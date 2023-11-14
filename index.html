@@ -1,25 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
 
-    <title>Sugar-Office</title>
-  </head>
-  <body class="bg-gray-100 p-8">
-    <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden">
-      <div class="p-4">
-        <label for="search" class="block text-gray-700 text-sm font-bold mb-2"
-          >Arama:</label
-        >
-        <div class="flex">
-          
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Tailwind CSS Genişletilmiş Navbar</title>
+</head>
+
+
+<div class="bg-blue-300 text-white p-4">
+    <div class="flex justify-between items-center">
+        <!-- Sol Açılır Menü (Dil Seçeneği) -->
+        <div class="relative group">
+            <button class="focus:outline-none">Dil</button>
+            <div class="absolute hidden mt-2 bg-white border border-gray-200 rounded-lg shadow-md">
+                <ul class="py-1">
+                    <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">Türkçe</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">English</a></li>
+                    <!-- Diğer dil seçenekleri buraya eklenebilir -->
+                </ul>
+            </div>
         </div>
-      </div>
+
+        <!-- Orta Metin Giriş Alanı -->
+        <div class="flex-grow text-center">
+            <input type="text" placeholder="Metin Giriniz" class="w-1/2 p-2 text-sm border border-gray-300 rounded-md focus:outline-none">
+        </div>
+
+        <!-- Sağ Açılır Menü -->
+        <div class="relative group">
+            <button class="focus:outline-none">Sağ Menü</button>
+            <div class="absolute hidden mt-2 bg-white border border-gray-300 rounded-lg shadow-md">
+                <ul class="py-1">
+                    <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">Seçenek A</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">Seçenek B</a></li>
+                    <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">Seçenek C</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </body>
+</div>
+    
+
+<script src="App.js"></script>
+</body>
 </html>
+
+

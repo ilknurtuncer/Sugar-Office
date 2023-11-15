@@ -1,4 +1,4 @@
- // JavaScript ile açılır menüyü kontrol etmek için
+ // -JavaScript ile açılır menüyü kontrol etmek için
  document.addEventListener('DOMContentLoaded', function () {
     const languageButton = document.querySelector('.relative:nth-child(1) button');
     const languageMenu = document.querySelector('.relative:nth-child(1) .absolute');
@@ -7,7 +7,7 @@
         languageMenu.classList.toggle('hidden');
     });
 
-    // Dışarı tıklandığında dil menüsünü kapat
+    //- Dışarı tıklandığında dil menüsünü kapat
     document.addEventListener('click', function (event) {
         if (!languageButton.contains(event.target)) {
             languageMenu.classList.add('hidden');
@@ -21,7 +21,7 @@
         currencyMenu.classList.toggle('hidden');
     });
 
-    // Dışarı tıklandığında para birimi menüsünü kapat
+    //- Dışarı tıklandığında para birimi menüsünü kapat
     document.addEventListener('click', function (event) {
         if (!currencyButton.contains(event.target)) {
             currencyMenu.classList.add('hidden');

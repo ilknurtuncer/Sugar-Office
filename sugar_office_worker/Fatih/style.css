@@ -104,4 +104,7 @@
   display: block !important;
 
 }
-
+/* ----------------------------------Slider-----------------------------*/
+.sliderr{
+  height: 80vh !important;
+}

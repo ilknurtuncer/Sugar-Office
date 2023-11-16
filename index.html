@@ -193,22 +193,22 @@
 </nav>
 
 
+ <!-- Add slides Carousel -->
 
-
-<div class="relative">
+ <div class="relative">
     <div id="carouselExampleSlidesOnly" class="slick-carousel">
         <div>
-            <img src="https://sekerofisi.com/uploads/p/o/5IW9tx067AYF.jpg" alt="Wild Landscape" class="block w-full">
-            <button class="bg-pink-500 text-white font-bold py-2 px-4 rounded absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        Pembe Buton
-    </button>
+            <img src="https://sekerofisi.com/uploads/p/o/5IW9tx067AYF.jpg" alt="Wild Landscape" class="w-full">
         </div>
         <div>
-            <img src="https://sekerofisi.com/uploads/p/o/UJcZfLu1mDz4.jpg" alt="Camera" class="block w-full">
-           
+            <img src="https://sekerofisi.com/uploads/p/o/UJcZfLu1mDz4.jpg" alt="Camera" class="w-full">
         </div>
-        <!-- Add more slides as needed -->
+        <!-- Daha fazla slayt ekleyebilirsiniz -->
     </div>
+    <!-- Pembe Buton -->
+    <button class="bg-pink-500 text-white font-bold py-2 px-4 rounded absolute left-14 top-20 transform -translate-y-1/2">
+        Pembe Buton
+    </button>
 </div>
 
 <!-- Slick Carousel JS -->
@@ -220,11 +220,14 @@
     $(document).ready(function(){
         $('.slick-carousel').slick({
             autoplay: true,
-            autoplaySpeed: 3000, //  millisaniye cinsinden
-            dots: true, // gezinme noktası false
+            autoplaySpeed: 3000,
+            dots: true,
+            prevArrow: '<button type="button" class="slick-prev">&#8249;</button>',
+            nextArrow: '<button type="button" class="slick-next">&#8250;</button>',
         });
     });
 </script>
+
 
 <script src="App.js"></script>
 </body>

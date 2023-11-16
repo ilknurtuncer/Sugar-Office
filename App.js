@@ -30,26 +30,26 @@
 });
 
 
-// JavaScript kullanarak accordion özelliği ekleme
-document.addEventListener('DOMContentLoaded', function () {
-    var buttons = document.querySelectorAll('button[data-target]');
-    
-    buttons.forEach(function (button) {
-        button.addEventListener('click', function () {
-            var targetId = this.getAttribute('data-target');
-            var targetElement = document.getElementById(targetId);
+// // JavaScript kullanarak accordion özelliği ekleme
+// document.addEventListener('DOMContentLoaded', function () {
+// var buttons = document.querySelectorAll('button[data-target]');
 
-            // Diğer tüm menüleri gizle
-            buttons.forEach(function (btn) {
-                var otherTargetId = btn.getAttribute('data-target');
-                if (otherTargetId !== targetId) {
-                    document.getElementById(otherTargetId).classList.add('hidden');
-                }
-            });
+// buttons.forEach(function (button) {
+//     button.addEventListener('click', function () {
+//         var targetId = this.getAttribute('data-target');
+//         var targetElement = document.getElementById(targetId);
 
-            // Tıklanan menüyü göster veya gizle
-            targetElement.classList.toggle('hidden');
-        });
-    });
-});
+//         // Diğer tüm menüleri gizle
+//         buttons.forEach(function (btn) {
+//             var otherTargetId = btn.getAttribute('data-target');
+//             if (otherTargetId !== targetId) {
+//                 document.getElementById(otherTargetId).classList.add('hidden');
+//             }
+//         });
+
+//         // Tıklanan menüyü göster veya gizle
+//         targetElement.classList.toggle('hidden');
+//     });
+// });
+// });
 

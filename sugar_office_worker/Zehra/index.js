@@ -22,6 +22,18 @@ function setLang() {
 
 }
 
+function getCart(){
+  if(!document.getElementById("cart").classList.contains('show'))
+  document.getElementById("cart").classList.toggle("show");
+
+}
+
+function onToys(){
+  if(!document.getElementById("plush").classList.contains('show'))
+  document.getElementById("plush").classList.toggle("show");
+
+}
+
   
   // Close the dropdown if the user clicks outside of it
 //   window.onclick = function(event) {
@@ -54,7 +66,8 @@ window.onclick = function(){
     document.getElementById("onMouse").classList.remove('show');
     document.getElementById("onMoney").classList.remove('show');
     document.getElementById("onMultiLevel").classList.remove('show');
-
+    document.getElementById("cart").classList.remove('show');
+    document.getElementById("plush").classList.remove('show');
 } 
 
 let slideIndex = 1;
@@ -84,5 +97,6 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+  console.log(document.getElementsByClassName("mySlides").length);
 }
 

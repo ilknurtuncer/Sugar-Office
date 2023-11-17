@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet" href="/sugar_office_worker/Kubra/index.css">
+    
+    <link rel="stylesheet" href="/sugar_office_worker/Kubra/css/index.css">
 
 
-    <link href="/sugar_office_worker/Kubra/dist/output.css" rel="stylesheet">
+    <link href="/sugar_office_worker/Kubra/css/output.css" rel="stylesheet">
+
+    
  
-    <title>candy</title>
+    <title>CandyOffice</title>
 </head>
 <body >
     <div class='flex justify-between pl-24  pr-24'>
@@ -19,7 +24,7 @@
 <div class="relative  " data-te-dropdown-ref  >
     <button
       class="flex items-center
-       whitespace-nowrap rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal
+       whitespace-nowrap rounded px-6 py-1 text-xs font-medium uppercase leading-normal
        text-gray-400  hover:text-pink-400
        transition duration-150 ease-in-out 
   
@@ -29,7 +34,7 @@
       aria-expanded="false"
       data-te-ripple-init
     >
-    <i class="fa-solid fa-expand"></i>
+    <i class="fa-solid fa-arrow-up-right-from-square"></i>
       <span class='mx-1'></span>
       BUY CANDY
       <span class="ml-2 w-2">
@@ -54,7 +59,13 @@
           class="block w-full whitespace-nowrap bg-transparent px-4 py-4 border-b text-sm font-normal text-gray-500 hover:bg-pink-200 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
           href="#"
           data-te-dropdown-item-ref
-          >Candy1</a
+          >
+          
+          <i class="fa-regular fa-circle-user"></i>
+
+
+         
+          Unlimited</a
         >
       </li>
       <li>
@@ -62,7 +73,10 @@
           class="block w-full whitespace-nowrap bg-transparent px-4 py-4 border-b text-sm font-normal text-gray-500 hover:bg-pink-200 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
           href="#"
           data-te-dropdown-item-ref
-          >Candy2</a
+          >
+          <i class="fa-solid fa-pen-to-square"></i>
+          
+          Customs</a
         >
       </li>
       <li>
@@ -70,7 +84,10 @@
           class="block w-full whitespace-nowrap bg-transparent px-4 py-4 border-b text-sm font-normal text-gray-500 hover:bg-pink-200 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
           href="#"
           data-te-dropdown-item-ref
-          >Candy3</a
+          >
+          
+          <i class="fa-solid fa-gear"></i>
+          Menu Items</a
         >
       </li>
     </ul>
@@ -80,11 +97,12 @@
 
 <!-- center -->
 
-<div class='flex p-4 text-sm text-gray-400 hover:text-pink-400'>
+<div class='flex text-sm py-1 text-gray-400 hover:text-pink-400'>
     
-    <span className='mx-0.5'></span>
+    <span className='mx-0.5 '></span>
 
-    <i class="fa-solid fa-phone m-1 text-gray-400 items-center "></i>
+    <i class="fa-solid fa-phone m-1 
+     text-gray-400 items-center hover:text-pink-400"></i>
     CALL NOW: 1800.555.9090 
     
     </div>
@@ -97,7 +115,7 @@
 <div class="relative" data-te-dropdown-ref>
     <button
       class="flex items-center 
-      whitespace-nowrap rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal
+      whitespace-nowrap rounded px-6  py-1 text-xs font-medium uppercase leading-normal
        text-gray-400
        hover:text-pink-400
        transition duration-150 ease-in-out 
@@ -175,7 +193,12 @@
 
 <!-- header start -->
 
-<div class="flex place-content-evenly items-center border-t border-b  py-4 border-gray-200">
+<div class="flex justify-center items-center border-t border-b gap-12 py-4
+
+
+
+
+border-gray-200">
 
 
     <!-- şeker -->
@@ -184,7 +207,7 @@
     
 
 
-    class="ml-36" 
+    class="" 
 
     alt="sekerLogo" />
     
@@ -192,15 +215,19 @@
 
 
     <!-- search -->
-    <div class="flex items-center  ">
+
+
+    <div class="flex items-center ">
         <div class="flex space-x-0 ">
           <input
             type="text"
-            class="block w-96 px-64 py-2 bg-white border 
+            class="w-96 px-2 py-2 bg-white border 
               focus:border-purple-400
                focus:ring-purple-300 
+              
                focus:outline-none focus:ring focus:ring-opacity-40"
             placeholder="Search..."
+            
           />
           <button class="px-4 text-white hover:bg-pink-400 bg-purple-600 rounded-r-full">
             <svg
@@ -224,13 +251,13 @@
 <!-- search -->
 
 
-<!-- account and shopping  -->
-<div class="flex items-center space-x-0 mr-28 ">
-      <div class="relative" data-te-dropdown-ref>
+<!-- account and heart start -->
+<div class="flex items-center ">
+      <div class="relative  hover:text-pink-600   " data-te-dropdown-ref>
         <button
-          class="flex items-center whitespace-nowrap rounded border-r p-1 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal
+          class="flex items-center    whitespace-nowrap rounded border-r p-1 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal
            text-gray-400
-           hover:text-pink-600 
+          
            transition duration-150 ease-in-out 
       
           type="button"
@@ -239,9 +266,13 @@
           aria-expanded="false"
           data-te-ripple-init
         >
-        <i class="fa-solid fa-user  hover:text-pink-600  text-gray-500 fa-xl"></i>
+        <i class="fa-solid fa-user
+          hover:text-pink-600  text-gray-500 fa-3x  "></i>
         
-            <svg
+     
+            <div class="block text-start  ">
+              <p class="flex m-1  text-gray-600" >Account
+ <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
@@ -251,7 +282,13 @@
                 d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
                 clip-rule="evenodd" />
             </svg>
-          
+
+
+              </p>
+              <p class="m-1 text-gray-400">Login/Register</p>
+
+            </div>
+         
         </button>
         <ul
           class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
@@ -273,28 +310,88 @@
               >Register</a
             >
           </li>
-          <li>
-            <a
-              class="block w-full whitespace-nowrap bg-transparent
-               px-4 py-4 border-b text-sm font-normal text-gray-500 
-               hover:bg-pink-200 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
-              href="#"
-              data-te-dropdown-item-ref
-              >Logout</a
-            >
-          </li>
+   
         </ul>
       </div>
 
-        <div class="">
-          <button 
-              class="h-14 w-14  overflow-hidden focus:outline-none"
-             
-          >
-         <i class=" fa-solid fa-bag-shopping  fa-xl  hover:text-pink-600 text-gray-500"></i>
-         </button>
+      <div class="relative  hover:text-pink-600   " data-te-dropdown-ref>
+        <button
+          class="flex items-center  hover:text-pink-600  whitespace-nowrap rounded border-r p-1 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal
+           text-gray-400
+          
+           transition duration-150 ease-in-out 
       
-         </div>
+          type="button"
+          id="dropdownMenuButton1"
+          data-te-dropdown-toggle-ref
+          aria-expanded="false"
+          data-te-ripple-init
+        >
+        <i class="fa-solid fa-heart p-1
+          hover:text-pink-600  text-gray-500 fa-3x  "></i>
+        
+    
+            <div class="block text-start  ">
+              <p class="m-1 text-gray-600" >WishList</p>
+              <p class="m-1 text-gray-400">Edit Your WishList</p>
+
+            </div>
+         
+        </button>
+        
+      </div>
+
+
+      <div class="relative  hover:text-pink-600   " data-te-dropdown-ref>
+        <button
+          class="flex items-center  hover:text-pink-600  whitespace-nowrap rounded p-1 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal
+           text-gray-400
+          
+           transition duration-150 ease-in-out 
+      
+          type="button"
+          id="dropdownMenuButton1"
+          data-te-dropdown-toggle-ref
+          aria-expanded="false"
+          data-te-ripple-init
+        >
+        <i class="fa-solid fa-circle-check p-1
+          hover:text-pink-600  text-gray-500 fa-3x  "></i>
+         
+            <div class="block text-start  ">
+              <p class="m-1 text-gray-600" >Compare</p>
+              <p class="m-1 text-gray-400">Product Comparison</p>
+
+            </div>
+         
+        </button>
+        
+      </div>
+
+      <div class="relative  hover:text-pink-600   " data-te-dropdown-ref>
+        <button
+          class="flex items-center  hover:text-pink-600 border-l  whitespace-nowrap rounded p-1 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal
+           text-gray-400
+          
+           transition duration-150 ease-in-out 
+      
+          type="button"
+          id="dropdownMenuButton1"
+          data-te-dropdown-toggle-ref
+          aria-expanded="false"
+          data-te-ripple-init
+        >
+        <i class="fa-solid fa-bag-shopping p-1
+          hover:text-pink-600  text-gray-500 fa-3x  "></i>
+         
+      
+        </button>
+        
+      </div>
+
+ </div>
+
+<!-- account and heart end -->
 
        
 
@@ -303,7 +400,7 @@
       </div>
 
     </div>     
- <!-- account and shopping  -->  
+
    
    </div>   
 
@@ -312,45 +409,33 @@
 <!-- Header end -->
 
 <!-- navbar start  -->
+
+
+<div class="  ">
     <nav
-    class="relative flex w-full h-20 
-    
+    class="relative w-full h-20 
    
     
-    text-xl flex-nowrap items-center justify-between pl-60 bg-blue-300  text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
+    text-xl flex-nowrap items-center 
+     bg-blue-300  text-neutral-500 shadow-lg
+      hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600
+       lg:flex-wrap lg:justify-start lg:py-4"
     data-te-navbar-ref>
-    <div class="flex w-full flex-wrap items-center justify-between px-3  ">
-      <!-- Hamburger button for mobile view -->
-      <button
-        class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-        type="button"
-        data-te-collapse-init
-        data-te-target="#navbarSupportedContent5"
-        aria-controls="navbarSupportedContent5"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-        <!-- Hamburger icon -->
-        <span class="[&>svg]:w-7">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="h-7 w-7">
-            <path
-              fill-rule="evenodd"
-              d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-              clip-rule="evenodd" />
-          </svg>
-        </span>
-      </button>
+    <div class="flex w-full flex-wrap items-center mx-auto  px-3 ">
+   
+    
       <!-- Collapsible navbar container -->
       <div
-        class="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
+        class="!visible mt-2 hidden 
+        
+        text-center
+        
+        flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
         id="navbarSupportedContent5"
         data-te-collapse-item>
         <!-- Left links -->
         <ul
-          class="list-style-none mr-auto flex flex-col pl-0 lg:mt-1 lg:flex-row"
+          class="list-style-none mx-auto mr-auto flex flex-col pl-0 lg:mt-1 lg:flex-row"
           data-te-navbar-nav-ref>
     <!-- Dropdown link -->
     <li
@@ -393,7 +478,52 @@
           font-normal text-neutral-700 hover:bg-pink-200 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
           href="#"
           data-te-dropdown-item-ref
-          >Kırtasiye Ürünü 1</a
+          >Kırtasiye Ürünü +</a
+        >
+      </li>
+      <li>
+        <a
+          class="block w-full whitespace-nowrap bg-transparent px-4 py-4 border-b text-sm 
+          font-normal text-neutral-700 hover:bg-pink-200 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+          href="#"
+          data-te-dropdown-item-ref
+          >Kırtasiye Ürünü +</a
+        >
+      </li>
+      <li>
+        <a
+          class="block w-full whitespace-nowrap bg-transparent px-4 py-4 border-b text-sm 
+          font-normal text-neutral-700 hover:bg-pink-200 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+          href="#"
+          data-te-dropdown-item-ref
+          >Kırtasiye Ürünü +</a
+        >
+      </li>
+      <li>
+        <a
+          class="block w-full whitespace-nowrap bg-transparent px-4 py-4 border-b text-sm 
+          font-normal text-neutral-700 hover:bg-pink-200 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+          href="#"
+          data-te-dropdown-item-ref
+          >Kırtasiye Ürünü +</a
+        >
+      </li>
+      <li>
+        <a
+          class="block w-full whitespace-nowrap bg-transparent px-4 py-4 border-b text-sm 
+          font-normal text-neutral-700 hover:bg-pink-200 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+          href="#"
+          data-te-dropdown-item-ref
+          >Kırtasiye Ürünü +</a
+        >
+      </li>
+      <li>
+        <a
+          class="block w-full whitespace-nowrap bg-transparent px-4 py-4 border-b text-sm 
+          font-normal text-neutral-700 hover:bg-pink-200 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
+          href="#"
+          data-te-dropdown-item-ref
+          >Kırtasiye Ürünü +</a
         >
       </li>
       <li>
@@ -401,7 +531,7 @@
           class="block w-full whitespace-nowrap bg-transparent px-4 py-4 border-b text-sm font-normal text-neutral-700 hover:bg-pink-200 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
           href="#"
           data-te-dropdown-item-ref
-          >Kırtasiye Ürünü 2</a
+          >Kırtasiye Ürünü +</a
         >
       </li>
       <li>
@@ -409,7 +539,7 @@
           class="block w-full whitespace-nowrap bg-transparent px-4 py-4 border-b text-sm font-normal text-neutral-700 hover:bg-pink-200 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
           href="#"
           data-te-dropdown-item-ref
-          >Kırtasiye Ürünü 3</a
+          >Kırtasiye Ürünü +</a
         >
       </li>
     </ul>
@@ -483,11 +613,38 @@
           </li>
       
         
+
+
+       <li></li>
+            
+            
+           
+          
+          
+       
+
+
         </ul>
       </div>
+         
+        
+         
+      
+        
+     
+      
     </div>
+
+
+    
     </nav>
 
+
+
+
+
+
+  </div>
 <!-- navbar end -->
 
 <!-- slider start  -->

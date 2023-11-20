@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f9b0132-41a3-431a-93b9-20c05ec5e9e2" name="Changes" comment="base">
-      <change afterPath="$PROJECT_DIR$/backend/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/nest-cli.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/app.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/app.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/app.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/test/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/test/jest-e2e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tsconfig.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +28,7 @@
         <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/frontend" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -69,13 +54,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.laravel-idea.search-composer-json": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "ahmet-dev",
+    "git-widget-placeholder": "<unknown>",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Users/akocoglu/Projects/Sugar-Office/backend/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Applications/PhpStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -90,7 +75,7 @@
       <workItem from="1700478511925" duration="1918000" />
       <workItem from="1700507599569" duration="415000" />
       <workItem from="1700508022281" duration="1252000" />
-      <workItem from="1700509458190" duration="1347000" />
+      <workItem from="1700509458190" duration="1755000" />
     </task>
     <task id="LOCAL-00001" summary="test işlemi 2">
       <option name="closed" value="true" />
@@ -148,7 +133,23 @@
       <option name="project" value="LOCAL" />
       <updated>1700510502921</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="base">
+      <option name="closed" value="true" />
+      <created>1700510859003</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700510859003</updated>
+    </task>
+    <task id="LOCAL-00009" summary="base">
+      <option name="closed" value="true" />
+      <created>1700510917628</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700510917628</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

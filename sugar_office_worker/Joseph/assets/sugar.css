@@ -17,6 +17,23 @@
 
 /* ------------ */
 
+/*! ----dropdawnn------ */
+
+
+  /* Menü için z-index değerini ayarlamak için bu stil ekleniyor */
+  #menu {
+    z-index: 24; /* İhtiyaca göre değeri ayarlayın */
+  }
+
+  /* Slider için z-index değerini ayarlamak için bu stil ekleniyor */
+  #default-carousel {
+    z-index: 0; /* İhtiyaca göre değeri ayarlayın */
+  }
+
+
+
+
+
 /* slider ares */
 .indicator {
   width: 10px;

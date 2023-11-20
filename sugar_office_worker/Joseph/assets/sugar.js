@@ -35,6 +35,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // !---------------------------
 
+function toggleMenu() {
+  var multilevelMenu = document.getElementById("multilevel-menu");
+  var submenu = document.getElementById("submenu");
+  multilevelMenu.classList.toggle("hidden");
+  if (!submenu.classList.contains("hidden")) {
+      submenu.classList.add("hidden");
+  }
+}
+
+function toggleSubmenu() {
+  var submenu = document.getElementById("submenu");
+  submenu.classList.toggle("hidden");
+}
+
+// !-----------dropdawn-------------
+
+
+  function toggleSubmenu() {
+    var submenu = document.getElementById("submenu");
+    submenu.classList.toggle("hidden");
+  }
+
+
+
 // !--------Slider Area--------
 // Get the slider element
 const slider = document.getElementById("slider");

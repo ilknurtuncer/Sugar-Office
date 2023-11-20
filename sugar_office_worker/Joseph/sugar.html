@@ -46,7 +46,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.4.2/alpine.js"></script>
 
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 
 
@@ -160,9 +161,96 @@
               <li class="flex text-center px-1">
                 <a href="#" class="text-gray-900 font-bold hover:text-blue-700">MEGAMENU</a>
               </li>
-              <li class="flex text-center px-1">
-                <a href="#" class="text-gray-900 font-bold hover:text-blue-700">MULTILEVEL</a>
+
+              <!-- !------- -->
+
+    <li class="flex text-center px-1">
+                <a href="#" class="text-gray-900 font-bold hover:text-blue-700">
+
+              <!-- HTML kodu -->
+<li class="group inline-block">
+  <button
+    class="outline-none border-none h-auto focus:outline-none border px-1  bg-white rounded-sm flex min-w-32 text-gray-900 font-bold hover:text-pink-100"
+  >
+  
+    <li class="flex text-center px-1">
+      <a href="#" class="text-gray-900 font-bold hover:text-blue-700 pr-1 font-semibold font-bold flex text-center px-1">MULTILEVEL</a>
+    </li>
+
+
+  </button>
+  <ul
+    class="bg-white w-auto border rounded-sm transform scale-0 group-hover:scale-100 absolute 
+  transition duration-150 ease-in-out origin-top min-w-32"
+  >
+    <li class="rounded-sm px-1 py-1 hover:bg-gray-100">Programming</li>
+    <li class="rounded-sm px-1 py-1 hover:bg-gray-100">DevOps</li>
+    <li class="rounded-sm relative px-1 py-1 hover:bg-gray-100">
+      <button
+        class="w-full text-left flex items-center outline-none focus:outline-none"
+      >
+        <span class="pr-1 flex-1">Langauges</span>
+        <span class="mr-auto">
+          <svg
+            class="fill-current h-4 w-4
+            transition duration-150 ease-in-out"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+            />
+          </svg>
+        </span>
+      </button>
+      <ul
+        class="bg-white border rounded-sm absolute top-0 right-0 
+  transition duration-150 ease-in-out origin-top-left
+  min-w-32
+  "
+      >
+        <li class="px-3 py-1 hover:bg-gray-100">Javascript</li>
+        <li class="rounded-sm relative px-3 py-1 hover:bg-gray-100">
+          <button
+            class="w-full text-left flex items-center outline-none focus:outline-none"
+          >
+            <span class="pr-1 flex-1">Python</span>
+            <span class="mr-auto">
+              <svg
+                class="fill-current h-4 w-4
+                transition duration-150 ease-in-out"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                />
+              </svg>
+            </span>
+          </button>
+          <ul
+            class="bg-white border rounded-sm absolute top-0 right-0 
+      transition duration-150 ease-in-out origin-top-left
+      min-w-32
+      "
+          >
+            <li class="px-3 py-1 hover:bg-gray-100">2.7</li>
+            <li class="px-3 py-1 hover:bg-gray-100">3+</li>
+          </ul>
+        </li>
+        <li class="px-3 py-1 hover:bg-gray-100">Go</li>
+        <li class="px-3 py-1 hover:bg-gray-100">Rust</li>
+      </ul>
+    </li>
+    <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Testing</li>
+  </ul>
+</li>
+                  
+                </a>
               </li>
+              <!-- !------- -->
+
+          
               <li class="flex text-center px-1">
                 <a href="#" class="text-gray-900 font-bold hover:text-blue-700">BRANDS</a>
               </li>
@@ -229,10 +317,10 @@
 
 
   <div id="default-carousel" class="container mx-auto relative w-full h-full sliderr" data-carousel="slide">
-    <div id="slider" class="relative w-full overflow-hidden">
+  
       <!-- Carousel wrapper -->
     
-    <div  class="relative h-full overflow-hidden rounded-lg sliderr">
+    <div id="slider" class="relative h-full overflow-hidden rounded-lg sliderr">
 
          <!-- Item 1 -->
         <div id="slider" class="hidden duration-700 ease-in-out h-full sliderr relative w-full flex transition-transform"
@@ -250,49 +338,50 @@
         <div class="hidden duration-700 ease-in-out h-full sliderr" data-carousel-item>
           <img src="assets/pictures/6li-Seker-Fosforlu-Kalem-Seti_4.jpg" class="absolute h-full block w-full sliderr -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"alt="Exotic Fruits" >
       </div>
+         <!-- Item 4 -->
       <div class="hidden duration-700 ease-in-out h-full sliderr" data-carousel-item>
         <img src="assets/pictures/Jjc1ITYdu0ZS.jpg" class="absolute h-full block w-full sliderr -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"alt="Exotic Fruits" >
-    
-        
       </div>
+
     <!-- Slider indicators -->
-    <div class="absolute z-20 flex -translate-x-1/2 bottom-0 left-1/2 space-x-3 rtl:space-x-reverse">
+    <div class="absolute z-20 flex -translate-x-1/2 bottom-0 left-1/2 space-x-3 rtl:space-x-reverse"
         <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <!-- <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-    -->
+        <!-- <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button> -->
+   
       </div> 
       
     <!-- Slider controls -->
     <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-            </svg>
-            <span class="sr-only">Previous</span>
-        </span>
-    </button>
-    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-            </svg>
-            <span class="sr-only">Next</span>
-        </span>
-    </button>
-    <div  class="absolute top-[75%] start-[250px] z-30 flex items-center justify-center  opacity-95 hover:opacity-100">
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+      </span>
+  </button>
+  <div  class="absolute top-[75%] start-[250px] z-30 opa flex items-center justify-center  opacity-95 hover:opacity-100 ">
 
-      <button type="button" class="py-2.5 px-5 me-2 mb-2 text-md font-medium text-white focus:outline-none bg-sugar__navy rounded-lg border border-gray-200 hover:bg-sugar__blue  focus:z-10 focus:ring-4 focus:ring-gray-200 ">Alternative</button>
-    </div>
-    <div  class="absolute top-[75%] start-[400px] z-30 flex items-center justify-center  opacity-95 hover:opacity-100">
+    <button type="button" class="py-2.5 px-5 me-2 mb-2 text-md font-normal text-white focus:outline-none bg-sugar__navy2 rounded-lg border border-gray-200 hover:bg-sugar__blue  focus:z-10 focus:ring-4 focus:ring-gray-200 ">LEARN MORE</button>
+  </div>
+  <div  class="absolute top-[75%] start-[400px] z-30 flex items-center justify-center  opacity-95 hover:opacity-100" style="margin-left: 50px;">
 
-      <button type="button" class="py-2.5 px-5 me-2 mb-2 text-md font-medium text-white focus:outline-none bg-sugar__navy2 rounded-lg border border-gray-200 hover:bg-sugar__pink  focus:z-10 focus:ring-4 focus:ring-gray-200 ">Alternative</button>
+    <button type="button" class="py-2.5 px-5 me-2 mb-2 text-md font-medium text-white focus:outline-none bg-sugar__navy2 rounded-lg border border-gray-200 hover:bg-sugar__pink  focus:z-10 focus:ring-4 focus:ring-gray-200 ">SHOP NOW</button>
+  </div>
+
+  
     </div>
   </div>
-    </div>
-
 
 
     

@@ -1,3 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* slider ares */
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.indicator[aria-current="true"] {
+  opacity: 1;
+}
+
+#slider {
+  height: calc(100vh - 196px); /* Subtract the navbar height */
+}
+
+[data-carousel-item] {
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
 .mainmenubtn {
     background-color: rgb(241, 236, 236);
     color: rgb(13, 13, 13);

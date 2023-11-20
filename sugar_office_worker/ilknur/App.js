@@ -90,8 +90,27 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+// sepet------
+document.addEventListener("DOMContentLoaded", function () {
+    var cartButton = document.getElementById("cart-button");
+    var cartDropdown = document.getElementById("cart-dropdown");
 
+    // Sepet butonuna tıklandığında
+    cartButton.addEventListener("click", function () {
+        // Sepet dropdown'un görünürlüğünü toggle et
+        cartDropdown.classList.toggle("hidden");
+    });
 
+    // Örnek: Ürün eklemek için bir bağlantıya tıklandığında
+    var addToCartLinks = document.querySelectorAll("#cart-dropdown a");
+    addToCartLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            // Burada ürün eklemek için gerekli işlemleri yapabilirsiniz.
+            console.log("Ürün eklendi: " + link.textContent);
+        });
+    });
+});
 
 
 

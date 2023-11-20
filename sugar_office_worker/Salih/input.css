@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .dropdownLanguage li{
+    padding: 2px;
+  }
+  
+  .dropdownLanguage li:hover, .dropdownCurrency li:hover, .dropdownAll li:hover{
+    background-color: #59B5FE;
+  }
+  
+  .dropdownCategory li:hover {
+    background-color:  #FF9BA7;
+  }
+  .dropdownMenuLinks li:hover {
+    color:  #FF9BA7;
+  }
+  
+
+  .search-box:nth-child(2) {
+    flex-basis: 100%; /* The second box takes up full width */
+  }
+  
+  @media screen and (min-width:1320px) {
+    .search-box:nth-child(2) {
+      flex-basis: auto; /* The second box takes up full width */
+      order: 0;
+      width: 40%;
+    }
+    .categoryxl{
+      display: hidden;
+    }
+  }
+  
+  .xyz{
+    transition: all 1s;
+  }
+  
+
+
+  
+.aaaa:hover{
+  color:red;
+}
+
+
+
+/* Bottom menu clickable mobile dropdown part   */
+.menu2{
+
+  height: 0;
+  position: absolute;
+ 
+  min-width: 160px;
+  overflow: auto;
+  color:black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: all ease-in-out 500ms;
+  padding:0 10px;
+}
+
+
+.show{
+  height: 250px;
+  max-height: 400px;
+}
+
+/* Bottom menu clickable mobile dropdown part end  */
+
+.overlay {
+  margin-left:0 !important;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: rgb(240, 236, 236);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top:10%;
+  width: 100%;
+
+}
+
+.overlay li {
+
+
+  font-size: 20px;
+  border-bottom: 2px solid black;
+  transition: 0.3s;
+}
+
+.overlay li:hover, .overlay li:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 36px;
+}
+
+@media screen and (max-width: 650px) {
+  .overlay li {font-size: 14px}
+
+}

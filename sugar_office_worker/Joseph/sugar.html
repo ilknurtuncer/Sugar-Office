@@ -58,7 +58,7 @@
     <header class="bg-pink-100 shadow-lg ">
       <div x-data="{ openBuyJournal: false, openCurrency: false }" class="all-header px-32">
         <div class="top-navbar flex justify-between items-center p-1">
-          <div class="language">
+          <div class="language z-20">
             <div @mouseenter="openBuyJournal = true" @mouseleave="openBuyJournal = false" class="relative">
               <div class="cursor-pointer">
                 <i class="fas fa-globe mr-2"></i> Language
@@ -222,6 +222,56 @@
       </nav>
 
     </header>
+   <!-- Slider Area -->
+
+   <div class="container mx-auto">
+    <div id="slider" class="relative w-full overflow-hidden">
+      <!-- Carousel indicators -->
+      <div class="absolute inset-x-0 bottom-0 z-10 mx-[15%] mb-4 flex list-none justify-center p-0" data-carousel-indicators>
+        <!-- You can add or remove indicators based on the number of slides -->
+        <button type="button" data-carousel-target="#slider" data-carousel-slide-to="0" class="indicator"></button>
+        <button type="button" data-carousel-target="#slider" data-carousel-slide-to="1" class="indicator"></button>
+        <button type="button" data-carousel-target="#slider" data-carousel-slide-to="2" class="indicator"></button>
+      </div>
+
+      <!-- Carousel items -->
+      <div class="relative w-full flex transition-transform duration-500 ease-in-out">
+        <!-- First item -->
+        <div class="w-full flex-shrink-0">
+          <img src="assets/pictures/candy1.jpg" id="slider" class="w-full" alt="Wild Landscape" />
+        </div>
+        <!-- Second item -->
+        <div class="w-full flex-shrink-0">
+          <img src="assets/pictures/candy2.jpg" class="w-full" alt="Camera" />
+        </div>
+        <!-- Third item -->
+        <div class="w-full flex-shrink-0">
+          <img src="assets/pictures/Jjc1ITYdu0ZS.jpg" class="w-full" alt="Exotic Fruits" />
+        </div>
+      </div>
+
+      <!-- Carousel controls -->
+      <button class="absolute bottom-0 left-0 top-0 z-20 flex items-center justify-center w-1/6 text-white opacity-50 hover:text-opacity-75 transition-all duration-300" type="button" data-carousel-target="#slider" data-carousel-prev>
+        <span class="inline-block h-8 w-8">
+          <!-- Previous icon -->
+          <svg class="w-4 h-4 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+        </span>
+        <span class="absolute -ml-px h-px w-px overflow-hidden whitespace-nowrap border-0 p-0 clip-rect(0,0,0,0)">Previous</span>
+      </button>
+      <button class="absolute bottom-0 right-0 top-0 z-20 flex items-center justify-center w-1/6 text-white opacity-50 hover:text-opacity-75 transition-all duration-300" type="button" data-carousel-target="#slider" data-carousel-next>
+        <span class="inline-block h-8 w-8">
+          <!-- Next icon -->
+          <svg class="w-4 h-4 text-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4-4 4"/>
+          </svg>
+        </span>
+        <span class="absolute -ml-px h-px w-px overflow-hidden whitespace-nowrap border-0 p-0 clip-rect(0,0,0,0)">Next</span>
+      </button>
+    </div>
+  </div>
+
 
     
 
@@ -229,7 +279,7 @@
  
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
-    <script src="./assets/sugar.js"></script>
+    <script src="assets/sugar.js"></script>
   </body>
 </html>
 

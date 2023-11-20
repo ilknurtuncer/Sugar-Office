@@ -27,15 +27,15 @@
 </head>
 
 <body>
-  <div class="w-full border">
+  <div class="w-full border-b">
 
     <!-- HEADER-1 LANGUAGE TEL MONEY -->
 
-    <div class="h-10 border flex text-xs font-semibold justify-evenly items-center text-gray-600">
-
+    <div class="h-8 border-b">
+     <div class="flex text-xs font-semibold  items-center text-gray-600 justify-between m-auto pl-2 w-9/12 xl:w-10/12 lg:w-11/12 md:w-full">
       <div class="relative ">
         <button type="button"
-          class="dropbtn px-4 py-2 text-gray-600  text-xs inline-flex items-center hover:text-pinky "
+          class="dropbtn py-2 text-gray-600  text-xs inline-flex items-center hover:text-pinky "
           onmouseover="onMouseFunction()">
           <p id="lang">English</p>
 
@@ -72,7 +72,7 @@
         <div>
           <p>CALL NOW:</p>
         </div>
-        <a href="tel:+55555555">+555555555</a>
+        <a class="text-xs" href="tel:+55555555">+555555555</a>
       </div>
 
       <div class="relative ">
@@ -110,47 +110,48 @@
           </ul>
         </div>
       </div>
+     </div>
+    
     </div>
 
     <!-- HEADER-2 LOGO İNPUT ACCOUNT -->
 
-    <div class="h-24 flex ">
-      <div class="p-2 ml-24">
-        <img src="./assets/images/logo.png" alt="Picture of the author" class="w-32" />
+    <div class="h-24 flex justify-evenly w-9/12 xl:w-10/12 md:w-full lg:w-11/12 m-auto">
+      <div class="pr-1 mt-2">
+        <img src="./assets/images/logo.png" alt="Picture of the author" class="w-32 h-16" />
       </div>
 
 
-      <div class="flex justify-center items-center w-[36rem] py-0 ml-10 mr-5">
-        <div class="bg-pinky w-12 h-10 rounded-l-full"></div>
-        <input class="w-[30rem] h-10  bg-grayPrimary border-none " placeholder="Search here..."></input>
+      <div class="flex justify-center items-center w-[32rem] py-0 ">
+        <input class="w-[28rem] h-10 bg-grayPrimary border-none " placeholder="Search here..."></input>
         <button class="border w-14 pt-2 pl-2  h-10 bg-pinky rounded-r-full hover:opacity-75">
           <img src="./assets/images/magnifying-glass-solid.svg" alt="searchIcon" class="w-12"></img>
         </button>
       </div>
 
-      <div class="flex justify-center items-center m-5">
+      <div class="flex justify-center items-center">
 
         <div class="flex cursor-pointer hover:text-pinky">
-          <img src="./assets/images/add-friend.png"  alt="account_image" class="w-10 h-10 mt-2">
-          <div class="mt-2 ml-2">
-            <p class="text-sm font-bold">Account</p>
+          <img src="./assets/images/add-friend.png"  alt="account_image" class="w-7 h-7 mt-2">
+          <div class="mt-2 ml-1">
+            <p class="text-xs font-bold">Account</p>
             <p class="text-xs">Login/Register</p>
           </div>
         </div>
 
 
-        <div class="flex m-2 cursor-pointer hover:text-pinky">
-          <img src="./assets/images/love.png" alt="account_image" class="w-9 h-9 mt-2 ">
+        <div class="flex cursor-pointer hover:text-pinky">
+          <img src="./assets/images/love.png" alt="account_image" class="w-7 h-7 mt-2 ">
           <div class="ml-2 mt-1">
-            <p class="text-sm font-bold mt-1">Wishlist</p>
+            <p class="text-xs font-bold mt-1">Wishlist</p>
             <p class="text-xs">Edit your wishlist</p>
           </div>
         </div>
 
         <div class="flex cursor-pointer hover:text-pinky">
-          <img src="./assets/images/compare.png" alt="account_image" class="w-10 mt-2">
+          <img src="./assets/images/compare.png" alt="account_image" class="w-8 h-8 mt-2">
           <div class="ml-2 mt-1">
-            <p class="text-sm font-bold mt-1">Compare</p>
+            <p class="text-xs font-bold mt-1">Compare</p>
             <p class="text-xs">Product Comparison</p>
           </div>
         </div>
@@ -162,9 +163,9 @@
 
   <!-- HEADER-3 MENU ITEMS BASKET -->
 
-  <div class="h-14 flex items-center justify-between pl-24">
+  <div class="h-14 flex items-center justify-between w-9/12 m-auto xl:w-10/12 md:w-full lg:w-11/12">
     <div class="relative">
-      <ul class="menu-list flex font-semibold text-sm justify-center">
+      <ul class="menu-list flex font-semibold text-xs justify-center">
         <li class="mx-2  hover:text-pinky hover:cursor-pointer ">
           CATEGORIES
         </li>
@@ -178,13 +179,13 @@
             <ul  role="menu" aria-orientation="vertical" aria-labelledby="options-menu" class="multilevel-list "  >
 
               <li >
-                <a href="#" class="block px-4 py-2 text-sm font-thin hover:bg-gray-100">
+                <a href="#" class="block px-4 py-2 text-xs font-thin hover:bg-gray-100">
                   Squishy
                 </a>
               </li>
           
               <li onmouseover="onToys()" class=" w-full flex w-96 relative hover:bg-gray-100">
-                <a href="#" class="block px-4 py-2 text-sm font-thin ">
+                <a href="#" class="block px-4 py-2 text-xs font-thin ">
                   Toys
                   <span class="absolute right-2 top-1/2 ">
                  <img src="./assets/images/right.png" class="w-2 h-2">
@@ -193,17 +194,17 @@
               </li>
              
               <li >
-                <a href="#" class="block px-4 py-2 text-sm font-thin hover:bg-gray-100">
+                <a href="#" class="block px-4 py-2 text-xs font-thin hover:bg-gray-100">
                   Accessories
                 </a>
               </li>
               <li >
-                <a href="#" class="block px-4 py-2 text-sm font-thin hover:bg-gray-100">
+                <a href="#" class="block px-4 py-2 text-xs font-thin hover:bg-gray-100">
                   Back To School
                 </a>
               </li>   
               <li >
-                <a href="#" class="block px-4 py-2 text-sm font-thin hover:bg-gray-100">
+                <a href="#" class="block px-4 py-2 text-xs font-thin hover:bg-gray-100">
                   Cosmetic
                 </a>
               </li>
@@ -212,8 +213,8 @@
         </li>
         <ul id="plush" class="toys-content bg-white absolute right-2
          top-20 z-10 w-24 py-1 font-thin" aria-disabled="true">
-          <li ><a class="hover:bg-gray-100 text-sm p-1 " href="#">plush toys</a></li>
-          <li ><a class="hover:bg-gray-100 text-sm p-1" href="#">slime</a></li>
+          <li ><a class="hover:bg-gray-100 text-xs p-1 " href="#">plush toys</a></li>
+          <li ><a class="hover:bg-gray-100 text-xs p-1" href="#">slime</a></li>
         </ul>
         <li class="mx-2  hover:text-pinky hover:cursor-pointer">
           BRANDS
@@ -225,8 +226,8 @@
     </div>
 
 
-    <div class="flex justify-center pr-24 items-center">
-      <ul class="flex menu-list font-semibold text-sm justify-around">
+    <div class="flex justify-center  items-center">
+      <ul class="flex menu-list font-semibold text-xs justify-around">
         <li class="mx-2  hover:text-pinky hover:cursor-pointer ">
           ABOUT
         </li>
@@ -240,7 +241,7 @@
           BLOG
         </li>
       </ul>
-      <div class="mx-2 flex items-center border-l-2 border-black h-12 px-2 tel">0 item(s) - 0.00€</div>
+      <div class="mx-2 flex items-center border-l-2 border-black h-12 px-2 tel text-xs">1 item(s) - 53.53€</div>
 
       <div onmouseover="getCart()" class="border p-4 bg-pinky cursor-pointer relative ">
    <div class="flex flex-col justify-center items-center">
@@ -253,8 +254,8 @@
         <p>Sub-Total 53.53€</p>
       </div>
       <div>
-        <button class="border p-2 mt-2 bg-gray-800 text-white text-sm">VIEW CART</button>
-        <button class="border p-2 mt-2 bg-gray-800 text-white text-sm">CHECKOUT</button>
+        <button class="border p-2 mt-2 bg-gray-800 text-white text-xs">VIEW CART</button>
+        <button class="border p-2 mt-2 bg-gray-800 text-white text-xs">CHECKOUT</button>
       </div>
 
     </div>
@@ -270,19 +271,22 @@
 
     <div class="mySlides fade relative">
       <div class="numbertext">1 / 2</div>
-      <img src="./assets/images/sliderimg2.jpg" class="w-full brightness-100">
-      <div class="absolute start-3/4 bottom-1/3 flex justify-around mr-10">
+      <img src="./assets/images/sliderimg2.jpg" class="w-full brightness-75">
+      <div class="absolute right-48 bottom-1/2 text-white  text-7xl font-bold">NEW MODALS</div>
+      <div class="absolute right-36 bottom-1/3 flex justify-around mr-10">
         <button class="mx-1 py-4 border-2 px-4 w-42 bg-grayPrimary shadow-lg hover:bg-pinky">LEARN MORE</button>
-        <button class="mx-1 py-4 border-2 px-5  bg-grayPrimary shadow-lg hover:bg-pinky">SHOP NOW</button>
+        <button class="mx-1 py-4 border-2 px-5  bg-pinky text-white shadow-lg hover:bg-white hover:text-gray-900">SHOP NOW</button>
       </div>
     </div>
 
     <div class="mySlides fade relative">
       <div class="numbertext">2 / 2</div>
-      <img src="./assets/images/sliderimg1.jpg" class=" w-full brightness-90">
+      <img src="./assets/images/sliderimg1.jpg" class=" w-full brightness-75">
+      <div class="absolute left-12 bottom-1/2 text-white text-7xl font-bold">NEW MODALS</div>
+
       <div class="absolute start-11 bottom-1/3 flex justify-around ">
         <button class="mx-1 py-4 border-2 px-4 bg-grayPrimary shadow-lg hover:bg-pinky">LEARN MORE</button>
-        <button class="mx-1 py-4 border-2 px-4 bg-grayPrimary shadow-lg hover:bg-pinky">SHOP NOW</button>
+        <button class="mx-1 py-4 border-2 px-4 bg-pinky text-white shadow-lg hover:bg-white hover:text-gray-900">SHOP NOW</button>
       </div>
     </div>
 

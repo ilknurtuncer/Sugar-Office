@@ -1,398 +1,456 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              sugar__pink: "#FF9BA7",
-              sugar__blue: "#59B5FE",
-              sugar__navy: "#001B79",
-              sugar__navy2: "#1640D6",
-              backcolor:"#FAF6F0",
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+            sugar__pink: "#FF9BA7",
+            sugar__blue: "#59B5FE",
+            sugar__navy: "#001B79",
+            sugar__navy2: "#1640D6",
+            backcolor: "#FAF6F0",
           },
         },
-      };
-    </script>
-    
-    <link rel="stylesheet" href="assets/sugar.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,100;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css" rel="stylesheet" />
+      },
+    };
+  </script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.4.2/alpine.js"></script>
+  <link rel="stylesheet" href="assets/css/sugar.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,100;1,500;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.4.2/alpine.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-8wcjxGw4WGtGA2oiWcREie/VrX4mZwKbM9drdLXEUhD9sR1lkaQujGDQCJdUGKXnTnAcW2vz5xkBk5kPd2XDw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 
+</head>
 
-    </head>
-    <body>
+<body>
 
-    <!-- Header section -->
+  <!-- Header section -->
 
-    <header class="bg-pink-100 shadow-lg ">
-      <div x-data="{ openBuyJournal: false, openCurrency: false }" class="all-header px-32">
-        <div class="top-navbar flex justify-between items-center p-1">
-          <div class="language z-20">
-            <div @mouseenter="openBuyJournal = true" @mouseleave="openBuyJournal = false" class="relative">
-              <div class="cursor-pointer">
-                <i class="fas fa-globe mr-2"></i> Language
-              </div>
-              <div x-show="openBuyJournal" @click.away="openBuyJournal = false" class="absolute mt-2 bg-white border rounded shadow-md" style="display: none;">
-                <!-- Dropdown content here -->
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Option 1</a>
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Option 2</a>
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Option 3</a>
-              </div>
-            </div>
+  <header class="bg-pink-100 shadow-lg ">
+
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="top-navbar h-8 grid grid-cols-3 text-white bg-pink-200 all-header px-32 ">
+      <!-- Left dropdown menu -->
+      <div class="flex items-center justify-start h-8 col-span-1 ">
+        <div class="relative z-10">
+          <button id="dropdownLeftButton" data-dropdown-toggle="dropdownLeft" data-dropdown-delay="500"
+            data-dropdown-trigger="hover"
+            class="language h-8 text-black hover:bg-pink-300 focus:ring-4 focus:outline-none focus:ring-pink-300 border-none font-medium rounded-lg text-sm  text-center inline-flex items-center dark:bg-pink-200 dark:hover:bg-pink-400 dark:focus:ring-pink-300"
+            type="button"> <i class="fas fa-globe mr-2 ml-2 "></i> Language<svg class="w-2.5 h-2.5 ms-3"
+              aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" />
+            </svg>
+          </button>
+
+          <!-- Dropdown menu -->
+        <div id="dropdownLeft"
+            class="hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-36 dark:bg-gray-700">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLeftButton">
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><i class="fas fa-language fa-2x text-pink-500 rotate-45"></i> Turkey</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><i class="fas fa-language fa-2x text-pink-500 rotate-45"></i> English</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><i class="fas fa-language fa-2x text-pink-500 rotate-45"></i> Germany</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><i class="fas fa-language fa-2x text-pink-500 rotate-45"></i> Spanish</a>
+              </li>
+            </ul>
           </div>
-          <div class="phone">
-            <i class="fas fa-phone-alt mr-2"></i> +90555 555 5555
-          </div>
-          <div class="currency">
-            <div @mouseenter="openCurrency = true" @mouseleave="openCurrency = false" class="relative">
-              <div class="cursor-pointer">
-                <i class="fas fa-money-bill-wave mr-2"></i> Currency
-              </div>
-              <div x-show="openCurrency" @click.away="openCurrency = false" class="absolute mt-2 bg-white border rounded shadow-md" style="display: none;">
-                <!-- Dropdown content here -->
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">USD</a>
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">EUR</a>
-                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">GBP</a>
-              </div>
-            </div>
+
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center col-span-1">
+        <div
+          class="phone mr-2 ml-2 h-8 text-black hover:bg-pink-300 focus:ring-4 focus:outline-none focus:ring-pink-300 border-none font-medium rounded-lg text-sm  text-center inline-flex items-center dark:bg-pink-200 dark:hover:bg-pink-400 dark:focus:ring-pink-300">
+          <i class="fas fa-phone-alt mr-2 ml-2"></i> +90555 555 5555
+        </div>
+      </div>
+
+      <!-- Right dropdown menu -->
+      <div class="flex items-center justify-end col-span-1">
+        <div class="relative z-20">
+          <button id="dropdownRightButton" data-dropdown-toggle="dropdownRight" data-dropdown-delay="500"
+            data-dropdown-trigger="hover"
+            class="language h-8 text-black hover:bg-pink-300 focus:ring-4 focus:outline-none focus:ring-pink-300 border-none font-medium rounded-lg text-sm  text-center inline-flex items-center dark:bg-pink-200 dark:hover:bg-pink-400 dark:focus:ring-blue-300"
+            type="button">
+
+            <i class="fas fa-money-bill-wave mr-2 ml-2"></i> Currency<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" />
+            </svg>
+          </button>
+
+          <!-- Dropdown menu -->
+          <div id="dropdownRight"
+            class="hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-36 dark:bg-gray-700">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownRightButton">
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><i class="fas fa-dollar-sign fa-lg text-green-500"></i> Dolar</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><i class="fas fa-euro-sign fa-lg text-blue-500"></i> Euro</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><i class="fas fa-coins fa-lg text-yellow-500"></i> Gold</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Logout</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-   
-      <nav class="bg-white border-t-2 border-b-2 border-pink-300 shadow-lg px-32">
-        <div class="container mx-auto flex items-center justify-between h-20">
-          <img src="./assets/pictures/sugar-logo.png" class="h-12 w-auto mr-4" alt="Salamon logo">
-  
-          <div class="flex items-center flex-grow">
-            <div class="relative">
-              <div class="flex items-center flex-grow rad">
-                <input type="text" class="border-2 border-gray-200 hover\:to-white rounded-3xl w-full px-4 py-2 mr-4 pr-64 hover\:bg-[#3b5998] "  placeholder="Search">
-              </div>
-              <i class="fas fa-search absolute top-3 right-8 flex items-center text-gray-400"></i>
+    </nav>
+
+
+
+    <!-- Dropdown menu -->
+
+    <nav class="bg-white border-t-2 border-b-2 border-pink-300 shadow-lg px-32">
+      <div class="container mx-auto flex items-center justify-between h-20">
+        <img src="./assets/pictures/sugar-logo.png" class="h-12 w-auto mr-4" alt="Salamon logo">
+
+        <div class="flex items-center flex-grow">
+          <div class="relative">
+            <div class="flex items-center flex-grow rad">
+              <input type="text"
+                class="border-2 border-gray-200 hover\:to-white rounded-3xl w-full px-4 py-2 mr-4 pr-64 hover:bg-pink-200 "
+                placeholder="Search">
             </div>
+            <i class="fas fa-search absolute top-3 right-8 flex items-center text-gray-400"></i>
           </div>
-  
-          <div class="flex items-center" style="align-items: center;">
-            <i class="fas fa-user text-gray-500" style="font-size: 2.5rem; margin: 0.5rem; color: #87CEEB;"></i>
-            <div class="flex flex-col mt-1">
-              <a href="/account" class="text-black-500 underline px-2">
-                Account
-              </a>
-              <div class="flex flex-row">
-                <a href="/login" class="text-gray-500 text-sm" style="font-size: 0.6rem; margin: 0.25rem;">Login</a>
-                <a href="/" class="text-gray-500">/</a>
-                <a href="/register" class="text-gray-500 text-sm" style="font-size: 0.6rem; margin: 0.25rem;">Register</a>
-              </div>
-            </div>
-            <i class="fas fa-heart text-gray-500" style="font-size: 2.5rem; margin: 0.5rem; color: #87CEEB;"></i>
-            <div class="flex flex-col mt-1">
-              <a href="/wishlist" class="text-black-500 underline px-2">
-                Wishlist
-              </a>
-              <div class="flex flex-row">
-                <a href="/edit-wishlist" class="text-gray-500 text-sm" style="font-size: 0.6rem; margin: 0.25rem;">Edit Your Wishlist</a>
-              </div>
-            </div>
-            <i class="fas fa-list text-gray-500" style="font-size: 2.5rem; margin: 0.5rem; color: #87CEEB;"></i>
-            <div class="flex flex-col mt-1">
-              <a href="/compare" class="text-black-500 underline px-2">
-                Compare
-              </a>
-              <div class="flex flex-row">
-                <a href="/edit-wishlist" class="text-gray-500 text-sm" style="font-size: 0.6rem; margin: 0.25rem;">Edit Your Wishlist</a>
-              </div>
-            </div>
-          </div>
-          
-
-       
-          
-
-
         </div>
-      </nav>
 
-      <nav class="flex items-center justify-between bg-white p-4 shadow-md px-32">
-        <!-- Hamburger menu -->
-        <button class="block md:hidden p-2 rounded-lg text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" onclick="toggleMenu()">
-          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-  
-        <div class="flex items-center justify-evenly bg-white p-2 w-full">
-          <div class="flex  space-x-4 justify-start  ">
-            <ul class="flex" >
-              <li class="flex text-center px-1">
-                <a href="#" class="text-gray-700 font-bold">CATEGORIES</a>
-              </li>
-              <li class="flex text-center px-1">
-                <a href="#" class="text-gray-900 font-bold hover:text-blue-700">MEGAMENU</a>
-              </li>
+        <div class="flex items-center" style="align-items: center;">
+          <i class="fas fa-user text-gray-500" style="font-size: 2.5rem; margin: 0.5rem; color: #87CEEB;"></i>
+          <div class="flex flex-col mt-1">
+            <a href="/account" class="text-black-500 underline px-2">
+              Account
+            </a>
+            <div class="flex flex-row">
+              <a href="/login" class="text-gray-500 text-sm" style="font-size: 0.6rem; margin: 0.25rem;">Login</a>
+              <a href="/" class="text-gray-500">/</a>
+              <a href="/register" class="text-gray-500 text-sm" style="font-size: 0.6rem; margin: 0.25rem;">Register</a>
+            </div>
+          </div>
+          <i class="fas fa-heart text-gray-500" style="font-size: 2.5rem; margin: 0.5rem; color: #87CEEB;"></i>
+          <div class="flex flex-col mt-1">
+            <a href="/wishlist" class="text-black-500 underline px-2">
+              Wishlist
+            </a>
+            <div class="flex flex-row">
+              <a href="/edit-wishlist" class="text-gray-500 text-sm" style="font-size: 0.6rem; margin: 0.25rem;">Edit
+                Your Wishlist</a>
+            </div>
+          </div>
+          <i class="fas fa-list text-gray-500" style="font-size: 2.5rem; margin: 0.5rem; color: #87CEEB;"></i>
+          <div class="flex flex-col mt-1">
+            <a href="/compare" class="text-black-500 underline px-2">
+              Compare
+            </a>
+            <div class="flex flex-row">
+              <a href="/edit-wishlist" class="text-gray-500 text-sm" style="font-size: 0.6rem; margin: 0.25rem;">Edit
+                Your Wishlist</a>
+            </div>
+          </div>
+        </div>
 
-              <!-- !------- -->
-
-    <li class="flex text-center px-1">
-                <a href="#" class="text-gray-900 font-bold hover:text-blue-700">
-
-              <!-- HTML kodu -->
-<li class="group inline-block">
-  <button
-    class="outline-none border-none h-auto focus:outline-none border px-1  bg-white rounded-sm flex min-w-32 text-gray-900 font-bold hover:text-pink-100"
-  >
-  
-    <li class="flex text-center px-1">
-      <a href="#" class="text-gray-900 font-bold hover:text-blue-700 pr-1 font-semibold font-bold flex text-center px-1">MULTILEVEL</a>
-    </li>
 
 
-  </button>
-  <ul 
-    class="bg-white w-auto border rounded-sm transform scale-0 group-hover:scale-100 absolute 
-  transition duration-150 ease-in-out origin-top min-w-32"
-  >
-    <li class="rounded-sm px-1 py-1 hover:bg-gray-100">Programming</li>
-    <li class="rounded-sm px-1 py-1 hover:bg-gray-100">DevOps</li>
-    <li class="rounded-sm relative px-1 py-1 hover:bg-gray-100">
+
+
+
+      </div>
+    </nav>
+
+    <nav class="flex items-center justify-between bg-white p-4 shadow-md px-32">
+      <!-- Hamburger menu -->
       <button
-        class="w-full text-left flex items-center outline-none focus:outline-none"
-      >
-        <span class="pr-1 flex-1">Langauges</span>
-        <span class="mr-auto">
-          <svg
-            class="fill-current h-4 w-4
-            transition duration-150 ease-in-out"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-            />
-          </svg>
-        </span>
+        class="block md:hidden p-2 rounded-lg text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+        onclick="toggleMenu()">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
       </button>
-      <ul
-        class="bg-white border rounded-sm absolute top-0 right-0 
+
+      <div class="flex items-center justify-evenly bg-white p-2 w-full">
+        <div class="flex  space-x-4 justify-start  ">
+          <ul class="flex">
+            <li class="flex text-center px-1">
+              <a href="#" class="text-gray-700 font-bold">CATEGORIES</a>
+            </li>
+            <li class="flex text-center px-1">
+              <a href="#" class="text-gray-900 font-bold hover:text-blue-700">MEGAMENU</a>
+            </li>
+
+            <!-- !------- -->
+
+            <li class="flex text-center px-1">
+              <a href="#" class="text-gray-900 font-bold hover:text-blue-700">
+
+                <!-- HTML kodu -->
+            <li class="group inline-block">
+              <button
+                class="outline-none border-none h-auto focus:outline-none border px-1  bg-white rounded-sm flex min-w-32 text-gray-900 font-bold hover:text-pink-100">
+
+            <li class="flex text-center px-1 z-30">
+              <a href="#"
+                class="text-gray-900 font-bold hover:text-blue-700 pr-1 font-semibold font-bold flex text-center px-1">MULTILEVEL</a>
+            </li>
+
+
+            </button>
+            <ul class="bg-white w-auto border rounded-sm transform scale-0 group-hover:scale-100 absolute 
+  transition duration-150 ease-in-out origin-top min-w-32 z-30">
+              <li class="rounded-sm px-1 py-1 hover:bg-gray-100">Programming</li>
+              <li class="rounded-sm px-1 py-1 hover:bg-gray-100">DevOps</li>
+              <li class="rounded-sm relative px-1 py-1 hover:text-pink-300">
+                <button class="w-full text-left flex items-center outline-none focus:outline-none ">
+                  <span class="pr-1 flex-1">Langauges</span>
+                  <span class="mr-auto">
+                    <svg class="fill-current h-4 w-4
+            transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                  </span>
+                </button>
+                <ul class="bg-white border rounded-sm absolute top-0 right-0 
   transition duration-150 ease-in-out origin-top-left
   min-w-32
-  "
-      >
-        <li class="px-3 py-1 hover:bg-gray-100">Javascript</li>
-        <li class="rounded-sm relative px-3 py-1 hover:bg-gray-100">
-          <button
-            class="w-full text-left flex items-center outline-none focus:outline-none"
-          >
-            <span class="pr-1 flex-1">Python</span>
-            <span class="mr-auto">
-              <svg
-                class="fill-current h-4 w-4
-                transition duration-150 ease-in-out"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                />
-              </svg>
-            </span>
-          </button>
-          <ul
-            class="bg-white border rounded-sm absolute top-0 right-0 
+  ">
+                  <li class="px-3 py-1 hover:bg-gray-100">Javascript</li>
+                  <li class="rounded-sm relative px-3 py-1 hover:bg-gray-100">
+                    <button class="w-full text-left flex items-center outline-none focus:outline-none">
+                      <span class="pr-1 flex-1">Python</span>
+                      <span class="mr-auto">
+                        <svg class="fill-current h-4 w-4
+                transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                        </svg>
+                      </span>
+                    </button>
+                    <ul class="bg-white border rounded-sm absolute top-0 right-0 
       transition duration-150 ease-in-out origin-top-left
       min-w-32
-      "
-          >
-            <li class="px-3 py-1 hover:bg-gray-100">2.7</li>
-            <li class="px-3 py-1 hover:bg-gray-100">3+</li>
-          </ul>
-        </li>
-        <li class="px-3 py-1 hover:bg-gray-100">Go</li>
-        <li class="px-3 py-1 hover:bg-gray-100">Rust</li>
-      </ul>
-    </li>
-    <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Testing</li>
-  </ul>
-</li>
-                  
-                </a>
+      ">
+                      <li class="px-3 py-1 hover:bg-gray-100">2.7</li>
+                      <li class="px-3 py-1 hover:bg-gray-100">3+</li>
+                    </ul>
+                  </li>
+                  <li class="px-3 py-1 hover:bg-gray-100">Go</li>
+                  <li class="px-3 py-1 hover:bg-gray-100">Rust</li>
+                </ul>
               </li>
-              <!-- !------- -->
+              <li class="rounded-sm px-3 py-1 hover:bg-gray-100">Testing</li>
+            </ul>
+            </li>
 
-          
-              <li class="flex text-center px-1">
-                <a href="#" class="text-gray-900 font-bold hover:text-blue-700">BRANDS</a>
-              </li>
-              <li class="flex text-center px-1">
-                <a href="#" class="text-blue-900 font-bold hover:text-blue-700">SPECIALS</a>
-              </li>
-            </ul>
-          </div>
-  
-          <div class="flex  space-x-4 justify-end ">
-            <ul class="flex mx-20 justify-between">
-              <li class="flex-1 text-center px-1">
-                <a href="#" class="text-gray-700 font-bold">ABOUT</a>
-              </li>
-              <li class="flex-1 text-center px-1">
-                <a href="#" class="text-gray-900 font-bold hover:text-blue-700">FAQ</a>
-              </li>
-              <li class="flex-1 text-center px-1">
-                <a href="#" class="text-gray-900 font-bold hover:text-blue-700">CONTACT</a>
-              </li>
-              <li class="flex-1 text-center px-1">
-                <a href="#" class="text-gray-900 font-bold hover:text-blue-700">BLOCK</a>
-              </li>
-              <li class="flex-1 text-center px-1">
-                <a href="#" class="text-blue-900 font-bold hover:text-blue-700">0</a>
-              </li>
-              <li class="flex-1 text-center ">
-                <a href="#" class="text-blue-900 font-bold hover:text-blue-700">item(s)-</a>
-              </li>
-              <li class="flex-1 text-center px-0\.5">
-                <a href="#" class="text-blue-900 font-bold hover:text-blue-700">$0,00</a>
-              </li>
-            </ul>
-          </div>
-            <!-- Sepet alanı -->
-  <div class="flex items-center justify-end bg-white p-1">
-    <a href="#" class="text-gray-900 hover:text-blue-700">
-      <!-- <img src="assets/pictures/" alt=""> -->
-      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-      </svg>
-    </a>
-  </div>
-        </div>
-        
-  
-        <div class="hidden md:hidden" id="menu">
-          <ul class="flex flex-col p-4 space-y-4 bg-gray-50 border border-gray-100 rounded-lg">
-            <li><a href="#" class="text-blue-700 font-bold"></a></li>
-            <li><a href="#" class="text-gray-900 hover:text-blue-700">CATEGORIES</a></li>
-            <li><a href="#" class="text-gray-900 hover:text-blue-700"></a>MEGAMENU</li>
-            <li><a href="#" class="text-gray-900 hover:text-blue-700"></a>MULTILEVEL</li>
-            <li><a href="#" class="text-gray-900 hover:text-blue-700"></a>BRANDS</li>
-            <li><a href="#" class="text-white bg-blue-700 px-4 py-2 rounded hover:bg-blue-800 transition">SPECIALS</a></li>
+            </a>
+            </li>
+            <!-- !------- -->
+
+
+            <li class="flex text-center px-1">
+              <a href="#" class="text-gray-900 font-bold hover:text-blue-700">BRANDS</a>
+            </li>
+            <li class="flex text-center px-1">
+              <a href="#" class="text-blue-900 font-bold hover:text-blue-700">SPECIALS</a>
+            </li>
           </ul>
         </div>
-      </nav>
 
-    </header>
+        <div class="flex  space-x-4 justify-end ">
+          <ul class="flex mx-20 justify-between">
+            <li class="flex-1 text-center px-1">
+              <a href="#" class="text-gray-700 font-bold">ABOUT</a>
+            </li>
+            <li class="flex-1 text-center px-1">
+              <a href="#" class="text-gray-900 font-bold hover:text-blue-700">FAQ</a>
+            </li>
+            <li class="flex-1 text-center px-1">
+              <a href="#" class="text-gray-900 font-bold hover:text-blue-700">CONTACT</a>
+            </li>
+            <li class="flex-1 text-center px-1">
+              <a href="#" class="text-gray-900 font-bold hover:text-blue-700">BLOCK</a>
+            </li>
+            <li class="flex-1 text-center px-1">
+              <a href="#" class="text-blue-900 font-bold hover:text-blue-700">0</a>
+            </li>
+            <li class="flex-1 text-center ">
+              <a href="#" class="text-blue-900 font-bold hover:text-blue-700">item(s)-</a>
+            </li>
+            <li class="flex-1 text-center px-0\.5">
+              <a href="#" class="text-blue-900 font-bold hover:text-blue-700">$0,00</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Sepet alanı -->
+        <div class="flex items-center justify-end bg-white p-1">
+          <a href="#" class="text-gray-900 hover:text-blue-700">
+            <!-- <img src="assets/pictures/" alt=""> -->
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </a>
+        </div>
+      </div>
 
 
+      <div class="hidden md:hidden" id="menu">
+        <ul class="flex flex-col p-4 space-y-4 bg-gray-50 border border-gray-100 rounded-lg">
+          <li><a href="#" class="text-blue-700 font-bold"></a></li>
+          <li><a href="#" class="text-gray-900 hover:text-blue-700">CATEGORIES</a></li>
+          <li><a href="#" class="text-gray-900 hover:text-blue-700"></a>MEGAMENU</li>
+          <li><a href="#" class="text-gray-900 hover:text-blue-700"></a>MULTILEVEL</li>
+          <li><a href="#" class="text-gray-900 hover:text-blue-700"></a>BRANDS</li>
+          <li><a href="#" class="text-white bg-blue-700 px-4 py-2 rounded hover:bg-blue-800 transition">SPECIALS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-   <!-- Slider Area -->
+  <!-- Slider Area -->
 
+  <div id="default-carousel" class=" mx-auto relative w-full h-full sliderr z-20" data-carousel="slide">
 
-  <div id="default-carousel" class="container mx-auto relative w-full h-full sliderr" data-carousel="slide">
-  
-      <!-- Carousel wrapper -->
-    
+    <!-- Carousel wrapper -->
+
     <div id="slider" class="relative h-full overflow-hidden rounded-lg sliderr">
 
-         <!-- Item 1 -->
-        <div id="slider" class="hidden duration-700 ease-in-out h-full sliderr relative w-full flex transition-transform"
-       
+      <!-- Item 1 -->
+      <div id="slider" class="hidden duration-700 ease-in-out h-full sliderr relative w-full flex transition-transform"
         data-carousel-item>
-            <img src="assets/pictures/candy1.jpg" id="slider" class="absolute block h-full w-full sliderr -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            
-        </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out h-full sliderr" data-carousel-item>
-            <img src="assets/pictures/candy2.jpg" class="absolute h-full block w-full sliderr -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-        </div>
-        <!-- Item 3 -->
+        <img src="assets/pictures/candy1.jpg" id="slider"
+          class="absolute block h-full w-full sliderr -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
 
-        <div class="hidden duration-700 ease-in-out h-full sliderr" data-carousel-item>
-          <img src="assets/pictures/6li-Seker-Fosforlu-Kalem-Seti_4.jpg" class="absolute h-full block w-full sliderr -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"alt="Exotic Fruits" >
       </div>
-         <!-- Item 4 -->
+      <!-- Item 2 -->
       <div class="hidden duration-700 ease-in-out h-full sliderr" data-carousel-item>
-        <img src="assets/pictures/Jjc1ITYdu0ZS.jpg" class="absolute h-full block w-full sliderr -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"alt="Exotic Fruits" >
+        <img src="assets/pictures/candy2.jpg"
+          class="absolute h-full block w-full sliderr -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 3 -->
+
+      <div class="hidden duration-700 ease-in-out h-full sliderr" data-carousel-item>
+        <img src="assets/pictures/6li-Seker-Fosforlu-Kalem-Seti_4.jpg"
+          class="absolute h-full block w-full sliderr -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          alt="Exotic Fruits">
+      </div>
+      <!-- Item 4 -->
+      <div class="hidden duration-700 ease-in-out h-full sliderr" data-carousel-item>
+        <img src="assets/pictures/Jjc1ITYdu0ZS.jpg"
+          class="absolute h-full block w-full sliderr -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          alt="Exotic Fruits">
       </div>
 
-    <!-- Slider indicators -->
-    <div  class="absolute z-20 flex -translate-x-1/2 bottom-0 left-1/2 space-x-3 rtl:space-x-reverse"
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+      <!-- Slider indicators -->
+      <div class="absolute z-20 flex -translate-x-1/2 bottom-0 left-1/2 space-x-3 rtl:space-x-reverse" <button
+        type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0">
+        </button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+          data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+          data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+          data-carousel-slide-to="3"></button>
         <!-- <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button> -->
-   
-      </div> 
-      
-    <!-- Slider controls -->
-    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+
+      </div>
+
+      <!-- Slider controls -->
+      <button type="button"
+        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 1 1 5l4 4" />
           </svg>
           <span class="sr-only">Previous</span>
-      </span>
-  </button>
-  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+        </span>
+      </button>
+      <button type="button"
+        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 9 4-4-4-4" />
           </svg>
           <span class="sr-only">Next</span>
-      </span>
-  </button>
-  <div  class="absolute top-[75%] start-[250px] z-30 opa flex items-center justify-center  opacity-95 hover:opacity-100 ">
+        </span>
+      </button>
+      <div
+        class="absolute top-[75%] start-[250px] z-30 opa flex items-center justify-center  opacity-95 hover:opacity-100 ">
 
-    <button type="button" class="py-2.5 px-5 me-2 mb-2 text-md font-normal text-white focus:outline-none bg-sugar__navy2 rounded-lg border border-gray-200 hover:bg-sugar__blue  focus:z-10 focus:ring-4 focus:ring-gray-200 ">LEARN MORE</button>
-  </div>
-  <div  class="absolute top-[75%] start-[400px] z-30 flex items-center justify-center  opacity-95 hover:opacity-100" style="margin-left: 50px;">
+        <button type="button1"
+          class="py-2 px-2 me-2 mb-2 w-40 h-10  text-md font-normal text-white focus:outline-none bg-sugar__navy2 rounded-lg border border-gray-200 hover:bg-sugar__blue  focus:z-10 focus:ring-4 focus:ring-gray-200 ">LEARN
+          MORE</button>
+      </div>
+      <div class="absolute top-[75%] start-[400px] z-30 flex items-center justify-center  opacity-95 hover:opacity-100"
+        style="margin-left: 50px;">
 
-    <button type="button" class="py-2.5 px-5 me-2 mb-2 text-md font-medium text-white focus:outline-none bg-sugar__navy2 rounded-lg border border-gray-200 hover:bg-sugar__pink  focus:z-10 focus:ring-4 focus:ring-gray-200 ">SHOP NOW</button>
-  </div>
+        <button type="button2"
+          class="py-2 px-2 me-2 mb-2 text-md w-40 h-10 font-medium text-white focus:outline-none bg-sugar__navy2 rounded-lg border border-gray-200 hover:bg-sugar__pink  focus:z-10 focus:ring-4 focus:ring-gray-200 ">SHOP
+          NOW</button>
+      </div>
 
-  
+
     </div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
+  <script src="assets/js/sugar.js"></script>
+</body>
 
-    
-
-
- 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
-    <script src="assets/sugar.js"></script>
-  </body>
 </html>
-
-
-

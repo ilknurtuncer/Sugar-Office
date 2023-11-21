@@ -118,3 +118,15 @@
   box-shadow: rgba(187, 3, 169, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   
 }
+
+
+/* ----------------------------------Module 5-----------------------------*/
+
+.modul{
+  background-image: url("https://www.journal-theme.com/2/image/cache/catalog/journal3/people/andrew-neel-369701-unsplash-1500x1000.jpg.webp");
+  background-position: center center;
+  background-size: cover;
+  filter: contrast(200%);
+  background-attachment:fixed ;
+  
+}

@@ -29,27 +29,91 @@
     });
 });
 
+//-Group Multilevel button -----
+document.addEventListener('DOMContentLoaded', function () {
+    const categoriesButton = document.querySelector('.group-multilevel .group:nth-child(1) button');
+    const categoriesMenu = document.querySelector('.group-multilevel .group:nth-child(1) .absolute');
 
-// // JavaScript kullanarak accordion özelliği ekleme
-// document.addEventListener('DOMContentLoaded', function () {
-// var buttons = document.querySelectorAll('button[data-target]');
+    const megaMenuButton = document.querySelector('.group-multilevel .group:nth-child(2) button');
+    const megaMenu = document.querySelector('.group-multilevel .group:nth-child(2) .absolute');
 
-// buttons.forEach(function (button) {
-//     button.addEventListener('click', function () {
-//         var targetId = this.getAttribute('data-target');
-//         var targetElement = document.getElementById(targetId);
+    const multiLevelButton = document.querySelector('.group-multilevel .group:nth-child(3) button');
+    const multiLevelMenu = document.querySelector('.group-multilevel .group:nth-child(3) .absolute');
 
-//         // Diğer tüm menüleri gizle
-//         buttons.forEach(function (btn) {
-//             var otherTargetId = btn.getAttribute('data-target');
-//             if (otherTargetId !== targetId) {
-//                 document.getElementById(otherTargetId).classList.add('hidden');
-//             }
-//         });
+    const brandsButton = document.querySelector('.group-multilevel .group:nth-child(4) button');
+    const brandsMenu = document.querySelector('.group-multilevel .group:nth-child(4) .absolute');
 
-//         // Tıklanan menüyü göster veya gizle
-//         targetElement.classList.toggle('hidden');
-//     });
-// });
-// });
+    const specialsButton = document.querySelector('.group-multilevel .group:nth-child(5) button');
+    const specialsMenu = document.querySelector('.group-multilevel .group:nth-child(5) .absolute');
+
+    function hideAllMenus() {
+        categoriesMenu.classList.add('hidden');
+        megaMenu.classList.add('hidden');
+        multiLevelMenu.classList.add('hidden');
+        brandsMenu.classList.add('hidden');
+        specialsMenu.classList.add('hidden');
+    }
+
+    categoriesButton.addEventListener('mouseover', function () {
+        hideAllMenus();
+        categoriesMenu.classList.toggle('hidden');
+    });
+
+    megaMenuButton.addEventListener('mouseover', function () {
+        hideAllMenus();
+        megaMenu.classList.toggle('hidden');
+    });
+
+    multiLevelButton.addEventListener('mouseover', function () {
+        hideAllMenus();
+        multiLevelMenu.classList.toggle('hidden');
+    });
+
+    brandsButton.addEventListener('mouseover', function () {
+        hideAllMenus();
+        brandsMenu.classList.toggle('hidden');
+    });
+
+    specialsButton.addEventListener('mouseover', function () {
+        hideAllMenus();
+        specialsMenu.classList.toggle('hidden');
+    });
+
+    document.addEventListener('mouseover', function (event) {
+        if (
+            !categoriesButton.contains(event.target) &&
+            !megaMenuButton.contains(event.target) &&
+            !multiLevelButton.contains(event.target) &&
+            !brandsButton.contains(event.target) &&
+            !specialsButton.contains(event.target)
+        ) {
+            hideAllMenus();
+        }
+    });
+});
+// sepet------
+document.addEventListener("DOMContentLoaded", function () {
+    var cartButton = document.getElementById("cart-button");
+    var cartDropdown = document.getElementById("cart-dropdown");
+
+    // Sepet butonuna tıklandığında
+    cartButton.addEventListener("mouseover", function () {
+        // Sepet dropdown'un görünürlüğünü toggle et
+        cartDropdown.classList.toggle("hidden");
+    });
+
+    // Örnek: Ürün eklemek için bir bağlantıya tıklandığında
+    var addToCartLinks = document.querySelectorAll("#cart-dropdown a");
+    addToCartLinks.forEach(function (link) {
+        link.addEventListener("mouseover", function (event) {
+            event.preventDefault();
+            // Burada ürün eklemek için gerekli işlemleri yapabilirsiniz.
+            console.log("Ürün eklendi: " + link.textContent);
+        });
+    });
+});
+
+
+
+
 

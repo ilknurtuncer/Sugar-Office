@@ -1,147 +1,136 @@
- .dropbtn,.multibtn {
-    border: none;
-    cursor: pointer;
-  }
-  .multi-content {
-    display: none;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .multi-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+.dropbtn,.multibtn {
+  border: none;
+  cursor: pointer;
+}
+.multi-content {
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
 
-  .moneyContent {
-    display: none;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .moneyContent a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown a:hover {background-color: #ddd;}
+.multi-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
-  .dropdown-content {
-    display: none;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .cart-content {
-    display: none;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
+.moneyContent {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
-  .toys-content {
-    display: none;
-  }
+.moneyContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
-  .toys-content a {
-    color: black;
-    text-decoration: none;
-    display: block;
-  }
+/* .dropdown a:hover {background-color: #ddd;}
 
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .show {display: block;}
+.dropdown-content {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+ */
+.cart-content {
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
-  .menu-list {
-    font-family: 'Montserrat';
-  }
+.toys-content {
+  display: none;
+}
 
-  #lang .dropdown-content #moneyText .money .tel .multilevel-list {
-    font-family: 'Nunito Sans';
-  }
+.toys-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
 
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {display: block;}
+
+.menu-list {
+  font-family: 'Montserrat';
+}
+
+#lang .dropdown-content #moneyText .money .tel .multilevel-list {
+  font-family: 'Nunito Sans';
+}
+
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
   
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    right: 0;
-    padding: 10px;
-  
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    margin-top: -10px;
-  }
-  .prev{
-    margin-top: -65px;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    
-    cursor: pointer;
-    background-color: #bbb;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 0.75s;
-   
-  }
-  
-  @keyframes fade {
-    from  {opacity: .4 ;left:0px}
-    to  { opacity: 1;left:10px}
-  }
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.50s;
+  transform-style: preserve-3d;
+ 
+}
+
+@keyframes fade {
+  from  {opacity: .4 ;left:-5px}
+  to  { opacity: 1;left:20px}
+}
+
+.fade-left {
+  animation-name: fade-left;
+  animation-duration: 0.4s;
+ 
+}
+
+@keyframes fade-left {
+  from  {opacity: .5;right:3;}
+  to  { opacity: 0; right:1;}
+}
+
+.fade-right {
+  animation-name: fade-right;
+  animation-duration: 0.4s;
+ 
+}
+
+@keyframes fade-right {
+  from  {opacity: .5;right:3;}
+  to  { opacity: 0; right:1;}
+}
+

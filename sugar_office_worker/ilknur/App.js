@@ -29,6 +29,7 @@
     });
 });
 
+//-Group Multilevel button -----
 document.addEventListener('DOMContentLoaded', function () {
     const categoriesButton = document.querySelector('.group-multilevel .group:nth-child(1) button');
     const categoriesMenu = document.querySelector('.group-multilevel .group:nth-child(1) .absolute');
@@ -53,32 +54,32 @@ document.addEventListener('DOMContentLoaded', function () {
         specialsMenu.classList.add('hidden');
     }
 
-    categoriesButton.addEventListener('click', function () {
+    categoriesButton.addEventListener('mouseover', function () {
         hideAllMenus();
         categoriesMenu.classList.toggle('hidden');
     });
 
-    megaMenuButton.addEventListener('click', function () {
+    megaMenuButton.addEventListener('mouseover', function () {
         hideAllMenus();
         megaMenu.classList.toggle('hidden');
     });
 
-    multiLevelButton.addEventListener('click', function () {
+    multiLevelButton.addEventListener('mouseover', function () {
         hideAllMenus();
         multiLevelMenu.classList.toggle('hidden');
     });
 
-    brandsButton.addEventListener('click', function () {
+    brandsButton.addEventListener('mouseover', function () {
         hideAllMenus();
         brandsMenu.classList.toggle('hidden');
     });
 
-    specialsButton.addEventListener('click', function () {
+    specialsButton.addEventListener('mouseover', function () {
         hideAllMenus();
         specialsMenu.classList.toggle('hidden');
     });
 
-    document.addEventListener('click', function (event) {
+    document.addEventListener('mouseover', function (event) {
         if (
             !categoriesButton.contains(event.target) &&
             !megaMenuButton.contains(event.target) &&
@@ -96,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var cartDropdown = document.getElementById("cart-dropdown");
 
     // Sepet butonuna tıklandığında
-    cartButton.addEventListener("click", function () {
+    cartButton.addEventListener("mouseover", function () {
         // Sepet dropdown'un görünürlüğünü toggle et
         cartDropdown.classList.toggle("hidden");
     });
@@ -104,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Örnek: Ürün eklemek için bir bağlantıya tıklandığında
     var addToCartLinks = document.querySelectorAll("#cart-dropdown a");
     addToCartLinks.forEach(function (link) {
-        link.addEventListener("click", function (event) {
+        link.addEventListener("mouseover", function (event) {
             event.preventDefault();
             // Burada ürün eklemek için gerekli işlemleri yapabilirsiniz.
             console.log("Ürün eklendi: " + link.textContent);

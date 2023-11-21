@@ -112,6 +112,9 @@
 /* ----------------------------------Shop Menü-----------------------------*/
 .drop-menü:hover .shop-menü{
   display: block;
+
+ 
+
 }
 .shop-menü{
   display: none;

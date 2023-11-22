@@ -8,7 +8,8 @@
     href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/main.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
@@ -21,8 +22,10 @@
             pinky: "#FF9BA7",
             grayPrimary: "#EFF2F5",
             pinkyLight: '#FFAFB8',
-            gray:'#7D7C7C',
-            blue:'#3C79F5'
+            gray: '#7D7C7C',
+            blue: '#3C79F5',
+            grayDark:'#39444F',
+            grayText:'#B6BBC6'
           }
         }
       }
@@ -329,64 +332,115 @@
 
   <!-- FOOTER -->
 
-  <div class="border-t  w-full pt-5 bg-pinky text-white">
+  <div class="border-t  w-full pt-5 bg-pinky">
     <div class="w-9/12  m-auto flex flex-col h-56">
       <div class="flex justify-between">
-        <div><img src="./assets/images/logo.png" class="w-32 h-24"></div>
-        <div></div>
-        <div>
-          <p class="nunito leading-0 ">CUSTOMER SERVICE</p>
+        <div class="flex flex-col items-center mt-3">
+          <img src="./assets/images/logo.png" class="w-32 h-24">
+        <div class="text-center">
+          <p class="text-grayPrimary text-bold">123 Main St. London, UK</p>
+        <div class="flex justify-evenly w-48 mt-5">
+          <div class="relative group p-1 cursor-pointer">          
+            <img src="./assets/images/facebook-app-symbol.png" class="w-5 h-5 opacity-50">
+           <div class="absolute group-hover:block hidden right-0 text-xs text-white  p-1 bottom-8 bg-blue"> <p>Facebook</p></div>
+          </div>
+          <div  class="relative group p-1 cursor-pointer"> <img src="./assets/images/twitter-logo_107195.png" class="w-5 h-5 opacity-75">
+            <div class="absolute group-hover:block hidden right-0 text-xs text-white  p-1 bottom-8 bg-blue"> <p>Twitter</p></div>
 
-          <ul class="list-image-[url(./assets/images/r.png)] leading-none nunito flex flex-col">
-            <li>
-              <p>Contact</p>
+          </div>
+          <div  class="relative group p-1 cursor-pointer"> <img src="./assets/images/camera_919664.png" class="w-5 h-5 bg-gray rounded-lg">
+            <div class="absolute group-hover:block hidden left-0 text-xs text-white  p-1 bottom-8 bg-blue"> <p>İnstagram</p></div>
+
+          </div>
+          <div  class="relative group p-1 cursor-pointer"> <img src="./assets/images/google-plus_220381.png" class="w-5 h-5">
+            <div class="absolute group-hover:block hidden left-1 text-xs text-white  p-1 bottom-8 bg-blue"> <p>Google</p></div>
+
+          </div>
+
+
+        </div>
+        </div>
+        </div>
+        <div class="p-2">
+          <p class="leading-0 font-bold">CUSTOMER SERVICE</p>
+
+          <ul class="leading-none flex flex-col justify-start">
+            <li class="flex items-center group" >
+              <a class="m-1 text-sm cursor-pointer"><span class="group-hover:text-clifford font-bold mr-2 text-blue">></span>Contact</a>
             </li>
-            <li>Returns</li>
-            <li>Site Map</li>
-            <li>Brands</li>
-            <li>Unlimited Links</li>
+            <li class="flex items-center group">
+              <a class="m-1 text-sm cursor-pointer"><span class="group-hover:text-clifford font-bold mr-2 text-blue text-xs">></span>Returns</a>
+
+            
+            </li>
+            <li class="flex items-center group">
+              <a class="m-1 text-sm cursor-pointer"><span class="group-hover:text-clifford font-bold mr-2 text-blue text-xs">></span>Site Map</a>
+              
+             
+            </li>
+            <li class="flex items-center group">
+              <a class="m-1 text-sm cursor-pointer"><span class="group-hover:text-clifford font-bold mr-2 text-blue text-xs">></span>Brands</a>
+              
+            </li>
+            <li class="flex items-center group">
+              <a class="m-1 text-sm cursor-pointer"><span class="group-hover:text-clifford font-bold mr-2 text-blue text-xs">></span>Unlimited Links</a>
+             
+            </li>
           </ul>
 
         </div>
-        <div>
-          <p class="nunito leading-0">MY ACCOUNT</p>
+        <div class="p-2">
+          <p class="leading-0 font-bold">MY ACCOUNT</p>
 
-          <ul class="list-image-[url(./assets/images/r.png)] leading-none nunito">
-            <li>
-              <p>My Account</p>
+          <ul class="leading-none flex flex-col">
+            <li class="flex items-center group">
+
+              <a class="m-1 text-sm cursor-pointer"><span class="group-hover:text-clifford font-bold mr-2 text-blue text-xs">></span>My Account</a>
             </li>
-            <li>
-              <p>Order History</p>
+            <li class="flex items-center group">
+
+              <a class="m-1 text-sm cursor-pointer"><span class="group-hover:text-clifford font-bold mr-2 text-blue text-xs">></span>Affiliates</a>
+
+            
             </li>
-            <li>
-              <p>Affiliates</p>
+            <li class="flex items-center group">
+
+              <a class="m-1 text-sm cursor-pointer"><span class="group-hover:text-clifford font-bold mr-2 text-blue text-xs">></span>Order History</a>
+              
+             
             </li>
-            <li>
-              <p>Newsletter</p>
+            <li class="flex items-center group">
+
+              <a class="m-1 text-sm cursor-pointer"><span class="group-hover:text-clifford font-bold mr-2 text-blue text-xs">></span>Newsletter</a>
+              
             </li>
-            <li>
-              <p>Gift Certificates</p>
+            <li class="flex items-center group">
+
+              <a class="m-1 text-sm cursor-pointer"><span class="group-hover:text-clifford font-bold mr-2 text-blue text-xs">></span>Gift Certificates</a>
+             
             </li>
           </ul>
+
+       
         </div>
-        <div class="text-white text-sm">
-          <p class="nunito leading-0">NEWSLETTER</p>
-          <p class="break-words">Stay up to datewith news andpromotions by<br> signing up for our newsletter</p>
+        <div class="text-md p-2">
+          <p class="leading-0 font-bold text-white ">NEWSLETTER</p>
+          <p class="break-words mt-1 text-white ">Stay up to datewith news andpromotions by<br> signing up for our newsletter</p>
           <div class="relative ">
-            <input class="w-full border-none rounded-sm mt-1 " placeholder="Your Email">
-
-            <button class="absolute right-2 top-3 border bg-gray flex justify-around w-20 h-6 text-center">
-              <span class="material-symbols-outlined w-1 h-1 mr-2">
+            <input class="w-full border-none rounded-sm mt-1 placeholder:text-gray placeholder:text-sm" placeholder="Your Email" >
+            <button class="absolute right-2 top-2 bg-grayDark flex items-center justify-around w-18 h-8 text-center hover:bg-pinky px-1">
+              <span class="material-symbols-outlined ">
                 mail
-                </span>
-                <p class="text-xs mt-1">Send</p>
-              </button>
-              <div class="flex mt-5">
-                <input type="checkbox">
-                <p class="text-xs ml-1">I have read and agree to the <span class="text-blue text-xs"><a>Privacy Policy</a></span></p>
-    
-              </div>
-    
+              </span>
+              <p class="text-xs m-1">Send</p>
+            </button>
+            <div class="flex mt-5">
+              <input type="checkbox">
+              <p class="text-xs ml-1 cursor-pointer">I have read and agree to the <span class="text-blue text-xs"><a>Privacy
+                    Policy</a></span></p>
+
+            </div>
+
           </div>
 
         </div>
@@ -394,35 +448,55 @@
     </div>
   </div>
 
-  <div class="w-full h-16 flex items-center bg-pinkyLight text-white" >
-    <div class="w-9/12 m-auto flex justify-between">
-      <div>      
-        <p>Copyright 2014, Your Store,All Rights Reserved</p>
+  <div class="w-full h-16 flex items-center bg-pinkyLight text-white">
+    <div class="w-10/12 ml-28  flex justify-between">
+      <div class="flex items-center">
+        <p class="text-base text-gray">Copyright © 2014, Your Store,All Rights Reserved</p>
       </div>
 
       <div class="flex items-center text-grayPrimary">
-        <div class="group relative">      
-          <img src="./assets/images/money_39022.png" class="cursor-pointer w-10 h-10 mx-1">
-          <div class="hidden group-hover:block -top-5 absolute bg-gray p-1">          
-            <p class="text-xs" >PayPal</p>
+        <div class="group relative ">
+          <img src="./assets/images/money_39022.png" class=" cursor-pointer hover:opacity-50 mx-1 w-10 h-10">
+          <div class="hidden group-hover:block -top-5 absolute bg-blue p-1 cursor-pointer">
+            <p class="text-xs">PayPal</p>
           </div>
         </div>
 
-        <div>      <img src="./assets/images/pngwing.com.png" class=" cursor-pointer w-9 h-9 mx-1">
+        <div class="group relative"> <img src="./assets/images/pngwing.com.png"
+            class=" cursor-pointer hover:opacity-50 w-9 h-9 mx-1">
+          <div class="hidden group-hover:block -top-5 absolute bg-blue p-1 cursor-pointer">
+            <p class="text-xs">Mastercard</p>
+          </div>
         </div>
-        <div>      <img src="./assets/images/visa_5968151.png" class=" cursor-pointer w-10 h-10 mx-1">
+        <div class="group relative"> <img src="./assets/images/visa_5968151.png"
+            class=" cursor-pointer hover:opacity-50 w-10 h-10 mx-1">
+          <div class="hidden group-hover:block -top-5 right-1 absolute bg-blue p-1 cursor-pointer">
+            <p class="text-xs">Visa</p>
+          </div>
         </div>
-        <div>      <img src="./assets/images/american-express_349290.png" class=" cursor-pointer w-10 h-9 mx-2">
+        <div class="group relative"> <img src="./assets/images/american-express_349290.png"
+            class=" cursor-pointer hover:opacity-50 w-10 h-9 mx-2">
+          <div class="hidden group-hover:block -top-5 absolute bg-blue p-1 cursor-pointer">
+            <p class="text-xs">AmericanExpress</p>
+          </div>
         </div>
-        <div>      <img src="./assets/images/discover.svg" class=" cursor-pointer w-10 h-10 mx-1">
+        <div class="group relative"> <img src="./assets/images/discover.svg"
+            class=" cursor-pointer hover:opacity-50 w-10 h-10 mx-1">
+          <div class="hidden group-hover:block -top-5 absolute bg-blue p-1 cursor-pointer">
+            <p class="text-xs">Discover</p>
+          </div>
         </div>
-        <div>      <img src="./assets/images/cc-stripe.svg" class=" cursor-pointer w-12 h-7 mx-1">
+        <div class="group relative"> <img src="./assets/images/cc-stripe.svg"
+            class=" cursor-pointer hover:opacity-50 w-12 h-7 mx-1">
+          <div class="hidden group-hover:block -top-5 right-1 absolute bg-blue p-1 cursor-pointer">
+            <p class="text-xs">Stripe</p>
+          </div>
         </div>
 
 
 
 
-          
+
       </div>
     </div>
   </div>
@@ -433,4 +507,3 @@
 </body>
 
 </html>
-

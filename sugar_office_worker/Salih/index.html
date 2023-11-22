@@ -1,0 +1,505 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./input.css">
+  <link rel="stylesheet" href="./assets/css/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+  <header>
+    <!--  ***************  Top MENU Start ****************** -->
+    <div class="top-menu flex justify-between items-center w-full lg:w-3/4  mx-auto ">
+      <!-- *************** Language Select Section *************** -->
+      <div class="language-menu relative  w-[150px] group  ">
+        <!-- *** select language visible part start *** -->
+        <div class="flex justify-center items-center  ">
+          <a class="text-sm " href="">
+            Select Language
+          </a>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
+              stroke="currentColor" class="w-4 group-hover:text-[#FF9BA7]">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </span>
+        </div>
+        <!-- *** select language visible part end *** -->
+
+        <!-- *** select language options part start *** -->
+        <ul
+          class="dropdownLanguage absolute z-50 bg-[#FF9BA7] hidden group-hover:block text-sm text-center w-[150px] mx-auto group-hover:text-white">
+          <li class="p-2">
+            English
+          </li>
+          <li class="p-2">
+            Turkish
+          </li>
+          <li class="p-2">
+            German
+          </li>
+        </ul>
+        <!-- *** select language options part end *** -->
+      </div>
+      <!-- *** call number section   *** -->
+
+      <div class="hidden md:block text-[14px] lg:text-[16px]">
+        <h3>CALL NOW: 1800 555 90 90</h3>
+      </div>
+        <!-- *** call number section  end  *** -->
+
+      <!-- *************** CURRENCY *************** -->
+      <div class="currency-menu relative  w-[150px] group  ">
+        <!-- *** select Currency visible part start *** -->
+        <div class="flex justify-center items-center  ">
+          <a class="text-sm " href="">
+            Select Currency
+          </a>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
+              stroke="currentColor" class="w-4 group-hover:text-[#FF9BA7]">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </span>
+        </div>
+        <!-- *** select Currency visible part end *** -->
+
+        <!-- *** select Currency options part start *** -->
+
+        <ul
+          class="dropdownCurrency absolute z-30 bg-[#FF9BA7] hidden group-hover:block text-sm text-center w-[150px] mx-auto group-hover:text-white">
+          <li class="p-1"> &#36; US Dollar</li>
+          <li class="p-1"> &#8364; Euro</li>
+          <li class="p-1"> &#163; Sterlin</li>
+        </ul>
+        <!-- *** select Currency options part end *** -->
+      </div>
+    </div>
+    <!-- *************** Top MENU End  *************** -->
+
+    <!-- ***************  Mid MENU Start *************** -->
+    <div
+      class="mid-menu flex flex-wrap justify-between lg:justify-between space-x-[10px] px-2  items-center mt-5 w-full lg:w-3/4 mx-auto">
+      <div class="search-box w-4/12 lg:w-[175px] ">
+        <img class="w-[120px] lg:w-[175px] mr-7" src="assets/images/sugar-logo.png" alt="sugar-icon" />
+      </div>
+
+      <!-- {/* Searchbar Start */} -->
+      <div class="searchBar-wrapper search-box flex w-screen  order-1 ">
+        <!-- {/* All Dropdown Start  */} -->
+        <div class="group relative w-[50px] ">
+          <div
+            class="flex justify-center items-center bg-[#FF9BA7] hover:bg-[#59B5FE] py-2 px-1  rounded-tl-lg  rounded-bl-lg ">
+            <a class="text-sm text-white " href="">
+              All
+            </a>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
+                stroke="currentColor" class="w-3 ms-1 text-white ">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </span>
+          </div>
+          <ul
+            class="dropdownAll z-30 absolute  bg-[#FF9BA7] hidden group-hover:block text-sm text-center w-[150px] mx-auto group-hover:text-white">
+            <li class="p-2">İtem 1</li>
+            <li class="p-2">Item 2</li>
+            <li class="p-2">Item 3</li>
+          </ul>
+        </div>
+        <!-- {/* All Dropdown End  */} -->
+
+        <!-- {/* Search Input Start  */} -->
+        <div class="w-4/5">
+          <input type="text" placeholder="Search here.."
+            class="p-1 h-9 focus:outline-0 bg-[#eee] text-red block w-full" />
+        </div>
+        <!-- {/* Search Input End  */} -->
+
+        <!-- {/* Magnifying icon Start  */} -->
+
+        <div
+          class="bg-[#FF9BA7] hover:bg-[#59B5FE]  rounded-tr-lg  rounded-br-lg w-[40px] flex justify-center items-center text-white">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <!-- {/* Magnifying icon End  */} -->
+      </div>
+      <!-- {/* Searchbar End */} -->
+
+      <!-- {/* icons wrapper start  */} -->
+      <div class="search-box flex w-7/12 lg:w-4/12  justify-end space-x-4">
+        <!-- {/* user Account start  */} -->
+
+        <div class="flex  space-x-2 ">
+          <div class="flex justify-center items-center text-[25px]">
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <div class=" hidden md:block whitespace-nowrap">
+            <h3 class="text-[12px] my-0">Account</h3>
+            <span class="text-[12px] my-0 white">Login / Register</span>
+          </div>
+        </div>
+
+        <!-- {/* user Account end  */} -->
+
+        <!-- {/* like wrapper start  */} -->
+        <div class="flex space-x-5 ">
+          <!-- {/* like Start  */} -->
+          <div class="relative">
+            <i class="fa-regular fa-heart text-[32px]"></i>
+            <div
+              class="bg-danger w-[16px] h-[16px] flex justify-center items-center absolute top-0 right-[-8px] p-[2px] text-white text-[12px] rounded-lg ">
+              0
+            </div>
+          </div>
+          <!-- {/* like end  */} -->
+
+          <!-- {/* wishlist start  */}  -->
+          <div class="hidden md:block whitespace-nowrap ">
+            <h3 class="text-[12px] m-0">Wishlist</h3>
+            <span class="text-[10px] my-0">Edit Your Wishlist</span>
+          </div>
+          <!-- {/* wishlist end  */} -->
+        </div>
+        <!-- {/* like wrapper end  */} -->
+
+        <!-- {/* Compare Wrapper start  */} -->
+        <div class="flex  space-x-2 ">
+          <!-- {/* Compare Icon Start  */} -->
+          <div class="relative">
+            <div class="w-[32px] h-[32px] border border-black rounded-[100px] flex justify-center items-center">
+              <i class="fa-solid fa-arrow-right-arrow-left text-[18px]"></i>
+            </div>
+
+            <div
+              class="bg-danger w-[16px] h-[16px] flex justify-center items-center absolute top-0 right-[-8px] p-[2px] text-white text-[12px] rounded-lg ">
+              0
+            </div>
+          </div>
+          <!-- {/* Compare Icon end  */} -->
+
+          <!-- {/* Compare Heading start  */} -->
+
+          <div class="hidden md:block whitespace-nowrap">
+            <h3 class="text-[12px] my-0">Compare</h3>
+            <a class="text-[10px] my-0">Product Copmarison</a>
+          </div>
+          <!-- *** Compare Heading end  *** -->
+        </div>
+        <!-- *** Compare Wrapper end *** -->
+
+        <!-- *** Curtain Start ****-->
+        <div class="curtainSlider lg:hidden w-[30px] h-[30px] flex justify-center items-center bg-[#59B5FE]">
+          <i class="fa-solid fa-bars text-white"></i>
+        </div>
+        <!-- *** Curtain End *** -->
+         <!-- *** Curtain layer start ***-->
+         <div id="myNav" class="overlay">
+          <a href="#" class="closebtn">&times;</a>
+          <div class="overlay-content">
+    
+            <ul
+            class="dropdownCategory  group-hover:block   text-red text-sm text-center w-full mx-auto ">
+            <li class="p-3 flex justify-between items-center">
+              <div>
+                <i class="fa-solid fa-bars mr-2"></i>
+                <span>Hoparlör</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-plus  mx-3 text-[16px]"></i>
+              </div>
+            </li>
+            <li class="p-3 flex justify-between items-center">
+              <div>
+                <i class="fa-solid fa-bars mr-2"></i>
+                <span>Figür</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-plus  mx-3 text-[16px]"></i>
+              </div>
+            </li>
+            <li class="p-3 flex justify-between items-center">
+              <div>
+                <i class="fa-solid fa-bars mr-2 "></i>
+                <span>Toka</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-plus  mx-3 text-[16px]"></i>
+              </div>
+            </li>
+            <li class="p-3 flex justify-between items-center">
+              <div>
+                <i class="fa-solid fa-bars mr-2 "></i>
+                <span>Çanta</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-plus  mx-3 text-[16px]"></i>
+              </div>
+            </li>
+            <li class="p-3 flex justify-between items-center">
+              <div>
+                <i class="fa-solid fa-bars mr-2 "></i>
+                <span>Kozmetik</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-plus  mx-3 text-[16px]"></i>
+              </div>
+            </li>
+            <li class="p-3 flex justify-between items-center">
+              <div>
+                <i class="fa-solid fa-bars mr-2 "></i>
+                <span>Davetiye</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-plus  mx-3 text-[16px]"></i>
+              </div>
+            </li>
+            <li class="p-3 flex justify-between items-center">
+              <div>
+                <i class="fa-solid fa-bars mr-2 "></i>
+                <span>Oyuncak</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-plus  mx-3 text-[16px]"></i>
+              </div>
+            </li>
+            <li class="p-3 flex justify-between items-center">
+              <div>
+                <i class="fa-solid fa-bars mr-2 "></i>
+                <span>Back to School</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-plus  mx-3 text-[16px]"></i>
+              </div>
+            </li>
+
+          </ul>
+          </div>
+        </div>
+        <!-- ***  Curtain layer end ***-->
+
+      </div>
+      <!-- {/* icons wrapper end  */} -->
+    </div>
+    <!-- ***************  Mid MENU End *************** -->
+
+
+    <!-- ***************  Bottom MENU Start ***************  -->
+    <div class="bottom-menu-wrapper bg-[#FF9BA7] w-full mt-3 h-[44px] flex items-center  mx-space-2">
+      <!--  *************** menu-links-container start *************** -->
+      <div class="menu-links-container w-full  lg:w-3/4 mx-auto hidden lg:flex  items-center ">
+        <!-- *************** Categories Start  ***************  -->
+        <div class="relative group  lg:w-1/4 ">
+          <div
+            class="cursor-pointer   bg-[#59B5FE] text-white flex justify-between items-center  h-[44px] px-3 text-[18px] text-bold">
+            <span>TÜM KATEGORİLER</span>
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+
+          <ul
+            class="dropdownCategory hidden group-hover:block absolute z-50 bg-[#FFFFFF]  text-sm text-center w-full mx-auto ">
+            <li class="p-3 flex justify-between items-center">
+              <div>
+                <i class="fa-solid fa-bars mr-2"></i>
+                <span>Hoparlör</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-greater-than font-thin text-[11px]"></i>
+              </div>
+            </li>
+            <li class="p-3 flex justify-between items-center">
+              <div>
+                <i class="fa-solid fa-bars mr-2"></i>
+                <span>Figür</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-greater-than font-thin text-[11px]"></i>
+              </div>
+            </li>
+            <li class="p-3 flex justify-between items-center">
+              <div>
+                <i class="fa-solid fa-bars mr-2 "></i>
+                <span>Toka</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-greater-than font-thin text-[11px]"></i>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+        <!-- *************** Categories end  ***************  -->
+
+        <!-- *************** Bottom Menu Links Start  *************** -->
+        <div class="menu ml-2 w-3/4">
+          <ul class="  h-[44px] flex justify-around items-center  ">
+            <li class="group relative py-[10px] ">
+              <a class="text-white" href="#">
+                Oyuncak
+              </a>
+              <i class="fa-solid fa-plus ml-3 text-white"></i>
+              <ul
+                class="dropdownMenuLinks absolute top-11 z-30 bg-[#eee] hidden group-hover:block text-sm w-[150px]  mx-auto ">
+                <li class="p-1 list-disc list-inside"> Squishy</li>
+                <li class="p-1 list-disc list-inside"> Pelush</li>
+                <li class="p-1 list-disc list-inside">Slime</li>
+              </ul>
+            </li>
+            <li class="group relative py-[10px]  ">
+              <a class="text-white" href="#">
+                Back to School
+              </a>
+              <i class="fa-solid fa-plus  ml-3 text-white"></i>
+              <ul
+                class="dropdownMenuLinks absolute top-11 z-30 bg-[#eee] hidden group-hover:block text-sm w-[150px]  mx-auto ">
+                <li class="p-1 list-disc list-inside"> Squishy</li>
+                <li class="p-1 list-disc list-inside"> Pelush</li>
+                <li class="p-1 list-disc list-inside">Slime</li>
+              </ul>
+            </li>
+            <li class="group relative py-[10px]  ">
+              <a class="text-white" href="#">
+                Kırtasiye
+              </a>
+              <i class="fa-solid fa-plus  ml-3 text-white"></i>
+              <ul
+                class="dropdownMenuLinks absolute top-11 z-30 bg-[#eee] hidden group-hover:block text-sm w-[150px]  mx-auto ">
+                <li class="p-1 list-disc list-inside"> Squishy</li>
+                <li class="p-1 list-disc list-inside"> Pelush</li>
+                <li class="p-1 list-disc list-inside">Slime</li>
+              </ul>
+            </li>
+            <li class="group relative py-[10px] ">
+              <a class="text-white" href="#">
+                Aksesuar
+              </a>
+              <i class="fa-solid fa-plus  ml-3 text-white"></i>
+              <ul
+                class="dropdownMenuLinks absolute top-11 z-30 bg-[#eee] hidden group-hover:block text-sm w-[150px]  mx-auto ">
+                <li class="p-1 list-disc list-inside"> Squishy</li>
+                <li class="p-1 list-disc list-inside"> Pelush</li>
+                <li class="p-1 list-disc list-inside">Slime</li>
+              </ul>
+            </li>
+            <li class="group relative py-[10px]  ">
+              <a class="text-white" href="#">
+                İlginç Ürünler
+              </a>
+              <i class="fa-solid fa-plus  ml-3 text-white"></i>
+              <ul
+                class="dropdownMenuLinks absolute top-11 z-30 bg-[#eee] hidden group-hover:block text-sm w-[150px]  mx-auto ">
+                <li class="p-1 list-disc list-inside"> Squishy</li>
+                <li class="p-1 list-disc list-inside"> Pelush</li>
+                <li class="p-1 list-disc list-inside">Slime</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- ***************  Bottom Menu Links End *************** -->
+      </div>
+      <!-- *************** menu-links-container end *************** -->
+
+      <div
+        class="cursor-pointer lg:hidden w-full menuClick relative   bg-[#59B5FE] text-white flex justify-between items-center  h-[44px] px-3 text-[18px] text-bold">
+        <span>TÜM KATEGORİLER</span>
+        <i class="fa-solid fa-bars"></i>
+        
+          <div id="menu2" class="menu2 bg-[#59B5FE] w-full lg:hidden absolute top-11 left-0 ">
+            <ul class="   ">
+              <li class="py-[10px] flex justify-between items-center ">
+                <a class="text-white" href="#">
+                  Oyuncak
+                </a>
+                <i class="fa-solid fa-plus ml-3 text-[12px] text-white"></i>
+            
+              </li>
+              <li class="py-[10px] flex justify-between items-center  ">
+                <a class="text-white" href="#">
+                  Back to School
+                </a>
+                <i class="fa-solid fa-plus  ml-3 text-white text-[12px]"></i>
+            
+              </li>
+              <li class="py-[10px] flex justify-between items-center  ">
+                <a class="text-white" href="#">
+                  Kırtasiye
+                </a>
+                <i class="fa-solid fa-plus  ml-3 text-white text-[12px]"></i>
+            
+              </li>
+              <li class="py-[10px] flex justify-between items-center ">
+                <a class="text-white" href="#">
+                  Aksesuar
+                </a>
+                <i class="fa-solid fa-plus  ml-3 text-white text-[12px]"></i>
+            
+              </li>
+              <li class="py-[10px] flex justify-between items-center  ">
+                <a class="text-white" href="#">
+                  İlginç Ürünler
+                </a>
+                <i class="fa-solid fa-plus  ml-3 text-white text-[12px]"></i>
+            
+              </li>
+            </ul>
+          </div>
+        
+      </div>
+    
+    </div>
+    <!-- ******************** Bottom MENU End ******************** -->
+
+  </header>
+
+  <!-- ************** Slider Section Start *************** -->
+
+  <!--  *** slider wrapper  *** -->
+  <div class=" overflow-hidden relative">
+
+    <!--  *** slider container  *** -->
+    <div class="slider ">
+
+      <!-- *** Slides *** -->
+      <div class="slideContainer flex transition ease-out duration-40">
+        <!-- *** slide 1 *** -->
+
+        <img class="slide" src="./assets/images/candy1.jpg" alt="" />
+
+
+        <!-- *** slide 2 *** -->
+
+        <img class="slide" src="./assets/images/candy2.jpg" alt="" />
+
+
+      </div>
+
+
+      <!-- *** Control buttons *** -->
+      <div class="absolute top-0 h-full z-57  w-full justify-between items-center flex text-black px-10 text-3xl">
+        <button class="bg-[#eee] p-1 btn-prev">
+          <i class="slideBtn fa-solid fa-arrow-left text-black hover:text-red-500 "></i>
+        </button>
+        <button class="bg-[#eee] p-1 btn-next">
+          <i class="slideBtn fa-solid fa-arrow-right text-black hover:text-red-500"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+    <!-- ************** Slider Section End *************** -->
+
+   
+  <script src="./assets/js/slider.js"></script>
+</body>
+
+</html>
+

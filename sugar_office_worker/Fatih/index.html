@@ -15,9 +15,11 @@
           colors: {
             clifford: "#da373d",
             sugar__pink: "#FF9BA7",
+            sugar__pink2: "#940B92",
             sugar__blue: "#59B5FE",
             sugar__navy: "#001B79",
             sugar__navy2: "#1640D6",
+            modul6:"rebeccapurple",
             backcolor: "#FAF6F0",
             footerColor:"#1D1B38"
           },
@@ -38,7 +40,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css" rel="stylesheet" />
 </head>
 
-<body class="bg-backcolor">
+<body class="bg-bakColor">
   <div class=" shadow mx-auto bg-backcolor  ">
     <!-- Top Navbar  -->
     <div class="top-nav shadow text-sm font-light">
@@ -193,13 +195,15 @@
                 </div>
                 <div class="p-2  ">X 1</div>
                 <div class="p-2  font-bold">505.99 $</div>
-                <div class="p-2 text-red-500 font-bold">
-                  <p>X</p>
+                <div class="p-2  font-bold">
+                  <p><svg class="w-4 h-4 hover:text-sugar__blue " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                    <path d="M17 4h-4V2a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v2H1a1 1 0 0 0 0 2h1v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1a1 1 0 1 0 0-2ZM7 2h4v2H7V2Zm1 14a1 1 0 1 1-2 0V8a1 1 0 0 1 2 0v8Zm4 0a1 1 0 0 1-2 0V8a1 1 0 0 1 2 0v8Z"/>
+                  </svg></p>
                 </div>
               </div>
-              <div class="flex justify-end items-center border-solid border border-sugar__pink"><span
+              <div class="flex justify-end items-center border-t-2 border-b-2  border-sugar__pink"><span
                   class="font-bold p-2"> Sub-Total</span> <span>$ 35.99</span></div>
-              <div class="flex justify-end items-center border-solid border border-sugar__pink"><span
+              <div class="flex justify-end items-center border-t-2 border-b-2  border-sugar__pink"><span
                   class="font-bold p-2"> Total</span> <span>$ 35.99</span></div>
               <div class="flex justify-center items-center pt-2 bg-sugar__navy2">
                 <button type="button"
@@ -304,10 +308,7 @@
         data-carousel-slide-to="0"></button>
       <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
         data-carousel-slide-to="1"></button>
-      <!-- <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-      -->
+     
     </div>
 
     <!-- Slider controls -->
@@ -340,10 +341,70 @@
 
 
   </div>
+  <!-- Modul 5 Tasarımı Start-->
+  <div class="modul h-[400px] flex flex-col justify-center items-center text-white p-4 ">
+    <h1 class="font-bold text-5xl p-2">END OF SEASON SALE</h1>
+    <p class="w-2/3 text-center p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis magnam sed repudiandae itaque blanditiis quam ab, officia veniam eius, porro, consequuntur sequi. Natus est iure explicabo itaque sit rem at!</p>
+    <button type="button" class=" text-white bg-sugar__pink2 opacity-90 hover:bg-sugar__pink focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 ">Default</button>
+  </div>
+  <!-- Modul 5 Tasarımı  End-->
+  
+  <!-- Modul 6 Tasarımı  Start-->
+  <div class="flex justify-around p-4 bg-modul6">
+    <div class="flex">
+      <div class="rounded-full border-2 hover:border-sugar__blue border-sugar__pink p-4 hover:border-4 ">
 
+        <svg class="w-6 h-6 hover:cursor-pointer   text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+        </svg>
+      </div>
+      <div class="p-2">
+        <h2 class="text-white font-bold hover:text-sugar__pink hover:cursor-pointer ">Free Shipping</h2>
+        <p class="text-gray-400">Free delivery over $100</p>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="rounded-full border-2 hover:border-sugar__blue border-sugar__pink p-4 hover:border-4 ">
 
-  <!-- 
-  <-- Footer    flex justify-center items-center flex-row  -->
+        <svg class="w-6 h-6 hover:cursor-pointer text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4m6-8L7 5l4 4"/>
+        </svg>
+      </div>
+      <div class="p-2">
+        <h2 class="text-white font-bold hover:text-sugar__pink hover:cursor-pointer">Free Returns</h2>
+        <p class="text-gray-400">Hassle free returns</p>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="rounded-full border-2 hover:border-sugar__blue border-sugar__pink p-4 hover:border-4 ">
+
+        <svg class="w-6 h-6 hover:cursor-pointer text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+          <path d="m17.351 3.063-8-3a1.009 1.009 0 0 0-.7 0l-8 3A1 1 0 0 0 0 4a19.394 19.394 0 0 0 8.47 15.848 1 1 0 0 0 1.06 0A19.394 19.394 0 0 0 18 4a1 1 0 0 0-.649-.937Zm-3.644 4.644-5 5A1 1 0 0 1 8 13c-.033 0-.065 0-.1-.005a1 1 0 0 1-.733-.44l-2-3a1 1 0 0 1 1.664-1.11l1.323 1.986 4.138-4.138a1 1 0 0 1 1.414 1.414h.001Z"/>
+        </svg>
+      </div>
+      <div class="p-2">
+        <h2 class="text-white font-bold hover:text-sugar__pink hover:cursor-pointer">Scure Shopping</h2>
+        <p class="text-gray-400">Best security features</p>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="rounded-full border-2 border-sugar__pink p-4 hover:border-4 hover:border-sugar__blue hover:cursor-pointer ">
+
+        <svg class="w-6 h-6 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 19">
+          <path d="M10.013 4.175 5.006 7.369l5.007 3.194-5.007 3.193L0 10.545l5.006-3.193L0 4.175 5.006.981l5.007 3.194ZM4.981 15.806l5.006-3.193 5.006 3.193L9.987 19l-5.006-3.194Z"/>
+          <path d="m10.013 10.545 5.006-3.194-5.006-3.176 4.98-3.194L20 4.175l-5.007 3.194L20 10.562l-5.007 3.194-4.98-3.211Z"/>
+        </svg>
+      </div>
+      <div class="p-2">
+        <h2 class="text-white font-bold hover:text-sugar__pink hover:cursor-pointer">Unlimited Blocks</h2>
+        <p class="text-gray-400">Any content, any page</p>
+      </div>
+    </div>
+    
+  </div>
+  <!-- Modul 6 Tasarımı  End-->
+  
+  <!-- Footer     -->
   <div class="footer-div px-[100px] bg-footerColor text-white">
     <div class=" grid grid-cols-6 gap-4 ">
       <div class="  flex flex-col justify-center items-center  col-span-1 p-8 ">
@@ -352,10 +413,10 @@
           <p class="text-sm">123 Main St. London, UK</p>
         </div>
         <div class="flex justify-center items-center p-2">
-          <i class="fa-brands fa-facebook fa-md px-2"></i>
-          <i class="fa-brands fa-twitter fa-md px-2"></i>
-          <i class="fa-brands fa-instagram fa-md px-2"></i>
-          <i class="fa-brands fa-google fa-md px-2"></i>
+          <i class="fa-brands fa-facebook fa-md px-2 hover:text-sugar__blue hover:cursor-pointer hover:text-xl"></i>
+          <i class="fa-brands fa-twitter fa-md px-2 hover:text-sugar__blue hover:cursor-pointer hover:text-xl"></i>
+          <i class="fa-brands fa-instagram fa-md px-2 hover:text-sugar__blue hover:cursor-pointer hover:text-xl"></i>
+          <i class="fa-brands fa-google fa-md px-2 hover:text-sugar__blue hover:cursor-pointer hover:text-xl"></i>
         </div>
 
       </div>
@@ -363,19 +424,19 @@
         <div class="p-2">
           <h2 class="mb-2 text-lg font-semibold  ">CUSTOMER SERVICE</h2>
           <ul class="max-w-md text-sm text-gray-400 list-disc list-inside ">
-            <li>
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
               Contact
             </li>
-            <li>
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
               Returns
             </li>
-            <li>
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
               Site Map
             </li>
-            <li>
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
               Brands
             </li>
-            <li>
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
               Unlimited Links
             </li>
           </ul>
@@ -383,19 +444,19 @@
         <div class="p-2">
           <h2 class="mb-2 text-lg font-semibold  ">MY ACCOUNT</h2>
           <ul class="max-w-md text-sm text-gray-400 list-disc list-inside ">
-            <li>
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
               My Account
             </li>
-            <li>
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
               Order History
             </li>
-            <li>
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
               Affıliates
             </li>
-            <li>
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
               newsletter
             </li>
-            <li>
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
               Gift Certificates
             </li>
           </ul>
@@ -421,14 +482,14 @@
               class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500  "
               placeholder="Search Mockups, Logos..." required>
             <button type="submit"
-              class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+              class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-sugar__pink focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2  ">Search</button>
           </div>
         </form>
         <div class="flex items-center mb-4">
           <input id="default-checkbox" type="checkbox" value=""
             class="w-4 h-4  bg-gray-100  rounded focus:ring-blue-100 ">
           <label for="default-checkbox" class="ms-2 text-sm font-medium  ">I have read and agree to the
-          <span class="underline text-sugar__pink hover:text-sugar__blue">Privacy Policy</span>  </label>
+          <span class="underline text-sugar__pink hover:text-sugar__blue hover:font-bold hover:cursor-pointer">Privacy Policy</span>  </label>
         </div>
       </div>
     </div>
@@ -437,7 +498,7 @@
 
 <footer class="  bg-footerColor border-t-4 border-indigo-500">
   <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-    <span class="text-sm text-gray-500 sm:text-center ">© 2023 <a href="https://flowbite.com/" class="hover:underline">SEKER OFIS™</a>. All Rights Reserved.
+    <span class="text-sm text-gray-500 sm:text-center ">© 2023 <a href="https://flowbite.com/" class="hover:underline hover:text-sugar__pink hover:font-bold">SEKER OFIS™</a>. All Rights Reserved.
   </span>
   <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500  sm:mt-0">
       <li>

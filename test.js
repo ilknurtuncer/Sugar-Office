@@ -7,4 +7,3 @@ yeni satır
 deneme afm
 bmmv
 fghjfgjh
-

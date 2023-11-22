@@ -1,3 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+body{
+  padding: 0;
+  overflow-x: hidden;
+
+}
+
 .dropbtn,.multibtn {
   border: none;
   cursor: pointer;
@@ -5,8 +17,6 @@
 .multi-content {
   background-color: #f1f1f1;
   min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1000;
 }
 
@@ -69,6 +79,17 @@
   display: block;
 }
 
+.material-symbols-outlined {
+  
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+
 .show {display: block;}
 
 .menu-list {
@@ -79,6 +100,9 @@
   font-family: 'Nunito Sans';
 }
 
+.nunito {
+  font-family:'Nunito Sans';
+}
 
 
 /* Hide the images by default */
@@ -134,3 +158,6 @@
   to  { opacity: 0; right:1;}
 }
 
+.iconModul6{
+  color: darkorchid!important;
+}

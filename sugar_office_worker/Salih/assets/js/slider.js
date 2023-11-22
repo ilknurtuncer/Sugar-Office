@@ -2,7 +2,8 @@ const slides = document.querySelectorAll(".slide");
 
 const slideContainer = document.querySelector(".slideContainer")
 
-
+const btnSlider = document.querySelector(".btnSlider")
+const btnSliderContainer = document.querySelector(".btnSliderContainer")
 
 
 // select next slide button
@@ -46,6 +47,8 @@ prevSlide.addEventListener("click", function () {
 
 const slideFn = (curSlide) => {
   slideContainer.style.transform = `translateX(-${curSlide * 100}%)`;
+  // btnSliderContainer.style.right = `${15 - curSlide * 100}%`;
+  // btnSlider.style.left = `${15 + curSlide * 100}%`;
 }
 
 

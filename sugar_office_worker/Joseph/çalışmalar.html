@@ -128,7 +128,7 @@
         </div>
       </div>
 
-      // !--------Slider Area--------
+      // !---------Slider Area--------
 // Get the slider element
 const slider = document.getElementById("slider");
 
@@ -254,6 +254,7 @@ document.addEventListener("keydown", (event) => {
 
 // Start the slider
 startSlider();
+
 
 
 
@@ -764,3 +765,121 @@ startSlider();
 </body>
 
 </html>
+=======
+------------------
+
+Dropdown
+<div class="all-header px-32">
+  <div class="top-navbar flex justify-between items-center p-1">
+     
+      <div class="language z-20">
+          <div class="group relative">
+              <div class="cursor-pointer">
+                  <i class="fas fa-globe mr-2"></i> Language
+              </div>
+              <div class="group-hover:block relative bg-white border rounded shadow-md hidden z-30">
+                  <!-- Dropdown content here -->
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Unlimited</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Custom</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Menu Items</a>
+              </div>
+          </div>
+      </div>
+      
+      <div class="phone">
+          <i class="fas fa-phone-alt mr-2"></i> +90555 555 5555
+      </div>
+
+      <div class="currency">
+          <div class="group relative">
+              <div class="cursor-pointer">
+                  <i class="fas fa-money-bill-wave mr-2"></i> Currency
+              </div>
+              <div class="group-hover:block relative bg-white border rounded shadow-md hidden z-10">
+                  <!-- Dropdown content here -->
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">USD</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">EURO</a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">GBP</a>
+              </div>
+          </div>
+      </div>
+      
+  </div>
+</div>
+
+Dropdawn
+  <!-- <div class="language z-20">
+      <div @mouseover="openBuyJournal = true" @mouseout="openBuyJournal = false" class="relative">
+        <div class="cursor-pointer">
+          <i class="fas fa-globe mr-2"></i> Language
+        </div>
+        <div x-show="openBuyJournal" @click.away="openBuyJournal = false" class="absolute mt-2 bg-white border rounded shadow-md hidden">
+           Dropdown content here 
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Unlimited</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Custom</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Menu Items</a>
+        </div>
+      </div>
+    </div>
+    <div class="phone">
+      <i class="fas fa-phone-alt mr-2"></i> +90555 555 5555
+    </div>
+    <div class="currency">
+      <div @mouseover="openCurrency = true" @mouseout="openCurrency = false" class="relative">
+        <div class="cursor-pointer">
+          <i class="fas fa-money-bill-wave mr-2"></i> Currency
+        </div>
+        <div x-show="openCurrency" @click.away="openCurrency = false" class="absolute mt-2 bg-white border rounded shadow-md hidden">
+           Dropdown content here 
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">USD</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">EUR</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">GBP</a>
+        </div>
+      </div>
+    </div> -->
+
+ <!-- Navbar -->
+
+ <div class="all-header px-32">
+  <div class="top-navbar flex justify-between items-center p-1">
+
+
+    <div class="language z-20">
+      <div @mouseover="openBuyJournal = true" @mouseout="openBuyJournal = false" class="relative">
+        <div class="cursor-pointer">
+          <i class="fas fa-globe mr-2"></i> Language
+        </div>
+        <div x-show="openBuyJournal" @click.away="openBuyJournal = false"
+          class="absolute mt-2 bg-white border rounded shadow-md hidden">
+          <!-- Dropdown content here -->
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Unlimited</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Custom</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Menu Items</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="phone">
+      <i class="fas fa-phone-alt mr-2"></i> +90555 555 5555
+    </div>
+    
+    <div class="currency">
+      <div @mouseover="openCurrency = true" @mouseout="openCurrency = false" class="relative">
+        <div class="cursor-pointer">
+          <i class="fas fa-money-bill-wave mr-2"></i> Currency
+        </div>
+        <div x-show="openCurrency" @click.away="openCurrency = false"
+          class="absolute mt-2 bg-white border rounded shadow-md hidden">
+          <!-- Dropdown content here -->
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">USD</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">EUR</a>
+          <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">GBP</a>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+

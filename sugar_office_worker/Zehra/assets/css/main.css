@@ -7,7 +7,6 @@
 body{
   padding: 0;
   overflow-x: hidden;
-  min-height: 100%;
 
 }
 
@@ -159,3 +158,6 @@ body{
   to  { opacity: 0; right:1;}
 }
 
+.iconModul6{
+  color: darkorchid!important;
+}

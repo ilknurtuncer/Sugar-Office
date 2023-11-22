@@ -1,260 +1,544 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              sugar__pink: "#FF9BA7",
-              sugar__blue: "#59B5FE",
-              sugar__navy: "#001B79",
-              sugar__navy2: "#1640D6",
-              backcolor:"#FAF6F0",
-            },
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+            sugar__pink: "#FF9BA7",
+            sugar__pink2: "#940B92",
+            sugar__blue: "#59B5FE",
+            sugar__navy: "#001B79",
+            sugar__navy2: "#1640D6",
+            modul6:"rebeccapurple",
+            backcolor: "#FAF6F0",
+            footerColor:"#1D1B38"
           },
         },
-      };
-    </script>
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,100;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css" rel="stylesheet" />
-  </head>
-  <body class="bg-backcolor">
-    <div class=" shadow mx-auto bg-backcolor  ">
-      <!-- Top Navbar  -->
-      <div class="top-nav shadow text-sm font-light">
-        <div class="left-top-nav">
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;0,900;1,100;1,500;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-bakColor">
+  <div class=" shadow mx-auto bg-backcolor  ">
+    <!-- Top Navbar  -->
+    <div class="top-nav shadow text-sm font-light">
+      <div class="left-top-nav">
 
 
-          <ul>
-            <li class="drop-menü hover:text-sugar__pink"><i class="fa-regular fa-folder-closed fa-sm text-sugar__blue hover:text-sugar__pink"></i> BUY JOURNAL
+        <ul>
+          <li class="drop-menü hover:text-sugar__pink "><i
+              class="fa-solid fa-language fa-md text-sugar__blue hover:text-sugar__pink"></i> Turkish
             <ul class="bg-sugar__pink text-white shadow-xl rounded-lg ">
-              <li><i class="fa-regular fa-user fa-xs text-sugar__blue"></i> Unlimited</li>
-              <li > <i class="fa-brands fa-intercom fa-xs text-sugar__blue"></i> Custom</li>
-              <li><i class="fa-solid fa-gear fa-xs text-sugar__blue"></i> Menu Items</li>
+              <li class="text-xs"><i class="fa-regular fa-user fa-xs text-sugar__blue"></i> EN</li>
+              <li class="text-xs"> <i class="fa-brands fa-intercom fa-xs text-sugar__blue"></i> DE</li>
+              <li class="text-xs"><i class="fa-solid fa-gear fa-xs text-sugar__blue"></i> FR</li>
             </ul>
-            
-            </li>
-          </ul>
 
-          
-        </div>
-        <div class="mid-top-nav">
-          <p class="hover:text-sugar__pink">
-            <i class="fa-solid fa-phone-volume fa-sm text-sugar__blue hover:text-sugar__pink"></i>
-            <a href="tel:0312 059 08 08">CALL NOW: 0312 059 08 08</a>
-          </p>
-        </div>
-        <div class="right-top-nav">
-          <ul>
-            <li class="drop-menü z-50 hover:text-sugar__pink"><i class="fa-solid fa-dollar-sign fa-sm text-sugar__blue"></i> US DOLLAR
+          </li>
+        </ul>
+
+
+      </div>
+      <div class="mid-top-nav">
+        <p class="hover:text-sugar__pink">
+          <i class="fa-solid fa-phone-volume fa-sm text-sugar__blue hover:text-sugar__pink"></i>
+          <a href="tel:0312 059 08 08">CALL NOW: 0312 059 08 08</a>
+        </p>
+      </div>
+      <div class="right-top-nav">
+        <ul>
+          <li class="drop-menü z-50 hover:text-sugar__pink"><i
+              class="fa-solid fa-dollar-sign fa-sm text-sugar__blue"></i> US DOLLAR
             <ul class="bg-sugar__pink text-white text-sm w-[100px] shadow-xl rounded-lg">
               <li><i class="fa-solid fa-euro-sign fa-xs text-sugar__blue hover:text-sugar__pink"></i> Euro</li>
-              <li><i class="fa-solid fa-sterling-sign fa-xs text-sugar__blue hover:text-sugar__pink"></i> Pound Sterling</li>
+              <li><i class="fa-solid fa-sterling-sign fa-xs text-sugar__blue hover:text-sugar__pink"></i> Pound Sterling
+              </li>
               <li><i class="fa-solid fa-dollar-sign fa-xs text-sugar__blue hover:text-sugar__pink"></i> US Dollar</li>
             </ul>
-            
+
+          </li>
+        </ul>
+        <p></p>
+      </div>
+    </div>
+    <!-- Mid Navbar  -->
+
+    <div class="mid-nav">
+      <div class="left-mid-nav">
+        <img src="https://sekerofisi.com/uploads/p/o/Cp0Dlc3Rg2xo.PNG" alt="logo" style="width: 125px" />
+      </div>
+      <div class="mid-mid-nav">
+        <form action="/search" class="w-full px-4 mt-[20px]">
+          <div class="relative">
+            <input type="text" name="q"
+              class="w-full hover:text-white  h-12 shadow p-4 rounded-full hover:bg-sugar__pink" placeholder="search" />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass text-teal-400 h-5 w-5 absolute top-3.5 right-3 fill-current"
+                style="color: #59b5fe"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="right-mid-nav cursor-pointer">
+        <div class="flex items-center">
+          <i class="fa-regular fa-user fa-2xl text-sugar__blue p-2"> </i>
+          <div>
+            <p>Account</p>
+            <p class="text-xs font-light"> <span class="hover:text-sugar__pink">Login</span> / <span
+                class="hover:text-sugar__pink">Register</span></p>
+          </div>
+        </div>
+        <div class="flex items-center cursor-pointer">
+          <i class="fa-regular fa-heart fa-2xl text-sugar__blue relative">
+            <span
+              class="absolute bottom-0 right-0 text-sm  font-bold text-sugar__pink z-20 bg-backcolor rounded-full ">0</span>
+          </i>
+          <div class="p-2">
+            <p>Wishlist</p>
+            <p class="text-xs font-light">Edit Your Wishlist</p>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <i class="fa-solid fa-equals fa-2xl text-sugar__blue relative">
+            <span class="absolute bottom-0 right-0 text-sm text-sugar__pink z-20 bg-backcolor rounded-full">0</span>
+          </i>
+
+          <div class="p-2">
+            <p>Compare</p>
+            <p class="text-xs font-light">Edit Your Wishlist</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <div class="end-nav flex justify-around">
+      <div class="left-end-nav">
+        <ul class=" flex font-bold cursor-pointer  ">
+          <li class="p-2">CATEGORİES</li>
+          <li class="p-2">MEGAMENU</li>
+          <li class="p-2 right-drop-menü z-30">MULTILEVEL
+            <ul class="bg-sugar__blue text-white text-xs">
+              <li class="p-2  relative"> Desktop <i
+                  class="fa-solid fa-forward fa-2xs text-end absolute right-0 top-[15px]"></i>
+                <ul class="bg-sugar__pink">
+
+                  <li class="p-2">Subcategory</li>
+
+                  <li class="p-2">PC</li>
+
+                  <li class="p-2">Mac</li>
+
+                </ul>
+              </li>
+              <li class="p-2">Laptops & Notebooks</li>
+              <li class="p-2">Phones & PDAs</li>
+              <li class="p-2">Cameras</li>
+              <li class="p-2">MP3 Players</li>
+
+            </ul>
+          </li>
+
+          <li class="p-2">BRANDS </li>
+          <li class="p-2 text-sugar__blue hover:text-sugar__pink">SPECIALS</li>
+        </ul>
+      </div>
+
+      <div class="right-end-nav flex">
+        <ul class="flex font-bold cursor-pointer">
+          <li class="p-2">ABOUT</li>
+          <li class="p-2">FAQ</li>
+          <li class="p-2">CONTACT</li>
+          <li class="p-2">BLOG </li>
+        </ul>
+        <div class="border flex font-light drop-menü relative ">
+          <p class="p-2">
+            <span>0</span> <span class="font-bold">item(s)-</span> <span>$ 0.00 </span>
+          <div class="shop bg-sugar__blue w-[50px] flex justify-center items-center p-4">
+
+            <i class="fa-solid fa-bag-shopping fa-2xl text-sugar__pink relative">
+              <span class="absolute bottom-0 right-0 text-sm text-white z-20 rounded-full ">0</span>
+            </i>
+          </div>
+          </p>
+          <div class="shop-menü absolute z-30 w-[400px] top-10 right-0 bg-sugar__blue text-white">
+            <div class="flex flex-col  ">
+              <div class="flex justify-between bg-sugar__pink items-center border-solid border border-sugar__pink">
+                <img class="w-[75px] rounded-\[2rem\] p-2"
+                  src="https://sekerofisi.com/uploads/p/p/Seffaf-Dosya-Deniz-Kizi_1.JPG?v=1697880853" alt="">
+                <div class="p-2  font-bold">
+                  <h5 class="underline ">Ürün 1</h5>
+                  <p>size * M</p>
+                  <p> color * Red</p>
+                </div>
+                <div class="p-2  ">X 1</div>
+                <div class="p-2  font-bold">505.99 $</div>
+                <div class="p-2  font-bold">
+                  <p><svg class="w-4 h-4 hover:text-sugar__blue " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                    <path d="M17 4h-4V2a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v2H1a1 1 0 0 0 0 2h1v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1a1 1 0 1 0 0-2ZM7 2h4v2H7V2Zm1 14a1 1 0 1 1-2 0V8a1 1 0 0 1 2 0v8Zm4 0a1 1 0 0 1-2 0V8a1 1 0 0 1 2 0v8Z"/>
+                  </svg></p>
+                </div>
+              </div>
+              <div class="flex justify-end items-center border-t-2 border-b-2  border-sugar__pink"><span
+                  class="font-bold p-2"> Sub-Total</span> <span>$ 35.99</span></div>
+              <div class="flex justify-end items-center border-t-2 border-b-2  border-sugar__pink"><span
+                  class="font-bold p-2"> Total</span> <span>$ 35.99</span></div>
+              <div class="flex justify-center items-center pt-2 bg-sugar__navy2">
+                <button type="button"
+                  class="flex justify-between items-center text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+
+                  <svg class="w-3 h-3 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 9V4a3 3 0 0 0-6 0v5m9.92 10H2.08a1 1 0 0 1-1-1.077L2 6h14l.917 11.923A1 1 0 0 1 15.92 19Z" />
+                  </svg>
+                  <span class="px-2">VIEM CART</span>
+                </button>
+                <button type="button"
+                  class="flex justify-between items-center text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                  <span class="px-2">
+                    CHECKOUT
+
+                  </span>
+                  <svg class="w-3 h-3   text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                  </svg>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="default-carousel" class="relative w-full h-full sliderr" data-carousel="slide">
+    <!-- Carousel wrapper -->
+
+    <div class="relative h-96 overflow-hidden rounded-lg md:h-96 sliderr">
+
+      <!-- Item 1 -->
+
+      <div class="hidden duration-700 ease-in-out h-96 sliderr " data-carousel-item>
+        <div class="absolute top-[50%] start-[10%] z-30 flex items-center justify-center  opacity-95 hover:opacity-100">
+          <h1 class="text-5xl font-bold  border-b-4 border-red-500">
+            <span class="text-sugar__pink">Seker</span> <span class="text-sugar__blue">OFIS</span>
+          </h1>
+
+        </div>
+        <div class="absolute top-[65%] start-[10%] z-30 flex items-center justify-center  opacity-95 hover:opacity-100">
+          <h1 class="text-7xl font-bold ">
+            NEW COLLECTION
+          </h1>
+
+        </div>
+        <div class="absolute top-[85%] start-[10%] z-30 flex items-center justify-center  opacity-95 hover:opacity-100">
+
+          <button type="button"
+            class="py-2.5 px-5 me-2 mb-2 text-md font-medium text-white focus:outline-none bg-sugar__navy rounded-lg border border-gray-200 hover:bg-sugar__blue  focus:z-10 focus:ring-4 focus:ring-gray-200 ">LEARN MORE</button>
+          <button type="button"
+            class="py-2.5 px-5 me-2 mb-2 text-md font-medium text-white focus:outline-none bg-sugar__navy2 rounded-lg border border-gray-200 hover:bg-sugar__pink  focus:z-10 focus:ring-4 focus:ring-gray-200 ">SHOP NOW         </button>
+
+        </div>
+        <img src="https://sekerofisi.com/uploads/p/o/UJcZfLu1mDz4.jpg"
+          class="backdrop-brightness-100  absolute block w-full sliderr -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          alt="...">
+
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out h-96 sliderr backdrop-filter backdrop-brightness-125"
+        data-carousel-item>
+        <div class="absolute top-[50%] start-[10%] z-30 flex items-center justify-center  opacity-95 hover:opacity-100">
+          <h1 class="text-5xl font-bold border-b-4 border-red-900">
+            <span class="text-sugar__pink">Seker</span> <span class="text-sugar__blue">OFIS</span>
+          </h1>
+
+        </div>
+        <div class="absolute top-[65%] start-[10%] z-30 flex items-center justify-center  opacity-95 hover:opacity-100">
+          <h1 class="text-7xl font-bold  ">
+            NEW COLLECTION 2
+          </h1>
+
+        </div>
+        <div class="absolute top-[85%] start-[10%] z-30 flex items-center justify-center  opacity-95 hover:opacity-100">
+
+          <button type="button"
+            class="py-2.5 px-5 me-2 mb-2 text-md font-medium text-white focus:outline-none bg-sugar__navy rounded-lg border border-gray-200 hover:bg-sugar__blue  focus:z-10 focus:ring-4 focus:ring-gray-200 ">LEARN MORE</button>
+          <button type="button"
+            class="py-2.5 px-5 me-2 mb-2 text-md font-medium text-white focus:outline-none bg-sugar__navy2 rounded-lg border border-gray-200 hover:bg-sugar__pink  focus:z-10 focus:ring-4 focus:ring-gray-200 ">SHOP NOW         </button>
+
+        </div>
+        <img src="https://img.freepik.com/free-photo/part-pink-pencils-pens_23-2147843257.jpg?w=900&t=st=1700603984~exp=1700604584~hmac=b2a9c3e056a032e9cf2f31d583c1e9821dec6e1ebfdee2de0685ee24f56839f5"
+          class=" backdrop-brightness-100 absolute block w-full  h-auto max-w-full sliderr -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          alt="...">
+      </div>
+      <!-- Item 3 -->
+
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-20 flex -translate-x-1/2 bottom-0 left-1/2 space-x-3 rtl:space-x-reverse">
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+        data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+        data-carousel-slide-to="1"></button>
+     
+    </div>
+
+    <!-- Slider controls -->
+    <button type="button"
+      class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-prev>
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M5 1 1 5l4 4" />
+        </svg>
+        <span class="sr-only">Previous</span>
+      </span>
+    </button>
+    <button type="button"
+      class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-next>
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m1 9 4-4-4-4" />
+        </svg>
+        <span class="sr-only">Next</span>
+      </span>
+    </button>
+
+
+  </div>
+  <!-- Modul 5 Tasarımı Start-->
+  <div class="modul h-[400px] flex flex-col justify-center items-center text-white p-4 ">
+    <h1 class="font-bold text-5xl p-2">END OF SEASON SALE</h1>
+    <p class="w-2/3 text-center p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis magnam sed repudiandae itaque blanditiis quam ab, officia veniam eius, porro, consequuntur sequi. Natus est iure explicabo itaque sit rem at!</p>
+    <button type="button" class=" text-white bg-sugar__pink2 opacity-90 hover:bg-sugar__pink focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 ">Default</button>
+  </div>
+  <!-- Modul 5 Tasarımı  End-->
+  
+  <!-- Modul 6 Tasarımı  Start-->
+  <div class="flex justify-around p-4 bg-modul6">
+    <div class="flex">
+      <div class="rounded-full border-2 hover:border-sugar__blue border-sugar__pink p-4 hover:border-4 ">
+
+        <svg class="w-6 h-6 hover:cursor-pointer   text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+        </svg>
+      </div>
+      <div class="p-2">
+        <h2 class="text-white font-bold hover:text-sugar__pink hover:cursor-pointer ">Free Shipping</h2>
+        <p class="text-gray-400">Free delivery over $100</p>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="rounded-full border-2 hover:border-sugar__blue border-sugar__pink p-4 hover:border-4 ">
+
+        <svg class="w-6 h-6 hover:cursor-pointer text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4m6-8L7 5l4 4"/>
+        </svg>
+      </div>
+      <div class="p-2">
+        <h2 class="text-white font-bold hover:text-sugar__pink hover:cursor-pointer">Free Returns</h2>
+        <p class="text-gray-400">Hassle free returns</p>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="rounded-full border-2 hover:border-sugar__blue border-sugar__pink p-4 hover:border-4 ">
+
+        <svg class="w-6 h-6 hover:cursor-pointer text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+          <path d="m17.351 3.063-8-3a1.009 1.009 0 0 0-.7 0l-8 3A1 1 0 0 0 0 4a19.394 19.394 0 0 0 8.47 15.848 1 1 0 0 0 1.06 0A19.394 19.394 0 0 0 18 4a1 1 0 0 0-.649-.937Zm-3.644 4.644-5 5A1 1 0 0 1 8 13c-.033 0-.065 0-.1-.005a1 1 0 0 1-.733-.44l-2-3a1 1 0 0 1 1.664-1.11l1.323 1.986 4.138-4.138a1 1 0 0 1 1.414 1.414h.001Z"/>
+        </svg>
+      </div>
+      <div class="p-2">
+        <h2 class="text-white font-bold hover:text-sugar__pink hover:cursor-pointer">Scure Shopping</h2>
+        <p class="text-gray-400">Best security features</p>
+      </div>
+    </div>
+    <div class="flex">
+      <div class="rounded-full border-2 border-sugar__pink p-4 hover:border-4 hover:border-sugar__blue hover:cursor-pointer ">
+
+        <svg class="w-6 h-6 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 19">
+          <path d="M10.013 4.175 5.006 7.369l5.007 3.194-5.007 3.193L0 10.545l5.006-3.193L0 4.175 5.006.981l5.007 3.194ZM4.981 15.806l5.006-3.193 5.006 3.193L9.987 19l-5.006-3.194Z"/>
+          <path d="m10.013 10.545 5.006-3.194-5.006-3.176 4.98-3.194L20 4.175l-5.007 3.194L20 10.562l-5.007 3.194-4.98-3.211Z"/>
+        </svg>
+      </div>
+      <div class="p-2">
+        <h2 class="text-white font-bold hover:text-sugar__pink hover:cursor-pointer">Unlimited Blocks</h2>
+        <p class="text-gray-400">Any content, any page</p>
+      </div>
+    </div>
+    
+  </div>
+  <!-- Modul 6 Tasarımı  End-->
+  
+  <!-- Footer     -->
+  <div class="footer-div px-[100px] bg-footerColor text-white">
+    <div class=" grid grid-cols-6 gap-4 ">
+      <div class="  flex flex-col justify-center items-center  col-span-1 p-8 ">
+        <img src="https://sekerofisi.com/uploads/p/o/Cp0Dlc3Rg2xo.PNG" class="w-[150px] h-[90px]" alt="">
+        <div>
+          <p class="text-sm">123 Main St. London, UK</p>
+        </div>
+        <div class="flex justify-center items-center p-2">
+          <i class="fa-brands fa-facebook fa-md px-2 hover:text-sugar__blue hover:cursor-pointer hover:text-xl"></i>
+          <i class="fa-brands fa-twitter fa-md px-2 hover:text-sugar__blue hover:cursor-pointer hover:text-xl"></i>
+          <i class="fa-brands fa-instagram fa-md px-2 hover:text-sugar__blue hover:cursor-pointer hover:text-xl"></i>
+          <i class="fa-brands fa-google fa-md px-2 hover:text-sugar__blue hover:cursor-pointer hover:text-xl"></i>
+        </div>
+
+      </div>
+      <div class="flex justify-around  col-span-3 text-white p-8">
+        <div class="p-2">
+          <h2 class="mb-2 text-lg font-semibold  ">CUSTOMER SERVICE</h2>
+          <ul class="max-w-md text-sm text-gray-400 list-disc list-inside ">
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
+              Contact
+            </li>
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
+              Returns
+            </li>
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
+              Site Map
+            </li>
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
+              Brands
+            </li>
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
+              Unlimited Links
             </li>
           </ul>
-          <p></p>
         </div>
+        <div class="p-2">
+          <h2 class="mb-2 text-lg font-semibold  ">MY ACCOUNT</h2>
+          <ul class="max-w-md text-sm text-gray-400 list-disc list-inside ">
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
+              My Account
+            </li>
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
+              Order History
+            </li>
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
+              Affıliates
+            </li>
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
+              newsletter
+            </li>
+            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
+              Gift Certificates
+            </li>
+          </ul>
+        </div>
+
+       
       </div>
-      <!-- Mid Navbar  -->
-
-      <div class="mid-nav">
-        <div class="left-mid-nav">
-          <img
-            src="https://sekerofisi.com/uploads/p/o/Cp0Dlc3Rg2xo.PNG"
-            alt="logo"
-            style="width: 125px"
-          />
-        </div>
-        <div class="mid-mid-nav">
-          <form action="/search" class="w-full px-4 mt-[20px]">
-            <div class="relative">
-              <input
-                type="text"
-                name="q"
-                class="w-full hover:text-white  h-12 shadow p-4 rounded-full hover:bg-sugar__pink"
-                placeholder="search"
-              />
-              <button type="submit">
-                <i
-                  class="fa-solid fa-magnifying-glass text-teal-400 h-5 w-5 absolute top-3.5 right-3 fill-current"
-                  style="color: #59b5fe"
-                ></i>
-              </button>
+      <!-- input -->
+      <div class=" p-8 w-[400px] col-span-1 ">
+        <h2 class="font-bold">NEWSLETTER</h2>
+        <p class="text-xs">Don't miss any updates or promotions by signing up to our newsletter.</p>
+        <form>
+          <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only ">Search</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+              </svg>
             </div>
-          </form>
-        </div>
-        <div class="right-mid-nav cursor-pointer">
-          <div class="flex items-center">
-            <i class="fa-regular fa-user fa-2xl text-sugar__blue p-2"> </i>
-            <div>
-              <p>Account</p>
-              <p class="text-xs font-light"> <span class="hover:text-sugar__pink">Login</span> / <span class="hover:text-sugar__pink" >Register</span></p>
-            </div>
+            <input type="search" id="default-search"
+              class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500  "
+              placeholder="Search Mockups, Logos..." required>
+            <button type="submit"
+              class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-sugar__pink focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2  ">Search</button>
           </div>
-          <div class="flex items-center cursor-pointer">
-            <i class="fa-regular fa-heart fa-2xl text-sugar__blue relative">
-                <span
-                class="absolute bottom-0 right-0 text-sm  font-bold text-sugar__pink z-20 bg-backcolor rounded-full "
-                >0</span
-              >
-            </i>
-            <div class="p-2">
-              <p>Wishlist</p>
-              <p class="text-xs font-light">Edit Your Wishlist</p>
-            </div>
-          </div>
-          <div class="flex items-center">
-            <i class="fa-solid fa-equals fa-2xl text-sugar__blue relative">
-              <span
-                class="absolute bottom-0 right-0 text-sm text-sugar__pink z-20 bg-backcolor rounded-full"
-                >0</span
-              >
-            </i>
-
-            <div class="p-2">
-              <p>Compare</p>
-              <p class="text-xs font-light">Edit Your Wishlist</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr/>
-
-      <div class="end-nav flex justify-around">
-        <div class="left-end-nav">
-            <ul class=" flex font-bold cursor-pointer  ">
-                <li class="p-2">CATEGORİES</li>
-                <li class="p-2">MEGAMENU</li>
-                <li class="p-2 right-drop-menü z-30">MULTILEVEL
-                  <ul class="bg-sugar__blue text-white text-xs">
-                    <li class="p-2  relative"> Desktop <i class="fa-solid fa-forward fa-2xs text-end absolute right-0 top-[15px]"></i>
-                      <ul class="bg-sugar__pink">
-                        
-                        <li class="p-2">Subcategory</li>
-                        
-                        <li class="p-2">PC</li>
-                        
-                        <li class="p-2">Mac</li>
-
-                      </ul>
-                    </li>
-                    <li class="p-2">Laptops & Notebooks</li>
-                    <li class="p-2">Phones & PDAs</li>
-                    <li class="p-2">Cameras</li>
-                    <li class="p-2">MP3 Players</li>
-                    
-                  </ul>
-                </li>
-
-                <li class="p-2">BRANDS </li>
-                <li class="p-2 text-sugar__blue hover:text-sugar__pink">SPECIALS</li>
-            </ul>
-        </div>
-
-        <div class="right-end-nav flex">
-            <ul class="flex font-bold cursor-pointer">
-                <li class="p-2">ABOUT</li>
-                <li class="p-2">FAQ</li>
-                <li class="p-2">CONTACT</li>
-                <li class="p-2">BLOG </li>
-            </ul>
-            <div class="border flex font-light">
-                <p class="p-2"> <span>0</span> <span class="font-bold">item(s)-</span>  <span>$ 0.00 </span>
-                    <div class="shop bg-sugar__blue w-[50px] flex justify-center items-center p-4">
-
-                        <i class="fa-solid fa-bag-shopping fa-2xl text-sugar__pink relative">
-                            <span
-                class="absolute bottom-0 right-0 text-sm text-white z-20 rounded-full "
-                >0</span>
-                        </i>
-                    </div>
-                 </p>       
-            </div>
+        </form>
+        <div class="flex items-center mb-4">
+          <input id="default-checkbox" type="checkbox" value=""
+            class="w-4 h-4  bg-gray-100  rounded focus:ring-blue-100 ">
+          <label for="default-checkbox" class="ms-2 text-sm font-medium  ">I have read and agree to the
+          <span class="underline text-sugar__pink hover:text-sugar__blue hover:font-bold hover:cursor-pointer">Privacy Policy</span>  </label>
         </div>
       </div>
     </div>
-
-    <div id="default-carousel" class="relative w-full h-full sliderr" data-carousel="slide">
-      <!-- Carousel wrapper -->
+    <div> 
       
-      <div class="relative h-96 overflow-hidden rounded-lg md:h-96 sliderr">
 
-           <!-- Item 1 -->
+<footer class="  bg-footerColor border-t-4 border-indigo-500">
+  <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+    <span class="text-sm text-gray-500 sm:text-center ">© 2023 <a href="https://flowbite.com/" class="hover:underline hover:text-sugar__pink hover:font-bold">SEKER OFIS™</a>. All Rights Reserved.
+  </span>
+  <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500  sm:mt-0">
+      <li>
+          <a href="#" class="hover:underline me-2 ">
+            <i class="fa-brands fa-cc-visa fa-xl "></i>
+          </a>
+      </li>
+      <li>
+          <a href="#" class="hover:underline me-2 ">
+            <i class="fa-brands fa-cc-mastercard fa-xl "></i>
+          </a>
+      </li>
+      <li>
+          <a href="#" class="hover:underline me-2 ">
+            <i class="fa-brands fa-cc-amex fa-xl "></i>
+          </a>
+      </li>
+      <li>
+          <a href="#" class=" me-2 hover:underline">
+            <i class="fa-brands fa-cc-discover fa-xl "></i>
+          </a>
+      </li>
+      <li>
+          <a href="#" class="me-2 hover:underline">
+            <i class="fa-brands fa-cc-paypal fa-xl "></i>
+          </a>
+      </li>
+      <li>
+          <a href="#" class="me-2 hover:underline">
+            <i class="fa-brands fa-cc-stripe fa-xl "></i>
+          </a>
+      </li>
+  </ul>
+  </div>
+</footer>
 
-          <div class="hidden duration-700 ease-in-out h-96 sliderr " data-carousel-item>
-              <img src="https://sekerofisi.com/uploads/p/o/UJcZfLu1mDz4.jpg" class="absolute block w-full sliderr -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-              
-          </div>
-          <!-- Item 2 -->
-          <div class="hidden duration-700 ease-in-out h-96 sliderr" data-carousel-item>
-              <img src="https://sekerofisi.com/uploads/p/o/5IW9tx067AYF.jpg" class="absolute block w-full sliderr -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-          <!-- Item 3 -->
-          
-        </div>
-      <!-- Slider indicators -->
-      <div class="absolute z-20 flex -translate-x-1/2 bottom-0 left-1/2 space-x-3 rtl:space-x-reverse">
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-          <!-- <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-      -->
-        </div> 
-        
-      <!-- Slider controls -->
-      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-              </svg>
-              <span class="sr-only">Previous</span>
-          </span>
-      </button>
-      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-              </svg>
-              <span class="sr-only">Next</span>
-          </span>
-      </button>
-      <div  class="absolute top-[75%] start-[250px] z-30 flex items-center justify-center  opacity-95 hover:opacity-100">
-
-        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-md font-medium text-white focus:outline-none bg-sugar__navy rounded-lg border border-gray-200 hover:bg-sugar__blue  focus:z-10 focus:ring-4 focus:ring-gray-200 ">Alternative</button>
-      </div>
-      <div  class="absolute top-[75%] start-[400px] z-30 flex items-center justify-center  opacity-95 hover:opacity-100">
-
-        <button type="button" class="py-2.5 px-5 me-2 mb-2 text-md font-medium text-white focus:outline-none bg-sugar__navy2 rounded-lg border border-gray-200 hover:bg-sugar__pink  focus:z-10 focus:ring-4 focus:ring-gray-200 ">Alternative</button>
-      </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
-  </body>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
+</body>
+
 </html>

@@ -2,7 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.fot{
+background-color: #a4bdd9;
+
+}
+.fotB{
+  background-color: #a4bdd9;
+}
 .carousel-open:checked + .carousel-item {
     position: static;
     opacity: 100;

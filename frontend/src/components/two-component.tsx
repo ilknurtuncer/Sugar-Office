@@ -1,3 +1,3 @@
-export default function OneComponent() {
-    return <>test</>
+export default function TwoComponent() {
+    return <>two</>
 }

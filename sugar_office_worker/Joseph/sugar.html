@@ -164,7 +164,7 @@
 
         <div class="flex items-center flex-grow">
           <div class="relative">
-            <div class="flex items-center flex-grow rad">
+            <div class="nav-search flex items-center flex-grow rad">
               <input type="text"
                 class="border-2 border-gray-200 hover\:to-white rounded-3xl w-full px-4 py-2 mr-4 pr-64 hover:bg-pink-200 "
                 placeholder="Search">
@@ -466,7 +466,7 @@
   <!-- website banner / created abone form -->
 
   <div class="bg-yellow-300 px-32 h-28 flex items-center justify-between">
-    <img src="assets/pictures/Harwen-Pleasant-E-mail.256.png" alt="Envelope icon" class="w-12 h-12 mr-4">
+    <img src="assets/pictures/Harwen-Pleasant-E-mail.256.png" alt="Envelope icon" class="w-12 h-12 mr-2">
    <div class="flex items-center">
     
      <div class="text-gray-700">
@@ -476,14 +476,17 @@
    </div>
    <div class="flex items-center gap-4"> <!-- Burada gap-4 sınıfı ekledim -->
     <div class="flex items-center">
-     <form action="subscribe.php" method="post" class="flex items-center gap-4 w-72 h-9">
-       <input type="email" name="email" placeholder="Email address" required class="border border-gray-400 px-2 py-2 h-10 rounded">
+     <form action="subscribe.php" method="post" class="flex items-center gap-4 w-84 h-9">
+       <input type="email" name="email" placeholder="Email Address" required class="input-box border px-2 py-2 h-10 rounded
+      flex-1 mr-4 
+       ">
        
      </form>
      
    </div>
    <button type="submit" name="submit" class="bg-black text-white  w-24 h-10 rounded">Subscribe</button>
    </div>
+
    
  </div>
 

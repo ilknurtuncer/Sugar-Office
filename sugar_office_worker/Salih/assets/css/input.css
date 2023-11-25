@@ -124,3 +124,10 @@
   .overlay li {font-size: 14px}
 
 }
+
+.parallax {
+  background-image: url('https://www.journal-theme.com/2/image/cache/catalog/journal3/people/andrew-neel-369701-unsplash-1500x1000.jpg.webp');
+  background-position: center center;
+  background-size: cover;
+  background-attachment:fixed ;
+}

@@ -580,6 +580,10 @@ video {
   position: relative;
 }
 
+.inset-0 {
+  inset: 0px;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -596,20 +600,20 @@ video {
   left: -7px;
 }
 
+.left-\[200px\] {
+  left: 200px;
+}
+
+.left-\[325px\] {
+  left: 325px;
+}
+
+.left-\[85px\] {
+  left: 85px;
+}
+
 .right-\[-8px\] {
   right: -8px;
-}
-
-.right-\[15\%\] {
-  right: 15%;
-}
-
-.right-\[25\%\] {
-  right: 25%;
-}
-
-.right-\[33\%\] {
-  right: 33%;
 }
 
 .top-0 {
@@ -632,72 +636,20 @@ video {
   top: 68%;
 }
 
-.left-\[25\%\] {
-  left: 25%;
-}
-
-.left-\[15\%\] {
-  left: 15%;
-}
-
-.left-\[12\%\] {
-  left: 12%;
-}
-
-.left-\[33\%\] {
-  left: 33%;
-}
-
-.left-\[30\%\] {
-  left: 30%;
-}
-
-.left-\[45\%\] {
-  left: 45%;
-}
-
-.left-\[45px\] {
-  left: 45px;
-}
-
-.left-\[85px\] {
-  left: 85px;
-}
-
-.left-\[125px\] {
-  left: 125px;
-}
-
-.left-\[175px\] {
-  left: 175px;
-}
-
-.left-\[275px\] {
-  left: 275px;
-}
-
-.left-\[225px\] {
-  left: 225px;
-}
-
-.left-\[425px\] {
-  left: 425px;
-}
-
-.left-\[325px\] {
-  left: 325px;
-}
-
-.left-\[200px\] {
-  left: 200px;
-}
-
 .z-30 {
   z-index: 30;
 }
 
 .z-50 {
   z-index: 50;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-\[-1\] {
+  z-index: -1;
 }
 
 .order-1 {
@@ -728,6 +680,16 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -756,8 +718,32 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-32 {
+  margin-top: 8rem;
+}
+
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.box-border {
+  box-sizing: border-box;
+}
+
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -788,12 +774,20 @@ video {
   height: 44px;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
 .h-\[60px\] {
   height: 60px;
 }
 
 .h-full {
   height: 100%;
+}
+
+.h-\[455px\] {
+  height: 455px;
 }
 
 .w-3\/4 {
@@ -844,6 +838,10 @@ video {
   width: 40px;
 }
 
+.w-\[50px\] {
+  width: 50px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -890,6 +888,12 @@ video {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -908,6 +912,12 @@ video {
   margin-left: calc(10px * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -920,21 +930,46 @@ video {
   border-radius: 100px;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .border {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-l-2 {
   border-left-width: 2px;
+}
+
+.border-solid {
+  border-style: solid;
 }
 
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-blue-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(30 64 175 / var(--tw-border-opacity));
 }
 
 .bg-\[\#0089DC\] {
@@ -976,6 +1011,11 @@ video {
   background-color: rgba(0,0,0,0.3);
 }
 
+.bg-blue-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
 .bg-red-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
@@ -984,6 +1024,32 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#E7284D\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 40 77 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[rgba\(0\2c 0\2c 0\2c 0\.2\)\] {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.bg-\[rgba\(0\2c 0\2c 0\2c 0\.\)\] {
+  background-color: rgba(0,0,0,0.);
+}
+
+.bg-\[rgba\(0\2c 0\2c 0\2c 0\.4\)\] {
+  background-color: rgba(0,0,0,0.4);
+}
+
+.bg-\[rgba\(0\2c 0\2c 0\2c 0\.5\)\] {
+  background-color: rgba(0,0,0,0.5);
 }
 
 .p-1 {
@@ -1030,6 +1096,21 @@ video {
 .py-\[10px\] {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .pl-\[1px\] {
@@ -1090,6 +1171,14 @@ video {
   line-height: 1.25rem;
 }
 
+.text-\[36px\] {
+  font-size: 36px;
+}
+
+.text-\[24px\] {
+  font-size: 24px;
+}
+
 .leading-\[25px\] {
   line-height: 25px;
 }
@@ -1097,6 +1186,16 @@ video {
 .text-\[\#9EA7B6\] {
   --tw-text-opacity: 1;
   color: rgb(158 167 182 / var(--tw-text-opacity));
+}
+
+.text-\[\#bbb\] {
+  --tw-text-opacity: 1;
+  color: rgb(187 187 187 / var(--tw-text-opacity));
+}
+
+.text-\[\#fff\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-black {
@@ -1109,6 +1208,11 @@ video {
   color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
+.text-orange-600 {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
+}
+
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
@@ -1117,6 +1221,20 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-blue-600 {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.text-\[\#C0C0C0\] {
+  --tw-text-opacity: 1;
+  color: rgb(192 192 192 / var(--tw-text-opacity));
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .transition {
@@ -1248,6 +1366,18 @@ video {
   }
 }
 
+.parallax {
+  background-image: url('https://www.journal-theme.com/2/image/cache/catalog/journal3/people/andrew-neel-369701-unsplash-1500x1000.jpg.webp');
+  background-position: center center;
+  background-size: cover;
+  background-attachment:fixed ;
+}
+
+.hover\:border-teal-300:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(94 234 212 / var(--tw-border-opacity));
+}
+
 .hover\:bg-\[\#59B5FE\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(89 181 254 / var(--tw-bg-opacity));
@@ -1256,6 +1386,11 @@ video {
 .hover\:bg-blue-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#313846\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 56 70 / var(--tw-bg-opacity));
 }
 
 .hover\:text-\[\#0089DC\]:hover {
@@ -1337,6 +1472,14 @@ video {
     height: 1.25rem;
   }
 
+  .md\:w-1\/4 {
+    width: 25%;
+  }
+
+  .md\:w-10\/12 {
+    width: 83.333333%;
+  }
+
   .md\:w-3\/4 {
     width: 75%;
   }
@@ -1355,6 +1498,10 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 
   .md\:justify-between {
@@ -1394,6 +1541,18 @@ video {
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-\[36px\] {
+    font-size: 36px;
+  }
+
+  .md\:text-\[66px\] {
+    font-size: 66px;
+  }
+
+  .md\:text-\[16px\] {
+    font-size: 16px;
   }
 }
 

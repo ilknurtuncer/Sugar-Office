@@ -56,3 +56,21 @@ background-color: #a4bdd9;
     .carousel-bullet {
     color: #ffb317; /*Set to match the Tailwind colour you want the active one to be */
   }
+
+
+  .fixed-image {
+    height: 50vh; /* İstediğiniz dikey yüksekliği ayarlayabilirsiniz */
+    width: 100%;
+    background: url('https://www.journal-theme.com/2/image/cache/catalog/journal3/people/andrew-neel-369701-unsplash-1500x1000.jpg.webp') center/cover no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: contrast(200%);
+    background-attachment:fixed ;
+
+  }
+
+.content {
+    overflow-y: auto;
+    height: calc(100vh - 50vh); 
+    padding: 10px;
+}

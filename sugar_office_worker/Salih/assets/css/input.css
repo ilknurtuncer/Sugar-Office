@@ -211,3 +211,34 @@
 }
 
 /* modul7 swiper end */
+
+
+/* modul10 start */
+.modul10-wrapper{
+  padding: 20px 0;
+}
+
+.modul10-header{
+  margin: 10px 0 20px;
+}
+.product-item {
+  padding-left: 15px !important;
+  margin: 8px;
+}
+@media screen and (max-width:768px) {
+  .product-item {
+    max-width: 400px !important;
+  
+  }
+
+}
+
+@media screen and (min-width:992px) {
+  .product-item {
+    max-width: 275px !important;
+    height: 150px;
+  
+  }
+
+}
+/* modul10 start */

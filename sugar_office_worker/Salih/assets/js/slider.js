@@ -112,3 +112,30 @@ closeButton.addEventListener("click", () => {
 
 })
 
+const swiper_main = new Swiper('.swiper_main', {
+  loop: true,                         
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,   
+  },                
+  navigation: {                       
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  slidesPerView: 4,
+  breakpoints: {
+    // When window width is >= 320px
+    576: {
+      slidesPerView: 4,
+    },
+    // When window width is >= 480px
+    992: {
+      slidesPerView: 8,
+    },
+    // When window width is >= 640px
+    1100: {
+      slidesPerView: 10,
+    },
+  },
+  
+})

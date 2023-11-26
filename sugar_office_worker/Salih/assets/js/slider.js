@@ -2,9 +2,12 @@ const slides = document.querySelectorAll(".slide");
 
 const slideContainer = document.querySelector(".slideContainer")
 
-const btnSlider = document.querySelector(".btnSlider")
+const btnSlider1 = document.querySelector(".btnSlider1")
+const btnSlider2 = document.querySelector(".btnSlider2")
+const headingSlider = document.querySelector(".headingSlider")
 const btnSliderContainer = document.querySelector(".btnSliderContainer")
 
+let isToggled = true;
 
 // select next slide button
 const nextSlide = document.querySelector(".btn-next");
@@ -47,6 +50,32 @@ prevSlide.addEventListener("click", function () {
 
 const slideFn = (curSlide) => {
   slideContainer.style.transform = `translateX(-${curSlide * 100}%)`;
+
+  
+  if(isToggled){
+    headingSlider.classList.remove("left-[200px]");
+    headingSlider.classList.add("right-[25%]");
+
+    btnSlider1.classList.remove("left-[85px]");
+    btnSlider1.classList.add("right-[33%]");
+
+    btnSlider2.classList.remove("left-[325px]");
+    btnSlider2.classList.add("right-[15%]");
+  }
+  else{
+    headingSlider.classList.remove("right-[25%]");
+    headingSlider.classList.add("left-[200px]");
+
+    btnSlider1.classList.remove("right-[33%]");
+    btnSlider1.classList.add("left-[85px]");
+
+    btnSlider2.classList.remove("right-[15%]");
+    btnSlider2.classList.add("left-[325px]");
+  }
+  isToggled = !isToggled;
+
+   console.log(headingSlider.classList)
+
   // btnSliderContainer.style.right = `${15 - curSlide * 100}%`;
   // btnSlider.style.left = `${15 + curSlide * 100}%`;
 }
@@ -83,3 +112,30 @@ closeButton.addEventListener("click", () => {
 
 })
 
+const swiper_main = new Swiper('.swiper_main', {
+  loop: true,                         
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,   
+  },                
+  navigation: {                       
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  slidesPerView: 4,
+  breakpoints: {
+    // When window width is >= 320px
+    576: {
+      slidesPerView: 4,
+    },
+    // When window width is >= 480px
+    992: {
+      slidesPerView: 8,
+    },
+    // When window width is >= 640px
+    1100: {
+      slidesPerView: 10,
+    },
+  },
+  
+})

@@ -4,15 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        blue: '#60a5fa',
-        pink:{
-          400:'#f472b6',
-
-        },
-        neutral:{
-          700:'#44403c'
-        }
-      }
+        customBlue: '#3498db', 
+        customRed: '#e74c3c', 
+        customSlate:'#64748b',
+      },
     },
   },
   plugins: [],

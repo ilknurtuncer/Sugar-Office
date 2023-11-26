@@ -156,8 +156,8 @@
     </div>
   </div>
   <!-- WİSHLİST -->
-  <div class="flex items-center cursor-pointer">
-    <i class="fa-regular fa-heart fa-2xl text-pinky relative">
+  <div class="flex cursor-pointer  group items-center ">
+    <i class="fa-regular fa-heart fa-2xl text-pinky ">
         
     </i>
     <div class=" ml-1 md:block sm:hidden hover:hover:text-pinky">
@@ -166,7 +166,7 @@
     </div>
   </div><!-- COMPARE -->
   <div class="flex items-center">
-    <i class="fa-solid fa-equals fa-2xl text-pinky relative">
+    <i class="fa-solid fa-equals fa-2xl text-pinky ">
     </i>
 
     <div class="ml-1 md:block sm:hidden hover:hover:text-pinky ">
@@ -176,6 +176,110 @@
   </div>
 </div>
 </div>
+<!-- HEADER-3 -->
+<div class="h-14 flex items-center justify-between m-auto xl:w-9/12 md:w-full lg:w-9/12">
+  <div class="relative">
+    <ul class="menu-list flex font-semibold text-xs justify-center">
+      <li class=" hover:text-pinky hover:cursor-pointer ">
+        CATEGORIES
+      </li>
+      <li class="mx-2  hover:text-pinky hover:cursor-pointer">
+        MEGAMENU
+      </li>
+      <li class="multibtn mx-2 hover:text-pinky hover:cursor-pointer relative group">
+        MULTILEVEL
+        <div class="z-10 hidden group-hover:block origin-top-right absolute  w-48 shadow-lg bg-white multi-content">
+          <ul role="menu" aria-orientation="vertical" aria-labelledby="options-menu" class="multilevel-list ">
 
+            <li>
+              <a href="#" class="block text-xs font-thin hover:bg-gray-100">
+                Squishy
+              </a>
+            </li>
+      </li>
+
+
+      <li class=" flex w-48 hover:bg-gray-100">
+        <div class="group/edit flex items-center justify-between w-full">
+          <a href="#" class="text-xs font-thin ">
+            Toys
+          </a>
+          <img src="./assets/images/right.png" class="w-2 h-2 mr-1 ">
+          <ul
+            class="invisible absolute -right-40 top-10 multi-content bg-white  w-24 py-1 font-thin group-hover/edit:visible">
+            <li><a class="hover:bg-gray-100 text-xs p-1 " href="#">plush toys</a></li>
+            <li><a class="hover:bg-gray-100 text-xs p-1" href="#">slime</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        <a href="#" class=" text-xs font-thin hover:bg-gray-100">
+          Accessories
+        </a>
+      </li>
+      <li>
+        <a href="#" class=" text-xs font-thin hover:bg-gray-100">
+          Back To School
+        </a>
+      </li>
+      <li>
+        <a href="#" class=" px-4 py-2 text-xs font-thin hover:bg-gray-100">
+          Cosmetic
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <li class="mx-2  hover:text-pinky hover:cursor-pointer">
+    BRANDS
+  </li>
+  <li class="mx-2  hover:text-pinky hover:cursor-pointer">
+    SPECIALS
+  </li>
+  </ul>
+
+
+</div>
+
+
+<div class="flex justify-center  items-center">
+  <ul class="flex menu-list font-semibold text-xs justify-around">
+    <li class="mx-2  hover:text-pinky hover:cursor-pointer ">
+      ABOUT
+    </li>
+    <li class="mx-2  hover:text-pinky hover:cursor-pointer ">
+      FAQ
+    </li>
+    <li class="mx-2  hover:text-pinky hover:cursor-pointer ">
+      CONTACT
+    </li>
+    <li class="mx-2  hover:text-pinky hover:cursor-pointer ">
+      BLOG
+    </li>
+  </ul>
+  <div class="mx-2 flex items-center border-l-2 border-black h-12 px-2 tel text-xs">1 item(s) - 53.53€</div>
+
+  <div class="p-4 bg-pinky cursor-pointer relative group ">
+    <div class="flex flex-col justify-center items-center">
+      <img src="./assets/images/local_mall_FILL0_wght400_GRAD0_opsz24.png" alt="basket"></img>
+
+      <div class="absolute right-0 bg-white top-2/3 w-96 h-48 cart-content hidden group-hover:block">
+        <div><img class="w-20 h-20"
+            src="./assets/images/Squishy-Sukusi-Panda-Galaxy-Poncikella-Sevimli-Oyuncak-Slow-Rising_1.jpg" />
+        </div>
+        <div class="border-2 px-5 w-full justify-end flex bg-grayPrimary">
+          <p>Sub-Total 53.53€</p>
+        </div>
+        <div>
+          <button class="border p-2 mt-2 bg-gray-800 text-white text-xs">VIEW CART</button>
+          <button class="border p-2 mt-2 bg-gray-800 text-white text-xs">CHECKOUT</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 </body>
 </html>

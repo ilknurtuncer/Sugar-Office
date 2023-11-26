@@ -131,3 +131,114 @@
   background-size: cover;
   background-attachment:fixed ;
 }
+
+
+/* modul7 swiper start */
+
+.swiper-container{
+  position: relative;
+  width: 85%;
+  margin: 0 auto 50px;
+}
+.swiper-container .swiper-button-prev{
+  left: -50px;
+  background-color: #313846;
+  color:white;
+  padding: 30px 20px;
+}
+.swiper-container .swiper-button-next{
+  right: -50px;
+  background-color: #313846;
+  color:white;
+
+  padding: 30px 20px;
+}
+.swiper-container .swiper-button-prev:hover{
+  
+  background-color: #E7284D;
+ 
+
+}
+.swiper-container .swiper-button-next:hover{
+ 
+  background-color:  #E7284D;
+ 
+}
+.swiper-container .swiper-pagination{
+  bottom: -30px!important;
+}
+
+
+.swiper-slide{
+  padding-top: 20px;
+  cursor: pointer;
+
+}
+
+.swiper img{
+  opacity: 0.5;
+  transition: all ease-in-out 0.4s;
+}
+.swiper img:hover{
+  transform: scale(1.1);
+
+  opacity: 1;
+}
+
+@media screen and (max-width:576px) {
+  .swiper img{
+    width:"40px";
+    height:"40px";
+
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  .swiper img{
+    width:"104px";
+    height:"104px";
+  }
+
+}
+
+@media screen and (max-width:1320px) {
+  .swiper img{
+    width:"120px";
+    height:"120px";
+  }
+
+}
+
+/* modul7 swiper end */
+
+
+/* modul10 start */
+.modul10-wrapper{
+  padding: 20px 0;
+}
+
+.modul10-header{
+  margin: 10px 0 20px;
+}
+.product-item {
+  padding-left: 15px !important;
+  margin: 8px;
+}
+@media screen and (max-width:768px) {
+  .product-item {
+    max-width: 400px !important;
+  
+  }
+
+}
+
+@media screen and (min-width:992px) {
+  .product-item {
+    max-width: 275px !important;
+    height: 150px;
+  
+  }
+
+}
+/* modul10 start */

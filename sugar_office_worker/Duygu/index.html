@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--? Tailwind Styles -->
     <script>
       tailwind.config = {
         theme: {
@@ -15,6 +17,7 @@
               blue2: "#00b0ff",
               blue3: "#0983a9",
               backcolor:"#fffbf4",
+              backcolor2:"#F4F4F4",
               footercolor1:"#38444F",
               footercolor2:"#45525E",
               footercolor3:"#B3BED5",
@@ -55,7 +58,7 @@
   <body class="bg-backcolor">
     <div class=" shadow mx-auto bg-backcolor  ">
       
-      <!-- Top Navbar  -->
+      <!--! Top Navbar  -->
       <div class="top-nav shadow text-sm font-light">
         <div class="left-top-nav text-blue1">
 
@@ -95,7 +98,7 @@
       </div>
 
 
-      <!-- Mid Navbar  -->
+      <!--! Mid Navbar  -->
 
       <div class="mid-nav">
         <div class="left-mid-nav">
@@ -207,30 +210,30 @@
 
     <div id="default-carousel" class="relative w-full h-full sliders" data-carousel="slide">
 
-      <!-- Carousel wrapper -->
+      <!--! Carousel wrapper -->
       
       <div class="relative h-96 overflow-hidden rounded-lg md:h-96 sliders">
 
-           <!-- Photo1 -->
+           <!--! Photo1 -->
            <div class="hidden duration-700 ease-in-out h-96 sliders" data-carousel-item>
             <img src="https://sekerofisi.com/uploads/p/o/5IW9tx067AYF.jpg" class="absolute block w-full sliders -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
 
           
-          <!-- Photo2 -->
+          <!--! Photo2 -->
           <div class="hidden duration-700 ease-in-out h-96 sliders " data-carousel-item>
             <img src="https://sekerofisi.com/uploads/p/o/UJcZfLu1mDz4.jpg" class="absolute block w-full sliders -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
             
         </div>
           
         </div>
-      <!-- Slider indicators -->
+      <!--! Slider indicators -->
       <div class="absolute z-20 flex -translate-x-1/2 bottom-0 left-1/2 space-x-3 rtl:space-x-reverse">
           <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
           <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
         </div> 
         
-      <!-- Slider controller -->
+      <!--! Slider controller -->
       <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
           <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
               <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
@@ -257,15 +260,108 @@
       </div>
     </div>
       
-      <!-- Modul 5 -->
+ <!--! Modul 10 -->
+ <div class="my-4 px-12 pb-4 bg-backcolor2 ">
+  <h1 class="font-bold text-2xl ml-14">Popular Departments</h1>
+  <p class="text-black  text-sm ml-14 ">Products From These Categories Often Buy</p>
+      
+  <div class="grid gap-10 grid-cols-6 px-16 ">
+
+      <div class="my-4 px-6 bg-white flex items-center ">
+              <div class="p-2 text-left">
+                  <h1 class="text-lg">
+                      <a class="font-bold hover:cursor-pointer" href="#">
+                          Vegatables
+                      </a>
+                  </h1>
+                  <p class="text-sm text-start">
+                      1 Products
+                  </p>
+              </div>
+              <a href="#" class="flex flex-col  justify-center ">
+                  <img class="w-full h-full object-cover" src="https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-1.png">
+              </a>
+      </div>
+      
+
+      <div class="my-4 px-6 bg-white  ">
+        <div class="overflow-hidden rounded-lg  flex  h-[180px]">
+            <div class="w-full  flex flex-col  justify-center   p-2 text-start">
+                <h1 class="text-lg">
+                    <a class="font-bold hover:cursor-pointer" href="#">
+                        Fruits
+                    </a>
+                </h1>
+                <p class="text-sm text-start">
+                    9 Products
+                </p>
+            </div>
+            <a href="#" class="flex flex-col  justify-center ">
+                <img class="" src="https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-2.png">
+            </a>
+        </div>
+    </div>
+
+
+    <div class="my-4 px-6 bg-white  ">
+      <div class="overflow-hidden rounded-lg  flex  h-[180px]">
+          <div class="w-full  flex flex-col  justify-center   p-2 text-start">
+              <h1 class="text-lg">
+                  <a class="font-bold hover:cursor-pointer" href="#">
+                      Breakfast
+                  </a>
+              </h1>
+              <p class="text-sm text-start">
+                  8 Products
+              </p>
+          </div>
+          <a href="#" class="flex flex-col  justify-center ">
+              <img class="" src="https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-4.png">
+          </a>
+      </div>
+  </div>
+
+  <div class="my-4 px-6 bg-white  ">
+    <div class="overflow-hidden rounded-lg  flex  h-[180px]">
+        <div class="w-full  flex flex-col  justify-center   p-2 text-start">
+            <h1 class="text-lg">
+                <a class="font-bold hover:cursor-pointer" href="#">
+                    Cooking
+                </a>
+            </h1>
+            <p class="text-sm text-start">
+                5 Products
+            </p>
+        </div>
+        <a href="#" class="flex flex-col  justify-center ">
+            <img class="" src="https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-3.png">
+        </a>
+    </div>
+</div>
+     
+
+    
+  
+
+  </div>
+</div>
+
+
+
+
+  <!--! Modul 10 -->
+
+
+
+      <!--! Modul 5 -->
     <div class="modul5 h-[400px] flex flex-col justify-center items-center text-white p-4 "style="background-image:url('https://www.journal-theme.com/2/image/cache/catalog/journal3/people/andrew-neel-369701-unsplash-1500x1000.jpg.webp')">
     <h1 class="font-bold text-5xl p-2">END OF SEASON SALE</h1>
     <p class="w-2/3 text-center p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis magnam sed repudiandae itaque blanditiis quam ab, officia veniam eius, porro, consequuntur sequi. Natus est iure explicabo itaque sitdddd rem at!</p>
     <button type="button" class=" text-white bg-shopBtn opacity-90 hover:bg-shopBtn2 text-black font-medium rounded text-sm px-5 py-2.5 me-2 mb-2 ">Shop Now</button>
     </div>
-  <!-- Modul 5 -->
+  <!--! Modul 5 -->
   
-<!-- Modul 6 -->
+<!--! Modul 6 -->
 <div class="flex justify-around p-4 bg-footercolor2">
   <div class="flex">
     <div class="rounded-full border-2 border-pink1 p-5 hover:border-footercolor1 cursor-pointer  ">
@@ -309,9 +405,9 @@
   </div>
   
 </div>
-<!-- Modul 6 -->
+<!--! Modul 6 -->
 
-  <!-- Modul 7 -->
+  <!--! Modul 7 -->
   <div class=" mx-auto px-8 md:px-14 py-8 bg-white">
 
     <div class="relative bg-white">
@@ -465,10 +561,10 @@
       </div>
     </div>
   </div>
-  <!-- Modul 7-->
+  <!--! Modul 7-->
 
 
-  <!-- Modul 9 -->
+  <!--! Modul 9 -->
   <div class="bg-yellow ">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-10">
         <div class="flex justify-around items-center">
@@ -512,10 +608,9 @@
     </div>
 </div>
 
+  <!--! Modul 9 -->
 
-  <!-- Modul 9 -->
-
- <!-- Footer     -->
+ <!--! Footer     -->
  <div class="footer-div px-[100px] bg-footercolor1 text-white">
   <div class=" grid grid-cols-6 gap-4 ">
     <div class="  flex flex-col justify-center items-center  col-span-1 p-8 ">
@@ -575,7 +670,8 @@
 
      
     </div>
-    <!-- input -->
+
+    <!--! Input -->
     <div class=" p-8 w-[400px] col-span-1 ">
       <h2 class="font-bold mb-2">NEWSLETTER</h2>
       <p class="text-xs text-footercolor3 mb-2">Stay up to date with news and promotions by siging up for our newsletter</p>
@@ -604,15 +700,11 @@
       </div>
     </div>
   </div>
- 
-    
-
-
 
 </div>
 <footer class="  bg-footercolor2  ">
   <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between ">
-    <span class="text-sm  sm:text-center text-footercolor3"> Copyright © 2023, <a href="https://flowbite.com/" class="hover:underline hover:text-sugar__pink hover:font-bold"></a>Your Store, All Rights Reserved
+    <span class="text-sm  sm:text-center text-footercolor3"> Copyright © 2023, <a href="https://flowbite.com/" class="hover:underline  hover:font-bold"></a>Your Store, All Rights Reserved
   </span>
   <ul class="flex flex-wrap items-center  mt-3 text-mid font-medium text-gray-500  sm:mt-0" >
       <li>

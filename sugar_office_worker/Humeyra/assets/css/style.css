@@ -55,6 +55,16 @@ body{
     color: #FFB317; /*Set to match the Tailwind colour you want the active one to be */
   }
 
+  .mod5image{
+    background: url('https://www.journal-theme.com/2/image/cache/catalog/journal3/people/andrew-neel-369701-unsplash-1500x1000.jpg.webp') 
+    ;
+    height: 456px;
+    width: 100%;
+    background-attachment:fixed ;
+    background-size: cover;
+    background-position: center center;
+  }
+
 React
 
 Reply

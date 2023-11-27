@@ -2,15 +2,32 @@
 
 //?----- thin slider area 
 
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+const slidesContainer = document.querySelector(".slides-container");
+const slideWidthOne = slidesContainer.querySelector(".slide").clientWidth;
+const prevButtonOne = document.querySelector(".prev");
+const nextButtonOne = document.querySelector(".next");
+
+nextButton1.addEventListener("click", () => {
+	slidesContainer.scrollLeft += slideWidthOne;
 });
+
+prevButtonOne.addEventListener("click", () => {
+	slidesContainer.scrollLeft -= slideWidthOne;
+});
+
+
+
+
+// Initialization for ES Users
+import {
+  Collapse,
+  Dropdown,
+  Ripple,
+  Carousel,
+  initTE
+} from 'tw-elements';
+
+initTE({ Collapse, Dropdown, Ripple, Carousel });
 
 
 

@@ -89,3 +89,11 @@
 .sliders {
   height: 50vh !important;
 }
+
+.modul5{
+  background-position: center center;
+  background-size: cover;
+  filter: contrast(100%);
+  background-attachment:fixed ;
+  
+}

@@ -12,7 +12,70 @@
 @tailwind utilities;
 
 
+
+/*? <!-- PARALAX AREA --> */
+
+.paralax-img {
+  background-image: url(/sugar_office_worker/Joseph/assets/pictures/andrew-neel-369701-unsplash-1500x1000.jpg.jpeg
+)
+}
+
+
 /* ------------ */
+
+/*!----  */
+/* Bu kısım Tailwind CSS için gerekli değildir, sadece ikonu göstermek için kullanılmıştır. */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css');
+
+.banner {
+  background-color: yellow;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+}
+
+.input-box {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  width: 28rem;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.text {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+
+
+/* !---- */
+
+
+
+
+
+
+
+
+
 
 .hidden {
   display: none;
@@ -52,6 +115,7 @@
 /* Fare üzerine gelince daha koyu arka plan */
 .btnsend:hover {
   background-color: RoyalBlue;
+
 } 
 
 /* İkonu ortala ve sağa kaydır */
@@ -65,9 +129,8 @@ items-center justify-center align-center
 
 
 
- 
 
-
+items-center justify-center align-center
 
 /* slider ares */
 .indicator {

@@ -1,3 +1,3 @@
 export default function OneComponent() {
-    return <>one</>
+    return <><button>değer gönder</button></>
 }

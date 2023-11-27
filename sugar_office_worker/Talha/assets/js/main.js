@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
     fadeToSlide(currentSlide + 1);
   });
 
-  setInterval(() => {
-    fadeToSlide(currentSlide + 1);
-  }, 2000);
+  // setInterval(() => {
+  //   fadeToSlide(currentSlide + 1);
+  // }, 2000);
 });
 
 document.getElementById('menu-btn').addEventListener('click', function() {

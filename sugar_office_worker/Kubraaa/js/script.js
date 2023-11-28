@@ -126,7 +126,7 @@ for (let index = 0; index < array.length; index++) {
   
 }
 
-function prevSlide3(){
+function nextSlide3(){
   console.log(+slider3.style.marginLeft.slice(0,-2))
   console.log(cardWidth*(cards.length-elementsToShow3))
   if(+slider3.style.marginLeft.slice(0,-2) !=-cardWidth*(cards.length-elementsToShow3))
@@ -134,8 +134,8 @@ function prevSlide3(){
 
 }
 
-function nextSlide3(){
-  if(+slider3.style.marginRight.slice(0,-2) !=-cardWidth*(cards.length-elementsToShow3))
+function prevSlide3(){
+  if(+slider3.style.marginLeft.slice(0,-2) !=0)
   slider3.style.marginLeft = ((+slider3.style.marginLeft.slice(0,-2))+cardWidth)+'px';
 
 }

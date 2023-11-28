@@ -60,6 +60,10 @@
   <link rel="stylesheet"
     href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/css/splide.min.css">
+
+
 
 </head>
 
@@ -368,7 +372,9 @@
   </header>
 
   <!-- Slider Area -->
-  <div id="default-carousel" class=" border-t-2 border-b-2 border-pink-400 shadow-lg mx-auto relative w-full h-full sliderr z-20" data-carousel="slide">
+  <div id="default-carousel"
+    class=" border-t-2 border-b-2 border-pink-400 shadow-lg mx-auto relative w-full h-full sliderr z-20"
+    data-carousel="slide">
 
     <!-- Carousel wrapper -->
     <div id="slider" class="relative h-full overflow-hidden rounded-lg sliderr">
@@ -465,7 +471,8 @@
 
   <!-- İcon Area -->
 
-  <div class="  border-t-2 border-b-2 border-pink-400 shadow-lg w-full  px-32 h-28 bg-blueGray-600 w-full flex flex-col items-center justify-around">
+  <div
+    class="  border-t-2 border-b-2 border-pink-400 shadow-lg w-full  px-32 h-28 bg-blueGray-600 w-full flex flex-col items-center justify-around">
     <div class="grid grid-cols-4 h-36 gap-4 p-2 flex flex-col items-center justify-around ">
 
       <div class="flex flex-cow items-center gap-2 ">
@@ -508,17 +515,17 @@
       </div>
 
       <div class="flex flex-cow items-center gap-2 ">
-        <img src="assets/pictures/Pink-2-Gift-icon.png" class="w-16 h-16 rounded-full border-4 border-blue-400 bg-orange-500"
-          alt="">
+        <img src="assets/pictures/Pink-2-Gift-icon.png"
+          class="w-16 h-16 rounded-full border-4 border-blue-400 bg-orange-500" alt="">
 
-      
-          <div class="text-write flex flex-col items-start justify-start ">
-            <p class="text-white  ">Unlimited Blocks</p>
-            <h6></h6>
-            <p class="text-white text-2xs font-thin ">
-              Any content, any page</p>
-            </h6>
-          </div>
+
+        <div class="text-write flex flex-col items-start justify-start ">
+          <p class="text-white  ">Unlimited Blocks</p>
+          <h6></h6>
+          <p class="text-white text-2xs font-thin ">
+            Any content, any page</p>
+          </h6>
+        </div>
 
       </div>
 
@@ -530,179 +537,194 @@
   <!--  -->
 
   <!-- thin slider area -->
-<!-- component -->
+  <!-- component -->
 
-<div id="" class=" mx-auto px-4 md:px-8 py-12 transition-all duration-500 ease-linear ">
 
-  <div class="relative h-28 flex flex-col items-center justify-around">
-    <div
-      class="slides-container h-\[156px\]] flex  snap-x snap-mandatory overflow-hidden  space-x-2 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0">
-
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden hover:opacity-100 grayscale hover:grayscale-0  opacity-30 ">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/olivia-fashion-150x150.jpg.webp"
-          alt="Olivia Smith">
+  <div class="container mx-auto">
+    <div class="splide">
+      <div class="splide__arrows">
+        <button class="bg-gray-900 shadow splide__arrow splide__arrow--prev">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+          </svg>
+        </button>
+        <button class="bg-gray-900 shadow splide__arrow splide__arrow--next">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+          </svg>
+        </button>
       </div>
+      <div class="splide__track">
 
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden grayscale hover:grayscale-0 opacity-30 hover:opacity-100">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/palm_logo-150x150w.jpg.webp"
-          alt="Palm">
+        <div class="splide__list gap-x-4">
+          <div class="w-full p-4 shadow splide__slide lg:max-w-lg">
+            <div class="space-y-2">
+              <div class="flex  justify-between">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/olivia-fashion-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50  transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/awesome-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/mellisa-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/htc_logo-150x150w.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/superbrand-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+
+              </div>
+
+            </div>
+          </div>
+          <div class="w-full p-4 shadow splide__slide lg:max-w-lg">
+            <div class="space-y-2">
+              <div class="flex justify-between">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/FC-fashion-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sony_logo-150x150w.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/fashion-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sunglasses-150x150.png.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/canon_logo-150x150w.jpg.webp"
+                  alt="" width="75" height="75">
+              
+              </div>
+              <!-- <h3 class="text-2xl font-semibold">
+                Tailwind Card Slider 2
+              </h3>
+              <p class="text-gray-600">
+                tailwind card slider with splidejs It is a long established
+                fact that a reader will be distracted.
+              </p> -->
+            </div>
+          </div>
+          <div class="w-full p-4 shadow splide__slide lg:max-w-lg">
+            <div class="space-y-2">
+
+              <div class="flex justify-between">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/erikson-150x150.jpg.webp"
+                alt="" width="75" height="75">
+              <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sarah-cosmetics-150x150.jpg.webp"
+                alt="" width="75" height="75">
+              <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/apple_logo-150x150h.jpg.webp"
+                alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sony_logo-150x150w.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/fashion-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+               
+              </div>
+
+
+
+              <!-- <h3 class="text-2xl font-semibold">
+                Tailwind Card Slider 3
+              </h3>
+              <p class="text-gray-600">
+                tailwind card slider with splidejs It is a long established
+                fact that a reader will be distracted.
+              </p> -->
+            </div>
+          </div>
+          <div class="w-full p-4 shadow splide__slide lg:max-w-lg">
+            <div class="space-y-2">
+
+
+              <div class="flex justify-between">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sunglasses-150x150.png.webp"
+                alt="" width="75" height="75">
+              <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/canon_logo-150x150w.jpg.webp"
+                alt="" width="75" height="75">
+              <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/erikson-150x150.jpg.webp"
+                alt="" width="75" height="75">
+              <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sarah-cosmetics-150x150.jpg.webp"
+                alt="" width="75" height="75">
+              <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/apple_logo-150x150h.jpg.webp"
+                alt="" width="75" height="75">
+                <!-- <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sony_logo-150x150w.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/fashion-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sunglasses-150x150.png.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/canon_logo-150x150w.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/erikson-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sarah-cosmetics-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/apple_logo-150x150h.jpg.webp"
+                  alt="" width="75" height="75"> -->
+              </div>
+
+
+
+
+
+              <!-- <h3 class="text-2xl font-semibold">
+                Tailwind Card Slider 4
+              </h3>
+              <p class="text-gray-600">
+                tailwind card slider with splidejs It is a long established
+                fact that a reader will be distracted.
+              </p> -->
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden grayscale hover:grayscale-0 opacity-30 hover:opacity-100">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/awesome-150x150.jpg.webp"
-          alt="Awesome Brand">
-      </div>
-
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden grayscale hover:grayscale-0 opacity-30 hover:opacity-100">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/mellisa-150x150.jpg.webp"
-          alt="Melissa Johnson">
-      </div>
-
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden grayscale hover:grayscale-0 opacity-30 hover:opacity-100">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/htc_logo-150x150w.jpg.webp"
-          alt="HTC">
-      </div>
-
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden grayscale hover:grayscale-0 opacity-30 hover:opacity-100">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/superbrand-150x150.jpg.webp"
-          alt="SuperBrand">
-      </div>
-
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden grayscale hover:grayscale-0 opacity-30 hover:opacity-100">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/FC-fashion-150x150.jpg.webp"
-          alt="Fort Cane">
-      </div>
-
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden grayscale hover:grayscale-0 opacity-30 hover:opacity-100">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sony_logo-150x150w.jpg.webp"
-          alt="Sony">
-      </div>
-
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden grayscale hover:grayscale-0 opacity-30 hover:opacity-100">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/fashion-150x150.jpg.webp"
-          alt="NY Fashion">
-      </div>
-
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden grayscale hover:grayscale-0 opacity-30 hover:opacity-100">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sunglasses-150x150.png.webp"
-          alt="Scandinavian Sunglasses">
-      </div>
-
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden grayscale hover:grayscale-0 opacity-30 hover:opacity-100">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/canon_logo-150x150w.jpg.webp"
-          alt="Canon">
-      </div>
-
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden grayscale hover:grayscale-0 opacity-30 hover:opacity-100">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/erikson-150x150.jpg.webp"
-          alt="Ericksson">
-      </div>
-
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden grayscale hover:grayscale-0 opacity-30 hover:opacity-100">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sarah-cosmetics-150x150.jpg.webp"
-          alt="Sarah Bloom">
-      </div>
-
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden grayscale hover:grayscale-0 opacity-30 hover:opacity-100">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/apple_logo-150x150h.jpg.webp"
-          alt="Apple">
-      </div>
-
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden grayscale hover:grayscale-0 opacity-30 hover:opacity-100">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/hipster-150x150.jpg.webp"
-          alt="Hipster">
-      </div>
-
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden grayscale hover:grayscale-0 opacity-30 hover:opacity-100">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sarah-beauty-150x150.jpg.webp"
-          alt="Sarah Bell">
-      </div>
-
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden grayscale hover:grayscale-0 opacity-30 hover:opacity-100">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/hp_logo-150x150w.jpg.webp"
-          alt="Hewlett-Packard">
-      </div>
-
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden grayscale hover:grayscale-0 opacity-30 hover:opacity-100">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/chic-150x150.jpg.webp"
-          alt="Chic D'or">
-      </div>
-
-      <div
-        class="slide aspect-square p-2 h-[116.66px] flex-shrink-0 snap-center rounded overflow-hidden grayscale hover:grayscale-0 opacity-30 hover:opacity-100">
-        <img class="w-[116.66px] h-[116.66px] object-cover"
-          src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sarah-cosmetics-150x150.jpg.webp"
-          alt="Sarah Bloom">
-      </div>
-
-
-
-    </div>
-
-    <div class="absolute top-0 -left-4 h-full items-center hidden md:flex opacity-20 hover:opacity-90">
-      <button role="button" class="prev px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group"
-        aria-label="prev"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-          stroke="currentColor" class="w-5 h-5 group-active:-translate-x-2 transition-all duration-200 ease-linear">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-        </svg>
-
-      </button>
-    </div>
-    <div class="absolute top-0 -right-4 h-full items-center hidden md:flex">
-      <button role="button" class="next px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group"
-        aria-label="next"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-          stroke="currentColor" class="w-5 h-5 group-active:translate-x-2 transition-all duration-200 ease-linear">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-        </svg>
-      </button>
     </div>
   </div>
-</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/js/splide.min.js"></script>
+  <script>
+    var splide = new Splide('.splide', {
+      type: 'loop',
+      autoplay: true,
+    });
+
+    splide.mount();
+  </script>
 
 
-<!-- This is an example component -->
+
+  <!-- This is an example component -->
 
 
 
   <!-- website banner / created abone form -->
 
-  <div class="border-t-2 border-b-2 border-pink-400 shadow-lg bg-yellow-300 px-32 h-28 flex items-center justify-between">
+  <div
+    class="border-t-2 border-b-2 border-pink-400 shadow-lg bg-yellow-300 px-32 h-28 flex items-center justify-between">
     <img src="assets/pictures/Harwen-Pleasant-E-mail.256.png" alt="Envelope icon" class="w-12 h-12 mr-2">
     <div class="flex items-center">
 

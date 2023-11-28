@@ -357,12 +357,12 @@
   <!-- Carousel End -->
 
   <!-- Modul 20 Tasarımı Start-->
-  <div class="flex grid grid-cols-2 gap-4 h-[500px] bg-backcolor3 px-12 py-8 ">
+  <div class=" grid grid-cols-2 gap-4 h-[500px] bg-backcolor3 px-12 py-8 ">
     <!-- Left Slider -->
 
     <div
       id="controls-carousel"
-      class="relative w-full h-[450px]  bg-white shadow-2xl relative rounded-lg"
+      class="relative w-full h-[450px]  bg-white shadow-2xl  rounded-lg"
       data-carousel="static"
     >
     <h1 class="font-bold text-3xl p-2">Deals Of The Days</h1>
@@ -374,10 +374,15 @@
           class="hidden duration-700 ease-in-out flex justify-center items-center"
           data-carousel-item
         >
-          <div class="w-1/2">
-            <img src="assets/image/modüle20/sapka.jpg" class="" alt="..." />
+          <div class="w-1/2 relative text-center">
+            <img src="assets/image/modüle20/sapka.jpg" class="w-full" alt="..." />
+            <div class="text-white absolute top-10 left-1 font-sans bg-red-600 rounded-[50%] p-3 w-[50px]" >
+             <span class="text-sm">-13%</span> 
+              
+            </div>
+
           </div>
-          <div class="w-1/2">
+          <div class="w-1/2 p-4 ">
             <h2 class="font-bold">Doenpuis Consuat</h2>
             <p class="flex pt-2">
               <svg
@@ -456,7 +461,7 @@
                 />
               </svg>
             </p>
-            <p class="text-sm pt-2">
+            <p class="text-sm w-2/3 pt-2 ">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
               illum aut suscipit mollitia, architecto deleniti voluptate
               doloremque autem quas...
@@ -538,10 +543,14 @@
         class="hidden duration-700 ease-in-out flex justify-center items-center"
         data-carousel-item
       >
-        <div class="w-1/2">
-          <img src="assets/image/modüle20/sapka.jpg" class="" alt="..." />
+        <div class="w-1/2 relative">
+          <img src="assets/image/modüle20/ayakkabı.jpg" class="w-full" alt="..." />
+          <div class="text-white absolute top-10 left-1 font-sans bg-red-600 rounded-[50%] p-3 w-[50px]" >
+            <span class="text-sm">-13%</span> 
+             
+           </div>
         </div>
-        <div class="w-1/2">
+        <div class="w-1/2 p-4">
           <h2 class="font-bold">Doenpuis Consuat</h2>
           <p class="flex pt-2">
             <svg
@@ -620,7 +629,7 @@
               />
             </svg>
           </p>
-          <p class="text-sm pt-2">
+          <p class="text-sm w-2/3 pt-2">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
             illum aut suscipit mollitia, architecto deleniti voluptate
             doloremque autem quas...
@@ -702,10 +711,14 @@
           class="hidden duration-700 ease-in-out flex justify-center items-center"
           data-carousel-item
         >
-          <div class="w-1/2">
-            <img src="assets/image/modüle20/sapka.jpg" class="" alt="..." />
+          <div class="w-1/2 relative">
+            <img src="assets/image/modüle20/sapka.jpg" class="w-full" alt="..." />
+            <div class="text-white absolute top-10 left-1 font-sans bg-red-600 rounded-[50%] p-3 w-[50px]" >
+              <span class="text-sm">-13%</span> 
+               
+             </div>
           </div>
-          <div class="w-1/2">
+          <div class="w-1/2 4-2">
             <h2 class="font-bold">Doenpuis Consuat</h2>
             <p class="flex pt-2">
               <svg
@@ -784,7 +797,7 @@
                 />
               </svg>
             </p>
-            <p class="text-sm pt-2">
+            <p class="text-sm w-2/3 pt-2">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
               illum aut suscipit mollitia, architecto deleniti voluptate
               doloremque autem quas...
@@ -866,10 +879,14 @@
           class="hidden duration-700 ease-in-out flex justify-center items-center"
           data-carousel-item
         >
-          <div class="w-1/2">
-            <img src="assets/image/modüle20/sapka.jpg" class="" alt="..." />
+          <div class="w-1/2 relative">
+            <img src="assets/image/modüle20/tshirt.jpg" class="w-full" alt="..." />
+            <div class="text-white absolute top-10 left-1 font-sans bg-red-600 rounded-[50%] p-3 w-[50px]" >
+              <span class="text-sm">-13%</span> 
+               
+             </div>
           </div>
-          <div class="w-1/2">
+          <div class="w-1/2 4-2">
             <h2 class="font-bold">Doenpuis Consuat</h2>
             <p class="flex pt-2">
               <svg
@@ -948,7 +965,7 @@
                 />
               </svg>
             </p>
-            <p class="text-sm pt-2">
+            <p class="text-sm w-2/3 pt-2">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
               illum aut suscipit mollitia, architecto deleniti voluptate
               doloremque autem quas...
@@ -1031,11 +1048,11 @@
       <!-- Slider controls -->
       <button
         type="button"
-        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        class="absolute top-0 -start-4  z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-prev
       >
         <span
-          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          class="inline-flex items-center justify-center w-10 h-10 bg-red-500 opacity-20 hover:opacity-90 group-focus:outline-none"
         >
           <svg
             class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
@@ -1057,11 +1074,11 @@
       </button>
       <button
         type="button"
-        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        class="absolute top-0 -end-4  z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-next
       >
         <span
-          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          class="inline-flex items-center justify-center w-10 h-10 bg-red-500 opacity-20 hover:opacity-90 group-focus:outline-none"
         >
           <svg
             class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
@@ -1081,6 +1098,7 @@
           <span class="sr-only">Next</span>
         </span>
       </button>
+    
     </div>
 
     <!-- Right Slider -->
@@ -1095,8 +1113,12 @@
   
        
   
-          <div class="slide aspect-square w-1/4 text-center p-2 h-[400px] ">
+          <div class="slide aspect-square w-1/4 text-center p-2 h-[400px] relative">
               <img src="assets/image/modüle20/elbise.jpg" alt="">
+              <div class="text-white absolute top-5 right-2 font-sans bg-red-900 rounded-[100%] p-1 w-[30px]" >
+                <span class="text-sm">-3%</span> 
+                 
+               </div>
               <h3 class="text-center font-sans">
                   Andouille burgdogge 
               </h3>
@@ -1177,9 +1199,9 @@
                     />
                   </svg>
                 </p>
-                <p class="text-red-500 font-bold">$100.00</p>
-                <div class="pt-2">
-                  <button type="button" class="text-gray-500  p-2 border border-gray-500  focus:ring-4 focus:outline-none  font-medium  text-sm  text-center inline-flex items-center me-2 mb-2">
+                <p class="text-red-500 pt-2 font-bold">$100.00</p>
+                <div class="pt-2 ">
+                  <button type="button" class="text-gray-500  p-1 border border-gray-500  focus:ring-4 focus:outline-none  font-medium  text-sm  text-center inline-flex items-center me-2 mb-2">
                      
                       <svg class="w-4 h-4 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
                           <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
@@ -1187,7 +1209,7 @@
                       ADD TO CART
                       </button>
                  
-                  <button class="p-2 border border-gray-500">
+                  <button class="p-1 border border-gray-500">
                     <svg
                       class="w-4 h-4 text-gray-800 "
                       aria-hidden="true"
@@ -1200,7 +1222,7 @@
                       />
                     </svg>
                   </button>
-                  <button class="p-2 border border-gray-500">
+                  <button class="p-1 border border-gray-500">
                     <svg
                       class="w-4 h-4 text-gray-800 "
                       aria-hidden="true"
@@ -1221,6 +1243,7 @@
           </div>
           <div class="slide aspect-square w-1/4 text-center p-2 h-[400px]  ">
               <img src="assets/image/modüle20/atlet.jpg" alt="">
+              
               <h3 class="text-center font-sans">
                   Beefribs tenderloine
               </h3>
@@ -1301,9 +1324,9 @@
                     />
                   </svg>
                 </p>
-                <p class="text-red-500 font-bold">$93.00</p>
+                <p class="text-red-500 pt-2 font-bold">$93.00</p>
                 <div class="pt-2">
-                  <button type="button" class="text-gray-500  p-2 border border-gray-500  focus:ring-4 focus:outline-none  font-medium  text-sm  text-center inline-flex items-center me-2 mb-2">
+                  <button type="button" class="text-gray-500  p-1 border border-gray-500  focus:ring-4 focus:outline-none  font-medium  text-sm  text-center inline-flex items-center me-2 mb-2">
                      
                       <svg class="w-4 h-4 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
                           <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
@@ -1311,7 +1334,7 @@
                       ADD TO CART
                       </button>
                  
-                  <button class="p-2 border border-gray-500">
+                  <button class="p-1 border border-gray-500">
                     <svg
                       class="w-4 h-4 text-gray-800 "
                       aria-hidden="true"
@@ -1324,7 +1347,7 @@
                       />
                     </svg>
                   </button>
-                  <button class="p-2 border border-gray-500">
+                  <button class="p-1 border border-gray-500">
                     <svg
                       class="w-4 h-4 text-gray-800 "
                       aria-hidden="true"
@@ -1343,8 +1366,12 @@
                   </button>
               </div>
           </div>
-          <div class="slide aspect-square w-1/4 text-center p-2 h-[400px] ">
+          <div class="slide aspect-square w-1/4 text-center p-2 h-[400px] relative">
               <img src="assets/image/modüle20/tencere.jpg" alt="">
+              <div class="text-white absolute top-5 right-2 font-sans bg-red-900 rounded-[100%] p-1 w-[30px]" >
+                <span class="text-sm">-2%</span> 
+                 
+               </div>
               <h3 class="text-center font-sans">
                   Buffalo tail chicke 
               </h3>
@@ -1425,9 +1452,9 @@
                     />
                   </svg>
                 </p>
-                <p class="text-red-500 font-bold">$60.00 <span class="line-through text-xs text-gray-500">$49.00</span></p>
+                <p class="text-red-500 pt-2 font-bold">$60.00 <span class="line-through text-xs text-gray-500">$49.00</span></p>
                 <div class="pt-2">
-                  <button type="button" class="text-gray-500  p-2 border border-gray-500  focus:ring-4 focus:outline-none  font-medium  text-sm  text-center inline-flex items-center me-2 mb-2">
+                  <button type="button" class="text-gray-500  p-1 border border-gray-500  focus:ring-4 focus:outline-none  font-medium  text-sm  text-center inline-flex items-center me-2 mb-2">
                      
                       <svg class="w-4 h-4 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
                           <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
@@ -1435,7 +1462,7 @@
                       ADD TO CART
                       </button>
                  
-                  <button class="p-2 border border-gray-500">
+                  <button class="p-1 border border-gray-500">
                     <svg
                       class="w-4 h-4 text-gray-800 "
                       aria-hidden="true"
@@ -1448,7 +1475,7 @@
                       />
                     </svg>
                   </button>
-                  <button class="p-2 border border-gray-500">
+                  <button class="p-1 border border-gray-500">
                     <svg
                       class="w-4 h-4 text-gray-800 "
                       aria-hidden="true"
@@ -1467,8 +1494,12 @@
                   </button>
               </div>
           </div>
-          <div class="slide aspect-square w-1/4 text-center p-2 h-[400px] ">
+          <div class="slide aspect-square w-1/4 text-center p-2 h-[400px] relative ">
               <img src="assets/image/modüle20/ayakkabı.jpg" alt="">
+              <div class="text-white absolute top-5 right-2 font-sans bg-red-900 rounded-[100%] p-1 w-[30px]" >
+                <span class="text-sm">-3%</span> 
+                 
+               </div>
               <h3 class="text-center font-sans">
                   Doenpuis consuat 
               </h3>
@@ -1549,9 +1580,9 @@
                     />
                   </svg>
                 </p>
-                <p class="text-red-500 font-bold">$45.00 <span class="line-through text-xs text-gray-500">$49.00</span></p>
+                <p class="text-red-500 pt-2 font-bold">$45.00 <span class="line-through text-xs text-gray-500">$49.00</span></p>
                 <div class="pt-2">
-                  <button type="button" class="text-gray-500  p-2 border border-gray-500  focus:ring-4 focus:outline-none  font-medium  text-sm  text-center inline-flex items-center me-2 mb-2">
+                  <button type="button" class="text-gray-500  p-1 border border-gray-500  focus:ring-4 focus:outline-none  font-medium  text-sm  text-center inline-flex items-center me-2 mb-2">
                      
                       <svg class="w-4 h-4 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
                           <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
@@ -1559,7 +1590,7 @@
                       ADD TO CART
                       </button>
                  
-                  <button class="p-2 border border-gray-500">
+                  <button class="p-1 border border-gray-500">
                     <svg
                       class="w-4 h-4 text-gray-800 "
                       aria-hidden="true"
@@ -1572,7 +1603,7 @@
                       />
                     </svg>
                   </button>
-                  <button class="p-2 border border-gray-500">
+                  <button class="p-1 border border-gray-500">
                     <svg
                       class="w-4 h-4 text-gray-800 "
                       aria-hidden="true"
@@ -1673,9 +1704,9 @@
                     />
                   </svg>
                 </p>
-                <p class="text-red-500 font-bold">$100.00</p>
+                <p class="text-red-500 pt-2 font-bold">$100.00</p>
                 <div class="pt-2">
-                  <button type="button" class="text-gray-500  p-2 border border-gray-500  focus:ring-4 focus:outline-none  font-medium  text-sm  text-center inline-flex items-center me-2 mb-2">
+                  <button type="button" class="text-gray-500  p-1 border border-gray-500  focus:ring-4 focus:outline-none  font-medium  text-sm  text-center inline-flex items-center me-2 mb-2">
                      
                       <svg class="w-4 h-4 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
                           <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
@@ -1683,7 +1714,7 @@
                       ADD TO CART
                       </button>
                  
-                  <button class="p-2 border border-gray-500">
+                  <button class="p-1 border border-gray-500">
                     <svg
                       class="w-4 h-4 text-gray-800 "
                       aria-hidden="true"
@@ -1696,7 +1727,7 @@
                       />
                     </svg>
                   </button>
-                  <button class="p-2 border border-gray-500">
+                  <button class="p-1 border border-gray-500">
                     <svg
                       class="w-4 h-4 text-gray-800 "
                       aria-hidden="true"
@@ -1797,9 +1828,9 @@
                     />
                   </svg>
                 </p>
-                <p class="text-red-500 font-bold">$67.00 <span class="line-through text-xs text-gray-500">$79.00</span></p>
+                <p class="text-red-500 pt-2 font-bold">$67.00 <span class="line-through text-xs text-gray-500">$79.00</span></p>
                 <div class="pt-2">
-                  <button type="button" class="text-gray-500  p-2 border border-gray-500  focus:ring-4 focus:outline-none  font-medium  text-sm  text-center inline-flex items-center me-2 mb-2">
+                  <button type="button" class="text-gray-500  p-1 border border-gray-500  focus:ring-4 focus:outline-none  font-medium  text-sm  text-center inline-flex items-center me-2 mb-2">
                      
                       <svg class="w-4 h-4 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
                           <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
@@ -1807,7 +1838,7 @@
                       ADD TO CART
                       </button>
                  
-                  <button class="p-2 border border-gray-500">
+                  <button class="p-1 border border-gray-500">
                     <svg
                       class="w-4 h-4 text-gray-800 "
                       aria-hidden="true"
@@ -1820,7 +1851,7 @@
                       />
                     </svg>
                   </button>
-                  <button class="p-2 border border-gray-500">
+                  <button class="p-1 border border-gray-500">
                     <svg
                       class="w-4 h-4 text-gray-800 "
                       aria-hidden="true"
@@ -1921,9 +1952,9 @@
                     />
                   </svg>
                 </p>
-                <p class="text-red-500 font-bold">$100.00</p>
+                <p class="text-red-500 pt-2 font-bold">$100.00</p>
                 <div class="pt-2">
-                  <button type="button" class="text-gray-500  p-2 border border-gray-500  focus:ring-4 focus:outline-none  font-medium  text-sm  text-center inline-flex items-center me-2 mb-2">
+                  <button type="button" class="text-gray-500  p-1 border border-gray-500  focus:ring-4 focus:outline-none  font-medium  text-sm  text-center inline-flex items-center me-2 mb-2">
                      
                       <svg class="w-4 h-4 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
                           <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
@@ -1931,7 +1962,7 @@
                       ADD TO CART
                       </button>
                  
-                  <button class="p-2 border border-gray-500">
+                  <button class="p-1 border border-gray-500">
                     <svg
                       class="w-4 h-4 text-gray-800 "
                       aria-hidden="true"
@@ -1944,7 +1975,7 @@
                       />
                     </svg>
                   </button>
-                  <button class="p-2 border border-gray-500">
+                  <button class="p-1 border border-gray-500">
                     <svg
                       class="w-4 h-4 text-gray-800 "
                       aria-hidden="true"
@@ -2045,9 +2076,9 @@
                     />
                   </svg>
                 </p>
-                <p class="text-red-500 font-bold">$100.00</p>
+                <p class="text-red-500 pt-2 font-bold">$100.00</p>
                 <div class="pt-2">
-                  <button type="button" class="text-gray-500  p-2 border border-gray-500  focus:ring-4 focus:outline-none  font-medium  text-sm  text-center inline-flex items-center me-2 mb-2">
+                  <button type="button" class="text-gray-500  p-1 border border-gray-500  focus:ring-4 focus:outline-none  font-medium  text-sm  text-center inline-flex items-center me-2 mb-2">
                      
                       <svg class="w-4 h-4 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 21">
                           <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z"/>
@@ -2055,7 +2086,7 @@
                       ADD TO CART
                       </button>
                  
-                  <button class="p-2 border border-gray-500">
+                  <button class="p-1 border border-gray-500">
                     <svg
                       class="w-4 h-4 text-gray-800 "
                       aria-hidden="true"
@@ -2068,7 +2099,7 @@
                       />
                     </svg>
                   </button>
-                  <button class="p-2 border border-gray-500">
+                  <button class="p-1 border border-gray-500">
                     <svg
                       class="w-4 h-4 text-gray-800 "
                       aria-hidden="true"
@@ -2093,22 +2124,24 @@
   
         </div>
   
-        <div class="absolute top-0 -left-4 h-full items-center hidden md:flex opacity-20 hover:opacity-90">
-          <button role="button" class="prev px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group"
+        <div class="absolute -top-7 left-0 h-full items-center hidden md:flex opacity-20 hover:opacity-90">
+          <button role="button" class="prev px-2 py-2  bg-red-600 text-neutral-900 group"
             aria-label="prev"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor" class="w-5 h-5 group-active:-translate-x-2 transition-all duration-200 ease-linear">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>
   
           </button>
+        
         </div>
-        <div class="absolute top-0 -right-4 h-full items-center hidden md:flex">
-          <button role="button" class="next px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group"
+        <div class="absolute -top-7 right-0 h-full items-center hidden md:flex opacity-20 hover:opacity-90">
+          <button role="button" class="next px-2 py-2  bg-red-600 text-neutral-900 group"
             aria-label="next"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor" class="w-5 h-5 group-active:translate-x-2 transition-all duration-200 ease-linear">
               <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
             </svg>
           </button>
+        
         </div>
       </div>
     </div>
@@ -2721,7 +2754,7 @@
 
       </div>
       <!-- input -->
-      <div class=" p-8 w-[400px] col-span-1 ">
+      <div class=" p-8  w-[400px] col-span-1 ">
         <h2 class="font-bold">NEWSLETTER</h2>
         <p class="text-xs">Don't miss any updates or promotions by signing up to our newsletter.</p>
         <form>

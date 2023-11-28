@@ -3,7 +3,9 @@ import axios from 'axios'
 
 export const getPosts = createAsyncThunk('get/posts', async() => {
     const response = await axios.get('https://jsonplaceholder.org/posts')
-
+    
+    console.log('redux getPosts >> ', response);
+    
     return response.data
 })
 

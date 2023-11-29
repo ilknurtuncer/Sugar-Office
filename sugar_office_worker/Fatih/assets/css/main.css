@@ -137,3 +137,103 @@
 .deneme{
   backdrop-filter: sepia(100%);
 }
+
+/* ----------------------------------Module 21-----------------------------*/
+
+
+/* .img-2{
+  display: none;
+}
+
+.imgChange:hover .img-2{
+  display: block !important;
+}
+
+.imgChange:hover .img-1{
+  display: none  ;
+}
+
+
+
+.hover-txt1{
+  display: none ;
+ 
+  
+ 
+}
+
+
+.imgChange:hover .hover-txt1{
+ display: flex;
+ 
+ align-items: center;
+ margin-top: 20px;
+
+ 
+}
+.imgChange:hover .hover-txt2{
+  display: none;
+} */
+
+
+
+
+
+.img-2 {
+  display: none;
+}
+
+.imgChange:hover .img-2 , .popbtn{
+  display: block !important;
+  opacity: 1;
+}
+.imgChange:hover .popbtn{
+  display: block !important;
+  
+}
+
+.imgChange:hover .img-1 {
+  display: none;
+  opacity: 0;
+}
+
+.hover-txt1 {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.imgChange:hover .hover-txt1 {
+  display: flex;
+  opacity: 1;
+  align-items: center;
+  margin-top: 20px;
+  transition: opacity 0.3s ease-in-out, margin-top 0.3s ease-in-out;
+}
+
+.imgChange:hover .hover-txt2 {
+  display: none;
+}
+
+.w-50 {
+  transition: transform 1s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.hover-txt1 button,
+.hover-txt1 div {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hover-txt1 button:hover,
+.hover-txt1 div:hover {
+  background-color: rgb(234 179 8);
+}
+/* .w-50:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.popbtn{
+  display: none !important;
+}

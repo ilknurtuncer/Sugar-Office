@@ -8,10 +8,28 @@
   <link rel="icon" type="image/png" href="https://sekerofisi.com/uploads/p/o/U8je1xKoFdcw.JPG" />
   <link rel="stylesheet" href="./assets/css/main.css" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
   <link
     href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap"
     rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+  <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        fontFamily: {
+          sans: ["Roboto", "sans-serif"],
+          body: ["Roboto", "sans-serif"],
+          mono: ["ui-monospace", "monospace"],
+        },
+      },
+      corePlugins: {
+        preflight: false,
+      },
+    };
+  </script>
   <style>
     body {
       font-family: "Montserrat", sans-serif;
@@ -25,8 +43,9 @@
 
 <body>
   <header>
-    <!-- NAVBAR 1.CHAPTER -->
-    <div class="flex justify-center items-center text-sm" style="height: 3rem">
+
+    <!--! NAVBAR 1.CHAPTER -->
+    <div class="flex justify-center items-center text-xs" style="height: 3rem">
       <div class="flex justify-between items-center border-b w-9/12">
         <div class="dropdown relative">
           <button class="font-semibold focus:outline-none">Language</button>
@@ -69,10 +88,9 @@
       </div>
     </div>
 
-    <!-- NAVBAR 2.CHAPTER LOGO. SEARCH, ACCOUNT -->
+    <!--! NAVBAR 2.CHAPTER LOGO. SEARCH, ACCOUNT -->
     <div class="flex justify-center text-sm">
       <div class="w-9/12 flex flex-col lg:flex-row justify-between items-center border-b">
-        <!-- Logo Area - Add your logo here -->
         <div class="py-5 lg:py-4">
           <a href=""><img src="./assets/images/logo.png" alt="Company Logo" class="h-auto" /></a>
         </div>
@@ -95,12 +113,12 @@
 
         <div class="flex-grow"></div>
 
-        <div class="flex gap-4 justify-center lg:justify-end mb-5 mt-5 lg:mb-1 lg:mt-1">
+        <div class="flex gap-4 justify-center lg:justify-end mb-5 mt-5 lg:mb-1 lg:mt-1 text-xs">
           <!-- Account Section -->
           <div class="relative dropdown">
             <button class="flex group flex-col items-start text-left font-semibold focus:outline-none">
               <div class="flex items-center">
-                <i class="fa-regular fa-user fa-2x mr-2 mb-1" style="color: #e650b4;"></i>
+                <i class="fa-regular fa-user fa-2x mr-2 mb-1" style="color: #e650b4"></i>
                 <span>Account</span>
               </div>
               <span class="text-xs text-gray-500">Login / Register</span>
@@ -115,9 +133,8 @@
           <div class="relative group">
             <button class="flex flex-col items-start text-left font-semibold focus:outline-none relative">
               <div class="flex items-center relative">
-                <i class="fa-solid fa-heart fa-2x mr-2 mb-1" style="color: #e650b4;"></i>
+                <i class="fa-solid fa-heart fa-2x mr-2 mb-1" style="color: #e650b4"></i>
                 <span>Wishlist</span>
-                <!-- Badge for notifications -->
                 <span
                   class="absolute -top-5 left-6 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 bg-pink-500 rounded-full">3</span>
               </div>
@@ -129,7 +146,7 @@
           <div class="relative group">
             <button class="flex flex-col items-start text-left font-semibold focus:outline-none">
               <div class="flex items-center relative">
-                <i class="fa-solid fa-code-compare fa-2x mr-2 mb-1" style="color: #e650b4;"></i>
+                <i class="fa-solid fa-code-compare fa-2x mr-2 mb-1" style="color: #e650b4"></i>
                 <span>Compare</span>
                 <span
                   class="absolute -top-5 left-6 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-pink-100 bg-pink-500 rounded-full">5</span>
@@ -141,13 +158,12 @@
       </div>
     </div>
 
-    <!-- NAVBAR 3.CHAPTER MENU, BASKET -->
-    <div class="mx-auto py-2 text-sm">
+    <!--! NAVBAR 3.CHAPTER MENU, BASKET  düzgün ama aşağı da daha güzel bir menü ekledim -->
+    <!--<div class="text-sm">
       <div class="flex lg:flex-row justify-between items-center border-b w-9/12 mx-auto">
-
-        <!-- Hamburger Menu -->
+   
         <div class="relative lg:hidden dropdown">
-          <i class="fa-solid fa-bars fa-3x mx-3 my-3" style="color: #e650b4;"></i>
+          <i class="fa-solid fa-bars fa-3x mx-3 my-3" style="color: #e650b4"></i>
           <div class="dropdown-menu absolute hidden hover:block bg-white shadow-md border z-10">
             <a href="#" class="block px-4 py-2 hover:bg-gray-100">CATEGORIES</a>
             <a href="#" class="block px-4 py-2 hover:bg-gray-100">MEGAMENU</a>
@@ -157,10 +173,10 @@
           </div>
         </div>
 
-        <!-- Categories Menu -->
-        <div class="g:flex-grow-0 flex hidden lg:flex">
+       
+        <div class="g:flex-grow-0 flex hidden lg:flex text-xs">
           <div class="relative dropdown">
-            <button class="py-2 font-semibold hover:text-gray-400 focus:outline-none">
+            <button class="font-semibold hover:text-gray-400 focus:outline-none">
               CATEGORIES
             </button>
             <div class="dropdown-menu absolute hidden bg-white shadow-md border z-10">
@@ -169,7 +185,7 @@
             </div>
           </div>
           <div class="relative dropdown">
-            <button class="py-2 px-4 font-semibold hover:text-gray-400 focus:outline-none">
+            <button class="px-4 font-semibold hover:text-gray-400 focus:outline-none">
               MEGAMENU
             </button>
             <div class="dropdown-menu absolute hidden bg-white shadow-md border z-10">
@@ -178,7 +194,7 @@
             </div>
           </div>
           <div class="relative dropdown">
-            <button class="py-2 px-4 font-semibold hover:text-gray-400 focus:outline-none">
+            <button class="px-4 font-semibold hover:text-gray-400 focus:outline-none">
               MULTILEVEL
             </button>
             <div class="dropdown-menu absolute hidden bg-white shadow-md border z-10">
@@ -187,7 +203,7 @@
             </div>
           </div>
           <div class="relative dropdown">
-            <button class="py-2 px-4 font-semibold hover:text-gray-400 focus:outline-none">
+            <button class="px-4 font-semibold hover:text-gray-400 focus:outline-none">
               BRANDS
             </button>
             <div class="dropdown-menu absolute hidden bg-white shadow-md border z-10">
@@ -196,7 +212,7 @@
             </div>
           </div>
           <div class="relative dropdown">
-            <button class="py-2 px-4 font-semibold hover:text-gray-400 text-pink-500 focus:outline-none">
+            <button class="px-4 font-semibold hover:text-gray-400 text-pink-500 focus:outline-none">
               SPECIAL
             </button>
             <div class="dropdown-menu absolute hidden bg-white shadow-md border z-10">
@@ -206,14 +222,14 @@
           </div>
         </div>
 
-        <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-4 text-xs">
           <div class="hidden lg:block border-r border-gray-300 h-8"></div>
-          <!-- Cart -->
+          
           <div class="relative dropdown py-2 hover:bg-gray-100">
             <button class="font-semibold flex items-center">
               <span class="mr-3 ml-2">2 item(s) - £20.00</span>
               <div class="bg-gray-300 p-3 rounded-lg">
-                <i class="fa-solid fa-cart-shopping fa-2x" style="color: #e650b4;"></i>
+                <i class="fa-solid fa-cart-shopping fa-2x" style="color: #e650b4"></i>
               </div>
               <div
                 class="absolute top-0 -right-2 bg-pink-500 text-white rounded-full h-6 w-6 flex items-center justify-center text-xs">
@@ -226,7 +242,7 @@
                   <h3 class="font-semibold">Shopping Cart</h3>
                   <p class="text-xs">You have 2 items in your cart</p>
                 </div>
-                <i class="fa-solid fa-basket-shopping fa-4x" style="color: #e650b4;"></i>
+                <i class="fa-solid fa-basket-shopping fa-4x" style="color: #e650b4"></i>
               </div>
               <ul class="divide-y divide-gray-100">
                 <li class="px-4 py-2">Cart item 1</li>
@@ -242,71 +258,925 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
 
-    <!-- SLIDER -->
-    <div id="slider" class="relative h-96 overflow-hidden">
-      <div class="slide absolute inset-0 bg-center bg-cover transition-opacity opacity-0"
-        style="background-image: url('./assets/images/1.jpg')">
-        <div class="absolute lg:space-x-48 top-3/4 transform -translate-y-1/2 translate-x-1/4 w-9/12 text-white block">
-          <div class="absolute inset-0 bg-black opacity-10"></div>
-          <h1 class="text-xl lg:text-5xl text-pink-500 font-bold py-2">Sugar Office</h1>
-          <p class="lg:text-2xl text-sm text-pink-300 font-semibold py-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
-          </p>
-          <button
-            class="text-white bg-pink-500 hover:bg-pink-700 focus:outline-none font-medium rounded-lg text-sm px-5 py-2 text-center z-50">
-            Shop Now
-          </button>
-        </div>
-      </div>
-      <div class="slide absolute inset-0 bg-center bg-cover transition-opacity opacity-0"
-        style="background-image: url('./assets/images/2.jpg')">
-        <div class="absolute lg:space-x-48 top-3/4 transform -translate-y-1/2 translate-x-1/4 w-9/12 text-white block">
-          <div class="absolute inset-0 bg-black opacity-10"></div>
-          <h1 class="text-xl lg:text-5xl text-pink-500 font-bold py-2">Sugar Office</h1>
-          <p class="lg:text-2xl text-sm text-pink-300 font-semibold py-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
-          </p>
-          <button
-            class="text-white bg-pink-500 hover:bg-pink-700 focus:outline-none font-medium rounded-lg text-sm px-5 py-2 text-center z-50">
-            Shop Now
-          </button>
-        </div>
-      </div>
-      <div class="slide absolute inset-0 bg-center bg-cover transition-opacity opacity-0"
-        style="background-image: url('./assets/images/3.jpg')">
-        <div class="absolute lg:space-x-48 top-3/4 transform -translate-y-1/2 translate-x-1/4 w-9/12 text-white block">
-          <div class="absolute inset-0 bg-black opacity-10"></div>
-          <h1 class="text-xl lg:text-5xl text-pink-500 font-bold py-2">Sugar Office</h1>
-          <p class="lg:text-2xl text-sm text-pink-300 font-semibold py-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
-          </p>
-          <button
-            class="text-white bg-pink-500 hover:bg-pink-700 focus:outline-none font-medium rounded-lg text-sm px-5 py-2 text-center z-50">
-            Shop Now
-          </button>
-        </div>
-      </div>
-
-      <button id="prev"
-        class="absolute left-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full cursor-pointer z-10">
-        <i class="fa-solid fa-angles-left fa-2x" style="color: #e650b4;"></i>
-      </button>
-      <button id="next"
-        class="absolute right-0 top-1/2 -translate-y-1/2 bg-white bg-opacity-50 p-2 rounded-full cursor-pointer z-10">
-        <i class="fa-solid fa-angles-right fa-2x" style="color: #e650b4;"></i>
-      </button>
-    </div>
-
-    <br />
   </header>
+
   <main>
-    <!-- MODULE 5 -->
-    <div class="relative bg-cover bg-center h-96" style="background-image: url('./assets/images/1.jpg')">
+
+    <!--! NAVBAR SECTION -->
+    <nav
+      class="relative text-xs flex w-9/12 mx-auto items-center justify-between bg-neutral-50 py-1 text-neutral-600 shadow-lg dark:bg-neutral-700 dark:text-neutral-200 dark:shadow-black/5 lg:flex-wrap lg:justify-start"
+      data-te-navbar-ref>
+      <div class="flex justify- items-center">
+        <div>
+          <button
+            class="leading-nonetransition-shadow border-0 bg-transparent py-3 text-xl duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
+            type="button" data-te-collapse-init data-te-target="#navbarSupportedContentU"
+            aria-controls="navbarSupportedContentU" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="[&>svg]:w-8">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="h-8 w-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </span>
+          </button>
+          <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+            id="navbarSupportedContentU" data-te-collapse-item>
+            <ul class="mr-auto flex flex-row gap-2" data-te-navbar-nav-ref>
+              <li class="static" data-te-nav-item-ref data-te-dropdown-ref>
+                <a class="flex items-center whitespace-nowrap py-2 pr-2 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:px-2 uppercase"
+                  href="#" data-te-ripple-init data-te-ripple-color="light" type="button" id="dropdownMenuButtonU"
+                  data-te-dropdown-toggle-ref aria-expanded="false" data-te-nav-link-ref>Categories
+                  <span class="ml-2 w-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                      <path fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                </a>
+                <div
+                  class="absolute left-0 right-0 top-full z-[1000] mt-0 hidden w-full border-none bg-white bg-clip-padding text-neutral-700 shadow-lg dark:bg-neutral-700 dark:text-neutral-200 [&[data-te-dropdown-show]]:block"
+                  aria-labelledby="dropdownMenuButtonU" data-te-dropdown-menu-ref>
+                  <div class="px-6 py-5 lg:px-8">
+                    <div class="grid gap-6 md:grid-cols-3">
+                      <div>
+                        <p class="block w-full pt-2 font-semibold uppercase">
+                          Lorem ipsum
+                        </p>
+                        <div class="relative my-4 overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init
+                          data-te-ripple-color="light">
+                          <img src="https://tecdn.b-cdn.net/img/new/fluid/city/113.webp"
+                            class="w-full rounded-md shadow-lg dark:shadow-black/10" alt="Louvre" />
+                          <a href="#!">
+                            <div
+                              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden rounded-md bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                              style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                          </a>
+                        </div>
+                        <div class="mb-3 mt-1 flex items-center justify-between">
+                          <p class="flex items-center text-primary dark:text-primary-400">
+                            <span class="mr-2 w-4">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="h-5 w-5">
+                                <path
+                                  d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.004 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z" />
+                              </svg>
+                            </span>
+                            Travels
+                          </p>
+                          <p><u>15.07.2021</u></p>
+                        </div>
+                        <a href="#!">
+                          <h5 class="mb-2 text-xl font-semibold">
+                            This is title of the news
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit, iste aliquid. Sed id nihil magni, sint
+                            vero provident esse numquam perferendis ducimus
+                            dicta adipisci iusto nam temporibus modi animi
+                            laboriosam.
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <p class="block w-full pt-2 font-semibold uppercase">
+                          Explicabo voluptas
+                        </p>
+                        <div class="relative my-4 overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init
+                          data-te-ripple-color="light">
+                          <img src="https://tecdn.b-cdn.net/img/new/fluid/city/011.webp"
+                            class="w-full rounded-md shadow-lg dark:shadow-black/10" alt="Louvre" />
+                          <a href="#!">
+                            <div
+                              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden rounded-md bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                              style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                          </a>
+                        </div>
+                        <div class="mb-3 mt-1 flex items-center justify-between">
+                          <p class="flex items-center text-danger dark:text-danger-400">
+                            <span class="mr-2 w-4">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="h-5 w-5">
+                                <path fill-rule="evenodd"
+                                  d="M2.25 13.5a8.25 8.25 0 018.25-8.25.75.75 0 01.75.75v6.75H18a.75.75 0 01.75.75 8.25 8.25 0 01-16.5 0z"
+                                  clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                  d="M12.75 3a.75.75 0 01.75-.75 8.25 8.25 0 018.25 8.25.75.75 0 01-.75.75h-7.5a.75.75 0 01-.75-.75V3z"
+                                  clip-rule="evenodd" />
+                              </svg>
+                            </span>
+                            Business
+                          </p>
+                          <p><u>15.07.2021</u></p>
+                        </div>
+                        <a href="#!">
+                          <h5 class="mb-2 text-xl font-semibold">
+                            This is title of the news
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit, iste aliquid. Sed id nihil magni, sint
+                            vero provident esse numquam perferendis ducimus
+                            dicta adipisci iusto nam temporibus modi animi
+                            laboriosam.
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <p class="block w-full pt-2 font-semibold uppercase">
+                          Cras justo odio
+                        </p>
+                        <div class="relative my-4 overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init
+                          data-te-ripple-color="light">
+                          <img src="https://tecdn.b-cdn.net/img/new/fluid/city/018.webp"
+                            class="w-full rounded-md shadow-lg dark:shadow-black/10" alt="Louvre" />
+                          <a href="#!">
+                            <div
+                              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden rounded-md bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                              style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                          </a>
+                        </div>
+                        <div class="mb-3 mt-1 flex items-center justify-between">
+                          <p class="flex items-center text-warning">
+                            <span class="mr-2 w-4">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="h-5 w-5">
+                                <path fill-rule="evenodd"
+                                  d="M14.447 3.027a.75.75 0 01.527.92l-4.5 16.5a.75.75 0 01-1.448-.394l4.5-16.5a.75.75 0 01.921-.526zM16.72 6.22a.75.75 0 011.06 0l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 11-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 010-1.06zm-9.44 0a.75.75 0 010 1.06L2.56 12l4.72 4.72a.75.75 0 11-1.06 1.06L.97 12.53a.75.75 0 010-1.06l5.25-5.25a.75.75 0 011.06 0z"
+                                  clip-rule="evenodd" />
+                              </svg>
+                            </span>
+                            Technology
+                          </p>
+                          <p><u>15.07.2021</u></p>
+                        </div>
+                        <a href="#!">
+                          <h5 class="mb-2 text-xl font-semibold">
+                            This is title of the news
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit, iste aliquid. Sed id nihil magni, sint
+                            vero provident esse numquam perferendis ducimus
+                            dicta adipisci iusto nam temporibus modi animi
+                            laboriosam.
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="static" data-te-nav-item-ref data-te-dropdown-ref>
+                <a class="flex items-center whitespace-nowrap py-2 pr-2 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:px-2 uppercase"
+                  href="#" data-te-ripple-init data-te-ripple-color="light" type="button" id="dropdownMenuButtonU"
+                  data-te-dropdown-toggle-ref aria-expanded="false" data-te-nav-link-ref>Mega menu
+                  <span class="ml-2 w-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                      <path fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                </a>
+                <div
+                  class="absolute left-0 right-0 top-full z-[1000] mt-0 hidden w-full border-none bg-white bg-clip-padding text-neutral-700 shadow-lg dark:bg-neutral-700 dark:text-neutral-200 [&[data-te-dropdown-show]]:block"
+                  aria-labelledby="dropdownMenuButtonU" data-te-dropdown-menu-ref>
+                  <div class="px-6 py-5 lg:px-8">
+                    <div class="grid gap-6 md:grid-cols-3">
+                      <div>
+                        <p class="block w-full pt-2 font-semibold uppercase">
+                          Lorem ipsum
+                        </p>
+                        <div class="relative my-4 overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init
+                          data-te-ripple-color="light">
+                          <img src="https://tecdn.b-cdn.net/img/new/fluid/city/113.webp"
+                            class="w-full rounded-md shadow-lg dark:shadow-black/10" alt="Louvre" />
+                          <a href="#!">
+                            <div
+                              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden rounded-md bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                              style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                          </a>
+                        </div>
+                        <div class="mb-3 mt-1 flex items-center justify-between">
+                          <p class="flex items-center text-primary dark:text-primary-400">
+                            <span class="mr-2 w-4">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="h-5 w-5">
+                                <path
+                                  d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.004 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z" />
+                              </svg>
+                            </span>
+                            Travels
+                          </p>
+                          <p><u>15.07.2021</u></p>
+                        </div>
+                        <a href="#!">
+                          <h5 class="mb-2 text-xl font-semibold">
+                            This is title of the news
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit, iste aliquid. Sed id nihil magni, sint
+                            vero provident esse numquam perferendis ducimus
+                            dicta adipisci iusto nam temporibus modi animi
+                            laboriosam.
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <p class="block w-full pt-2 font-semibold uppercase">
+                          Explicabo voluptas
+                        </p>
+                        <div class="relative my-4 overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init
+                          data-te-ripple-color="light">
+                          <img src="https://tecdn.b-cdn.net/img/new/fluid/city/011.webp"
+                            class="w-full rounded-md shadow-lg dark:shadow-black/10" alt="Louvre" />
+                          <a href="#!">
+                            <div
+                              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden rounded-md bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                              style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                          </a>
+                        </div>
+                        <div class="mb-3 mt-1 flex items-center justify-between">
+                          <p class="flex items-center text-danger dark:text-danger-400">
+                            <span class="mr-2 w-4">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="h-5 w-5">
+                                <path fill-rule="evenodd"
+                                  d="M2.25 13.5a8.25 8.25 0 018.25-8.25.75.75 0 01.75.75v6.75H18a.75.75 0 01.75.75 8.25 8.25 0 01-16.5 0z"
+                                  clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                  d="M12.75 3a.75.75 0 01.75-.75 8.25 8.25 0 018.25 8.25.75.75 0 01-.75.75h-7.5a.75.75 0 01-.75-.75V3z"
+                                  clip-rule="evenodd" />
+                              </svg>
+                            </span>
+                            Business
+                          </p>
+                          <p><u>15.07.2021</u></p>
+                        </div>
+                        <a href="#!">
+                          <h5 class="mb-2 text-xl font-semibold">
+                            This is title of the news
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit, iste aliquid. Sed id nihil magni, sint
+                            vero provident esse numquam perferendis ducimus
+                            dicta adipisci iusto nam temporibus modi animi
+                            laboriosam.
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <p class="block w-full pt-2 font-semibold uppercase">
+                          Cras justo odio
+                        </p>
+                        <div class="relative my-4 overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init
+                          data-te-ripple-color="light">
+                          <img src="https://tecdn.b-cdn.net/img/new/fluid/city/018.webp"
+                            class="w-full rounded-md shadow-lg dark:shadow-black/10" alt="Louvre" />
+                          <a href="#!">
+                            <div
+                              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden rounded-md bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                              style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                          </a>
+                        </div>
+                        <div class="mb-3 mt-1 flex items-center justify-between">
+                          <p class="flex items-center text-warning">
+                            <span class="mr-2 w-4">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="h-5 w-5">
+                                <path fill-rule="evenodd"
+                                  d="M14.447 3.027a.75.75 0 01.527.92l-4.5 16.5a.75.75 0 01-1.448-.394l4.5-16.5a.75.75 0 01.921-.526zM16.72 6.22a.75.75 0 011.06 0l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 11-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 010-1.06zm-9.44 0a.75.75 0 010 1.06L2.56 12l4.72 4.72a.75.75 0 11-1.06 1.06L.97 12.53a.75.75 0 010-1.06l5.25-5.25a.75.75 0 011.06 0z"
+                                  clip-rule="evenodd" />
+                              </svg>
+                            </span>
+                            Technology
+                          </p>
+                          <p><u>15.07.2021</u></p>
+                        </div>
+                        <a href="#!">
+                          <h5 class="mb-2 text-xl font-semibold">
+                            This is title of the news
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit, iste aliquid. Sed id nihil magni, sint
+                            vero provident esse numquam perferendis ducimus
+                            dicta adipisci iusto nam temporibus modi animi
+                            laboriosam.
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="static" data-te-nav-item-ref data-te-dropdown-ref>
+                <a class="flex items-center whitespace-nowrap py-2 pr-2 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:px-2 uppercase"
+                  href="#" data-te-ripple-init data-te-ripple-color="light" type="button" id="dropdownMenuButtonU"
+                  data-te-dropdown-toggle-ref aria-expanded="false" data-te-nav-link-ref>multilevel
+                  <span class="ml-2 w-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                      <path fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                </a>
+                <div
+                  class="absolute left-0 right-0 top-full z-[1000] mt-0 hidden w-full border-none bg-white bg-clip-padding text-neutral-700 shadow-lg dark:bg-neutral-700 dark:text-neutral-200 [&[data-te-dropdown-show]]:block"
+                  aria-labelledby="dropdownMenuButtonU" data-te-dropdown-menu-ref>
+                  <div class="px-6 py-5 lg:px-8">
+                    <div class="grid gap-6 md:grid-cols-3">
+                      <div>
+                        <p class="block w-full pt-2 font-semibold uppercase">
+                          Lorem ipsum
+                        </p>
+                        <div class="relative my-4 overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init
+                          data-te-ripple-color="light">
+                          <img src="https://tecdn.b-cdn.net/img/new/fluid/city/113.webp"
+                            class="w-full rounded-md shadow-lg dark:shadow-black/10" alt="Louvre" />
+                          <a href="#!">
+                            <div
+                              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden rounded-md bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                              style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                          </a>
+                        </div>
+                        <div class="mb-3 mt-1 flex items-center justify-between">
+                          <p class="flex items-center text-primary dark:text-primary-400">
+                            <span class="mr-2 w-4">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="h-5 w-5">
+                                <path
+                                  d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.004 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z" />
+                              </svg>
+                            </span>
+                            Travels
+                          </p>
+                          <p><u>15.07.2021</u></p>
+                        </div>
+                        <a href="#!">
+                          <h5 class="mb-2 text-xl font-semibold">
+                            This is title of the news
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit, iste aliquid. Sed id nihil magni, sint
+                            vero provident esse numquam perferendis ducimus
+                            dicta adipisci iusto nam temporibus modi animi
+                            laboriosam.
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <p class="block w-full pt-2 font-semibold uppercase">
+                          Explicabo voluptas
+                        </p>
+                        <div class="relative my-4 overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init
+                          data-te-ripple-color="light">
+                          <img src="https://tecdn.b-cdn.net/img/new/fluid/city/011.webp"
+                            class="w-full rounded-md shadow-lg dark:shadow-black/10" alt="Louvre" />
+                          <a href="#!">
+                            <div
+                              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden rounded-md bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                              style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                          </a>
+                        </div>
+                        <div class="mb-3 mt-1 flex items-center justify-between">
+                          <p class="flex items-center text-danger dark:text-danger-400">
+                            <span class="mr-2 w-4">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="h-5 w-5">
+                                <path fill-rule="evenodd"
+                                  d="M2.25 13.5a8.25 8.25 0 018.25-8.25.75.75 0 01.75.75v6.75H18a.75.75 0 01.75.75 8.25 8.25 0 01-16.5 0z"
+                                  clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                  d="M12.75 3a.75.75 0 01.75-.75 8.25 8.25 0 018.25 8.25.75.75 0 01-.75.75h-7.5a.75.75 0 01-.75-.75V3z"
+                                  clip-rule="evenodd" />
+                              </svg>
+                            </span>
+                            Business
+                          </p>
+                          <p><u>15.07.2021</u></p>
+                        </div>
+                        <a href="#!">
+                          <h5 class="mb-2 text-xl font-semibold">
+                            This is title of the news
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit, iste aliquid. Sed id nihil magni, sint
+                            vero provident esse numquam perferendis ducimus
+                            dicta adipisci iusto nam temporibus modi animi
+                            laboriosam.
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <p class="block w-full pt-2 font-semibold uppercase">
+                          Cras justo odio
+                        </p>
+                        <div class="relative my-4 overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init
+                          data-te-ripple-color="light">
+                          <img src="https://tecdn.b-cdn.net/img/new/fluid/city/018.webp"
+                            class="w-full rounded-md shadow-lg dark:shadow-black/10" alt="Louvre" />
+                          <a href="#!">
+                            <div
+                              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden rounded-md bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                              style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                          </a>
+                        </div>
+                        <div class="mb-3 mt-1 flex items-center justify-between">
+                          <p class="flex items-center text-warning">
+                            <span class="mr-2 w-4">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="h-5 w-5">
+                                <path fill-rule="evenodd"
+                                  d="M14.447 3.027a.75.75 0 01.527.92l-4.5 16.5a.75.75 0 01-1.448-.394l4.5-16.5a.75.75 0 01.921-.526zM16.72 6.22a.75.75 0 011.06 0l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 11-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 010-1.06zm-9.44 0a.75.75 0 010 1.06L2.56 12l4.72 4.72a.75.75 0 11-1.06 1.06L.97 12.53a.75.75 0 010-1.06l5.25-5.25a.75.75 0 011.06 0z"
+                                  clip-rule="evenodd" />
+                              </svg>
+                            </span>
+                            Technology
+                          </p>
+                          <p><u>15.07.2021</u></p>
+                        </div>
+                        <a href="#!">
+                          <h5 class="mb-2 text-xl font-semibold">
+                            This is title of the news
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit, iste aliquid. Sed id nihil magni, sint
+                            vero provident esse numquam perferendis ducimus
+                            dicta adipisci iusto nam temporibus modi animi
+                            laboriosam.
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="static" data-te-nav-item-ref data-te-dropdown-ref>
+                <a class="flex items-center whitespace-nowrap py-2 pr-2 transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:px-2 uppercase"
+                  href="#" data-te-ripple-init data-te-ripple-color="light" type="button" id="dropdownMenuButtonU"
+                  data-te-dropdown-toggle-ref aria-expanded="false" data-te-nav-link-ref>Brands
+                  <span class="ml-2 w-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                      <path fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                </a>
+                <div
+                  class="absolute left-0 right-0 top-full z-[1000] mt-0 hidden w-full border-none bg-white bg-clip-padding text-neutral-700 shadow-lg dark:bg-neutral-700 dark:text-neutral-200 [&[data-te-dropdown-show]]:block"
+                  aria-labelledby="dropdownMenuButtonU" data-te-dropdown-menu-ref>
+                  <div class="px-6 py-5 lg:px-8">
+                    <div class="grid gap-6 md:grid-cols-3">
+                      <div>
+                        <p class="block w-full pt-2 font-semibold uppercase">
+                          Lorem ipsum
+                        </p>
+                        <div class="relative my-4 overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init
+                          data-te-ripple-color="light">
+                          <img src="https://tecdn.b-cdn.net/img/new/fluid/city/113.webp"
+                            class="w-full rounded-md shadow-lg dark:shadow-black/10" alt="Louvre" />
+                          <a href="#!">
+                            <div
+                              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden rounded-md bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                              style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                          </a>
+                        </div>
+                        <div class="mb-3 mt-1 flex items-center justify-between">
+                          <p class="flex items-center text-primary dark:text-primary-400">
+                            <span class="mr-2 w-4">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="h-5 w-5">
+                                <path
+                                  d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.004 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z" />
+                              </svg>
+                            </span>
+                            Travels
+                          </p>
+                          <p><u>15.07.2021</u></p>
+                        </div>
+                        <a href="#!">
+                          <h5 class="mb-2 text-xl font-semibold">
+                            This is title of the news
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit, iste aliquid. Sed id nihil magni, sint
+                            vero provident esse numquam perferendis ducimus
+                            dicta adipisci iusto nam temporibus modi animi
+                            laboriosam.
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <p class="block w-full pt-2 font-semibold uppercase">
+                          Explicabo voluptas
+                        </p>
+                        <div class="relative my-4 overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init
+                          data-te-ripple-color="light">
+                          <img src="https://tecdn.b-cdn.net/img/new/fluid/city/011.webp"
+                            class="w-full rounded-md shadow-lg dark:shadow-black/10" alt="Louvre" />
+                          <a href="#!">
+                            <div
+                              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden rounded-md bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                              style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                          </a>
+                        </div>
+                        <div class="mb-3 mt-1 flex items-center justify-between">
+                          <p class="flex items-center text-danger dark:text-danger-400">
+                            <span class="mr-2 w-4">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="h-5 w-5">
+                                <path fill-rule="evenodd"
+                                  d="M2.25 13.5a8.25 8.25 0 018.25-8.25.75.75 0 01.75.75v6.75H18a.75.75 0 01.75.75 8.25 8.25 0 01-16.5 0z"
+                                  clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                  d="M12.75 3a.75.75 0 01.75-.75 8.25 8.25 0 018.25 8.25.75.75 0 01-.75.75h-7.5a.75.75 0 01-.75-.75V3z"
+                                  clip-rule="evenodd" />
+                              </svg>
+                            </span>
+                            Business
+                          </p>
+                          <p><u>15.07.2021</u></p>
+                        </div>
+                        <a href="#!">
+                          <h5 class="mb-2 text-xl font-semibold">
+                            This is title of the news
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit, iste aliquid. Sed id nihil magni, sint
+                            vero provident esse numquam perferendis ducimus
+                            dicta adipisci iusto nam temporibus modi animi
+                            laboriosam.
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <p class="block w-full pt-2 font-semibold uppercase">
+                          Cras justo odio
+                        </p>
+                        <div class="relative my-4 overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init
+                          data-te-ripple-color="light">
+                          <img src="https://tecdn.b-cdn.net/img/new/fluid/city/018.webp"
+                            class="w-full rounded-md shadow-lg dark:shadow-black/10" alt="Louvre" />
+                          <a href="#!">
+                            <div
+                              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden rounded-md bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                              style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                          </a>
+                        </div>
+                        <div class="mb-3 mt-1 flex items-center justify-between">
+                          <p class="flex items-center text-warning">
+                            <span class="mr-2 w-4">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="h-5 w-5">
+                                <path fill-rule="evenodd"
+                                  d="M14.447 3.027a.75.75 0 01.527.92l-4.5 16.5a.75.75 0 01-1.448-.394l4.5-16.5a.75.75 0 01.921-.526zM16.72 6.22a.75.75 0 011.06 0l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 11-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 010-1.06zm-9.44 0a.75.75 0 010 1.06L2.56 12l4.72 4.72a.75.75 0 11-1.06 1.06L.97 12.53a.75.75 0 010-1.06l5.25-5.25a.75.75 0 011.06 0z"
+                                  clip-rule="evenodd" />
+                              </svg>
+                            </span>
+                            Technology
+                          </p>
+                          <p><u>15.07.2021</u></p>
+                        </div>
+                        <a href="#!">
+                          <h5 class="mb-2 text-xl font-semibold">
+                            This is title of the news
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit, iste aliquid. Sed id nihil magni, sint
+                            vero provident esse numquam perferendis ducimus
+                            dicta adipisci iusto nam temporibus modi animi
+                            laboriosam.
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="static" data-te-nav-item-ref data-te-dropdown-ref>
+                <a class="flex items-center whitespace-nowrap py-2 pr-2 transition duration-150 ease-in-out text-pink-500 hover:text-pink-700 focus:text-pink-700 dark:hover:text-white dark:focus:text-white lg:px-2 uppercase"
+                  href="#" data-te-ripple-init data-te-ripple-color="light" type="button" id="dropdownMenuButtonU"
+                  data-te-dropdown-toggle-ref aria-expanded="false" data-te-nav-link-ref>special
+                  <span class="ml-2 w-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                      <path fill-rule="evenodd"
+                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </span>
+                </a>
+                <div
+                  class="absolute left-0 right-0 top-full z-[1000] mt-0 hidden w-full border-none bg-white bg-clip-padding text-neutral-700 shadow-lg dark:bg-neutral-700 dark:text-neutral-200 [&[data-te-dropdown-show]]:block"
+                  aria-labelledby="dropdownMenuButtonU" data-te-dropdown-menu-ref>
+                  <div class="px-6 py-5 lg:px-8">
+                    <div class="grid gap-6 md:grid-cols-3">
+                      <div>
+                        <p class="block w-full pt-2 font-semibold uppercase">
+                          Lorem ipsum
+                        </p>
+                        <div class="relative my-4 overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init
+                          data-te-ripple-color="light">
+                          <img src="https://tecdn.b-cdn.net/img/new/fluid/city/113.webp"
+                            class="w-full rounded-md shadow-lg dark:shadow-black/10" alt="Louvre" />
+                          <a href="#!">
+                            <div
+                              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden rounded-md bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                              style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                          </a>
+                        </div>
+                        <div class="mb-3 mt-1 flex items-center justify-between">
+                          <p class="flex items-center text-primary dark:text-primary-400">
+                            <span class="mr-2 w-4">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="h-5 w-5">
+                                <path
+                                  d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.004 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z" />
+                              </svg>
+                            </span>
+                            Travels
+                          </p>
+                          <p><u>15.07.2021</u></p>
+                        </div>
+                        <a href="#!">
+                          <h5 class="mb-2 text-xl font-semibold">
+                            This is title of the news
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit, iste aliquid. Sed id nihil magni, sint
+                            vero provident esse numquam perferendis ducimus
+                            dicta adipisci iusto nam temporibus modi animi
+                            laboriosam.
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <p class="block w-full pt-2 font-semibold uppercase">
+                          Explicabo voluptas
+                        </p>
+                        <div class="relative my-4 overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init
+                          data-te-ripple-color="light">
+                          <img src="https://tecdn.b-cdn.net/img/new/fluid/city/011.webp"
+                            class="w-full rounded-md shadow-lg dark:shadow-black/10" alt="Louvre" />
+                          <a href="#!">
+                            <div
+                              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden rounded-md bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                              style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                          </a>
+                        </div>
+                        <div class="mb-3 mt-1 flex items-center justify-between">
+                          <p class="flex items-center text-danger dark:text-danger-400">
+                            <span class="mr-2 w-4">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="h-5 w-5">
+                                <path fill-rule="evenodd"
+                                  d="M2.25 13.5a8.25 8.25 0 018.25-8.25.75.75 0 01.75.75v6.75H18a.75.75 0 01.75.75 8.25 8.25 0 01-16.5 0z"
+                                  clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                  d="M12.75 3a.75.75 0 01.75-.75 8.25 8.25 0 018.25 8.25.75.75 0 01-.75.75h-7.5a.75.75 0 01-.75-.75V3z"
+                                  clip-rule="evenodd" />
+                              </svg>
+                            </span>
+                            Business
+                          </p>
+                          <p><u>15.07.2021</u></p>
+                        </div>
+                        <a href="#!">
+                          <h5 class="mb-2 text-xl font-semibold">
+                            This is title of the news
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit, iste aliquid. Sed id nihil magni, sint
+                            vero provident esse numquam perferendis ducimus
+                            dicta adipisci iusto nam temporibus modi animi
+                            laboriosam.
+                          </p>
+                        </a>
+                      </div>
+                      <div>
+                        <p class="block w-full pt-2 font-semibold uppercase">
+                          Cras justo odio
+                        </p>
+                        <div class="relative my-4 overflow-hidden bg-cover bg-no-repeat" data-te-ripple-init
+                          data-te-ripple-color="light">
+                          <img src="https://tecdn.b-cdn.net/img/new/fluid/city/018.webp"
+                            class="w-full rounded-md shadow-lg dark:shadow-black/10" alt="Louvre" />
+                          <a href="#!">
+                            <div
+                              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden rounded-md bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+                              style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                          </a>
+                        </div>
+                        <div class="mb-3 mt-1 flex items-center justify-between">
+                          <p class="flex items-center text-warning">
+                            <span class="mr-2 w-4">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="h-5 w-5">
+                                <path fill-rule="evenodd"
+                                  d="M14.447 3.027a.75.75 0 01.527.92l-4.5 16.5a.75.75 0 01-1.448-.394l4.5-16.5a.75.75 0 01.921-.526zM16.72 6.22a.75.75 0 011.06 0l5.25 5.25a.75.75 0 010 1.06l-5.25 5.25a.75.75 0 11-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 010-1.06zm-9.44 0a.75.75 0 010 1.06L2.56 12l4.72 4.72a.75.75 0 11-1.06 1.06L.97 12.53a.75.75 0 010-1.06l5.25-5.25a.75.75 0 011.06 0z"
+                                  clip-rule="evenodd" />
+                              </svg>
+                            </span>
+                            Technology
+                          </p>
+                          <p><u>15.07.2021</u></p>
+                        </div>
+                        <a href="#!">
+                          <h5 class="mb-2 text-xl font-semibold">
+                            This is title of the news
+                          </h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit, iste aliquid. Sed id nihil magni, sint
+                            vero provident esse numquam perferendis ducimus
+                            dicta adipisci iusto nam temporibus modi animi
+                            laboriosam.
+                          </p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- BASKET -->
+        <div class="relative dropdown hover:bg-gray-100 flex -right-20 lg:-right-48 xl:-right-72 2xl:-right-96">
+          <div class="right-0">
+            <button class="font-semibold flex items-center">
+              <span class="mr-3 ml-2">2 item(s) - £20.00</span>
+              <div class="bg-gray-300 p-3 rounded-lg">
+                <i class="fa-solid fa-cart-shopping fa-2x" style="color: #e650b4"></i>
+              </div>
+              <div
+                class="absolute top-0 -right-2 bg-pink-500 text-white rounded-full h-6 w-6 flex items-center justify-center text-xs">
+                2
+              </div>
+            </button>
+            <div class="dropdown-menu absolute hidden bg-white shadow-lg border z-10 w-64">
+              <div class="flex items-center justify-between px-4 py-2">
+                <div>
+                  <h3 class="font-semibold">Shopping Cart</h3>
+                  <p class="text-xs">You have 2 items in your cart</p>
+                </div>
+                <i class="fa-solid fa-basket-shopping fa-4x" style="color: #e650b4"></i>
+              </div>
+              <ul class="divide-y divide-gray-100">
+                <li class="px-4 py-2">Cart item 1</li>
+                <li class="px-4 py-2">Cart item 2</li>
+              </ul>
+              <div class="px-4 py-2">
+                <button
+                  class="text-white bg-pink-500 hover:bg-pink-700 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                  Checkout
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+    <br>
+
+    <!--! NEW SLIDER -->
+    <div id="carouselDarkVariant" class="relative" data-te-carousel-init data-te-ride="carousel">
+      <!-- Carousel indicators -->
+      <div class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+        data-te-carousel-indicators>
+        <button data-te-target="#carouselDarkVariant" data-te-slide-to="0" data-te-carousel-active
+          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button data-te-target="#carouselDarkVariant"
+          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+          data-te-slide-to="1" aria-label="Slide 1"></button>
+        <button data-te-target="#carouselDarkVariant"
+          class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+          data-te-slide-to="2" aria-label="Slide 1"></button>
+      </div>
+
+      <!-- Carousel items -->
+      <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+        <!-- First item -->
+        <div
+          class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-fade data-te-carousel-item data-te-carousel-active>
+          <img src="./assets/images/1.jpg" class="block w-full" alt="images1" />
+          <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-black md:block">
+            <div class="absolute bg-black opacity-10"></div>
+            <h5 class="text-xl">Sugar Office</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              quidem dolore fugit rem nobis veniam.
+            </p><button type="button"
+              class="inline-block rounded-full border-2 border-success px-6 pb-[6px] pt-2 text-xs bg-white text-bold font-medium uppercase leading-normal text-success transition duration-150 ease-in-out hover:border-success-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-success-600 focus:border-success-600 focus:text-success-600 focus:outline-none focus:ring-0 active:border-success-700 active:text-success-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+              data-te-ripple-init>
+              Success
+            </button>
+            <button type="button"
+              class="inline-block rounded-full border-2 border-warning px-6 pb-[6px] pt-2 text-xs font-medium bg-white uppercase leading-normal text-warning transition duration-150 ease-in-out hover:border-warning-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-warning-600 focus:border-warning-600 focus:text-warning-600 focus:outline-none focus:ring-0 active:border-warning-700 active:text-warning-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+              data-te-ripple-init>
+              Warning
+            </button>
+          </div>
+        </div>
+        <!-- Second item -->
+        <div
+          class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-fade data-te-carousel-item>
+          <img src="./assets/images/2.jpg" class="block w-full" alt="images2" />
+          <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-black md:block">
+            <div class="absolute bg-black opacity-50"></div>
+            <h5 class="text-xl">Candy Office</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              quidem dolore fugit rem nobis veniam.
+            </p><button type="button"
+              class="inline-block rounded-full border-2 border-success px-6 pb-[6px] pt-2 text-xs bg-white text-bold font-medium uppercase leading-normal text-success transition duration-150 ease-in-out hover:border-success-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-success-600 focus:border-success-600 focus:text-success-600 focus:outline-none focus:ring-0 active:border-success-700 active:text-success-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+              data-te-ripple-init>
+              Success
+            </button>
+            <button type="button"
+              class="inline-block rounded-full border-2 border-warning px-6 pb-[6px] pt-2 text-xs font-medium bg-white uppercase leading-normal text-warning transition duration-150 ease-in-out hover:border-warning-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-warning-600 focus:border-warning-600 focus:text-warning-600 focus:outline-none focus:ring-0 active:border-warning-700 active:text-warning-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+              data-te-ripple-init>
+              Warning
+            </button>
+          </div>
+        </div>
+        <!-- Third item -->
+        <div
+          class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-fade data-te-carousel-item>
+          <img src="./assets/images/1.jpg" class="block w-full" alt="images1" />
+          <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-black md:block">
+            <div class="absolute bg-black opacity-50"></div>
+            <h5 class="text-xl">Happy Office</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              quidem dolore fugit rem nobis veniam.
+            </p><button type="button"
+              class="inline-block rounded-full border-2 border-success px-6 pb-[6px] pt-2 text-xs bg-white text-bold font-medium uppercase leading-normal text-success transition duration-150 ease-in-out hover:border-success-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-success-600 focus:border-success-600 focus:text-success-600 focus:outline-none focus:ring-0 active:border-success-700 active:text-success-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+              data-te-ripple-init>
+              Success
+            </button>
+            <button type="button"
+              class="inline-block rounded-full border-2 border-warning px-6 pb-[6px] pt-2 text-xs font-medium bg-white uppercase leading-normal text-warning transition duration-150 ease-in-out hover:border-warning-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-warning-600 focus:border-warning-600 focus:text-warning-600 focus:outline-none focus:ring-0 active:border-warning-700 active:text-warning-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+              data-te-ripple-init>
+              Warning
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel controls - prev item-->
+      <button
+        class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+        type="button" data-te-target="#carouselDarkVariant" data-te-slide="prev">
+        <span class="inline-block h-8 w-8 dark:grayscale">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </span>
+        <span
+          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+      </button>
+      <!-- Carousel controls - next item-->
+      <button
+        class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+        type="button" data-te-target="#carouselDarkVariant" data-te-slide="next">
+        <span class="inline-block h-8 w-8 dark:grayscale">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </span>
+        <span
+          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+      </button>
+    </div>
+    <br>
+
+    <!--! MODULE 5 -->
+    <div class="relative bg-cover bg-center h-96"
+      style="background-image: url('https://www.journal-theme.com/2/image/cache/catalog/journal3/people/andrew-neel-369701-unsplash-1500x1000.jpg.webp'); background-attachment: fixed;">
       <div class="absolute inset-0 bg-black opacity-50"></div>
       <div class="flex items-center justify-center h-full">
         <div class="w-9/12 flex flex-col items-center relative z-10">
@@ -325,16 +1195,15 @@
         </div>
       </div>
     </div>
-
     <br />
 
-    <!-- MODULE 6 -->
-    <div class="bg-gray-500 py-4 w-full">
+    <!--! MODULE 6 -->
+    <div class="bg-gray-500 py-4 w-full text-sm">
       <div class="container mx-auto px-6 flex flex-col sm:flex-row justify-center items-center w-full sm:w-9/12">
         <!-- Free Shipping -->
         <div class="flex items-center flex-row mb-4 sm:mb-0 w-full">
           <div class="flex items-center justify-center h-12 w-12 rounded-full bg-orange-500 mr-4">
-            <i class="fa-solid fa-truck-fast fa-3x" style="color: #e650b4;"></i>
+            <i class="fa-solid fa-truck-fast fa-3x" style="color: #e650b4"></i>
           </div>
           <div class="flex-grow">
             <h3 class="text-white">Free Shipping</h3>
@@ -344,7 +1213,7 @@
         <!-- Free Returns -->
         <div class="flex items-center flex-row mb-4 sm:mb-0 w-full">
           <div class="flex items-center justify-center h-12 w-12 rounded-full bg-orange-500 mr-4">
-            <i class="fa-solid fa-rotate-left fa-3x" style="color: #e650b4;"></i>
+            <i class="fa-solid fa-rotate-left fa-3x" style="color: #e650b4"></i>
           </div>
           <div class="flex-grow">
             <h3 class="text-white">Free Returns</h3>
@@ -354,7 +1223,7 @@
         <!-- Secure Shopping -->
         <div class="flex items-center flex-row mb-4 sm:mb-0 w-full">
           <div class="flex items-center justify-center h-12 w-12 rounded-full bg-orange-500 mr-4">
-            <i class="fa-solid fa-lock fa-3x" style="color: #e650b4;"></i>
+            <i class="fa-solid fa-lock fa-3x" style="color: #e650b4"></i>
           </div>
           <div class="flex-grow">
             <h3 class="text-white">Secure Shopping</h3>
@@ -364,154 +1233,375 @@
         <!-- Unlimited Blocks -->
         <div class="flex items-center flex-row mb-4 sm:mb-0 w-full">
           <div class="flex items-center justify-center h-12 w-12 rounded-full bg-orange-500 mr-4">
-            <i class="fa-solid fa-cube fa-3x" style="color: #e650b4;"></i>
+            <i class="fa-solid fa-cube fa-3x" style="color: #e650b4"></i>
           </div>
           <div class="flex-grow">
             <h3 class="text-white">Unlimited Blocks</h3>
             <p class="text-gray-400 text-xs">Any content, any page</p>
           </div>
         </div>
-
       </div>
     </div>
-
-
     <br />
 
-  </main>
-  <!-- FOOTER -->
-  <footer class="bg-gray-400 text-white">
-    <div class="container mx-auto px-6 py-8 w-full">
-      <div class="flex flex-wrap justify-between w-9/12 mx-auto">
-        <!-- Logo and Address -->
-        <div class="w-full lg:w-1/4 mb-6 lg:mb-0">
-          <img src="./assets/images/logo.png" alt="" />
-          <p class="text-white">123 Main St. London, UK</p>
-          <div class="gap-5 mt-4 flex justify-center items-center w-40">
-            <i class="fa-brands fa-instagram fa-2x"></i>
-            <i class="fa-brands fa-facebook-f fa-2x"></i>
-            <i class="fa-brands fa-twitter fa-2x"></i>
-            <i class="fa-brands fa-google fa-2x"></i>
-          </div>
-        </div>
+    <!--! MODULE 7 -->
+    <div class="bg-gray-100 w-full flex justify-center items-center p-4">
+      <div class="w-9/12 flex gap-2 space-x-2 overflow-hidden h-16 overflow-x-auto">
+        <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/olivia-fashion-150x150.jpg.webp
+        " alt="Olivia Smith" class="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-100" />
+        <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/palm_logo-150x150w.jpg.webp"
+          alt="Palm" class="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-100" />
+        <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/awesome-150x150.jpg.webp"
+          alt="Awesome Brand" class="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-100" />
+        <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/mellisa-150x150.jpg.webp"
+          alt="Melissa Johnson"
+          class="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-100" />
+        <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/htc_logo-150x150w.jpg.webp"
+          alt="HTC" class="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-100" />
+        <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/superbrand-150x150.jpg.webp"
+          alt="SuperBrand" class="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-100" />
+        <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/FC-fashion-150x150.jpg.webp"
+          alt="Fort Cane" class="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-100" />
+        <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sony_logo-150x150w.jpg.webp"
+          alt="Sony" class="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-100" />
+        <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/fashion-150x150.jpg.webp"
+          alt="NY Fashion" class="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-100" />
+        <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sunglasses-150x150.png.webp"
+          alt="Scandinavian Sunglasses"
+          class="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-100" />
+        <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/canon_logo-150x150w.jpg.webp"
+          alt="Canon" class="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-100" />
+        <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/erikson-150x150.jpg.webp"
+          alt="Ericksson" class="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-100" />
+        <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sarah-cosmetics-150x150.jpg.webp"
+          alt="Sarah Bloom" class="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-100" />
+        <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/apple_logo-150x150h.jpg.webp"
+          alt="Apple" class="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-100" />
+        <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/hipster-150x150.jpg.webp"
+          alt="Hipster" class="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-100" />
+        <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sarah-beauty-150x150.jpg.webp"
+          alt="Sarah Bell" class="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-100" />
+        <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/hp_logo-150x150w.jpg.webp"
+          alt="Hewlett-Packard"
+          class="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-100" />
+        <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/chic-150x150.jpg.webp"
+          alt="Chic D'or" class="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-100" />
+      </div>
+    </div>
+    <br />
 
-        <!-- Customer Service Links -->
-        <div class="w-full lg:w-1/4 mb-6 lg:mb-0">
-          <h3 class="text-xl mb-3">Customer Service</h3>
-          <ul>
-            <li class="flex items-center mb-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>
-              <a href="#" class="hover:text-gray-300">Contact</a>
-            </li>
-            <li class="flex items-center mb-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>
-              <a href="#" class="hover:text-gray-300">Returns</a>
-            </li>
-            <li class="flex items-center mb-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>
-              <a href="#" class="hover:text-gray-300">Site Map</a>
-            </li>
-            <li class="flex items-center mb-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>
-              <a href="#" class="hover:text-gray-300">Brands</a>
-            </li>
-            <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>
-              <a href="#" class="hover:text-gray-300">Unlimited Links</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- My Account Links -->
-        <div class="w-full lg:w-1/4 mb-6 lg:mb-0">
-          <h3 class="text-xl mb-3">My Account</h3>
-          <ul>
-            <li class="flex items-center mb-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>
-              <a href="#" class="hover:text-gray-300">My Account</a>
-            </li>
-            <li class="flex items-center mb-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>
-              <a href="#" class="hover:text-gray-300">Order History</a>
-            </li>
-            <li class="flex items-center mb-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>
-              <a href="#" class="hover:text-gray-300">Affiliates</a>
-            </li>
-            <li class="flex items-center mb-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>
-              <a href="#" class="hover:text-gray-300">Newsletter</a>
-            </li>
-            <li class="flex items-center mb-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>
-              <a href="#" class="hover:text-gray-300">Gift Certificates</a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Newsletter Section -->
-        <div class="w-full lg:w-1/4 mb-6 lg:mb-0">
-          <h3 class="text-xl mb-3">Newsletter</h3>
-          <p class="mb-4">
-            Stay up to date with news and promotions by signing up for our
-            newsletter
+    <!--! MODULE 9 -->
+    <div class="bg-yellow-300 w-full flex justify-center items-center p-10 text-xs">
+      <div class="w-9/12 flex justify-between items-center">
+        <i class="fa-solid fa-envelope-open-text fa-2xl mr-5"></i>
+        <div class="w-1/2">
+          <p class="text-black font-semibold mb-2 text-sm">
+            Subscribe Newsletter
           </p>
-          <div class="flex">
-            <input type="email" placeholder="Your email" class="w-full p-2 rounded-l-lg" />
-            <button class="bg-pink-500 text-white p-2 rounded-r-lg hover:bg-pink-700">
-              Send
-            </button>
-          </div>
-          <!-- Checkbox for Privacy Policy -->
-          <div class="flex items-center mt-4">
-            <input type="checkbox" id="privacy_policy" class="mr-2" />
-            <label for="privacy_policy" class="text-sm">I have read and agree to the <a href=""
-                class="text-blue-600 hover:text-gray-300">Privacy Policy</a></label>
-          </div>
+          <p class="text-gray-500">
+            Get all the latest information on Events, Sales and Offers. Sign
+            up for newsletter today
+          </p>
+        </div>
+        <div class="flex gap-2 w-1/2 pt-2">
+          <input type="email" placeholder="Email address" class="p-2 rounded-lg focus:outline-none w-full" />
+          <button class="bg-black text-white p-2 rounded-lg hover:bg-pink-700 focus:outline-none w-36">
+            Subscribe
+          </button>
         </div>
       </div>
+    </div>
+    <br />
 
-      <!-- Copyright and Payment Icons Section -->
-      <div class="mt-10 border-t border-gray-700 pt-5 flex flex-wrap justify-between w-9/12 mx-auto">
-        <div class="text-sm">
-          <p>Copyright &copy; 2023 Your Store, All Rights Reserved</p>
+    <!--! MODULE 10 -->
+    <div class="bg-gray-100 w-full p-4">
+      <div class="mb-5 w-9/12 mx-auto">
+        <h2 class="text-base font-bold">Popular Departments</h2>
+        <p class="text-gray-600 text-xs">Products From These Categories Often Buy</p>
+      </div>
+      <div class="flex flex-nowrap justify-center gap-4 w-9/12 mx-auto">
+
+        <div class="max-w-sm w-72 h-48 bg-center bg-cover"
+          style="background-image: url('https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-1.png'); background-size: cover; background-position: right;">
+          <div class="flex h-full items-center pb-3">
+            <div class="w-full text-left pl-3">
+              <h4 class="text-sm font-semibold">Vegetables</h4>
+              <span class="text-xs">1 Products</span>
+            </div>
+          </div>
         </div>
-        <div>
-          <div class="flex gap-5">
-            <i class="fa-brands fa-cc-visa fa-2x"></i>
-            <i class="fa-brands fa-cc-mastercard fa-2x"></i>
-            <i class="fa-brands fa-cc-paypal fa-2x"></i>
-            <i class="fa-brands fa-cc-amex fa-2x"></i>
-            <i class="fa-brands fa-cc-discover fa-2x"></i>
-            <i class="fa-brands fa-cc-stripe fa-2x"></i>
+        <div class="max-w-sm w-72 h-48 bg-center bg-cover"
+          style="background-image: url('https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-2.png'); background-size: cover; background-position: right;">
+          <div class="flex h-full items-center pb-3">
+            <div class="w-full text-left pl-3">
+              <h4 class="text-sm font-semibold">Fruits</h4>
+              <span class="text-xs">9 Products</span>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-sm w-72 h-48 bg-center bg-cover"
+          style="background-image: url('https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-4.png'); background-size: cover; background-position: right;">
+          <div class="flex h-full items-center pb-3">
+            <div class="w-full text-left pl-3">
+              <h4 class="text-sm font-semibold">Breakfast</h4>
+              <span class="text-xs">8 Products</span>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-sm w-72 h-48 bg-center bg-cover"
+          style="background-image: url('https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-3.png'); background-size: cover; background-position: right;">
+          <div class="flex h-full items-center pb-3">
+            <div class="w-full text-left pl-3">
+              <h4 class="text-sm font-semibold">Cooking</h4>
+              <span class="text-xs">5 Products</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <br />
+
+    <!--! MODULE 12 -->
+    <div class="w-full flex items-center " style="height: 700px;">
+      <div class="mx-auto flex h-full w-full ">
+        <div class="text-center w-1/2 h-full bg-yellow-100 flex flex-col justify-center items-center">
+          <div>
+            <p class="text-sm uppercase text-gray-600">Mid-autumn sale</p>
+            <h2 class="text-3xl mb-6 mt-3">Makeup You're Unique</h2>
+            <p class="mb-5 text-xs">Buh-bye body acne. Hello Smoothing AHA Body Lotion.</p>
+            <button
+              class="bg-black text-white px-6 py-3 text-sm uppercase rounded-sm hover:bg-pink-700 rounded-full w-60 mt-3">Buy
+              now / $59.00</button>
+          </div>
+        </div>
+        <div class="w-1/2 h-full">
+          <img src="./assets/images/modül12.jpg" alt="modul12" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!--! MODULE 15 -->
+    <div class="bg-gray-100 w-full p-4">
+      <div class="mb-5 md:w-9/12 mx-auto">
+        <h2 class="text-base font-bold text-center md:text-left">Deals & Promotions</h2>
+      </div>
+      <div class="flex flex-col md:flex-row flex-nowrap justify-center gap-4 w-full md:w-9/12 mx-auto">
+        <div class="flex flex-col w-full md:w-1/3 bg-white rounded-lg shadow-lg h-2/3">
+          <img class="h-64 w-full object-cover rounded-t-lg" src="./assets/images/modül15-1.png"
+            alt="Promotion Image" />
+          <div class="p-4 h-24 overflow-hidden">
+            <h4 class="text-sm font-semibold">Sale Off Unlimited - Buy 1 Get 2</h4>
+            <p class="text-xs">Save 80% on order more than $599. Delivery in 1 days. Apply for the first 1k Customers.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col w-full md:w-1/3 bg-white rounded-lg shadow-lg h-2/3">
+          <img class="h-64 w-full object-cover rounded-t-lg" src="./assets/images/modül15-2.png"
+            alt="Promotion Image" />
+          <div class="p-4 h-24 overflow-hidden">
+            <h4 class="text-sm font-semibold">Cyber Monday - Save $599 On Speaker</h4>
+            <p class="text-xs">Save 50% on order more than $99. Delivery in 1 days. Apply for the first 1k Customers.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col w-full md:w-1/3 bg-white rounded-lg shadow-lg h-2/3">
+          <img class="h-64 w-full object-cover rounded-t-lg" src="./assets/images/modül15-3.png"
+            alt="Promotion Image" />
+          <div class="p-4 h-24 overflow-hidden">
+            <h4 class="text-sm font-semibold">Hurry Up - Smartphone Only $299 </h4>
+            <p class="text-xs">All smartphone products at the same price $299. Delivery in 1 days. Apply for the first
+              1k Customers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+  </main>
+
+  <footer>
+    <!--! FOOTER -->
+    <div class="bg-gray-400 text-white">
+      <div class="container mx-auto px-6 py-8 w-full">
+        <div class="flex flex-wrap justify-between w-9/12 mx-auto">
+          <!-- Logo and Address -->
+          <div class="w-full lg:w-1/4 text-xs text-center">
+            <div class="flex flex-col justify-center items-center">
+              <img src="./assets/images/logo.png" alt="logo" class="object-cover" />
+              <p class="text-white text-center">123 Main St. London, UK</p>
+            </div>
+            <div class="gap-5 mt-5 flex mb-5">
+              <a href="#!" role="button">
+                <!-- Facebook -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" style="color: #1877f2"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                </svg>
+              </a>
+
+              <a href="#!" role="button">
+                <!-- Instagram -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" style="color: #c13584"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </a>
+
+              <a href="#!" role="button">
+                <!-- Google -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" style="color: #ea4335"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
+                    fill-rule="evenodd" clip-rule="evenodd" />
+                </svg>
+              </a>
+
+              <a href="#!" role="button">
+                <!-- Twitter -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" style="color: #1da1f2"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Customer Service Links -->
+          <div class="w-full lg:w-1/4 mb-6 lg:mb-0 text-xs">
+            <h3 class="text-sm mb-3 uppercase">Customer Service</h3>
+            <ul>
+              <li class="flex items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                <a href="#" class="hover:text-gray-300">Contact</a>
+              </li>
+              <li class="flex items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                <a href="#" class="hover:text-gray-300">Returns</a>
+              </li>
+              <li class="flex items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                <a href="#" class="hover:text-gray-300">Site Map</a>
+              </li>
+              <li class="flex items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                <a href="#" class="hover:text-gray-300">Brands</a>
+              </li>
+              <li class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                <a href="#" class="hover:text-gray-300">Unlimited Links</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- My Account Links -->
+          <div class="w-full lg:w-1/4 mb-6 lg:mb-0 text-xs">
+            <h3 class="text-sm mb-3 uppercase">My Account</h3>
+            <ul>
+              <li class="flex items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                <a href="#" class="hover:text-gray-300">My Account</a>
+              </li>
+              <li class="flex items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                <a href="#" class="hover:text-gray-300">Order History</a>
+              </li>
+              <li class="flex items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                <a href="#" class="hover:text-gray-300">Affiliates</a>
+              </li>
+              <li class="flex items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                <a href="#" class="hover:text-gray-300">Newsletter</a>
+              </li>
+              <li class="flex items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+                <a href="#" class="hover:text-gray-300">Gift Certificates</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter Section -->
+          <div class="w-full lg:w-1/4 mb-6 lg:mb-0 text-xs">
+            <h3 class="text-sm mb-3">Newsletter</h3>
+            <p class="mb-4">
+              Stay up to date with news and promotions by signing up for our
+              newsletter
+            </p>
+            <div class="flex">
+              <input type="email" placeholder="Your email" class="w-full p-2 rounded-l-lg" />
+              <button class="bg-pink-500 text-white p-2 rounded-r-lg hover:bg-pink-700">
+                Send
+              </button>
+            </div>
+            <!-- Checkbox for Privacy Policy -->
+            <div class="flex items-center mt-4 text-xs">
+              <input type="checkbox" id="privacy_policy" class="mr-2" />
+              <label for="privacy_policy">I have read and agree to the
+                <a href="" class="text-blue-600 hover:text-gray-300">Privacy Policy</a></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright and Payment Icons Section -->
+        <div class="mt-10 border-t border-gray-700 pt-5 flex flex-wrap justify-between w-9/12 mx-auto">
+          <div class="text-xs">
+            <p>Copyright &copy; 2023 Your Store, All Rights Reserved</p>
+          </div>
+          <div>
+            <div class="flex gap-5">
+              <i class="fa-brands fa-cc-visa fa-2x"></i>
+              <i class="fa-brands fa-cc-mastercard fa-2x"></i>
+              <i class="fa-brands fa-cc-paypal fa-2x"></i>
+              <i class="fa-brands fa-cc-amex fa-2x"></i>
+              <i class="fa-brands fa-cc-discover fa-2x"></i>
+              <i class="fa-brands fa-cc-stripe fa-2x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </footer>
 
   <script src="./assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.js"></script>
+  <script src="tailwind.config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 </body>
 
 </html>

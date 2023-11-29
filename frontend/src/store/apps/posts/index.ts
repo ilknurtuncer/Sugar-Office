@@ -1,4 +1,4 @@
-import {createSlice, createAsyncThunk} from '@reduxjs/toolkit'
+import {createSlice, createAsyncThunk, PayloadAction} from '@reduxjs/toolkit'
 import axios from 'axios'
 
 export const getPosts = createAsyncThunk('get/posts', async() => {
@@ -15,7 +15,12 @@ export const appPostsSlice = createSlice({
         data: [],
         loading: false
     },
-    reducers: {},
+    reducers: {
+        testReducer: (state: any, action: PayloadAction<string>) => {
+            console.log(action.payload);
+            state.loading = true
+        }
+    },
     extraReducers: builder => {
         builder.addCase(getPosts.pending, (state: any) => {
             state.loading = true
@@ -30,4 +35,5 @@ export const appPostsSlice = createSlice({
     }
 })
 
+export const { testReducer } = appPostsSlice.actions
 export default appPostsSlice.reducer

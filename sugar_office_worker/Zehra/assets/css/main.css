@@ -138,7 +138,7 @@ body{
 
 
 /* Fading animation */
-.fade {
+.fade1 {
   animation-name: fade;
   animation-duration: 0.50s;
   transform-style: preserve-3d;
@@ -150,9 +150,9 @@ body{
   to  { left:100px}
 }
 
-.fade1 {
+.fade{
   animation-name: fade;
-  animation-duration: 3s;
+  animation-duration: 0.50s;
   transform-style: preserve-3d;
  
 }
@@ -186,4 +186,47 @@ body{
 
 .iconModul6{
   color: darkorchid!important;
+}
+
+.font-nanum{
+  font-family: 'Nanum Gothic', sans-serif;
+
+}
+
+.carousel-item {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-open:checked + .carousel-item {
+    opacity: 100;
+}
+
+
+.carousel-control {
+    display: none;
+}
+
+.carousel-indicators {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+}
+
+.carousel-bullet:hover {
+    color: #3182ce;
+}
+
+#back, #next, #back1, #next1 :hover{
+  color: #337AB7;
 }

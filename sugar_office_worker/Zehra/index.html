@@ -9,27 +9,38 @@
     rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/main.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Nanum+Gothic&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   <script>
     tailwind.config = {
       theme: {
+
         extend: {
           colors: {
             clifford: '#da373d',
             pinky: "#FF9BA7",
             grayPrimary: "#EFF2F5",
+            graySoft: '#F4F4F4',
             pinkyLight: '#FFAFB8',
             gray: '#7D7C7C',
-            blue: '#3C79F5',
+            blue: '#337AB7',
             grayDark: '#39444F',
             grayText: '#B6BBC6',
             red: 'rgba(231, 40, 77, 1)',
-            bluePrimary:'#007aff',
-            yellowPrimary:'#fedd4c'
+            bluePrimary: '#007aff',
+            yellowPrimary: '#fedd4c',
+            grayDown: '#46525E',
+            grayText2: '#BBC6DD',
+            brownSoft: '#F4E8D6',
+            yellowDark: '#F1AD0E'
           }
         }
       }
@@ -293,11 +304,11 @@
 
   <!-- SLİDER -->
 
-  <div class="mx-auto relative group z-0 mb-10">
+  <div class="mx-auto relative group z-0 ">
 
     <div class="mySlides fade relative">
       <img src="./assets/images/sliderimg2.jpg" class="w-full brightness-75">
-      <div class="absolute right-48 bottom-1/2 text-white  text-7xl font-bold fade-left">NEW MODALS1</div>
+      <div class="absolute right-48 bottom-1/2 text-white  text-7xl font-bold fade-left sm:hidden">NEW MODALS1</div>
 
       <div class="absolute right-48 bottom-1/3 flex justify-around">
         <button class="mx-1 py-4 border-2 px-4 w-42 bg-grayPrimary shadow-lg hover:bg-pinky">LEARN MORE</button>
@@ -306,10 +317,10 @@
       </div>
     </div>
 
-    <div class="mySlides relative" style="transform: translate3d(-699px, 0px, 0px); transition-duration: 0ms;">
+    <div class="mySlides fade relative">
       <img src="./assets/images/sliderimg1.jpg" class=" w-full brightness-75">
       <div
-        class="absolute left-48 bottom-1/2 text-white  xl:text-7xl lg:text-7xl md:text-7xl sm:text-xl font-bold fade-right">
+        class="absolute left-48 bottom-1/2 text-white  xl:text-7xl lg:text-7xl md:text-7xl sm:text-xl font-bold fade-right sm:hidden">
         NEW MODALS2</div>
 
       <div class="absolute left-48 bottom-1/3 flex justify-around ">
@@ -321,7 +332,7 @@
 
     <!-- Next and previous buttons -->
     <div class="flex flex-col absolute top-1/3 right-0 invisible group-hover:visible">
-      <a class="bg-white  hover:bg-grayPrimary w-8 h-10 text-center pt-2 mb-2 cursor-pointer"
+      <a class="bg-white  hover:bg-grayPrimary md:w-8 md:h-10  text-center pt-2 mb-2 cursor-pointer"
         onclick="plusSlides(-1)">&#10094;</a>
       <a class="bg-white hover:bg-grayPrimary w-8 h-10 text-center pt-2 cursor-pointer"
         onclick="plusSlides(1)">&#10095;</a>
@@ -334,10 +345,108 @@
     </div>
   </div>
 
+  <!-- MODUL-10 -->
+
+  <div class="bg-graySoft md:h-64  w-full flex flex-col">
+    <div class="w-9/12  mx-auto pt-3 mb-1">
+      <p class="font-bold pb-3">Popular Departments</p>
+      <p class="text-xs text-grayDown">Products From These Categories Often Buy</p>
+    </div>
+    <div
+      class="w-9/12  grid md:grid-cols-4 sm:grid-cols-2 sm:grid-rows-2 sm:grid-cols-2 sm:grid-rows-2 md:h-48  mx-auto md:gap-3 sm:gap-2 flex items-center ">
+
+
+      <div class="relative cursor-pointer rounded-md">
+
+        <img src="https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-1.png"
+          class="md:h-40 w-full hover:brightness-75 rounded-md">
+        <div class="flex flex-col ml-8 absolute bottom-1/3">
+          <p class="text-sm font-bold">Vegetables</p>
+          <p class="text-xs text-grayDown">1 products</p>
+        </div>
+      </div>
+      <div class="relative cursor-pointer rounded-md">
+
+        <img src="https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-2.png"
+          class="md:h-40 w-full hover:brightness-75 rounded-md">
+        <div class="flex flex-col ml-8 absolute bottom-1/3">
+          <p class="text-sm font-bold">Fruits</p>
+          <p class="text-xs text-grayDown">9 products</p>
+        </div>
+
+      </div>
+      <div class="relative cursor-pointer rounded-md">
+
+        <img src="https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-4.png"
+          class="md:h-40 w-full hover:brightness-75 rounded-md">
+        <div class="flex flex-col ml-8 absolute bottom-1/3">
+          <p class="text-sm font-bold">Breakfast</p>
+          <p class="text-xs text-grayDown">8 products</p>
+        </div>
+
+      </div>
+      <div class="relative cursor-pointer rounded-md">
+
+        <img src="https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-3.png"
+          class="md:h-40 w-full hover:brightness-75 rounded-md">
+        <div class="flex flex-col ml-8 absolute bottom-1/3">
+          <p class="text-sm font-bold">Cooking</p>
+          <p class="text-xs text-grayDown">5 products</p>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+  <!-- MODUL-15 -->
+  <div class="w-full md:h-[500px] sm:h-[50px] bg-graySoft mt-2">
+    <div class="md:w-9/12 sm:w-full m-auto py-1">
+      <div class="py-3">
+        <p class="font-bold mb-4 text-xl">Deals&Promotions</p>
+      </div>
+      <div class="grid grid-cols-3 gap-3">
+        <div class="rounded-lg bg-white">
+          <div>
+            <img class="rounded-t-lg md:h-[250px] sm:h-[185px]" src="./assets/images/image-3.png">
+          </div>
+          <div class="p-5">
+            <p class="text-xs font-bold mb-2 ">Sale Off Unlimited -Buy 1 Get 2</p>
+            <p class="text-xs">Savu 80% on nerder more than 5599. Delivery in 1 days. Apply for the first Customers,</p>
+          </div>
+        </div>
+        <div class="rounded-lg bg-white">
+          <div>
+            <img class="rounded-t-lg md:h-[250px] sm:h-[185px]" src="./assets/images/image.png">
+          </div>
+          <div class="p-5">
+            <p class="text-xs font-bold mb-2">Cyber Monday - Save $599 On Speaker</p>
+            <p class="text-xs">Save 50% on order more than $99. Dailvery in 1 days. Apply for the first ik Customers</p>
+          </div>
+        </div>
+        <div class="rounded-lg bg-white">
+          <div>
+            <img class="rounded-t-lg md:h-[250px] sm:h-[185px]" src="./assets/images/image-2.png">
+          </div>
+          <div class="p-5">
+            <p class="text-xs font-bold mb-2">Hurry Up-Smartphone Only $299</p>
+            <p class="text-xs">All smartphone products at the same price $299, Delivery in I deys. Apply for the first
+              Ik Customers</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
   <!-- MODUL-5 -->
 
-  <div class="w-full  flex flex-col justify-center items-center h-96 bg-fixed bg-cover "
-    style="background-image: url(./assets/images/sugar.jpg);">
+  <div class="w-full  flex flex-col justify-center items-center md:h-96 sm:h-[300px] bg-fixed bg-cover bg-opacity-30"
+    style="background-image: url(./assets/images/andrew-neel-369701-unsplash-1500x1000.jpg.webp);">
     <div class="w-9/12 m-auto text-center leading-5">
       <p class="text-4xl font-bold font-roboto text-white">END OF SEASON SALE</p>
       <p class="mt-10 text-base   text-white  ">Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -345,21 +454,453 @@
         text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
         specimen book. </p>
     </div>
-    <button class="bg-pinky px-5 py-3 rounded-sm text-white mb-20 hover:bg-red text-lg">Shop Now</button>
+    <button class="bg-red px-5 py-3 rounded-sm text-white mb-20 hover:bg-grayDark text-lg">Shop Now</button>
   </div>
 
-  
+
+
+
+
+  <!-- MODUL-7 -->
+
+  <div class="w-full relative">
+    <div class="mySlides1   group">
+      <div class="flex w-9/12 m-auto items-center h-40 justify-between">
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img
+            src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/olivia-fashion-150x150.jpg.webp">
+        </div>
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/palm_logo-150x150w.jpg.webp">
+        </div>
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img src=" https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/awesome-150x150.jpg.webp">
+        </div>
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/mellisa-150x150.jpg.webp">
+        </div>
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/htc_logo-150x150w.jpg.webp">
+        </div>
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/superbrand-150x150.jpg.webp">
+        </div>
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/FC-fashion-150x150.jpg.webp">
+        </div>
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sony_logo-150x150w.jpg.webp">
+        </div>
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/hp_logo-150x150w.jpg.webp">
+        </div>
+
+        <a class="bg-clifford text-white hover:bg-bluePrimary w-6 h-8  absolute  top-1/3 right-1 text-center pt-1 cursor-pointer  invisible group-hover:visible"
+          onclick="plusSlides1(1)"><i class="fa-solid fa-arrow-right" style="color: #FFFFFF;"></i></a>
+
+
+      </div>
+
+
+
+    </div>
+
+    <div class="mySlides1 group">
+      <div class="flex w-9/12 m-auto items-center h-40 justify-between">
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/fashion-150x150.jpg.webp">
+        </div>
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sunglasses-150x150.png.webp">
+        </div>
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/canon_logo-150x150w.jpg.webp">
+        </div>
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/erikson-150x150.jpg.webp">
+        </div>
+
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/apple_logo-150x150h.jpg.webp">
+        </div>
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/hipster-150x150.jpg.webp">
+        </div>
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sarah-beauty-150x150.jpg.webp">
+        </div>
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/chic-150x150.jpg.webp">
+        </div>
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img
+            src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sarah-cosmetics-150x150.jpg.webp">
+        </div>
+        <div
+          class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
+          <img
+            src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/olivia-fashion-150x150.jpg.webp">
+        </div>
+      </div>
+
+      <a class="bg-clifford text-white  hover:bg-bluePrimary w-6 h-8  absolute top-1/3 left-1 text-center pt-1 mb-2 cursor-pointer  invisible group-hover:visible"
+        onclick="plusSlides1(-1)"><i class="fa-solid fa-arrow-left" style="color: #FFFFFF;"></i></a>
+
+    </div>
+
+
+    <div class="text-center absolute -bottom-1 right-1/2">
+      <span class="dot1 w-2 h-2 rounded-full cursor-pointer  m-1 bg-grayDark " onclick="currentSlide1(1)"></span>
+      <span class="dot1 w-2 h-2 rounded-full cursor-pointer  m-1 bg-grayDark " onclick="currentSlide1(2)"></span>
+    </div>
+  </div>
+
+  <!-- MODUL-21 -->
+
+  <div class="w-9/12  m-auto h-[900px]">
+    <div class="w-full bg-graySoft rounded-md border-l-8 border-yellowDark my-4 p-2 text-xl font-bold">Popular Product
+    </div>
+    <div class="grid grid-cols-5 grid-rows-2 gap-2">
+
+      <div class="border border-graySoft hover:border-yellowDark group rounded-sm relative">
+        <div class="cursor-pointer">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/15-288x288.jpg"
+            class="group-hover:hidden transition-all duration-300 cursor-pointer ">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/3-288x288.jpg"
+            class="hidden group-hover:block">
+        </div>
+        <div class="p-2 ml-1">
+          <p>CAR</p>
+          <p class="font-bold">Fashion Design</p>
+          <div>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+
+          </div>
+          <div class="group-hover:invisible my-4 text-xl font-bold">$602.00</div>
+        </div>
+        <div
+          class="flex items-center justify-between invisible group-hover:visible pb-1 
+          absolute group-hover:-translate-y-16 transition-transform duration-300   my-4">
+          <button class="bg-graySoft p-2 hover:bg-yellowDark rounded-full text-md font-thin">+ Add To Cart</button>
+          <div class="bg-graySoft px-3 py-2 hover:bg-yellowDark rounded-full"><i class="fa-solid fa-heart fa-xs"></i></div>
+          <div class="bg-graySoft p-2 rounded-full hover:bg-yellowDark"><i class="fa-solid fa-code-compare"></i></div>
+
+        </div>
+      </div>
+      <div class="border border-graySoft hover:border-yellowDark group rounded-sm relative">
+        <div class="cursor-pointer">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/22-288x288.jpg"
+            class="group-hover:hidden transition-all duration-300 cursor-pointer ">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/21-288x288.jpg"
+            class="hidden group-hover:block">
+        </div>
+        <div class="p-2 ml-1">
+          <p>CAR</p>
+          <p class="font-bold">Fashion Design</p>
+
+          <div>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+
+          </div>
+          <div class="group-hover:invisible my-4 text-xl font-bold">$602.00</div>
+        </div>
+        <div
+          class="flex items-center justify-evenly invisible group-hover:visible pb-1 absolute group-hover:-translate-y-16 transition-transform duration-300  mr-1 my-4">
+          <button class="bg-graySoft p-2 hover:bg-yellowDark rounded-full text-md font-thin">+ Add To Cart</button>
+          <div class="bg-graySoft px-3 py-2 hover:bg-yellowDark rounded-full"><i class="fa-solid fa-heart fa-xs"></i></div>
+          <div class="bg-graySoft p-2 rounded-full hover:bg-yellowDark"><i class="fa-solid fa-code-compare"></i></div>
+
+        </div>
+      </div>
+      <div class="border border-graySoft hover:border-yellowDark group rounded-sm relative">
+        <div class="cursor-pointer">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/26-288x288.jpg"
+            class="group-hover:hidden transition-all duration-300 cursor-pointer ">
+            <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/20-288x288.jpg"
+            class="hidden group-hover:block">
+        </div>
+        <div class="p-2 ml-1">
+          <p>CAR</p>
+          <p class="font-bold">Fashion Design</p>
+
+          <div>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+
+          </div>
+          <div class="group-hover:invisible my-4 text-xl font-bold">$602.00</div>
+        </div>
+        <div
+          class="flex items-center justify-evenly invisible group-hover:visible pb-1 absolute group-hover:-translate-y-16 transition-transform duration-300  mr-1 my-4">
+          <button class="bg-graySoft p-2 hover:bg-yellowDark rounded-full text-md font-thin">+ Add To Cart</button>
+          <div class="bg-graySoft px-3 py-2 hover:bg-yellowDark rounded-full"><i class="fa-solid fa-heart fa-xs"></i></div>
+          <div class="bg-graySoft p-2 rounded-full hover:bg-yellowDark"><i class="fa-solid fa-code-compare"></i></div>
+
+        </div>
+      </div>
+      <div class="border border-graySoft hover:border-yellowDark group rounded-sm relative">
+        <div class="cursor-pointer">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/27-288x288.jpg"
+            class="group-hover:hidden transition-all duration-300 cursor-pointer ">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/23-288x288.jpg"
+            class="hidden group-hover:block">
+        </div>
+        <div class="p-2 ml-1">
+          <p>CAR</p>
+          <p class="font-bold">Fashion Design</p>
+
+          <div>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+
+          </div>
+          <div class="group-hover:invisible my-4 text-xl font-bold">$602.00</div>
+        </div>
+        <div
+          class="flex items-center justify-evenly invisible group-hover:visible pb-1 absolute group-hover:-translate-y-16 transition-transform duration-300  mr-1 my-4">
+          <button class="bg-graySoft p-2 hover:bg-yellowDark rounded-full text-md font-thin">+ Add To Cart</button>
+          <div class="bg-graySoft px-3 py-2 hover:bg-yellowDark rounded-full"><i class="fa-solid fa-heart fa-xs"></i></div>
+          <div class="bg-graySoft p-2 rounded-full hover:bg-yellowDark"><i class="fa-solid fa-code-compare"></i></div>
+
+        </div>
+      </div>
+      <div class="border border-graySoft hover:border-yellowDark group rounded-sm relative">
+        <div class="cursor-pointer">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/12-288x288.jpg"
+            class="group-hover:hidden transition-all duration-300 cursor-pointer ">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/11-288x288.jpg"
+            class="hidden group-hover:block">
+        </div>
+        <div class="p-2 ml-1">
+          <p>CAR</p>
+          <p class="font-bold">Fashion Design</p>
+
+          <div>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+
+          </div>
+          <div class="group-hover:invisible my-4 text-xl font-bold">$602.00</div>
+        </div>
+        <div
+          class="flex items-center justify-evenly invisible group-hover:visible pb-1 absolute group-hover:-translate-y-16 transition-transform duration-300  mr-1 my-4">
+          <button class="bg-graySoft p-2 hover:bg-yellowDark rounded-full text-md font-thin">+ Add To Cart</button>
+          <div class="bg-graySoft px-3 py-2 hover:bg-yellowDark rounded-full"><i class="fa-solid fa-heart fa-xs"></i></div>
+          <div class="bg-graySoft p-2 rounded-full hover:bg-yellowDark"><i class="fa-solid fa-code-compare"></i></div>
+
+        </div>
+      </div>
+      <div class="border border-graySoft hover:border-yellowDark group rounded-sm relative">
+        <div class="cursor-pointer">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/16-288x288.jpg"
+            class="group-hover:hidden transition-all duration-300 cursor-pointer ">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/17-288x288.jpg"
+            class="hidden group-hover:block">
+        </div>
+        <div class="p-2 ml-1">
+          <p>CAR</p>
+          <p class="font-bold">Fashion Design</p>
+
+          <div>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+
+          </div>
+          <div class="group-hover:invisible my-4 text-xl font-bold">$602.00</div>
+        </div>
+        <div
+          class="flex items-center justify-evenly invisible group-hover:visible pb-1 absolute group-hover:-translate-y-16 transition-transform duration-300  mr-1 my-4">
+          <button class="bg-graySoft p-2 hover:bg-yellowDark rounded-full text-md font-thin">+ Add To Cart</button>
+          <div class="bg-graySoft px-3 py-2 hover:bg-yellowDark rounded-full"><i class="fa-solid fa-heart fa-xs"></i></div>
+          <div class="bg-graySoft p-2 rounded-full hover:bg-yellowDark"><i class="fa-solid fa-code-compare"></i></div>
+
+        </div>
+      </div>
+      <div class="border border-graySoft hover:border-yellowDark group rounded-sm relative">
+        <div class="cursor-pointer">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/12-288x288.jpg"
+            class="group-hover:hidden transition-all duration-300 cursor-pointer ">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/27-288x288.jpg"
+            class="hidden group-hover:block">
+        </div>
+        <div class="p-2 ml-1">
+          <p>CAR</p>
+          <p class="font-bold">Fashion Design</p>
+
+          <div>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+
+          </div>
+          <div class="group-hover:invisible my-4 text-xl font-bold">$602.00</div>
+        </div>
+        <div
+          class="flex items-center justify-evenly invisible group-hover:visible pb-1 absolute group-hover:-translate-y-16 transition-transform duration-300  mr-1 my-4">
+          <button class="bg-graySoft p-2 hover:bg-yellowDark rounded-full text-md font-thin">+ Add To Cart</button>
+          <div class="bg-graySoft px-3 py-2 hover:bg-yellowDark rounded-full"><i class="fa-solid fa-heart fa-xs"></i></div>
+          <div class="bg-graySoft p-2 rounded-full hover:bg-yellowDark"><i class="fa-solid fa-code-compare"></i></div>
+
+        </div>
+      </div>
+      <div class="border border-graySoft hover:border-yellowDark group rounded-sm relative">
+        <div class="cursor-pointer">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/15-288x288.jpg"
+            class="group-hover:hidden transition-all duration-300 cursor-pointer ">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/12-288x288.jpg"
+            class="hidden group-hover:block">
+        </div>
+        <div class="p-2 ml-1">
+          <p>CAR</p>
+          <p class="font-bold">Fashion Design</p>
+
+          <div>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+
+          </div>
+          <div class="group-hover:invisible my-4 text-xl font-bold">$602.00</div>
+        </div>
+        <div
+          class="flex items-center justify-evenly invisible group-hover:visible pb-1 absolute group-hover:-translate-y-16 transition-transform duration-300  mr-1 my-4">
+          <button class="bg-graySoft p-2 hover:bg-yellowDark rounded-full text-md font-thin">+ Add To Cart</button>
+          <div class="bg-graySoft px-3 py-2 hover:bg-yellowDark rounded-full"><i class="fa-solid fa-heart fa-xs"></i></div>
+          <div class="bg-graySoft p-2 rounded-full hover:bg-yellowDark"><i class="fa-solid fa-code-compare"></i></div>
+
+        </div>
+      </div>
+      <div class="border border-graySoft hover:border-yellowDark group rounded-sm relative">
+        <div class="cursor-pointer">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/20-288x288.jpg"
+            class="group-hover:hidden transition-all duration-300 cursor-pointer ">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/21-288x288.jpg"
+            class="hidden group-hover:block">
+        </div>
+        <div class="p-2 ml-1">
+          <p>CAR</p>
+          <p class="font-bold">Fashion Design</p>
+
+          <div>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+
+          </div>
+          <div class="group-hover:invisible my-4 text-xl font-bold">$602.00</div>
+        </div>
+        <div
+          class="flex items-center justify-evenly invisible group-hover:visible pb-1 absolute group-hover:-translate-y-16 transition-transform duration-300  mr-1 my-4">
+          <button class="bg-graySoft p-2 hover:bg-yellowDark rounded-full text-md font-thin">+ Add To Cart</button>
+          <div class="bg-graySoft px-3 py-2 hover:bg-yellowDark rounded-full"><i class="fa-solid fa-heart fa-xs"></i></div>
+          <div class="bg-graySoft p-2 rounded-full hover:bg-yellowDark"><i class="fa-solid fa-code-compare"></i></div>
+
+        </div>
+      </div>
+      <div class="border border-graySoft hover:border-yellowDark group rounded-sm relative">
+        <div class="cursor-pointer">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/20-288x288.jpg"
+            class="group-hover:hidden transition-all duration-300 cursor-pointer ">
+          <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/21-288x288.jpg"
+            class="hidden group-hover:block">
+        </div>
+        <div class="p-2 ml-1">
+          <p>CAR</p>
+          <p class="font-bold">Fashion Design</p>
+
+          <div>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star fa-xs" style="color: #FEC42C;"></i>
+
+          </div>
+          <div class="group-hover:invisible my-4 text-xl font-bold">$602.00</div>
+        </div>
+        <div
+          class="flex items-center justify-evenly invisible group-hover:visible pb-1 absolute group-hover:-translate-y-16 transition-transform duration-300  mr-1 my-4">
+          <button class="bg-graySoft p-2 hover:bg-yellowDark rounded-full text-md font-thin">+ Add To Cart</button>
+          <div class="bg-graySoft px-3 py-2 hover:bg-yellowDark rounded-full"><i class="fa-solid fa-heart fa-xs"></i></div>
+          <div class="bg-graySoft p-2 rounded-full hover:bg-yellowDark"><i class="fa-solid fa-code-compare"></i></div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MODUL-12 -->
+  <div class=" md:h-[700px] sm:h-[250px] w-full justify-evenly grid grid-cols-2 gap-0 bg-brownSoft">
+    <div class="bg-brownSoft h-full flex justify-center items-center text-center">
+      <div>
+        <p class="font-bold text-xs mb-4">MID-AUTUMN SALE</p>
+        <p class=" mb-5 text-4xl font-nanum">Makeup You're Uniqe</p>
+        <p class="text-xs m-8">Buh-bye body acne. Hella Smoothing AHA Body Lotion</p>
+        <button class="bg-black rounded-full md:w-48 p-1 sm:w-40 h-8 text-white text-xs hover:opacity-75">BUY NOW /
+          $59.00</button>
+
+      </div>
+    </div>
+    <div>
+      <img src="./assets/images/image01.jpg" class="h-full">
+    </div>
+  </div>
 
   <!-- MODUL-6 -->
-  <div class="bg-grayText flex items-center h-24 w-full">
+  <div class="bg-grayText flex items-center md:h-24 sm:h-40 w-full">
 
-    <div class="w-9/12 m-auto flex justify-between items-center">
+    <div class="md:w-9/12 sm:w-full m-auto flex justify-between items-center">
       <div class="flex items-center">
         <div class="rounded-full border-2 border-blue p-3">
           <i class="fa-sharp fa-solid fa-truck-fast fa-lg" style="color: #ff9ba7;"></i>
         </div>
 
-        <div class="ml-2">
+        <div class="md:ml-2 sm:ml-1">
           <h1 class="text-white text-xs font-bold">Free Shipping</h1>
           <p class="text-xs text-grayDark opacity-90">Free delivery over $100</p>
         </div>
@@ -370,7 +911,7 @@
 
           <i class="fa-sharp fa-solid fa-rotate-left fa-lg" style="color:  #ff9ba7;"></i>
         </div>
-        <div class="ml-2">
+        <div class="md:ml-2 sm:ml-1">
           <h1 class="text-white text-xs font-bold">Free Shipping</h1>
           <p class="text-xs text-grayDark opacity-90"> Free delivery over $100</p>
         </div>
@@ -380,7 +921,7 @@
         <div class="rounded-full border-2 border-blue p-3">
           <i class="fa-solid fa-shield-virus fa-lg" style="color:#ff9ba7;"></i>
         </div>
-        <div class="ml-2">
+        <div class="md:ml-2 sm:ml-1">
           <h1 class="text-white text-xs font-bold">Free Shipping</h1>
           <p class="text-xs text-grayDark opacity-90">Free delivery over $100</p>
         </div>
@@ -390,7 +931,7 @@
         <div class="rounded-full border-2 border-blue p-3">
           <i class="fa-solid fa-cube fa-lg" style="color:#ff9ba7;"></i>
         </div>
-        <div class="ml-2">
+        <div class="md:ml-2 sm:ml-1">
           <h1 class="text-white text-xs font-bold">Free Shipping</h1>
           <p class="text-xs text-grayDark opacity-90">Free delivery over $100</p>
         </div>
@@ -400,115 +941,411 @@
 
   </div>
 
-    <!-- MODUL-7 -->
+  <!-- MODUL-20 -->
 
-    <div class="w-full relative">
-      <div class="mySlides1   group" >
-        <div class="flex w-9/12 m-auto items-center h-40 justify-between">
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
-            <img
-              src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/olivia-fashion-150x150.jpg.webp">
-          </div>
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100"> <img
-              src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/palm_logo-150x150w.jpg.webp">
-          </div>
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100"> <img
-              src=" https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/awesome-150x150.jpg.webp">
-          </div>
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100"> <img
-              src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/mellisa-150x150.jpg.webp">
-          </div>
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100"> <img
-              src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/htc_logo-150x150w.jpg.webp">
-          </div>
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100"> <img
-              src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/superbrand-150x150.jpg.webp">
-          </div>
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100"> <img
-              src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/FC-fashion-150x150.jpg.webp">
-          </div>
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100"> <img
-              src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sony_logo-150x150w.jpg.webp">
-          </div>
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100"> <img
-              src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/hp_logo-150x150w.jpg.webp">
-          </div>
+  <div class="w-full h-[500px] bg-[#F2F3F7] flex items-center justify-center border">
+    <div class="grid w-9/12  grid-cols-3 gap-2">
 
-          <a class="bg-clifford text-white hover:bg-bluePrimary w-6 h-8  absolute  top-1/3 right-1 text-center pt-1 cursor-pointer  invisible group-hover:visible"
-          onclick="plusSlides1(1)"><i class="fa-solid fa-arrow-right" style="color: #FFFFFF;"></i></a>
-  
-  
+      <div class="col-span-1  relative flex overflow-hidden bg-white">
+        <div class="flex flex-col px-2">
+          <div class="px-3 pt-4 ">
+            <p class="text-3xl">Deals Of The Days</p>
+          </div>
+          <div id="slide-1" class="flex relative">
+
+            <div class="slide-left flex bg-white p-1 w-[356px] h-[300px]">
+              <div class="m-4">
+                <img
+                  src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/4-330x330.jpg"
+                  class="object-cover w-[150px] h-[250px] ">
+              </div>
+              <div class="w-40 mt-8">
+                <div>
+                  <a class="text-md font-bold">Incididunt picanha</a>
+                  <div class="reating">
+                    <i class="fa-solid fa-star fa-xs" style="color: #FEC42C;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #FEC42C;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #FEC42C;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #FEC42C;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #FEC42C;"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm font-thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="flex text-center mt-4 items-center">
+                    <p class="font-bold text-l text-red">$ 45.00</p>
+                    <p class="text-xs ml-1 line-through"> $49.00</p>
+                  </div>
+
+                </div>
+                <div class="flex w-full justify-evenly mt-4">
+                  <div class="border cursor-pointer text-grayDark  items-center justify-center flex p-1">
+                    <i class="fa-solid fa-cart-shopping fa-xs "></i>
+                    <p class="text-xs">ADD TO CART</p>
+                  </div>
+                  <div class="border cursor-pointer text-gray p-1"><i class="fa-solid fa-heart fa-xs"></i></div>
+                  <div class="border cursor-pointer text-gray p-1"><i class="fa fa-refresh fa-xs"></i></div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="slide-left flex bg-white p-1 w-[356px] h-[300px]">
+              <div class="m-4">
+                <img
+                  src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/2-330x330.jpg"
+                  class="object-cover w-[150px] h-[250px] ">
+              </div>
+              <div class="w-40 mt-8">
+                <div>
+                  <a class="text-md font-bold">Ground round enim</a>
+                  <div class="reating">
+                    <i class="fa-solid fa-star fa-xs" style="color: #FEC42C;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #FEC42C;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #FEC42C;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #FEC42C;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #FEC42C;"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm font-thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="flex text-center mt-4 items-center ">
+                    <p class="font-bold text-l text-red">$ 45.00</p>
+                    <p class="text-xs ml-1 line-through"> $49.00</p>
+                  </div>
+
+                </div>
+                <div class="flex w-full  justify-evenly mt-4">
+                  <div class="border cursor-pointer text-grayDark  items-center justify-center flex p-1">
+                    <i class="fa-solid fa-cart-shopping fa-xs "></i>
+                    <p class="text-xs">ADD TO CART</p>
+                  </div>
+                  <div class="border cursor-pointer text-gray p-1"><i class="fa-solid fa-heart fa-xs"></i></div>
+                  <div class="border cursor-pointer text-gray p-1"><i class="fa fa-refresh fa-xs"></i></div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="slide-left flex bg-white p-1 w-[356px] h-[300px]">
+              <div class="m-4">
+                <img
+                  src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/10-330x330.jpg"
+                  class="object-cover w-[150px] h-[250px] ">
+              </div>
+              <div class="w-40 mt-8">
+                <div>
+                  <a class="text-md font-bold">Doenpuis consuat</a>
+                  <div class="reating">
+                    <i class="fa-solid fa-star fa-xs" style="color: #FEC42C;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #FEC42C;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #FEC42C;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #FEC42C;"></i>
+                    <i class="fa-solid fa-star fa-xs" style="color: #FEC42C;"></i>
+                  </div>
+                  <div>
+                    <p class="text-sm font-thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="flex text-center mt-4 items-center">
+                    <p class="font-bold text-l text-red">$ 45.00</p>
+                    <p class="text-xs ml-1 line-through"> $49.00</p>
+                  </div>
+
+                </div>
+                <div class="flex w-full mt-4  justify-evenly">
+                  <div class="border cursor-pointer text-grayDark  items-center justify-center flex p-1">
+                    <i class="fa-solid fa-cart-shopping fa-xs "></i>
+                    <p class="text-xs">ADD TO CART</p>
+                  </div>
+                  <div class="border cursor-pointer text-gray p-1"><i class="fa-solid fa-heart fa-xs"></i></div>
+                  <div class="border cursor-pointer text-gray p-1"><i class="fa fa-refresh fa-xs"></i></div>
+
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
         </div>
-  
-  
-  
+
+        <div id="back"
+          class=" border border-l-0 hover:text-blue border-grayText rounded-r-sm w-10 flex justify-center items-center h-20 z-10 top-36 absolute bg-white cursor-pointer left-0 ">
+          <i class="fa-solid fa-angle-left fa-lg " style="color:#636d77 ;"></i>
+        </div>
+        <div id="next"
+          class=" border border-r-0 hover:text-blue border-grayText rounded-r-sm w-10 flex justify-center items-center h-20 z-10 top-36 absolute bg-white cursor-pointer right-0">
+          <i class="fa-solid fa-angle-right fa-lg " style="color:#636d77 ;"></i>
+        </div>
       </div>
 
-      <div class="mySlides1 group" >
-        <div class="flex w-9/12 m-auto items-center h-40 justify-between">
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100"> <img
-              src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/fashion-150x150.jpg.webp">
+
+
+      <div class="col-span-2 bg-white relative overflow-hidden">
+        <div class="pl-3 pt-4  text-3xl">
+
+          <p>Featured Products</p>
+        </div>
+        <div id="slide-2" class="flex relative m-3">
+
+
+          <div class="slide-right ml-4 bg-white p-1">
+            <div class="m-2">
+              <img
+                src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/fashion-21/3-270x270.jpg"
+                class="object-cover w-[150px] h-[250px]">
+            </div>
+            <div class="w-40 flex flex-col items-center">
+              <div>
+                <a class="text-md font-bold text-center">Incididunt picanha</a>
+                <div class="reating flex justify-center m-2">
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+
+                </div>
+
+                <div class="flex items-center justify-center m-1">
+                  <p class="font-bold text-l text-red">$ 45.00</p>
+                </div>
+
+              </div>
+              <div class="flex w-full justify-evenly">
+                <div class="border cursor-pointer text-grayDark  items-center flex">
+                  <i class="fa-solid fa-cart-shopping fa-xs "></i>
+                  <p class="text-xs">ADD TO CART</p>
+                </div>
+                <div class="border cursor-pointer text-gray p-1"><i class="fa-solid fa-heart fa-xs"></i></div>
+                <div class="border cursor-pointer text-gray p-1"><i class="fa fa-refresh fa-xs"></i></div>
+
+              </div>
+            </div>
+
           </div>
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100"> <img
-              src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sunglasses-150x150.png.webp">
+          <div class="slide-right ml-4 bg-white p-1">
+            <div class="m-2">
+              <img
+                src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/fashion-21/8-270x270.jpg"
+                class="object-cover w-[150px] h-[250px]">
+            </div>
+            <div class="w-40 flex flex-col items-center">
+              <div>
+                <a class="text-md font-bold text-center">Incididunt picanha</a>
+                <div class="reating flex justify-center m-2">
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                </div>
+
+                <div class="flex items-center justify-center m-1">
+                  <p class="font-bold text-l text-red">$ 45.00</p>
+                </div>
+
+              </div>
+              <div class="flex w-full justify-evenly">
+                <div class="border cursor-pointer text-grayDark  items-center flex">
+                  <i class="fa-solid fa-cart-shopping fa-xs "></i>
+                  <p class="text-xs">ADD TO CART</p>
+                </div>
+                <div class="border cursor-pointer text-gray p-1"><i class="fa-solid fa-heart fa-xs"></i></div>
+                <div class="border cursor-pointer text-gray p-1"><i class="fa fa-refresh fa-xs"></i></div>
+
+              </div>
+            </div>
+
           </div>
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100"> <img
-              src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/canon_logo-150x150w.jpg.webp">
+          <div class="slide-right ml-4 bg-white p-1">
+            <div class="m-2">
+              <img
+                src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/id-update/Electronics/10-270x270.jpg"
+                class="object-cover w-[150px] h-[250px]">
+            </div>
+            <div class="w-40 flex flex-col items-center">
+              <div>
+                <a class="text-md font-bold text-center">Incididunt picanha</a>
+                <div class="reating flex justify-center m-2">
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                </div>
+
+                <div class="flex items-center justify-center m-1">
+                  <p class="font-bold text-l text-red">$ 45.00</p>
+                </div>
+
+              </div>
+              <div class="flex w-full justify-evenly">
+                <div class="border cursor-pointer text-grayDark  items-center flex">
+                  <i class="fa-solid fa-cart-shopping fa-xs "></i>
+                  <p class="text-xs">ADD TO CART</p>
+                </div>
+                <div class="border cursor-pointer text-gray p-1"><i class="fa-solid fa-heart fa-xs"></i></div>
+                <div class="border cursor-pointer text-gray p-1"><i class="fa fa-refresh fa-xs"></i></div>
+
+              </div>
+            </div>
+
           </div>
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100"> <img
-              src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/erikson-150x150.jpg.webp">
+          <div class="slide-right ml-4 bg-white p-1">
+            <div class="m-2">
+              <img
+                src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/10-270x270.jpg"
+                class="object-cover w-[150px] h-[250px]">
+            </div>
+            <div class="w-40 flex flex-col items-center">
+              <div>
+                <a class="text-md font-bold text-center">Doenpuis consuat</a>
+                <div class="reating flex justify-center m-2">
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                </div>
+
+                <div class="flex items-center justify-center m-1">
+                  <p class="font-bold text-l text-red">$ 45.00</p>
+                </div>
+
+              </div>
+              <div class="flex w-full justify-evenly">
+                <div class="border cursor-pointer text-grayDark  items-center flex">
+                  <i class="fa-solid fa-cart-shopping fa-xs "></i>
+                  <p class="text-xs">ADD TO CART</p>
+                </div>
+                <div class="border cursor-pointer text-gray p-1"><i class="fa-solid fa-heart fa-xs"></i></div>
+                <div class="border cursor-pointer text-gray p-1"><i class="fa fa-refresh fa-xs"></i></div>
+
+              </div>
+            </div>
+
           </div>
-  
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100"> <img
-              src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/apple_logo-150x150h.jpg.webp">
+          <div class="slide-right ml-4 bg-white p-1">
+            <div class="m-2">
+              <img
+                src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/funiture/2-270x270.jpg"
+                class="object-cover w-[150px] h-[250px]">
+            </div>
+            <div class="w-40 flex flex-col items-center">
+              <div>
+                <a class="text-md font-bold text-center">Incididunt picanha</a>
+                <div class="reating flex justify-center m-2">
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                </div>
+
+                <div class="flex items-center justify-center m-1">
+                  <p class="font-bold text-l text-red">$ 45.00</p>
+                </div>
+
+              </div>
+              <div class="flex w-full justify-evenly">
+                <div class="border cursor-pointer text-grayDark  items-center flex">
+                  <i class="fa-solid fa-cart-shopping fa-xs "></i>
+                  <p class="text-xs">ADD TO CART</p>
+                </div>
+                <div class="border cursor-pointer text-gray p-1"><i class="fa-solid fa-heart fa-xs"></i></div>
+                <div class="border cursor-pointer text-gray p-1"><i class="fa fa-refresh fa-xs"></i></div>
+
+              </div>
+            </div>
+
           </div>
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100"> <img
-              src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/hipster-150x150.jpg.webp">
+          <div class="slide-right ml-4 bg-white p-1">
+            <div class="m-2">
+              <img
+                src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/11-270x270.jpg"
+                class="object-cover w-[150px] h-[250px]">
+            </div>
+            <div class="w-40 flex flex-col items-center">
+              <div>
+                <a class="text-md font-bold text-center">Incididunt picanha</a>
+                <div class="reating flex justify-center m-2">
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
+                </div>
+
+                <div class="flex items-center justify-center m-1">
+                  <p class="font-bold text-l text-red">$ 45.00</p>
+                </div>
+
+              </div>
+              <div class="flex w-full justify-evenly">
+                <div class="border cursor-pointer text-grayDark  items-center flex">
+                  <i class="fa-solid fa-cart-shopping fa-xs "></i>
+                  <p class="text-xs">ADD TO CART</p>
+                </div>
+                <div class="border cursor-pointer text-gray p-1"><i class="fa-solid fa-heart fa-xs"></i></div>
+                <div class="border cursor-pointer text-gray p-1"><i class="fa fa-refresh fa-xs"></i></div>
+
+              </div>
+            </div>
+
           </div>
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100"> <img
-              src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sarah-beauty-150x150.jpg.webp">
-          </div>
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100"> <img
-              src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/chic-150x150.jpg.webp">
-          </div>
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100"> <img
-              src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sarah-cosmetics-150x150.jpg.webp">
-          </div>
-          <div class="w-20 h-20 hover:w-24 hover:h-24 cursor-pointer grayscale hover:grayscale-0 opacity-50 hover:opacity-100">
-            <img
-              src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/olivia-fashion-150x150.jpg.webp">
-          </div>
+
+
+
         </div>
 
-        <a class="bg-clifford text-white  hover:bg-bluePrimary w-6 h-8  absolute top-1/3 left-1 text-center pt-1 mb-2 cursor-pointer  invisible group-hover:visible"
-        onclick="plusSlides1(-1)"><i class="fa-solid fa-arrow-left" style="color: #FFFFFF;"></i></a>
 
-  
-      </div>
-  
-   
-      
-  
-
-  
-      <div class="text-center absolute -bottom-1 right-1/2">
-        <span class="dot1 w-2 h-2 rounded-full cursor-pointer  m-1 bg-grayDark " onclick="currentSlide1(1)"></span>
-        <span class="dot1 w-2 h-2 rounded-full cursor-pointer  m-1 bg-grayDark " onclick="currentSlide1(2)"></span>
+        <div id="back1"
+          class=" border border-l-0 hover:text-blue border-grayText rounded-r-sm w-10 flex justify-center items-center h-20 z-10 top-36 absolute bg-white cursor-pointer left-0 ">
+          <i class="fa-solid fa-angle-left fa-lg " style="color:#636d77 ;"></i>
+        </div>
+        <div id="next1"
+          class=" border border-r-0 hover:text-blue border-grayText rounded-r-sm w-10 flex justify-center items-center h-20 z-10 top-36 absolute bg-white cursor-pointer right-0">
+          <i class="fa-solid fa-angle-right fa-lg " style="color:#636d77 ;"></i>
+        </div>
       </div>
     </div>
 
 
 
 
+  </div>
+
+  <!-- MODUL-9 -->
+  <div class="w-full bg-yellowPrimary">
+
+    <div class="w-9/12 h-36 m-auto flex items-center">
+      <div class="mr-6">
+        <img src="./assets/images/email_5355051.png " class="w-16 h-8">
+      </div>
+      <div class="2/6 opacity-70">
+        <p class="my-2 font-bold text-sm">Subscribe Newsletter</p>
+        <p class="text-xs ">Get all the latest information on Events, Sales and Offers. Sign up for newsletter today.
+        </p>
+
+      </div>
+      <div class="w-full flex">
+        <input class="border-none rounded-lg  placeholder:text-xs placeholder:opacity-50 w-11/12 flex items-center"
+          placeholder="Email address"></input>
+        <button class="bg-black rounded-lg ml-2 w-3/12 text-white text-xs">Subscribe</button>
+      </div>
+
+    </div>
+  </div>
 
 
   <!-- FOOTER -->
 
-  <div class="border-t  w-full pt-5 bg-pinky">
-    <div class="w-9/12  m-auto flex flex-col h-56">
+  <div class="border-t  w-full pt-5 bg-grayDark">
+    <div class="xl:w-9/12 lg:w-9/12 md:10/12 sm:w-11/12 m-auto flex flex-col md:h-60 sm:h-96">
       <div class="flex justify-between">
         <div class="flex flex-col items-center mt-3">
-          <img src="./assets/images/logo.png" class="w-32 h-24">
+          <img src="./assets/images/logo.png" class="md:w-32 md:h-28 sm:w-20 sm:h-12 xs:w-18 xs:h-8 ">
           <div class="text-center">
             <p class="text-grayPrimary text-bold">123 Main St. London, UK</p>
             <div class="flex justify-evenly w-48 mt-5">
@@ -519,7 +1356,7 @@
                 </div>
               </div>
               <div class="relative group p-1 cursor-pointer"> <img src="./assets/images/twitter-logo_107195.png"
-                  class="w-5 h-5 opacity-75">
+                  class="w-5 h-5 bg-gray">
                 <div class="absolute group-hover:block hidden right-0 text-xs text-white  p-1 bottom-8 bg-blue">
                   <p>Twitter</p>
                 </div>
@@ -545,7 +1382,7 @@
           </div>
         </div>
         <div class="p-2 text-white">
-          <p class="leading-0 font-bold">CUSTOMER SERVICE</p>
+          <p class="leading-0 font-normal">CUSTOMER SERVICE</p>
 
           <ul class="leading-none flex flex-col justify-start">
             <li class="flex items-center group">
@@ -578,7 +1415,7 @@
 
         </div>
         <div class="p-2 text-white">
-          <p class="leading-0 font-bold">MY ACCOUNT</p>
+          <p class="leading-0 font-normal">MY ACCOUNT</p>
 
           <ul class="leading-none flex flex-col">
             <li class="flex items-center group">
@@ -617,8 +1454,8 @@
 
         </div>
         <div class="text-md p-2">
-          <p class="leading-0 font-bold text-white ">NEWSLETTER</p>
-          <p class="break-words mt-1 text-white ">Stay up to datewith news andpromotions by<br> signing up for our
+          <p class="leading-0 font-normal text-white ">NEWSLETTER</p>
+          <p class="break-words mt-1 text-grayText2 ">Stay up to date with news and promotions by<br> signing up for our
             newsletter</p>
           <div class="relative ">
             <input class="w-full border-none rounded-sm mt-1 placeholder:text-gray placeholder:text-sm"
@@ -644,11 +1481,10 @@
       </div>
     </div>
   </div>
-
-  <div class="w-full h-16 flex items-center bg-pinkyLight text-white">
+  <div class="w-full h-16 flex items-center bg-grayDown text-white">
     <div class="w-10/12 ml-28  flex justify-between">
       <div class="flex items-center">
-        <p class="text-base text-gray">Copyright © 2014, Your Store,All Rights Reserved</p>
+        <p class="text-base text-grayText">Copyright © 2014, Your Store,All Rights Reserved</p>
       </div>
 
       <div class="flex items-center text-grayPrimary">
@@ -697,28 +1533,6 @@
       </div>
     </div>
   </div>
-
-    <!-- MODUL-9 -->
-<div class="w-full bg-yellowPrimary">
-  
-  <div class="w-9/12 h-36 m-auto flex items-center">
-   <div class="m-6">
-    <img src="./assets/images/email_5355051.png " class="w-16 h-8">
-   </div>
-   <div class="2/6 opacity-70">
-    <p class="my-2 font-bold text-sm">Subscribe Newsletter</p>
-    <p class="text-xs ">Get all the latest information on Events, Sales and Offers. Sign up for newsletter today.</p>
-
-   </div>
-   <div class="w-full flex">
-    <input class="border-none rounded-lg  placeholder:text-xs placeholder:opacity-50 w-11/12 flex items-center" placeholder="Email address"></input>
-    <button class="bg-black rounded-lg ml-2 w-3/12 text-white text-xs">Subscribe</button>
-   </div>
-
-  </div>
-</div>
-
-
 
   <script src="./assets/js/index.js"></script>
 </body>

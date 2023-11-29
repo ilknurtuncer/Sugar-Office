@@ -7,7 +7,7 @@ import OneComponent from "@/components/one-component";
 import TwoComponent from "@/components/two-component";
 import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch, RootState } from '@/store';
-import { getPosts } from '@/store/apps/posts';
+import { getPosts, testReducer } from '@/store/apps/posts';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -57,6 +57,8 @@ export default function Home() {
       <OneComponent/>
       <hr/>
       <TwoComponent/>
+      <hr/>
+      <button onClick={() => dispatch(testReducer('abc - testReducer'))}>Test Reducer</button>
       <hr/>
       <button onClick={handleGetPosts}>Post u Getir</button>
       <hr/>

@@ -60,6 +60,10 @@
   <link rel="stylesheet"
     href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/css/splide.min.css">
+
+
 
 </head>
 
@@ -368,11 +372,9 @@
   </header>
 
   <!-- Slider Area -->
-
-  <div id="default-carousel" class=" border-t-2 border-b-2 border-pink-400 mx-auto relative w-full h-full sliderr z-20" data-carousel="slide">
-
-  <div id="default-carousel" class=" mx-auto relative w-full h-full sliderr z-20" data-carousel="slide">
-
+  <div id="default-carousel"
+    class=" border-t-2 border-b-2 border-pink-400 shadow-lg mx-auto relative w-full h-full sliderr z-20"
+    data-carousel="slide">
 
     <!-- Carousel wrapper -->
     <div id="slider" class="relative h-full overflow-hidden rounded-lg sliderr">
@@ -463,15 +465,15 @@
 
     </div>
   </div>
-
   </div>
   </div>
   <!--  -->
 
   <!-- İcon Area -->
 
-  <div class="  border-t-2 border-b-2 border-pink-400 w-full  px-32 h-28 bg-blueGray-600 w-full flex flex-col items-center justify-center">
-    <div class="grid grid-cols-4 h-36 gap-2 p-2 flex flex-col items-center justify-center ">
+  <div
+    class="  border-t-2 border-b-2 border-pink-400 shadow-lg w-full  px-32 h-28 bg-blueGray-600 w-full flex flex-col items-center justify-around">
+    <div class="grid grid-cols-4 h-36 gap-4 p-2 flex flex-col items-center justify-around ">
 
       <div class="flex flex-cow items-center gap-2 ">
         <img src="assets/pictures/116849.png" class="w-16 h-16 rounded-full border-4 border-blue-400 bg-orange-500"
@@ -513,17 +515,17 @@
       </div>
 
       <div class="flex flex-cow items-center gap-2 ">
-        <img src="assets/pictures/Pink-2-Gift-icon.png" class="w-16 h-16 rounded-full border-4 border-blue-400 bg-orange-500"
-          alt="">
+        <img src="assets/pictures/Pink-2-Gift-icon.png"
+          class="w-16 h-16 rounded-full border-4 border-blue-400 bg-orange-500" alt="">
 
-      
-          <div class="text-write flex flex-col items-start justify-start ">
-            <p class="text-white  ">Unlimited Blocks</p>
-            <h6></h6>
-            <p class="text-white text-2xs font-thin ">
-              Any content, any page</p>
-            </h6>
-          </div>
+
+        <div class="text-write flex flex-col items-start justify-start ">
+          <p class="text-white  ">Unlimited Blocks</p>
+          <h6></h6>
+          <p class="text-white text-2xs font-thin ">
+            Any content, any page</p>
+          </h6>
+        </div>
 
       </div>
 
@@ -535,15 +537,194 @@
   <!--  -->
 
   <!-- thin slider area -->
+  <!-- component -->
+
+
+  <div class="container mx-auto">
+    <div class="splide">
+      <div class="splide__arrows">
+        <button class="bg-gray-900 shadow splide__arrow splide__arrow--prev">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+          </svg>
+        </button>
+        <button class="bg-gray-900 shadow splide__arrow splide__arrow--next">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+          </svg>
+        </button>
+      </div>
+      <div class="splide__track">
+
+        <div class="splide__list gap-x-4">
+          <div class="w-full p-4 shadow splide__slide lg:max-w-lg">
+            <div class="space-y-2">
+              <div class="flex  justify-between">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/olivia-fashion-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50  transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/awesome-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/mellisa-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/htc_logo-150x150w.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/superbrand-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+
+              </div>
+
+            </div>
+          </div>
+          <div class="w-full p-4 shadow splide__slide lg:max-w-lg">
+            <div class="space-y-2">
+              <div class="flex justify-between">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/FC-fashion-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sony_logo-150x150w.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/fashion-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sunglasses-150x150.png.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/canon_logo-150x150w.jpg.webp"
+                  alt="" width="75" height="75">
+              
+              </div>
+              <!-- <h3 class="text-2xl font-semibold">
+                Tailwind Card Slider 2
+              </h3>
+              <p class="text-gray-600">
+                tailwind card slider with splidejs It is a long established
+                fact that a reader will be distracted.
+              </p> -->
+            </div>
+          </div>
+          <div class="w-full p-4 shadow splide__slide lg:max-w-lg">
+            <div class="space-y-2">
+
+              <div class="flex justify-between">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/erikson-150x150.jpg.webp"
+                alt="" width="75" height="75">
+              <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sarah-cosmetics-150x150.jpg.webp"
+                alt="" width="75" height="75">
+              <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/apple_logo-150x150h.jpg.webp"
+                alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sony_logo-150x150w.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/fashion-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+               
+              </div>
+
+
+
+              <!-- <h3 class="text-2xl font-semibold">
+                Tailwind Card Slider 3
+              </h3>
+              <p class="text-gray-600">
+                tailwind card slider with splidejs It is a long established
+                fact that a reader will be distracted.
+              </p> -->
+            </div>
+          </div>
+          <div class="w-full p-4 shadow splide__slide lg:max-w-lg">
+            <div class="space-y-2">
+
+
+              <div class="flex justify-between">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sunglasses-150x150.png.webp"
+                alt="" width="75" height="75">
+              <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/canon_logo-150x150w.jpg.webp"
+                alt="" width="75" height="75">
+              <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/erikson-150x150.jpg.webp"
+                alt="" width="75" height="75">
+              <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sarah-cosmetics-150x150.jpg.webp"
+                alt="" width="75" height="75">
+              <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/apple_logo-150x150h.jpg.webp"
+                alt="" width="75" height="75">
+                <!-- <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sony_logo-150x150w.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/fashion-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sunglasses-150x150.png.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/canon_logo-150x150w.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/erikson-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sarah-cosmetics-150x150.jpg.webp"
+                  alt="" width="75" height="75">
+                <img class="opacity-50 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/apple_logo-150x150h.jpg.webp"
+                  alt="" width="75" height="75"> -->
+              </div>
 
 
 
 
-  <!--  -->
+
+              <!-- <h3 class="text-2xl font-semibold">
+                Tailwind Card Slider 4
+              </h3>
+              <p class="text-gray-600">
+                tailwind card slider with splidejs It is a long established
+                fact that a reader will be distracted.
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/js/splide.min.js"></script>
+  <script>
+    var splide = new Splide('.splide', {
+      type: 'loop',
+      autoplay: true,
+    });
+
+    splide.mount();
+  </script>
+
+
+
+  <!-- This is an example component -->
+
+
 
   <!-- website banner / created abone form -->
 
-  <div class="border-t-2 border-b-4 border-pink-400 shadow-lg bg-yellow-300 px-32 h-28 flex items-center justify-between">
+  <div
+    class="border-t-2 border-b-2 border-pink-400 shadow-lg bg-yellow-300 px-32 h-28 flex items-center justify-between">
     <img src="assets/pictures/Harwen-Pleasant-E-mail.256.png" alt="Envelope icon" class="w-12 h-12 mr-2">
     <div class="flex items-center">
 
@@ -554,7 +735,7 @@
     </div>
     <div class="flex items-center gap-4"> <!-- Burada gap-4 sınıfı ekledim -->
       <div class="flex items-center">
-        <form action="subscribe.php" method="post" class="flex items-center gap-4 w-84 h-9">
+        <form action="subscribe.php" method="post" class="flex items-center gap-4 w-80 h-9">
           <input type="email" name="email" placeholder="Email Address" required class="input-box border px-2 py-2 h-10 rounded
       flex-1 mr-1 
        ">
@@ -567,10 +748,6 @@
 
 
   </div>
-  </div>
-  <!--  -->
-
-
 
   <!--  -->
 
@@ -588,14 +765,7 @@
   <!--  -->
 
   <!-- Footer Area -->
-  <footer class="border-t-2 border-b-2 border-pink-500 bg-pink-200 text-white px-32 h-80">
-
-
-
-
-  <!-- Footer Area -->
-  <footer class="bg-gray-800 text-white px-32 h-80">
-
+  <footer class="border-t-4 border-b-2 border-pink-400 shadow-lg bg-pink-200 text-white px-32 h-80">
     <div class="container mx-auto flex flex-wrap justify-between items-center">
       <div class="w-1/4 mt-16">
         <img src="assets/pictures/sugar-logo.png" alt="Journal" class="w-24 h-24">
@@ -641,7 +811,6 @@
       <div class="w-1/4 mt-16">
         <h3 class="font-bold text-lg">NEWSLETTER</h3>
         <p class="mt-2 text-xs">Sign up for our newsletter and get 10% off your next order.</p>
-
         <form
           class="mt flex items-center justify-center align-center justify-center content-center fa-align-center  relative h-10 w-full ">
           <input type="email" name="email" id="default-search" placeholder="Enter Your Email"
@@ -655,17 +824,6 @@
 
 
 
-        <form class="mt flex items-center justify-center align-center justify-center content-center fa-align-center  relative h-10 w-full ">
-          <input type="email" name="email" id="default-search" placeholder="Enter Your Email"
-            class="w-3/4 p-2 border border-gray-400 rounded-l block w-full h-10 p ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 absolute  flex justify-center content-center fa-align-center  h-full">
-          <button type="submit" class="btnsend items-center justify-center align-center w-1/5 p-2 font-bold bg-blue-500 rounded hover:bg-blue-600 mt-1 mr-1 text-white absolute h-8 w-20 bg-blue-700 hover:bg-sugar__pink focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2  items-center right-0 top-0 bottom-0 transform translate-y-50 flex justify-center content-center    ">
-        
-            Send</button>
-
-        </form>
-  
-
-
         <div class="mt-2 text-2xs"> <input type="checkbox" name="privacy" id="privacy" class="mr-2">
           <label for="privacy" class="mr-2">I have read and agree to the
             <a class="text-pink-700 font-bold" href="https://www.google.com">Privacy
@@ -674,20 +832,6 @@
       </div>
 
     </div>
-
-
-    <!-- <div class="flex flex-wrap items-center md:justify-between justify-center w-full px-32 ">
-      <div class="w-full md:w-4/12 mx-auto text-center w-full">
-        <div class="text-sm text-blueGray-500 font-semibold py-1 w-full">
-          Copyright © <span id="get-current-year">2021</span><a href="https://www.creative-tim.com/product/notus-js"
-            class="text-blueGray-500 hover:text-gray-800" target="_blank"> Notus JS by
-            <a href="https://www.creative-tim.com?ref=njs-profile"
-              class="text-blueGray-500 hover:text-blueGray-800">Creative Joseph SOFTWARER</a>.
-        </div>
-      </div>
-    </div> -->
-
-
 
     <!-- <div class="flex flex-wrap items-center md:justify-between justify-center w-full px-32 ">
       <div class="w-full md:w-4/12 mx-auto text-center w-full">
@@ -701,6 +845,7 @@
     </div> -->
 
     <!-- component -->
+
 
 
   </footer>
@@ -746,6 +891,13 @@
     </div>
   </div>
 
+  <div class="icon  flex flex-col items-center">
+
+    <svg class="w-4 h-4 rounded-full border-1 border-blue-400 bg-pink-500" xmlns="http://www.w3.org/2000/svg"
+      fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+    </svg>
+  </div>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>

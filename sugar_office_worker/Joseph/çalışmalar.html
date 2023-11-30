@@ -255,9 +255,40 @@ document.addEventListener("keydown", (event) => {
 // Start the slider
 startSlider();
 
+//! ------------top menu
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Function to toggle the visibility of the dropdown
+//   function toggleDropdown(dropdown, isOpen) {
+//     dropdown.style.display = isOpen ? "block" : "none";
+//   }
 
+//   // Function to handle mouseenter and mouseleave events
+//   function handleMouseEvents(trigger, dropdown) {
+//     trigger.addEventListener("mouseenter", function () {
+//       toggleDropdown(dropdown, true);
+//     });
 
+//     trigger.addEventListener("mouseleave", function () {
+//       toggleDropdown(dropdown, false);
+//     });
+//   }
 
+//   // Buy JOURNAL dropdown
+//   const buyJournalTrigger = document.querySelector(".all-header .language");
+//   const buyJournalDropdown = document.querySelector(".all-header .language .absolute");
+
+//   if (buyJournalTrigger && buyJournalDropdown) {
+//     handleMouseEvents(buyJournalTrigger, buyJournalDropdown);
+//   }
+
+//   // Currency dropdown
+//   const currencyTrigger = document.querySelector(".all-header .currency");
+//   const currencyDropdown = document.querySelector(".all-header .currency .absolute");
+
+//   if (currencyTrigger && currencyDropdown) {
+//     handleMouseEvents(currencyTrigger, currencyDropdown);
+//   }
+// });
 
 <!DOCTYPE html>
 <html>
@@ -765,6 +796,8 @@ startSlider();
 </body>
 
 </html>
+
+
 =======
 ------------------
 
@@ -922,3 +955,101 @@ stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
     </svg>
   </div>
+
+
+<!-- slider -->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Card Slider with Custom Arrows Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/css/splide.min.css">
+  </head>
+
+  <body>
+
+    <div class="container mx-auto">
+      <div class="splide">
+        <div class="splide__arrows">
+          <button class="bg-gray-900 shadow splide__arrow splide__arrow--prev">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 text-white">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+            </svg>
+          </button>
+          <button class="bg-gray-900 shadow splide__arrow splide__arrow--next">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 text-white">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+            </svg>
+          </button>
+        </div>
+        <div class="splide__track">
+          <div class="splide__list gap-x-4">
+            <div class="w-full p-4 shadow splide__slide lg:max-w-lg">
+              <div class="space-y-2">
+                <h3 class="text-2xl font-semibold">
+                  Tailwind Card Slider 1
+                </h3>
+                <p class="text-gray-600">
+                  tailwind card slider with splidejs It is a long established
+                  fact that a reader will be distracted.
+                </p>
+              </div>
+            </div>
+            <div class="w-full p-4 shadow splide__slide lg:max-w-lg">
+              <div class="space-y-2">
+                <h3 class="text-2xl font-semibold">
+                  Tailwind Card Slider 2
+                </h3>
+                <p class="text-gray-600">
+                  tailwind card slider with splidejs It is a long established
+                  fact that a reader will be distracted.
+                </p>
+              </div>
+            </div>
+            <div class="w-full p-4 shadow splide__slide lg:max-w-lg">
+              <div class="space-y-2">
+                <h3 class="text-2xl font-semibold">
+                  Tailwind Card Slider 3
+                </h3>
+                <p class="text-gray-600">
+                  tailwind card slider with splidejs It is a long established
+                  fact that a reader will be distracted.
+                </p>
+              </div>
+            </div>
+            <div class="w-full p-4 shadow splide__slide lg:max-w-lg">
+              <div class="space-y-2">
+                <h3 class="text-2xl font-semibold">
+                  Tailwind Card Slider 4
+                </h3>
+                <p class="text-gray-600">
+                  tailwind card slider with splidejs It is a long established
+                  fact that a reader will be distracted.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/js/splide.min.js"></script>
+    <script>
+      var splide = new Splide('.splide', {
+        type: 'loop',
+        autoplay: true,
+      });
+
+      splide.mount();
+    </script>
+
+  </body>
+
+</html>
+<!--  -->

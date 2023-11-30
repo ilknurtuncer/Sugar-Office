@@ -1,38 +1,33 @@
-//! ------------top menu
-// document.addEventListener("DOMContentLoaded", function () {
-//   // Function to toggle the visibility of the dropdown
-//   function toggleDropdown(dropdown, isOpen) {
-//     dropdown.style.display = isOpen ? "block" : "none";
-//   }
 
-//   // Function to handle mouseenter and mouseleave events
-//   function handleMouseEvents(trigger, dropdown) {
-//     trigger.addEventListener("mouseenter", function () {
-//       toggleDropdown(dropdown, true);
-//     });
 
-//     trigger.addEventListener("mouseleave", function () {
-//       toggleDropdown(dropdown, false);
-//     });
-//   }
+//?----- thin slider area 
 
-//   // Buy JOURNAL dropdown
-//   const buyJournalTrigger = document.querySelector(".all-header .language");
-//   const buyJournalDropdown = document.querySelector(".all-header .language .absolute");
+const slidesContainer = document.querySelector(".slides-container");
+const slideWidthOne = slidesContainer.querySelector(".slide").clientWidth;
+const prevButtonOne = document.querySelector(".prev");
+const nextButtonOne = document.querySelector(".next");
 
-//   if (buyJournalTrigger && buyJournalDropdown) {
-//     handleMouseEvents(buyJournalTrigger, buyJournalDropdown);
-//   }
+nextButton1.addEventListener("click", () => {
+	slidesContainer.scrollLeft += slideWidthOne;
+});
 
-//   // Currency dropdown
-//   const currencyTrigger = document.querySelector(".all-header .currency");
-//   const currencyDropdown = document.querySelector(".all-header .currency .absolute");
+prevButtonOne.addEventListener("click", () => {
+	slidesContainer.scrollLeft -= slideWidthOne;
+});
 
-//   if (currencyTrigger && currencyDropdown) {
-//     handleMouseEvents(currencyTrigger, currencyDropdown);
-//   }
-// });
 
+
+
+// Initialization for ES Users
+import {
+  Collapse,
+  Dropdown,
+  Ripple,
+  Carousel,
+  initTE
+} from 'tw-elements';
+
+initTE({ Collapse, Dropdown, Ripple, Carousel });
 
 
 

@@ -154,3 +154,16 @@ $('#carouselExampleSlidesOnly').slick('slickPrev');
 function nextSlide() {
 $('#carouselExampleSlidesOnly').slick('slickNext');
 }
+
+
+ //---  Modul-7 ----
+
+ function nextSlide() {
+    document.getElementById('slider-1').style.display = 'none';
+    document.getElementById('slider-2').style.display = 'flex';
+  }
+
+  function prevSlide() {
+    document.getElementById('slider-2').style.display = 'none';
+    document.getElementById('slider-1').style.display = 'flex';
+  }

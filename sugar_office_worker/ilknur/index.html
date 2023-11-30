@@ -353,15 +353,92 @@
 
       <!---------- Modul-20 --------->
 
-      <div id="container-Mod20" class="">
-<div id="deals" class="">
+      <div id="container-Mod20" class=" bg-gray-300 grid grid-cols-2 gap-4">
+<div id="deals-container" class="relative w-full bg-white" data-carousel="static">
+  <div id="deals-title" class="modtitle text-2xl font-semibold leading-6 uppercase m-0 p-20">
+    <h3 class="">
+      <a href="index.php?route=product/special">
+        <span>Deals of the days</span>
+      </a>
+</h3>
+    </div>
+<div id="deacard-container" class=" grid grid-cols-2 ">
+  <div class="left-block">
+    <div class="product-image-container">
+      <div class="image flex justify-end">
+        <a href="https://opencart4.magentech.com/themes/so_emarket/layout4/index.php?route=product/product&amp;language=en-gb&amp;product_id=93" target="_self">
+          <img src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/4-330x330.jpg" alt="Incididunt picanha" class="img-responsive">
+        </a>
+      </div>
+    </div>
+    <div class="box-label">
+      <span class="label label-sale">
+        -8%
+      </span>
+    </div>
+    <div class="so-quickview">
+      <a class="hidden" data-product="93" href="https://opencart4.magentech.com/themes/so_emarket/layout4/index.php?route=product/product&amp;language=en-gb&amp;product_id=93" target="_self"></a>
+      <a class="visible-lg btn-button quickview quickview_handler" href="https://opencart4.magentech.com/themes/so_emarket/layout4/index.php?route=extension/so_theme/soconfig/quickview&amp;product_id=93&amp;language=en-gb" title="Quick view" data-title="Quick view" data-fancybox-type="iframe">
+        <i class="fa fa-eye"></i><span>Quick view</span>
+      </a>
+    </div>
+  </div>
+  
+  <div class="right-block w-45 float-left text-left sm:text-center lg:text-left">
+    <div class="caption">
+      <h4><a href="https://opencart4.magentech.com/themes/so_emarket/layout4/index.php?route=product/product;language=en-gb;product_id=93" target="_self" title="Incididunt picanha">Incididunt picanha</a></h4>
+      <div class="rating">
+        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore..</p>
+      <p class="price">
+        <span class="price-new">$45.00</span>
+        <span class="price-old">$49.00</span>
+      </p>
+      <div class="button-group">
+        <button class="addToCart" title="Add to Cart" type="button" onclick="cart.add('93');"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
+        <button class="btn-button wishlist" type="button" title="Add to Wish List" onclick="wishlist.add('93');"><i class="fa fa-heart"></i><span>Add to Wish List</span></button>
+        <button class="btn-button compare" type="button" title="Compare this Product" onclick="compare.add('93');"><i class="fa fa-refresh"></i><span>Compare this Product</span></button>
+      </div>
+    </div>
+    <div class="item-time-w">
+      <div class="item-time">
+        <div class="item-timer product_time_93">
+          <div class="time-item time-day"><div class="num-time">116</div> <div class="name-time">Days</div></div>
+          <div class="time-item time-hour"><div class="num-time">22</div> <div class="name-time">Hours</div></div>
+          <div class="time-item time-min"><div class="num-time">19</div> <div class="name-time">Mins</div></div>
+          <div class="time-item time-sec"><div class="num-time">39</div> <div class="name-time">Secs</div></div>
+        </div>
+        <script type="text/javascript">
+          listdeal1.push('product_time_93|2024/03/27 00:00:00') 
+        </script>
+      </div>
+    </div>
+    
+   	
+  </div>
 
-
-
+</div>
 </div>
 
 
-        <div id="featured" class=" flex flex-row flex-wrap justify-end">
+
+<!-------- featurred----->
+<div id="featured-container" class="relative w-full bg-white" data-carousel="static">
+<div id="featured-title" class="modtitle text-2xl font-semibold leading-6 uppercase m-0 p-20">
+<h3>
+  <a href="/index.php?route=custom/featured">
+    <span>Featured products</span>
+  </a>
+</h3>
+
+</div>
+
+        <div id="feacard-container" class=" relative flex flex-row flex-wrap justify-end h-56 overflow-hidden rounded-lg md:h-96">
 
 <div id="featured-1" class=" p-4">
   <div class="product-item-container">
@@ -710,6 +787,24 @@
 </div>
 </div>
       </div>
+
+      <button type="button" class="absolute top-0 left-2 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 right-2 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+    </div>
 </div>
 <!---- Modul-5 ---->
 

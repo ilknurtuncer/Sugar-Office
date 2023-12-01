@@ -1,4 +1,4 @@
- // -JavaScript ile açılır menüyü kontrol etmek için
+ // --------JavaScript ile açılır menüyü kontrol etmek için ---------
  document.addEventListener('DOMContentLoaded', function () {
     const languageButton = document.querySelector('.relative:nth-child(1) button');
     const languageMenu = document.querySelector('.relative:nth-child(1) .absolute');
@@ -7,7 +7,7 @@
         languageMenu.classList.toggle('hidden');
     });
 
-    //- Dışarı tıklandığında dil menüsünü kapat
+    //------ Dışarı tıklandığında dil menüsünü kapat ---------
     document.addEventListener('click', function (event) {
         if (!languageButton.contains(event.target)) {
             languageMenu.classList.add('hidden');
@@ -21,7 +21,7 @@
         currencyMenu.classList.toggle('hidden');
     });
 
-    //- Dışarı tıklandığında para birimi menüsünü kapat
+    //- ------ Dışarı tıklandığında para birimi menüsünü kapat ---------
     document.addEventListener('click', function (event) {
         if (!currencyButton.contains(event.target)) {
             currencyMenu.classList.add('hidden');
@@ -29,7 +29,7 @@
     });
 });
 
-//-Group Multilevel button 
+//------- Group Multilevel button -------- 
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
- // Sepet -------
+ //------ Sepet -------
 
  document.addEventListener("DOMContentLoaded", function () {
     // Genel değişkenler
@@ -128,12 +128,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//----- Initialize Slick Carousel -----
 
-
-
-
-
-// Initialize Slick Carousel
 $(document).ready(function(){
     $('.slick-carousel').slick({
         autoplay: true,
@@ -154,3 +150,15 @@ $('#carouselExampleSlidesOnly').slick('slickPrev');
 function nextSlide() {
 $('#carouselExampleSlidesOnly').slick('slickNext');
 }
+
+ //---  Modul-7 ----
+
+ function nextSlide() {
+    document.getElementById('slider-1').style.display = 'none';
+    document.getElementById('slider-2').style.display = 'flex';
+  }
+
+  function prevSlide() {
+    document.getElementById('slider-2').style.display = 'none';
+    document.getElementById('slider-1').style.display = 'flex';
+  }

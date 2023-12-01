@@ -65,6 +65,22 @@ body{
     background-position: center center;
   }
 
+  .hover-effect:hover .default-content {
+    display: none;
+}
+
+.hover-effect:hover .hover-content {
+    display: block;
+}
+
+.default-content {
+    display: block;
+}
+
+.hover-content {
+    display: none;
+}
+
 React
 
 Reply

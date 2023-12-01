@@ -87,21 +87,21 @@ const max = document.querySelectorAll(".slide-left").length - 1;
 next.addEventListener("click", () => {
   if (counter < max) {
     counter++;
-    slide.style.left = "-" + "356" * counter + "px";
+    slide.style.left = "-" +  screen.width * (3/12) * counter + "px";
   } else {
     counter = 0;
-    slide.style.left = "-" + "356" * counter + "px";
+    slide.style.left = "-" +  screen.width * (3/12) * counter + "px";
   }
 });
 
 back.addEventListener("click", () => {
   if (counter >= 0) {
     counter--;
-    slide.style.left = "-" + "356" * counter + "px";
+    slide.style.left = "-" +  screen.width * (3/12) * counter + "px";
   }
   if(counter < 0){
     counter = 1;
-    slide.style.left = "-" + "356" * counter + "px";
+    slide.style.left = "-" +  screen.width * (3/12) * counter + "px";
 
   }
 });
@@ -115,21 +115,21 @@ const max1 = document.querySelectorAll(".slide-right").length - 1;
 next1.addEventListener("click", () => {
   if (count < max1 - 3) {
     count++;
-    slide2.style.left = "-" + "200" * count + "px";
+    slide2.style.left = "-" + "215" * count + "px";
   } else {
     count = 0;
-    slide2.style.left = "-" + "453" * count + "px";
+    slide2.style.left = "-" + "215" * count + "px";
   }
 });
 
 back1.addEventListener("click", () => {
   if (count >= 0) {
     count--;
-    slide2.style.left = "-" + "356" * count + "px";
+    slide2.style.left = "-" + "215" * count + "px";
   }
   if(count < 0){
     count = 1;
-    slide2.style.left = "-" + "356" * count + "px";
+    slide2.style.left = "-" + "215" * count + "px";
 
   }
   

@@ -164,28 +164,16 @@ $('#carouselExampleSlidesOnly').slick('slickNext');
   }
 
 
-   //------- slider1-modul-20 ----
-   document.addEventListener("DOMContentLoaded", function () {
-    const totalImages = document.querySelectorAll(".carousel-item").length;
-    let currentImageIndex = 0;
+ //------- modul-20-----
 
-    // Previous button click event
-    document.querySelector("[data-carousel-prev]").addEventListener("click", function () {
-        currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
-        showCurrentImage();
+ document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('#swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '[data-carousel-next]',
+        prevEl: '[data-carousel-prev]',
+      },
     });
-
-    // Next button click event
-    document.querySelector("[data-carousel-next]").addEventListener("click", function () {
-        currentImageIndex = (currentImageIndex + 1) % totalImages;
-        showCurrentImage();
-    });
-
-    // Function to show the current image
-    function showCurrentImage() {
-        const images = document.querySelectorAll(".carousel-item");
-        images.forEach((image, index) => {
-            image.style.display = index === currentImageIndex ? "block" : "none";
-        });
-    }
-});
+  });
+  

@@ -139,3 +139,18 @@ const swiper_main = new Swiper('.swiper_main', {
   },
   
 })
+
+const swiper_product = new Swiper('.swiper_product', {
+  loop: true,                         
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,   
+  },                
+  navigation: {                       
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  slidesPerView: 1,
+
+  
+})

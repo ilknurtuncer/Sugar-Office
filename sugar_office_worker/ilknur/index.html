@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="path/to/fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
     <title>Sugar-Office</title>
 </head>
 
@@ -164,7 +166,7 @@
         </div>
     
         <!-- Alışveriş Sepeti İkonu ve Butonu -->
-        <div class="group relative inline-block space-x-3 flex items-center justify-center p-1 z-10" id="cart-container">
+        <div class="group relative  space-x-3 flex items-center justify-center p-1 z-10" id="cart-container">
             <i class="text-base">5 item(s) - $8,567.00</i>
             <svg class="bg-pink-100 p-2 border rounded-full border-pink-600" xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 512 512"><path d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"/></svg>
             <button class="text-gray-700 rounded group-hover:bg-purple-300 hover:text-black" id="cart-button">Sepetim</button>
@@ -354,6 +356,9 @@
       <!---------- Modul-20 --------->
 
       <div id="container-Mod20" class=" bg-gray-200 grid grid-cols-2 gap-4">
+
+
+      <!----deals----->
 <div id="deals-container" class="relative w-full bg-white" data-carousel="static">
   <div id="deals-title" class="modtitle text-2xl font-semibold leading-6 uppercase m-0 p-20">
     <h3 class="">
@@ -376,45 +381,74 @@
   </div>
   
   <div class="right-block w-45 float-left text-left sm:text-center lg:text-left ml-3">
-    <div class="caption ">
+    <div class="caption m-5">
       <h4><a href="https://opencart4.magentech.com/themes/so_emarket/layout4/index.php?route=product/product;language=en-gb;product_id=93" target="_self" title="Incididunt picanha">Incididunt picanha</a></h4>
-      <div class="rating">
-        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+      <div class="rating flex justify-start">
+        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x text-red-500"></i></span>
+        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x text-red-500"></i></span>
+        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x text-red-500"></i></span>
+        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x text-red-500"></i></span>
+        
+      </div>
+
       </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore..</p>
       <p class="price">
-        <span class="price-new">$45.00</span>
-        <span class="price-old">$49.00</span>
+        <span class="price-new text-red-600 font-bold text-xl">$45.00</span>
+        <span class="price-old ml-1 line-through">$49.00</span>
       </p>
-      <div class="button-group">
-        <button class="addToCart" title="Add to Cart" type="button" onclick="cart.add('93');"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></button>
-        <button class="btn-button wishlist" type="button" title="Add to Wish List" onclick="wishlist.add('93');"><i class="fa fa-heart"></i><span>Add to Wish List</span></button>
-        <button class="btn-button compare" type="button" title="Compare this Product" onclick="compare.add('93');"><i class="fa fa-refresh"></i><span>Compare this Product</span></button>
+      <div class="button-group flex justify-start gap-3 p-2">
+        <button class="addToCart border  inline-block " title="Add to Cart" type="button" onclick="cart.add('93');"><i class="fa fa-shopping-cart ml-2 text-gray-600"></i> <span class="mr-4">add to card</span></button>
+        <button class="btn-button wishlist border" type="button" title="Add to Wish List" onclick="wishlist.add('93');"><i class="fa fa-heart p-1 text-gray-600"></i><span></span></button>
+        <button class="btn-button compare border" type="button" title="Compare this Product" onclick="compare.add('93');"><i class="fa fa-refresh p-1 text-gray-600"></i><span></span></button>
       </div>
     </div>
-    <div class="item-time-w">
-      <div class="item-time">
-        <div class="item-timer product_time_93">
-          <div class="time-item time-day"><div class="num-time">116</div> <div class="name-time">Days</div></div>
-          <div class="time-item time-hour"><div class="num-time">22</div> <div class="name-time">Hours</div></div>
-          <div class="time-item time-min"><div class="num-time">19</div> <div class="name-time">Mins</div></div>
-          <div class="time-item time-sec"><div class="num-time">39</div> <div class="name-time">Secs</div></div>
+
+      
+        <div class="item-timer flex flex-row gap-4 ">
+          <div class="btn flex justify-center mt-3 ">
+            
+            <button class="flex  items-center mx-2 px-1 text-xs rounded font-bold 
+text-blue-500 bg-gray-200 border border-gray-300 h-10"
+>
+
+108
+</button>
+<span class="text-blue-500">:</span>
+            <button
+class="flex items-center justify-center h-10 px-1 mx-2 text-sm rounded font-bold tracking-wide
+text-blue-500 bg-gray-200 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+2
+
+</button>
+<span class="text-blue-500">:</span>
+            <button
+class=" p-2 my-1 mx-2 h-10 text-sm rounded font-bold tracking-wide
+text-blue-600 bg-gray-200 border border-gray-300transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+6
+
+</button>
+<span class="text-blue-500">:</span>
+            <button
+class=" p-2 my-1 mx-2 h-10 text-sm rounded font-bold tracking-wide
+text-blue-500 bg-gray-200 border border-gray-300transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+13
+
+</button>
+           </div>
         </div>
-        <script type="text/javascript">
-          listdeal1.push('product_time_93|2024/03/27 00:00:00') 
-        </script>
+       
       </div>
     </div>
     
    	
   </div>
 
-</div>
-</div>
+
+
 
 
 
@@ -456,12 +490,11 @@
         Buffalo tail chicke
     </a>
     </h4>
-    <div class="rating">
-      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+    <div class="rating flex justify-start mt-0 mb-0">
+      <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x text-red-500"></i></span>
+      <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x text-red-500"></i></span>
+      <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x text-red-500"></i></span>
+      <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x text-red-500"></i></span>
     </div>
     <div class="price">
       <span class="price-new flex-shrink-0">$60.00 </span>

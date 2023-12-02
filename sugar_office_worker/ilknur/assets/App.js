@@ -162,3 +162,30 @@ $('#carouselExampleSlidesOnly').slick('slickNext');
     document.getElementById('slider-2').style.display = 'none';
     document.getElementById('slider-1').style.display = 'flex';
   }
+
+
+   //------- slider1-modul-20 ----
+   document.addEventListener("DOMContentLoaded", function () {
+    const totalImages = document.querySelectorAll(".carousel-item").length;
+    let currentImageIndex = 0;
+
+    // Previous button click event
+    document.querySelector("[data-carousel-prev]").addEventListener("click", function () {
+        currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
+        showCurrentImage();
+    });
+
+    // Next button click event
+    document.querySelector("[data-carousel-next]").addEventListener("click", function () {
+        currentImageIndex = (currentImageIndex + 1) % totalImages;
+        showCurrentImage();
+    });
+
+    // Function to show the current image
+    function showCurrentImage() {
+        const images = document.querySelectorAll(".carousel-item");
+        images.forEach((image, index) => {
+            image.style.display = index === currentImageIndex ? "block" : "none";
+        });
+    }
+});

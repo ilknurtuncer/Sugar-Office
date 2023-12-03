@@ -135,7 +135,7 @@
 
 /* modul7 swiper start */
 
-.swiper-container{
+.swiper-container-main{
   position: relative;
   width: 85%;
   margin: 0 auto 50px;
@@ -169,7 +169,7 @@
 }
 
 
-.swiper-slide{
+.swiper-container-main .swiper-slide{
   padding-top: 20px;
   cursor: pointer;
 
@@ -244,29 +244,3 @@
 /* modul10 start */
 
 
-/* modul20 start */
-.swiper-container .product-btn-prev{
-    left: -40px;
-    padding: 30px 20px;
-color: gray;
-    background-color: #d1d4d8;
-
-  
-    padding: 30px 20px;
-  }
-.swiper-container .product-btn-next{
-    right: -40px;
-    padding: 30px 20px;
-    color: gray;
-    background-color: #d1d4d8;
-
-  
-    padding: 30px 20px;
-  }
-  .swiper-container .product-btn-prev:hover{
-  color:blue;
-}
-  .swiper-container .product-btn-next:hover{
-  color:blue;
-}
-/* modul20 end */

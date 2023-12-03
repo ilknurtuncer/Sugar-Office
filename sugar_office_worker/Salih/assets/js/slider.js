@@ -112,7 +112,7 @@ closeButton.addEventListener("click", () => {
 
 })
 
-const swiper_main = new Swiper('.swiper_main', {
+const swiper_main = new Swiper('#swiper_main', {
   loop: true,                         
   pagination: {
       el: '.swiper-pagination',
@@ -140,17 +140,18 @@ const swiper_main = new Swiper('.swiper_main', {
   
 })
 
-const swiper_product = new Swiper('.swiper_product', {
-  loop: true,                         
-  pagination: {
-      el: '.swiper-pagination',
-      clickable: true,   
-  },                
-  navigation: {                       
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-  },
-  slidesPerView: 1,
 
-  
-})
+
+
+const swiperEl = document.querySelector('swiper-container');
+const buttonNext = document.getElementById('swiper-btn-next');
+const buttonPrev = document.getElementById('swiper-btn-prev');
+console.log(buttonPrev)
+
+buttonNext.addEventListener('click', () => {
+  swiperEl.swiper.slideNext();
+});
+
+buttonPrev.addEventListener('click', () => {
+  swiperEl.swiper.slidePrev();
+});

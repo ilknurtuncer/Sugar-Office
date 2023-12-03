@@ -166,14 +166,29 @@ $('#carouselExampleSlidesOnly').slick('slickNext');
 
  //------- modul-20-----
 
- document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('#swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      navigation: {
-        nextEl: '[data-carousel-next]',
-        prevEl: '[data-carousel-prev]',
-      },
-    });
-  });
-  
+// Carousel kontrol fonksiyonları
+function prevItem() {
+    showItem(currentItem - 1);
+  }
+
+  function nextItem() {
+    showItem(currentItem + 1);
+  }
+
+  // Görüntülenen öğe sayısını takip etmek için değişken
+  var currentItem = 1;
+
+  // Öğeleri gösteren fonksiyon
+  function showItem(n) {
+    var items = document.querySelectorAll('[data-carousel-item]');
+    if (n > items.length) {
+      currentItem = 1;
+    }
+    if (n < 1) {
+      currentItem = items.length;
+    }
+    for (var i = 0; i < items.length; i++) {
+      items[i].style.display = 'none';
+    }
+    items[currentItem - 1].style.display = 'flex';
+  }

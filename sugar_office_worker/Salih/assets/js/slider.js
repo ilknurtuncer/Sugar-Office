@@ -112,7 +112,7 @@ closeButton.addEventListener("click", () => {
 
 })
 
-const swiper_main = new Swiper('.swiper_main', {
+const swiper_main = new Swiper('#swiper_main', {
   loop: true,                         
   pagination: {
       el: '.swiper-pagination',
@@ -139,3 +139,19 @@ const swiper_main = new Swiper('.swiper_main', {
   },
   
 })
+
+
+
+
+const swiperEl = document.querySelector('swiper-container');
+const buttonNext = document.getElementById('swiper-btn-next');
+const buttonPrev = document.getElementById('swiper-btn-prev');
+console.log(buttonPrev)
+
+buttonNext.addEventListener('click', () => {
+  swiperEl.swiper.slideNext();
+});
+
+buttonPrev.addEventListener('click', () => {
+  swiperEl.swiper.slidePrev();
+});

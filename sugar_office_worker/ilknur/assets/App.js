@@ -162,3 +162,18 @@ $('#carouselExampleSlidesOnly').slick('slickNext');
     document.getElementById('slider-2').style.display = 'none';
     document.getElementById('slider-1').style.display = 'flex';
   }
+
+
+ //------- modul-20-----
+
+ document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('#swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '[data-carousel-next]',
+        prevEl: '[data-carousel-prev]',
+      },
+    });
+  });
+  

@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="path/to/fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.x.x/dist/tailwind.min.css" rel="stylesheet">
+   
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="../ilknur/assets/css/main.css"/>
+
+
     <title>Sugar-Office</title>
 </head>
 
@@ -164,7 +171,7 @@
         </div>
     
         <!-- Alışveriş Sepeti İkonu ve Butonu -->
-        <div class="group relative inline-block space-x-3 flex items-center justify-center p-1 z-10" id="cart-container">
+        <div class="group relative  space-x-3 flex items-center justify-center p-1 z-10" id="cart-container">
             <i class="text-base">5 item(s) - $8,567.00</i>
             <svg class="bg-pink-100 p-2 border rounded-full border-pink-600" xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 512 512"><path d="M184 48H328c4.4 0 8 3.6 8 8V96H176V56c0-4.4 3.6-8 8-8zm-56 8V96H64C28.7 96 0 124.7 0 160v96H192 320 512V160c0-35.3-28.7-64-64-64H384V56c0-30.9-25.1-56-56-56H184c-30.9 0-56 25.1-56 56zM512 288H320v32c0 17.7-14.3 32-32 32H224c-17.7 0-32-14.3-32-32V288H0V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V288z"/></svg>
             <button class="text-gray-700 rounded group-hover:bg-purple-300 hover:text-black" id="cart-button">Sepetim</button>
@@ -183,124 +190,678 @@
      <!-- Slides Carousel -->
     
      <div class="relative "> 
-        <div id="carouselExampleSlidesOnly" class="slick-carousel">
-            <div class="relative">
-                <img src="https://sekerofisi.com/uploads/p/o/5IW9tx067AYF.jpg" alt="Wild Landscape" class="w-full h-full">
-        <!-- Siyah Katman -->
- <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-0"></div>
-       <!--  Text Area -->
-    <div class="absolute top-52 right-28 text-white">
-        <h1 class="text-6xl font-bold">Your Text Goes Here</h1>
-       
-    </div>
- 
-        <!-- Pembe Buton -->
-       
-        <button class="bg-opacity-70 bg-pink-800 text-white font-bold py-5 px-10 rounded absolute right-64 top-72 transform hover:bg-pink-400 hover:text-white z-10 ">
-            Shop Now
-        </button>
-            </div>
-            <div class="relative">
-                <img src="https://sekerofisi.com/uploads/p/o/UJcZfLu1mDz4.jpg" alt="Camera" class="w-full">
+      <div id="carouselExampleSlidesOnly" class="slick-carousel">
+          <div class="relative">
+              <img src="https://sekerofisi.com/uploads/p/o/5IW9tx067AYF.jpg" alt="Wild Landscape" class="w-full h-full">
+      <!-- Siyah Katman -->
+<div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-0"></div>
+     <!--  Text Area -->
+  <div class="absolute top-52 right-28 text-white">
+      <h1 class="text-6xl font-bold">Your Text Goes Here</h1>
+     
+  </div>
+
+      <!-- Pembe Buton -->
+     
+      <button class="bg-opacity-70 bg-pink-800 text-white font-bold py-5 px-10 rounded absolute right-64 top-72 transform hover:bg-pink-400 hover:text-white z-10 ">
+          Shop Now
+      </button>
+          </div>
+          <div class="relative">
+              <img src="https://sekerofisi.com/uploads/p/o/UJcZfLu1mDz4.jpg" alt="Camera" class="w-full">
 
 <!-- Siyah Katman --> 
- <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-0"></div>
+<div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-0"></div>
 
-      <!--  Text Area -->
-    <div class="absolute top-52 right-28 text-white z-10">
-        <h1 class="text-6xl font-bold">Your Text Goes Here</h1>
-       
-    </div>
- 
-        <!-- Pembe Buton -->
-       
-        <button class="bg-opacity-70 bg-pink-800 text-white font-bold py-5 px-10 rounded absolute right-64 top-72 transform hover:bg-pink-400 hover:text-white z-10 ">
-            Shop Now
-        </button>
-            </div>
-            <!-- Daha fazla slayt ekleyebilirsiniz -->
-       
-        </div>
- 
+    <!--  Text Area -->
+  <div class="absolute top-52 right-28 text-white z-10">
+      <h1 class="text-6xl font-bold">Your Text Goes Here</h1>
+     
+  </div>
 
-        
-         <!-- Sol ve Sağ Kontrol Butonları -->
-    <div class="absolute top-1/2 left-2 transform -translate-y-1/2">
-        <button class="text-gray-500 px-3 py-2 bg-white bg-opacity-40 rounded-full mr-2 focus:outline-none text-3xl hover:bg-pink-600 hover:text-white hover:bg-opacity-40" onclick="prevSlide()">&lt;</button>
-    </div>
-    <div class="absolute top-1/2 right-2 transform -translate-y-1/2">
-        <button class="text-gray-500 px-3 py-2 bg-white bg-opacity-40 rounded-full focus:outline-none text-3xl hover:bg-pink-600 hover:text-white hover:bg-opacity-40" onclick="nextSlide()">&gt;</button>
-    </div>
+      <!-- Pembe Buton -->
+     
+      <button class="bg-opacity-70 bg-pink-800 text-white font-bold py-5 px-10 rounded absolute right-64 top-72 transform hover:bg-pink-400 hover:text-white z-10 ">
+          Shop Now
+      </button>
+          </div>
+      
+     
+      </div>
 
-    </div>
-    </div>
+
+      
+       <!-- Sol ve Sağ Kontrol Butonları -->
+  <div class="absolute top-1/2 left-2 transform -translate-y-1/2">
+      <button class="text-gray-500 px-3 py-2 bg-white bg-opacity-40 rounded-full mr-2 focus:outline-none text-3xl hover:bg-pink-600 hover:text-white hover:bg-opacity-40" onclick="prevSlide()"></button>
+  </div>
+  <div class="absolute top-1/2 right-2 transform -translate-y-1/2">
+      <button class="text-gray-500 px-3 py-2 bg-white bg-opacity-40 rounded-full focus:outline-none text-3xl hover:bg-pink-600 hover:text-white hover:bg-opacity-40" onclick="nextSlide()"></button>
+  </div>
+
+  </div>
+
+    <!------ Modul-12 ------>
+<div class=" w-full flex flex-wrap bg-pink-100 items-center"  >
+<div id="box-1" class="flex flex-col gap-6  text-center items-center mx-auto" style="height: 700px;">
+  <div class=" grid grid-rows-4 gap-2 justify-between my-auto">
+  <h3 class=" text-black text-2xl mt-10">MID-AUTUMN SALE</h3>
+  <h1 class="text-6xl text-black ">Makeup You`r Unique</h1>
+  <p class="text-black mt-8" >Buh-bye body acne. Hello Smoothing AHA Body Lotion</p>
+    <button class="bg-black hover:bg-gray-800  text-white rounded-3xl p-3 w-64 h-12 mx-auto mt-4">BUY NOW / $59.00</button>
+</div>
+
+
+
+</div>
+<div id="box-2" class="">
+<img class="" src="../ilknur/assets/picture/modul-12/image01.jpg" alt="">
+</div>
+
+</div>
+
+
+<!--------- Modul-15 -------->
+
+<div class=" flex flex-wrap justify-center gap-10 w-full bg-white p-4 sm:gap-6 md:gap-8 lg:gap-10 sm:p-6 md:p-8">
+
+<div class="max-w-full bg-white border border-gray-200 rounded-t-2xl shadow  md:max-w-sm">
+  <a href="#">
+      <img class="rounded-t-lg " src="../ilknur/assets/picture/modul-15/image (1).png" alt="" style="height: 250px;" />
+  </a>
+  <div class="text-start pl-3 ">
+      <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Sale Off Unlimited - Buy1 Get 2</h5>
+      </a>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Save 80% on onder more than $599. Delivery in 1 days. Apply for the first 1k Customers.</p>
+       
+  </div>
+</div>
+<div class="max-w-full bg-white border border-gray-200 rounded-lg rounded-t-2xl shadow md:max-w-sm">
+  <a href="#">
+      <img class="rounded-t-xl " src="../ilknur/assets/picture/modul-15/image (2).png" alt="" style="height: 250px;" />
+  </a>
+  <div class="text-start pl-3  ">
+      <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Cyber Monday - Save $599 On Speaker</h5>
+      </a>
+      <p class=" font-normal text-gray-700 dark:text-gray-400">Save 50% on order more than $99. Delivery in 1 days. Apply for the 1k Customers.</p>
+       
+  </div>
+</div>
+<div class="max-w-full bg-white border border-gray-200 rounded-t-2xl shadow md:max-w-sm">
+  <a href="#">
+      <img class="rounded-t-lg " src="../ilknur/assets/picture/modul-15/image.png" alt="" style="height: 250px;" />
+  </a>
+  <div class=" text-start pl-3 ">
+      <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Hurry Up - Smartphone Only $299</h5>
+      </a>
+      <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">All smartphone products at the same price $299. Delivery in 1 days. Apply for the first 1k Customers.</p>
+       
+  </div>
+</div>
+
+</div>
+
+
+
+
        <!---------- Modul-10 --------->
 
-    <div class=" flex items-center justify-center bg-gray-100 p-14">
-        <div class="w-9/12">
+    <div class=" flex items-center justify-center bg-gray-100 p-4 sm:p-6 md:p-14">
+        <div class=" w-9/12">
       
           <h1 class="text-2xl font-bold">Popular Departments</h1>
           <p class="text-black text-sm">Products From These Categories Often Buy</p>
       
-          <div class="grid gap-7 grid-cols-4 ">
-            <div class="flex flex-row  justify-center bg-white sm:my-4 md:my-4  my-2 py-5 sm:py-8 md:py-8">
-              <div class="flex-row  my-auto  ">
+          <div class="grid gap-4 sm:gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 ">
+            <div class="flex flex-row  justify-center bg-white sm:my-4 md:my-4 my-2 py-5 sm:py-8 md:py-8">
+              <div class=" my-auto text-center ">
                 <h2 class=" pl-2 text-black text-lg  font-bold">Vegatables</h2>
                 <p class=" pl-2 text-sm text-gray-500">1 Products</p>
               </div>
-              <div class=" flex items-center pr-2  ">
+              <div class=" flex items-center justify-center ">
                 <img class="w-full h-auto " src="https://img.freepik.com/premium-photo/vegetables-isolated-white-background_976492-142.jpg?size=338&ext=jpg&ga=GA1.1.1826414947.1699401600&semt=ais"  alt="vegatables">
               </div>
             </div>
             <div class="flex flex-row  justify-center bg-white sm:my-4 md:my-4  my-2 py-5 sm:py-8 md:py-8">
-              <div class="flex-row flex-shrink-0 my-auto">
+              <div class="my-auto text-center  flex-shrink-0">
                 <h2 class="pl-2 text-black text-lg font-bold">Fruits</h2>
                 <p class="pl-2 text-sm  text-gray-500">9 Products</p>
               </div>
-              <div class="pr-2 flex items-center">
+              <div class="flex items-center justify-center">
                 <img class="w-full h-auto" src="https://img.freepik.com/premium-photo/health-fruit-white-background_368913-297.jpg" alt="fruits">
               </div>
             </div>
             <div class="flex flex-row  justify-center bg-white sm:my-4 md:my-4  my-2 py-5 sm:py-8 md:py-8">
-              <div class="flex-row my-auto">
+              <div class=" my-auto text-center">
                 <h2 class="pl-2 text-black text-lg font-bold">Breakfast</h2>
                 <p class="pl-2 text-gray-500 text-sm">8 Products</p>
               </div>
-              <div class="pr-2 flex items-center">
+              <div class="flex items-center justify-center">
                 <img class="w-full h-auto" src="https://navixia.com/storage/app/uploads/public/63d/779/900/63d7799003bd4500694874.jpg" alt="breakfast">
               </div>
             </div>
             <div class="flex flex-row  justify-center bg-white sm:my-4 md:my-4  my-2 py-5 sm:py-8 md:py-8">
-              <div class="flex-row my-auto">
+              <div class="my-auto text-center">
                 <h2 class="pl-2 text-black text-lg font-bold">Cooking</h2>
                 <p class="pl-2 text-gray-500 text-sm">5 Products</p>
               </div>
-              <div class="pr-2">
-                <img class="w-full h-auto flex items-center" src="https://media.istockphoto.com/id/184933350/fr/photo/faire-cuire-les-ingr%C3%A9dients-oeufs-farine-lait-sucre.jpg?s=612x612&w=0&k=20&c=u0uYdeIQizR1--sYqmEQdiXKBTe6zIaFGGOwpIdcaX0=" alt="cooking">
+              <div class="flex items-center justify-center">
+                <img class="w-full h-auto " src="https://media.istockphoto.com/id/184933350/fr/photo/faire-cuire-les-ingr%C3%A9dients-oeufs-farine-lait-sucre.jpg?s=612x612&w=0&k=20&c=u0uYdeIQizR1--sYqmEQdiXKBTe6zIaFGGOwpIdcaX0=" alt="cooking">
               </div>
             </div>
           </div>
       
         </div>
       </div>
-<!-- Modul-5 -->
 
-<div class=" h-96 flex flex-col items-center justify-center bg-cover bg-fixed bg-center opacity-80 " style="background-image: url('./assets/picture/AdobeStock_308028610_Preview.jpeg');">
-    <div class="w-9/12 ">
-        <h3 class="title text-4xl text-white font-bold pb-8 text-center ">End of Season Sale</h3>
-        <div class=" relative">
+
+      <!---------- Modul-20 --------->
+
+      <div id="container-Mod20" class=" bg-gray-300 min-h-screen flex items-center justify-center p-3">
+        <div class=" flex justify-between gap-8 p-5 w-9/12" >
+
+      <!----deals----->
+
+      <div id="deals-container" class="relative w-1/3 bg-white"> 
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" style="height: 500px;">
+  <div id="deals-title" class="modtitle text-2xl font-semibold leading-6 uppercase m-0 p-12">
+    <h3 class="">
+      <a href="index.php?route=product/special">
+        <span>Deals of the days</span>
+      </a>
+</h3>
+<img src="../ilknur/assets/picture/modul-20/sale.png" alt="" class=" absolute z-50 top-0 right-0 h-50">
+    </div>
+    
+    <div class="carousel-item active">
+<div id="img-card" class=" grid grid-cols-2  border-neutral-600 ">
+  <div class="left-block ">
+    <div class="product-image-container " >
+      <div class="image flex justify-end ">
+        <a href="https://opencart4.magentech.com/themes/so_emarket/layout4/index.php?route=product/product;language=en-gb;product_id=93" target="_self">
+          <img src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/4-330x330.jpg" alt="Incididunt picanha" class="mb-0"  style="width: 290px; height: 290px;">
+        </a>
+         <div class="box-label absolute left-0">
+      <span class="label label-sale inline-flex items-center justify-center left-0 bg-red-600 text-white rounded-full w-10 h-10 ">
+        -8%
+</span>
+    </div> 
+      </div>
+    </div>
+  
+    
+  </div>
+  
+  <div class="right-block w-45 float-left text-left sm:text-center lg:text-left ml-3">
+    <div class="caption ">
+      <h4 class="text-2xl mb-2"><a href="https://opencart4.magentech.com/themes/so_emarket/layout4/index.php?route=product/product;language=en-gb;product_id=93" target="_self" title="Incididunt picanha">Incididunt picanha</a></h4>
+      <div class="rating flex justify-start mb-4">
+        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x text-red-500"></i></span>
+        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x text-red-500"></i></span>
+        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x text-red-500"></i></span>
+        <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x text-red-500"></i></span>
+        
+      </div>
+
+      </div>
+      <p class="text-start ">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p><p> sed do eiusmod tempor incididunt ut labore..</p>
+      <p class="price mb-2 mt-2">
+        <span class="price-new text-red-600 font-bold text-xl">$45.00</span>
+        <span class="price-old ml-1 line-through">$49.00</span>
+      </p>
+      <div class="button-group flex justify-start gap-3 p-2 mb-2">
+        <button class="addToCart border  inline-block " title="Add to Cart" type="button" onclick="cart.add('93');"><i class="fa fa-shopping-cart ml-2 text-gray-600"></i> <span class="mr-4">add to card</span></button>
+        <button class="btn-button wishlist border" type="button" title="Add to Wish List" onclick="wishlist.add('93');"><i class="fa fa-heart p-1 text-gray-600"></i><span></span></button>
+        <button class="btn-button compare border" type="button" title="Compare this Product" onclick="compare.add('93');"><i class="fa fa-refresh p-1 text-gray-600"></i><span></span></button>
+      </div>
+
+<div class="item-timer ">
+          <div class="btn flex justify-start  ">
             
-            <div class="text-white text-center mr-32 ml-32">
-                <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.&nbsp;<br></p>
-            </div>
-            <div class="btn-shop text-center   p-10">
-                <a class="btn bg-pink-800 hover:bg-pink-600 text-white font-bold py-4 px-6 rounded absolute " href="#">Shop Now</a>
+            <button class="flex  items-center p-2 my-2 mx-2 text-xs rounded font-bold 
+text-blue-500 bg-gray-200 border border-gray-300 "
+>
+
+108
+</button>
+<span class="text-blue-500 my-auto">:</span>
+            <button
+            class=" p-2 my-2 mx-2  text-sm rounded font-bold tracking-wide
+            text-blue-600 bg-gray-200 border border-gray-300"
+>
+2
+
+</button>
+<span class="text-blue-500 my-auto">:</span>
+            <button
+class=" p-2 my-2 mx-2  text-sm rounded font-bold tracking-wide
+text-blue-600 bg-gray-200 border border-gray-300"
+>
+6
+
+</button>
+<span class="text-blue-500 my-auto">:</span>
+            <button
+            class=" p-2 my-2 mx-2  text-sm rounded font-bold tracking-wide
+            text-blue-600 bg-gray-200 border border-gray-300"
+>
+13
+
+</button>
+           </div>
+        </div>
+
+
+    </div>
+
+      
+        
+       
+      </div>
+    </div>
+    <button type="button" class="absolute top-0 left-2 z-30 flex items-center justify-center h-full px-4 cursor-pointer group  focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-red-100  group-hover:bg-red-400  ">
+          <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 right-2 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-red-100  group-hover:bg-red-400   ">
+          <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+      </span>
+  </button>
+   	
+  </div>
+        </div>
+</div> 
+
+
+
+
+<!-------- featurred----->
+ <div id="featured-container" class="relative w-2/3 bg-white " data-carousel="static" style="height: 500px;"> 
+<div id="featured-title" class="modtitle text-2xl font-semibold leading-6 uppercase left-0 top-0  p-12">
+<h3>
+  <a href="/index.php?route=custom/featured">
+    <span>Featured products</span>
+  </a>
+</h3>
+
+</div>
+
+        <div id="swiper-container" class="swiper-container flex flex-row flex-wrap justify-start  h-56 overflow-hidden rounded-lg md:h-96">
+
+         
+          
+<div id="featured-1" class=" p-4">
+  <div class="product-item-container">
+    <div class="right-block">
+      <div class="product-image-container ">
+        <a href="https://opencart4.magentech.com/themes/so_emarket/layout4/index.php?route=product/product;language=en-gb;product_id=50" target="_self" title="Buffalo tail chicke">
+            <img data-sizes="auto" src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/id-update/Electronics/10-270x270.jpg" data-src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/id-update/Electronics/10-270x270.jpg" alt="Buffalo tail chicke" class="rounded-t-lg  h-52 my-auto flex" >
+        </a>
+    </div>
+    <div class="right-block w-45 float-left text-left sm:text-center lg:text-left ml-3">
+      <div class="caption ">
+        <p class="text-start ">Buffalo tail chicke</p>
+        <div class="rating flex justify-start mb-2">
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          
+        </div>
+  
+        </div>
+       
+        <p class="price mb-2 mt-2">
+          <span class="price-new text-red-600 font-bold text-lg">$60.00</span>
+          <span class="price-old ml-1 line-through">$67.00</span>
+        </p>
+        <div class="button-group flex justify-start gap-3 p-2 mb-2">
+          <button class="addToCart border  inline-block " title="Add to Cart" type="button" onclick="cart.add('93');"><i class="fa fa-shopping-cart ml-2 text-gray-600"></i> <span class="mr-4">add to card</span></button>
+          <button class="btn-button wishlist border" type="button" title="Add to Wish List" onclick="wishlist.add('93');"><i class="fa fa-heart p-1 text-gray-600"></i><span></span></button>
+          <button class="btn-button compare border" type="button" title="Compare this Product" onclick="compare.add('93');"><i class="fa fa-refresh p-1 text-gray-600"></i><span></span></button>
+        </div>
+      </div>
+    </div>  
+</div>
+</div>
+
+
+
+<div id="featured-2" class=" p-4">
+  <div class="product-item-container">
+    <div class="right-block">
+      <div class="product-image-container relative">
+        <a href="https://opencart4.magentech.com/themes/so_emarket/layout4/index.php?route=product/product;language=en-gb;product_id=402" target="_self" title="Corem ipsum dolor ">
+          <img data-sizes="auto" src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index38/20a-270x270.jpg" data-src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index38/20a-270x270.jpg" alt="Corem ipsum dolor" class="rounded-t-lg w-full h-52 my-auto flex" >
+<div class="box-label absolute  left-0 top-0">
+  <span class="label label-sale inline-flex items-center justify-center  bg-red-600 text-white rounded-full w-10 h-10 ">
+    -8%
+</span>
+</div> 
+</a>
+
+    </div>
+    <div class="right-block w-45 float-left text-left sm:text-center lg:text-left ml-3">
+      <div class="caption ">
+        <p class="text-start ">Buffalo tail chicke</p>
+        <div class="rating flex justify-start mb-2">
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          
+        </div>
+  
+        </div>
+       
+        <p class="price mb-2 mt-2">
+          <span class="price-new text-red-600 font-bold text-lg">$60.00</span>
+          <span class="price-old ml-1 line-through">$67.00</span>
+        </p>
+        <div class="button-group flex justify-start gap-3 p-2 mb-2">
+          <button class="addToCart border  inline-block " title="Add to Cart" type="button" onclick="cart.add('93');"><i class="fa fa-shopping-cart ml-2 text-gray-600"></i> <span class="mr-4">add to card</span></button>
+          <button class="btn-button wishlist border" type="button" title="Add to Wish List" onclick="wishlist.add('93');"><i class="fa fa-heart p-1 text-gray-600"></i><span></span></button>
+          <button class="btn-button compare border" type="button" title="Compare this Product" onclick="compare.add('93');"><i class="fa fa-refresh p-1 text-gray-600"></i><span></span></button>
+        </div>
+      </div>
+    </div>  
+</div>
+</div>
+
+
+<div id="featured-3" class=" p-4">
+  <div class="product-item-container">
+    <div class="right-block">
+      <div class="product-image-container relative">
+        <a href="https://opencart4.magentech.com/themes/so_emarket/layout4/index.php?route=product/product;language=en-gb;product_id=73" target="_self" title="Doenpuis consuat ">
+          <img data-sizes="auto" src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/10-270x270.jpg" data-src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/10-270x270.jpg" alt="Doenpuis consuat" class="rounded-t-lg  w-full h-52 my-auto flex">
+          <div class="box-label absolute  right-0 top-0">
+            <span class="label label-sale inline-flex items-center justify-center  bg-red-600 text-white rounded-full w-10 h-10 ">
+              -8%
+          </span>
+          </div> 
+</a>
+    </div>
+    <div class="right-block w-45 float-left text-left sm:text-center lg:text-left ml-3">
+      <div class="caption ">
+        <p class="text-start ">Buffalo tail chicke</p>
+        <div class="rating flex justify-start mb-2">
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          
+        </div>
+  
+        </div>
+       
+        <p class="price mb-2 mt-2">
+          <span class="price-new text-red-600 font-bold text-lg">$60.00</span>
+          <span class="price-old ml-1 line-through">$67.00</span>
+        </p>
+        <div class="button-group flex justify-start gap-3 p-2 mb-2">
+          <button class="addToCart border  inline-block " title="Add to Cart" type="button" onclick="cart.add('93');"><i class="fa fa-shopping-cart ml-2 text-gray-600"></i> <span class="mr-4">add to card</span></button>
+          <button class="btn-button wishlist border" type="button" title="Add to Wish List" onclick="wishlist.add('93');"><i class="fa fa-heart p-1 text-gray-600"></i><span></span></button>
+          <button class="btn-button compare border" type="button" title="Compare this Product" onclick="compare.add('93');"><i class="fa fa-refresh p-1 text-gray-600"></i><span></span></button>
+        </div>
+      </div>
+    </div>  
+</div>
+</div>
+
+
+<div id="featured-4" class=" p-4">
+  <div class="product-item-container">
+    <div class="right-block">
+      <div class="product-image-container">
+        <a href="https://opencart4.magentech.com/themes/so_emarket/layout4/index.php?route=product/product;language=en-gb;product_id=155" target="_self" title="Beefribs tenderloine ">
+          <img data-sizes="auto" src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/fashion-21/8-270x270.jpg" data-src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/fashion-21/8-270x270.jpg" alt="Beefribs tenderloine" class="rounded-t-lg   h-52 my-auto flex">
+
+</a>
+    </div>
+    <div class="right-block w-45 float-left text-left sm:text-center lg:text-left ml-3">
+      <div class="caption ">
+        <p class="text-start ">Buffalo tail chicke</p>
+        <div class="rating flex justify-start mb-2">
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          
+        </div>
+  
+        </div>
+       
+        <p class="price mb-2 mt-2">
+          <span class="price-new text-red-600 font-bold text-lg">$60.00</span>
+          <span class="price-old ml-1 line-through">$67.00</span>
+        </p>
+        <div class="button-group flex justify-start gap-3 p-2 mb-2">
+          <button class="addToCart border  inline-block " title="Add to Cart" type="button" onclick="cart.add('93');"><i class="fa fa-shopping-cart ml-2 text-gray-600"></i> <span class="mr-4">add to card</span></button>
+          <button class="btn-button wishlist border" type="button" title="Add to Wish List" onclick="wishlist.add('93');"><i class="fa fa-heart p-1 text-gray-600"></i><span></span></button>
+          <button class="btn-button compare border" type="button" title="Compare this Product" onclick="compare.add('93');"><i class="fa fa-refresh p-1 text-gray-600"></i><span></span></button>
+        </div>
+      </div>
+    </div>  
+</div>
+</div>
+
+
+
+<div id="featured-5" class=" p-4">
+  <div class="product-item-container">
+    <div class="right-block">
+      <div class="product-image-container">
+        <a href="https://opencart4.magentech.com/themes/so_emarket/layout4/index.php?route=product/product;language=en-gb;product_id=28" target="_self" title="Drumstick tempor ">
+          <img data-sizes="auto" src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/funiture/2-270x270.jpg" data-src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/funiture/2-270x270.jpg" alt="Drumstick tempor" class="rounded-t-lg   h-52 my-auto flex">
+
+</a>
+    </div>
+    <div class="right-block w-45 float-left text-left sm:text-center lg:text-left ml-3">
+      <div class="caption ">
+        <p class="text-start ">Buffalo tail chicke</p>
+        <div class="rating flex justify-start mb-2">
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          
+        </div>
+  
+        </div>
+       
+        <p class="price mb-2 mt-2">
+          <span class="price-new text-red-600 font-bold text-lg">$60.00</span>
+          <span class="price-old ml-1 line-through">$67.00</span>
+        </p>
+        <div class="button-group flex justify-start gap-3 p-2 mb-2">
+          <button class="addToCart border  inline-block " title="Add to Cart" type="button" onclick="cart.add('93');"><i class="fa fa-shopping-cart ml-2 text-gray-600"></i> <span class="mr-4">add to card</span></button>
+          <button class="btn-button wishlist border" type="button" title="Add to Wish List" onclick="wishlist.add('93');"><i class="fa fa-heart p-1 text-gray-600"></i><span></span></button>
+          <button class="btn-button compare border" type="button" title="Compare this Product" onclick="compare.add('93');"><i class="fa fa-refresh p-1 text-gray-600"></i><span></span></button>
+        </div>
+      </div>
+    </div>  
+</div>
+</div>
+
+
+
+<div id="featured-6" class=" p-4">
+  <div class="product-item-container">
+    <div class="right-block">
+      <div class="product-image-container">
+        <a href="https://opencart4.magentech.com/themes/so_emarket/layout4/index.php?route=product/product;language=en-gb;product_id=150" target="_self" title="Andouille burgdogge ">
+          <img data-sizes="auto" src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/fashion-21/3-270x270.jpg" data-src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/fashion-21/3-270x270.jpg" alt="Andouille burgdogge" class="rounded-t-lg   h-52 my-auto flex">
+
+</a>
+    </div>
+    <div class="right-block w-45 float-left text-left sm:text-center lg:text-left ml-3">
+      <div class="caption ">
+        <p class="text-start ">Buffalo tail chicke</p>
+        <div class="rating flex justify-start mb-2">
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
+          
+        </div>
+  
+        </div>
+       
+        <p class="price mb-2 mt-2">
+          <span class="price-new text-red-600 font-bold text-lg">$60.00</span>
+          <span class="price-old ml-1 line-through">$67.00</span>
+        </p>
+        <div class="button-group flex justify-start gap-3 p-2 mb-2">
+          <button class="addToCart border  inline-block " title="Add to Cart" type="button" onclick="cart.add('93');"><i class="fa fa-shopping-cart ml-2 text-gray-600"></i> <span class="mr-4">add to card</span></button>
+          <button class="btn-button wishlist border" type="button" title="Add to Wish List" onclick="wishlist.add('93');"><i class="fa fa-heart p-1 text-gray-600"></i><span></span></button>
+          <button class="btn-button compare border" type="button" title="Compare this Product" onclick="compare.add('93');"><i class="fa fa-refresh p-1 text-gray-600"></i><span></span></button>
+        </div>
+      </div>
+    </div>  
+</div>
+</div>
+
+
+      </div>
+     
+      <button type="button" class="absolute top-0 left-2 z-30 flex items-center justify-center h-full px-4 cursor-pointer group  focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-red-100  group-hover:bg-red-400  ">
+          <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button" class="absolute top-0 right-2 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-red-100  group-hover:bg-red-400   ">
+          <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+  
+    </div> 
+
+
+        </div>
+      </div>
+        </div>
+      </div>
+
+
+
+
+      <!--------- Modul-21 ------->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- İlk sayfa -->
+        <div class="owl-item" style="width: 320px;">
+            <div class="multi-row">
+    
+                <!-- İlk ürün kartı -->
+                <div class="product-layout col-span-12">
+                    <div class="product-thumb transition">
+                        <div class="image">
+                            <a href="https://opencart.dostguru.com/AS01/autospeed_02/index.php?route=product/product;product_id=43">
+                                <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/15-288x288.jpg" alt="Fashion Design Two Color Car Wheel" title="Fashion Design Two Color Car Wheel" class="w-full h-auto block mx-auto main-img">
+                            </a>
+                            <!-- Pixel Images Start -->
+                            <a href="https://opencart.dostguru.com/AS01/autospeed_02/index.php?route=product/product;product_id=43">
+                                <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/3-288x288.jpg" class="w-full h-auto  mx-auto second-img hidden group-hover:inline" alt="hover image">
+                            </a>
+                            <!-- End -->
+                        </div>
+                        <div class="caption text-left">
+                            <div class="bran">
+                                <span>
+                                    <a href="https://opencart.dostguru.com/AS01/autospeed_02/index.php?route=product/manufacturer/info&amp;manufacturer_id=8" class="textdeb">car</a>
+                                </span>
+                            </div>
+                            <h4 class="protitle">
+                                <a href="https://opencart.dostguru.com/AS01/autospeed_02/index.php?route=product/product&amp;product_id=43">Fashion Design Two Color Car Wheel</a>
+                            </h4>
+                            <div class="flex items-center">
+                                <!-- Diğer içerikler -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
             </div>
         </div>
+    
+        <!-- İkinci sayfa -->
+        <div class="owl-item" style="width: 320px;">
+            <div class="multi-row">
+    
+                <!-- İkinci ürün kartı -->
+                <div class="product-layout col-span-12">
+                    <div class="product-thumb transition">
+                        <div class="image">
+                            <a href="https://opencart.dostguru.com/AS01/autospeed_02/index.php?route=product/product&amp;product_id=42">
+                                <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/30-288x288.jpg" alt="Car Pump Washing Machine" title="Car Pump Washing Machine" class="w-full h-auto block mx-auto">
+                            </a>
+                            <!-- Pixel Images Start -->
+                            <a href="https://opencart.dostguru.com/AS01/autospeed_02/index.php?route=product/product&amp;product_id=42">
+                                <img src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/26-288x288.jpg" class="w-full h-auto block mx-auto second-img" alt="hover image">
+                            </a>
+                            <!-- End -->
+                        </div>
+                        <div class="caption text-left">
+                            <div class="bran">
+                                <span>
+                                    <a href="https://opencart.dostguru.com/AS01/autospeed_02/index.php?route=product/manufacturer/info&amp;manufacturer_id=8" class="textdeb">car</a>
+                                </span>
+                            </div>
+                            <h4 class="protitle">
+                                <a href="https://opencart.dostguru.com/AS01/autospeed_02/index.php?route=product/product&amp;product_id=42">Car Pump Washing Machine</a>
+                            </h4>
+                            <div class="flex items-center">
+                                <!-- Diğer içerikler -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+<!---- Modul-5 ---->
+
+<div class="  flex flex-col items-center justify-center bg-cover bg-fixed bg-center opacity-80 " style="background-image: url('../ilknur/assets/picture/modul-5/rBNaFl8s1EqAaSQTAAHsypAUzSo008.jpg'); height: 500px;">
+    <div class="w-9/12">
+        <h3 class="title text-4xl text-white font-bold pb-8 text-center ">End of Season Sale</h3> 
+            <div class="relative text-white text-center   flex-wrap">
+                <p class="mb-4  mx-auto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br></p>
+            </div>
+            <div class="btn-shop text-center p-4 ">
+                <a class="btn bg-pink-800 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded absolute " href="#">Shop Now</a>
+            </div>
+      
       </div>
     </div>
 
-<!----   Modul-7  -->
+<!----   Modul-7 ---->
 
 
 <div class="relative mx-auto px-8 md:px-14 py-8 bg-white">
@@ -545,7 +1106,7 @@
 <!-------- modul-9 -->
 
 <div class="bg-yellow-300 h-auto md:h-32 flex flex-col md:flex-row justify-around items-center flex-wrap">
-    <div class=" w-9/12 flex left  flex-grow-2   flex items-center justify-center gap-6">
+    <div class=" w-9/12 flex left flex-wrap flex-grow-2 items-center justify-center gap-6">
       
       <div class="md:mr-2 mt-4 md:mt-10">
         <svg class="h-14 w-18 text-black p-1 "  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />  <polyline points="22,6 12,13 2,6" /></svg>
@@ -612,17 +1173,7 @@
     </div>
     </div>
 
-    
-
-
-   
-
-
-   
-
-
   </div>
-  
   
 </div>
 
@@ -641,7 +1192,7 @@ class=" bg-gray-800 text-center text-white dark:bg-neutral-600">
     
       <div class="col-1 grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
         <div class=" grid-row grid-rows-2 pt-7">
-            <div class="m-30 flex justify-start">
+            <div class="m-30 flex  flex-wrap justify-start">
             <a href="#!" class="mr-10 flex-col justify-self-center">
                 <img src="https://sekerofisi.com/uploads/p/o/Cp0Dlc3Rg2xo.PNG" class="h-32 w-52 m-18" alt="Sugar-office Logo" />
             </a>
@@ -762,7 +1313,7 @@ class=" bg-gray-800 text-center text-white dark:bg-neutral-600">
 
 <!--Copyright section-->
 <div
-  class="w-full bg-gray-600 text-white p-4 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
+  class="w-full bg-gray-600 text-white p-4 text-center  dark:bg-neutral-700 dark:text-neutral-200">
  Copyright © 2023,
   <a
     class="text-neutral-800 dark:text-neutral-400"
@@ -770,10 +1321,14 @@ class=" bg-gray-800 text-center text-white dark:bg-neutral-600">
     >Sugar Office, All Rights Reserved</a
   >
 </div>
+
+
         <!-- Slick Carousel JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
-    <script src=".//assets/App.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tw-elements@1.0.0/dist/js/tw-elements.umd.min.js"></script>
+       <script src="../ilknur/assets/App.js"></script>
     </body> 
     </html>

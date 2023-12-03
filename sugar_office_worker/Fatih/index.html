@@ -12,6 +12,19 @@
     tailwind.config = {
       theme: {
         extend: {
+          screens: {
+            'mw-2xl': { 'max': '1400px' },
+
+            'mw-xl': { 'max': '1279px' },
+
+            'mw-lg': { 'max': '1023px' },
+            'mw-lg2': { 'max': '1200px' },
+
+            'mw-md': { 'max': '768px' },
+
+            'mw-sm': { 'max': '640px' },
+            
+          },
           colors: {
             clifford: "#da373d",
             sugar__pink: "#FF9BA7",
@@ -50,7 +63,7 @@
   <!-- Navbar  Tasarımı  Start-->
   <div class=" shadow mx-auto bg-backcolor  ">
     <!-- Top Navbar  -->
-    <div class="top-nav shadow text-sm font-light">
+    <div class="top-nav shadow text-sm font-light ">
       <div class="left-top-nav">
 
 
@@ -79,10 +92,13 @@
           <li class="drop-menü z-50 hover:text-sugar__pink"><i
               class="fa-solid fa-dollar-sign fa-sm text-sugar__blue"></i> US DOLLAR
             <ul class="bg-sugar__pink text-white text-sm w-[100px] shadow-xl rounded-lg">
-              <li><i class="fa-solid fa-euro-sign fa-xs text-sugar__blue hover:text-sugar__pink"></i> Euro</li>
-              <li><i class="fa-solid fa-sterling-sign fa-xs text-sugar__blue hover:text-sugar__pink"></i> Pound Sterling
+              <li><i class="fa-solid fa-euro-sign fa-xs text-sugar__blue hover:text-sugar__pink"></i> Euro
               </li>
-              <li><i class="fa-solid fa-dollar-sign fa-xs text-sugar__blue hover:text-sugar__pink"></i> US Dollar</li>
+              <li><i class="fa-solid fa-sterling-sign fa-xs text-sugar__blue hover:text-sugar__pink"></i>
+                Pound Sterling
+              </li>
+              <li><i class="fa-solid fa-dollar-sign fa-xs text-sugar__blue hover:text-sugar__pink"></i> US
+                Dollar</li>
             </ul>
 
           </li>
@@ -92,12 +108,12 @@
     </div>
     <!-- Mid Navbar  -->
 
-    <div class="mid-nav">
-      <div class="left-mid-nav">
-        <img src="https://sekerofisi.com/uploads/p/o/Cp0Dlc3Rg2xo.PNG" alt="logo" style="width: 125px" />
+    <div class="mid-nav mw-lg:hidden">
+      <div class="left-mid-nav  w-[125px] h-[125px] ">
+        <img src="https://sekerofisi.com/uploads/p/o/Cp0Dlc3Rg2xo.PNG" alt="logo" class="w-full" />
       </div>
-      <div class="mid-mid-nav">
-        <form action="/search" class="w-full px-4 mt-[20px]">
+      <div class="mid-mid-nav  ">
+        <form action="/search" class="md:w-full md:px-4 md:mt-[20px] ">
           <div class="relative">
             <input type="text" name="q"
               class="w-full hover:text-white  h-12 shadow p-4 rounded-full hover:bg-sugar__pink" placeholder="search" />
@@ -108,7 +124,7 @@
           </div>
         </form>
       </div>
-      <div class="right-mid-nav cursor-pointer">
+      <div class="right-mid-nav cursor-pointer ">
         <div class="flex items-center">
           <i class="fa-regular fa-user fa-2xl text-sugar__blue p-2"> </i>
           <div>
@@ -140,10 +156,11 @@
       </div>
     </div>
     <hr />
-
-    <div class="end-nav flex justify-around">
+    <!-- End Navbar  -->
+    <div class="end-nav flex justify-around ">
       <div class="left-end-nav">
-        <ul class=" flex font-bold cursor-pointer  ">
+
+        <ul class=" flex font-bold cursor-pointer  mw-lg:hidden ">
           <li class="p-2">CATEGORİES</li>
           <li class="p-2">MEGAMENU</li>
           <li class="p-2 right-drop-menü z-30">MULTILEVEL
@@ -173,7 +190,7 @@
         </ul>
       </div>
 
-      <div class="right-end-nav flex">
+      <div class="right-end-nav flex mw-lg:hidden">
         <ul class="flex font-bold cursor-pointer">
           <li class="p-2">ABOUT</li>
           <li class="p-2">FAQ</li>
@@ -246,6 +263,155 @@
         </div>
       </div>
     </div>
+    <!-- Mobil Nav -->
+    <nav class="bg-backcolor border-gray-200 lg:hidden relative">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="https://sekerofisi.com/uploads/p/o/Cp0Dlc3Rg2xo.PNG" class="h-8" alt="Flowbite Logo" />
+
+        </a>
+        <div class="flex md:hidden">
+
+          <button data-collapse-toggle="navbar-dropdown" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+          <div class=" flex font-light drop-menü relative ">
+
+
+            <div class="shop  w-[50px] flex justify-center items-center p-4">
+
+              <i class="fa-solid fa-bag-shopping fa-2xl  relative">
+                <span class="absolute bottom-0 right-0 text-sm text-sugar__pink z-20 rounded-full ">0</span>
+              </i>
+            </div>
+
+            <div class="shop-menü absolute z-30 w-[400px] top-10 right-0 bg-sugar__blue text-white">
+              <div class="flex flex-col  ">
+                <div class="flex justify-between bg-sugar__pink items-center border-solid border border-sugar__pink">
+                  <img class="w-[75px] rounded-\[2rem\] p-2"
+                    src="https://sekerofisi.com/uploads/p/p/Seffaf-Dosya-Deniz-Kizi_1.JPG?v=1697880853" alt="">
+                  <div class="p-2  font-bold">
+                    <h5 class="underline ">Ürün 1</h5>
+                    <p>size * M</p>
+                    <p> color * Red</p>
+                  </div>
+                  <div class="p-2  ">X 1</div>
+                  <div class="p-2  font-bold">505.99 $</div>
+                  <div class="p-2  font-bold">
+                    <p><svg class="w-4 h-4 hover:text-sugar__blue " aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                        <path
+                          d="M17 4h-4V2a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v2H1a1 1 0 0 0 0 2h1v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6h1a1 1 0 1 0 0-2ZM7 2h4v2H7V2Zm1 14a1 1 0 1 1-2 0V8a1 1 0 0 1 2 0v8Zm4 0a1 1 0 0 1-2 0V8a1 1 0 0 1 2 0v8Z" />
+                      </svg></p>
+                  </div>
+                </div>
+                <div class="flex justify-end items-center border-t-2 border-b-2  border-sugar__pink"><span
+                    class="font-bold p-2"> Sub-Total</span> <span>$ 35.99</span></div>
+                <div class="flex justify-end items-center border-t-2 border-b-2  border-sugar__pink"><span
+                    class="font-bold p-2"> Total</span> <span>$ 35.99</span></div>
+                <div class="flex justify-center items-center pt-2 bg-sugar__navy2">
+                  <button type="button"
+                    class="flex justify-between items-center text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+
+                    <svg class="w-3 h-3 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                      fill="none" viewBox="0 0 18 20">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 9V4a3 3 0 0 0-6 0v5m9.92 10H2.08a1 1 0 0 1-1-1.077L2 6h14l.917 11.923A1 1 0 0 1 15.92 19Z" />
+                    </svg>
+                    <span class="px-2">VIEM CART</span>
+                  </button>
+                  <button type="button"
+                    class="flex justify-between items-center text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                    <span class="px-2">
+                      CHECKOUT
+
+                    </span>
+                    <svg class="w-3 h-3   text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                      fill="none" viewBox="0 0 14 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+          <ul
+            class="flex flex-col font-bold p-4 md:p-0 mt-4  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  text-black">
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                aria-current="page">CATEGORİES</a>
+            </li>
+
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">MEGAMENU</a>
+            </li>
+            <li>
+              <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto ">MULTILEVEL
+                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg></button>
+              <!-- Dropdown menu -->
+              <div id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-backcolor  divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                <ul class="py-2 text-sm font-bold" aria-labelledby="dropdownLargeButton">
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Desktop</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Laptops &
+                      Notebooks </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Phones &
+                      PDAs</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Cameras</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">MP3
+                      Players</a>
+                  </li>
+                </ul>
+
+              </div>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">BRANDS</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">SPECIALS</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
   </div>
   <!-- Navbar  Tasarımı  End-->
 
@@ -258,13 +424,13 @@
 
       <div class="hidden duration-700 ease-in-out h-96 sliderr " data-carousel-item>
         <div class="absolute top-[50%] start-[10%] z-30 flex items-center justify-center  opacity-95 hover:opacity-100">
-          <h1 class="text-5xl font-bold  border-b-4 border-red-500">
+          <h1 class="text-5xl font-bold  border-b-4 border-red-500 mw-sm:text-2xl">
             <span class="text-sugar__pink">Seker</span> <span class="text-sugar__blue">OFIS</span>
           </h1>
 
         </div>
         <div class="absolute top-[65%] start-[10%] z-30 flex items-center justify-center  opacity-95 hover:opacity-100">
-          <h1 class="text-7xl font-bold ">
+          <h1 class="text-7xl font-bold mw-sm:text-3xl ">
             NEW COLLECTION
           </h1>
 
@@ -280,7 +446,7 @@
 
         </div>
         <img src="https://sekerofisi.com/uploads/p/o/UJcZfLu1mDz4.jpg"
-          class="backdrop-brightness-100  absolute block w-full sliderr -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          class="backdrop-brightness-100  absolute block w-full sliderr h-auto max-w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
           alt="...">
 
       </div>
@@ -288,13 +454,13 @@
       <div class="hidden duration-700 ease-in-out h-96 sliderr backdrop-filter backdrop-brightness-125"
         data-carousel-item>
         <div class="absolute top-[50%] start-[10%] z-30 flex items-center justify-center  opacity-95 hover:opacity-100">
-          <h1 class="text-5xl font-bold border-b-4 border-red-900">
+          <h1 class="text-5xl font-bold border-b-4 border-red-900 mw-sm:text-2xl">
             <span class="text-sugar__pink">Seker</span> <span class="text-sugar__blue">OFIS</span>
           </h1>
 
         </div>
         <div class="absolute top-[65%] start-[10%] z-30 flex items-center justify-center  opacity-95 hover:opacity-100">
-          <h1 class="text-7xl font-bold  ">
+          <h1 class="text-7xl font-bold  mw-sm:text-3xl">
             NEW COLLECTION 2
           </h1>
 
@@ -311,7 +477,7 @@
         </div>
         <img
           src="https://img.freepik.com/free-photo/part-pink-pencils-pens_23-2147843257.jpg?w=900&t=st=1700603984~exp=1700604584~hmac=b2a9c3e056a032e9cf2f31d583c1e9821dec6e1ebfdee2de0685ee24f56839f5"
-          class=" backdrop-brightness-100 absolute block w-full  h-auto max-w-full sliderr -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          class=" backdrop-brightness-100 absolute block w-full   h-auto mw-sm:max-w-lg sliderr -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
           alt="...">
       </div>
       <!-- Item 3 -->
@@ -359,19 +525,20 @@
   <!-- Carousel End -->
 
   <!-- Modul 20 Tasarımı Start-->
-  <div class=" grid grid-cols-2 gap-4 h-[500px] bg-backcolor3 px-12 py-8 ">
+  <div class=" grid grid-cols-2 gap-4 h-full mw-sm:h-full bg-backcolor3 px-12 py-8 mw-lg2:grid-cols-1 ">
     <!-- Left Slider -->
 
-    <div id="controls-carousel" class="relative w-full h-[450px]  bg-white shadow-2xl  rounded-lg"
+    <div id="controls-carousel" class="relative w-full h-[450px] mw-sm:h-[600px] bg-white shadow-2xl  rounded-lg "
       data-carousel="static">
       <h1 class="font-bold text-3xl p-2">Deals Of The Days</h1>
       <img src="assets/image/modüle20/sale.png" class="absolute w-[82px] h-[82px] right-[-5px] top-[-5px] z-40" alt="">
       <!-- Carousel wrapper -->
-      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+      <div class="relative h-full overflow-hidden rounded-lg md:h-96 ">
         <!-- Item 1 -->
-        <div class="hidden duration-700 ease-in-out flex justify-center items-center " data-carousel-item>
-          <div class="w-1/2  text-center relative ">
-            <img src="assets/image/modüle20/sapka.jpg" class="w-[500px]  " alt="..." />
+        <div class="hidden duration-700 ease-in-out sm:flex sm:justify-center sm:items-center  mw-sm:flex-col  "
+          data-carousel-item>
+          <div class="  text-center relative mw-sm:w-full">
+            <img src="assets/image/modüle20/sapka.jpg" class=" h-auto max-w-full " alt="..." />
             <div
               class="text-white absolute 2xl:top-20 lg:top-9 top-5 left-5  font-sans bg-red-600 rounded-[50%] p-3 w-[50px]">
               <span class="text-sm">-13%</span>
@@ -379,7 +546,7 @@
             </div>
 
           </div>
-          <div class="w-1/2 p-4 ">
+          <div class="w-1/2 mw-sm:w-full mw-sm:h-full mw-sm:m-auto p-4 ">
             <h2 class="font-bold">Doenpuis Consuat 123</h2>
             <p class="flex pt-2">
               <svg class="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -408,7 +575,7 @@
                   d="m11.479 1.712 2.367 4.8a.532.532 0 0 0 .4.292l5.294.769a.534.534 0 0 1 .3.91l-3.83 3.735a.534.534 0 0 0-.154.473l.9 5.272a.535.535 0 0 1-.775.563l-4.734-2.49a.536.536 0 0 0-.5 0l-4.73 2.487a.534.534 0 0 1-.775-.563l.9-5.272a.534.534 0 0 0-.154-.473L2.158 8.48a.534.534 0 0 1 .3-.911l5.294-.77a.532.532 0 0 0 .4-.292l2.367-4.8a.534.534 0 0 1 .96.004Z" />
               </svg>
             </p>
-            <p class="text-sm w-2/3 pt-2 ">
+            <p class="text-sm w-2/3 pt-2 mw-sm:truncate  ">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
               illum aut suscipit mollitia, architecto deleniti voluptate
               doloremque autem quas...
@@ -444,7 +611,7 @@
                 </svg>
               </button>
             </div>
-            <div class="grid grid-flow-col gap-5 text-center auto-cols-max pt-2">
+            <div class="mw-sm:hidden flex   text-center  pt-2  mw-sm:hidden">
               <div class="flex ">
                 <span class="countdown font-mono text-lg   ">
                   <span class="border border-gray-500 bg-backcolor3 text-blue-900 p-2" style="--value:15;">15 </span> :
@@ -473,16 +640,17 @@
           </div>
         </div>
         <!-- Item 2 -->
-        <div class="hidden duration-700 ease-in-out flex justify-center items-center" data-carousel-item>
-          <div class="w-1/2 relative">
-            <img src="assets/image/modüle20/ayakkabı.jpg" class="w-[500px] p-4" alt="..." />
+        <div class="hidden duration-700 ease-in-out sm:flex sm:justify-center sm:items-center  mw-sm:flex-col"
+          data-carousel-item>
+          <div class="text-center relative mw-sm:w-full">
+            <img src="assets/image/modüle20/ayakkabı.jpg" class=" h-auto max-w-full " alt="..." />
             <div
               class="text-white absolute 2xl:top-20 lg:top-9 top-5 left-5  font-sans bg-red-600 rounded-[50%] p-3 w-[50px]">
               <span class="text-sm">-13%</span>
 
             </div>
           </div>
-          <div class="w-1/2 p-4">
+          <div class="w-1/2 mw-sm:w-full mw-sm:h-full mw-sm:m-auto p-4 ">
             <h2 class="font-bold">Doenpuis Consuat</h2>
             <p class="flex pt-2">
               <svg class="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -511,7 +679,7 @@
                   d="m11.479 1.712 2.367 4.8a.532.532 0 0 0 .4.292l5.294.769a.534.534 0 0 1 .3.91l-3.83 3.735a.534.534 0 0 0-.154.473l.9 5.272a.535.535 0 0 1-.775.563l-4.734-2.49a.536.536 0 0 0-.5 0l-4.73 2.487a.534.534 0 0 1-.775-.563l.9-5.272a.534.534 0 0 0-.154-.473L2.158 8.48a.534.534 0 0 1 .3-.911l5.294-.77a.532.532 0 0 0 .4-.292l2.367-4.8a.534.534 0 0 1 .96.004Z" />
               </svg>
             </p>
-            <p class="text-sm w-2/3 pt-2">
+            <p class="text-sm w-2/3 pt-2 mw-sm:truncate">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
               illum aut suscipit mollitia, architecto deleniti voluptate
               doloremque autem quas...
@@ -547,7 +715,7 @@
                 </svg>
               </button>
             </div>
-            <div class="grid grid-flow-col gap-5 text-center auto-cols-max pt-2">
+            <div class="mw-sm:hidden flex text-center  pt-2">
               <div class="flex ">
                 <span class="countdown font-mono text-lg   ">
                   <span class="border border-gray-500 bg-backcolor3 text-blue-900 p-2" style="--value:15;">15 </span> :
@@ -576,16 +744,17 @@
           </div>
         </div>
         <!-- Item 3 -->
-        <div class="hidden duration-700 ease-in-out flex justify-center items-center" data-carousel-item>
-          <div class="w-1/2 relative">
-            <img src="assets/image/modüle20/sapka.jpg" class="w-[500px] p-4" alt="..." />
+        <div class="hidden duration-700 ease-in-out sm:flex sm:justify-center sm:items-center  mw-sm:flex-col"
+          data-carousel-item>
+          <div class="text-center relative mw-sm:w-full">
+            <img src="assets/image/modüle20/sapka.jpg" class="h-auto max-w-full" alt="..." />
             <div
               class="text-white absolute 2xl:top-20 lg:top-9 top-5 left-5  font-sans bg-red-600 rounded-[50%] p-3 w-[50px]">
               <span class="text-sm">-13%</span>
 
             </div>
           </div>
-          <div class="w-1/2 4-2">
+          <div class="w-1/2 mw-sm:w-full mw-sm:h-full mw-sm:m-auto p-4 ">
             <h2 class="font-bold">Doenpuis Consuat</h2>
             <p class="flex pt-2">
               <svg class="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -614,7 +783,7 @@
                   d="m11.479 1.712 2.367 4.8a.532.532 0 0 0 .4.292l5.294.769a.534.534 0 0 1 .3.91l-3.83 3.735a.534.534 0 0 0-.154.473l.9 5.272a.535.535 0 0 1-.775.563l-4.734-2.49a.536.536 0 0 0-.5 0l-4.73 2.487a.534.534 0 0 1-.775-.563l.9-5.272a.534.534 0 0 0-.154-.473L2.158 8.48a.534.534 0 0 1 .3-.911l5.294-.77a.532.532 0 0 0 .4-.292l2.367-4.8a.534.534 0 0 1 .96.004Z" />
               </svg>
             </p>
-            <p class="text-sm w-2/3 pt-2">
+            <p class="text-sm w-2/3 pt-2 mw-sm:truncate">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
               illum aut suscipit mollitia, architecto deleniti voluptate
               doloremque autem quas...
@@ -650,7 +819,7 @@
                 </svg>
               </button>
             </div>
-            <div class="grid grid-flow-col gap-5 text-center auto-cols-max pt-2">
+            <div class="mw-sm:hidden flex text-center  pt-2">
               <div class="flex ">
                 <span class="countdown font-mono text-lg   ">
                   <span class="border border-gray-500 bg-backcolor3 text-blue-900 p-2" style="--value:15;">15 </span> :
@@ -679,16 +848,17 @@
           </div>
         </div>
         <!-- Item 4 -->
-        <div class="hidden duration-700 ease-in-out flex justify-center items-center" data-carousel-item>
-          <div class="w-1/2 relative">
-            <img src="assets/image/modüle20/tshirt.jpg" class="w-[500px] p-4" alt="..." />
+        <div class="hidden duration-700 ease-in-out sm:flex sm:justify-center sm:items-center  mw-sm:flex-col"
+          data-carousel-item>
+          <div class="text-center relative mw-sm:w-full">
+            <img src="assets/image/modüle20/tshirt.jpg" class="h-auto max-w-full" alt="..." />
             <div
               class="text-white absolute 2xl:top-20 lg:top-9 top-5 left-5  font-sans bg-red-600 rounded-[50%] p-3 w-[50px]">
               <span class="text-sm">-13%</span>
 
             </div>
           </div>
-          <div class="w-1/2 4-2">
+          <div class="w-1/2 mw-sm:w-full mw-sm:h-full mw-sm:m-auto p-4 ">
             <h2 class="font-bold">Doenpuis Consuat</h2>
             <p class="flex pt-2">
               <svg class="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -717,7 +887,7 @@
                   d="m11.479 1.712 2.367 4.8a.532.532 0 0 0 .4.292l5.294.769a.534.534 0 0 1 .3.91l-3.83 3.735a.534.534 0 0 0-.154.473l.9 5.272a.535.535 0 0 1-.775.563l-4.734-2.49a.536.536 0 0 0-.5 0l-4.73 2.487a.534.534 0 0 1-.775-.563l.9-5.272a.534.534 0 0 0-.154-.473L2.158 8.48a.534.534 0 0 1 .3-.911l5.294-.77a.532.532 0 0 0 .4-.292l2.367-4.8a.534.534 0 0 1 .96.004Z" />
               </svg>
             </p>
-            <p class="text-sm w-2/3 pt-2">
+            <p class="text-sm w-2/3 pt-2 mw-sm:truncate">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
               illum aut suscipit mollitia, architecto deleniti voluptate
               doloremque autem quas...
@@ -753,7 +923,7 @@
                 </svg>
               </button>
             </div>
-            <div class="grid grid-flow-col gap-5 text-center auto-cols-max pt-2">
+            <div class="mw-sm:hidden flex text-center  pt-2">
               <div class="flex ">
                 <span class="countdown font-mono text-lg   ">
                   <span class="border border-gray-500 bg-backcolor3 text-blue-900 p-2" style="--value:15;">15 </span> :
@@ -820,13 +990,13 @@
       <div class="relative ">
         <h1 class="font-bold text-3xl p-2">Featured Products</h1>
         <div class="
-          slides-container flex justify-between  items-center  pr-6  overflow-hidden  rounded scroll-smooth before:w-1/2 before:shrink-0 after:w-full after:shrink-0 md:before:w-0 md:after:w-0
-          slides-container h-[450px] flex snap-x snap-mandatory overflow-hidden overflow-x-hidden space-x-2 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0
-          ">
+              slides-container flex justify-between  items-center mw-sm:pr-0  pr-6  overflow-hidden  rounded scroll-smooth before:w-1/2 mw-sm:before:w-1 before:shrink-0 after:w-full after:shrink-0 md:before:w-0 md:after:w-0
+              slides-container h-[450px]  snap-x snap-mandatory  overflow-x-hidden space-x-2 
+              ">
 
 
-
-          <div class="slide aspect-square w-1/4 text-center p-2 h-[400px] relative">
+          <!-- Item 1 -->
+          <div class="slide aspect-square  w-1/4 mw-sm:w-1/2  text-center p-2 h-[400px] relative">
             <img src="assets/image/modüle20/elbise.jpg" alt="" class="">
             <div class="text-white absolute top-5 right-2 font-sans bg-red-900 rounded-[100%] p-1 w-[30px]">
               <span class="text-sm">-3%</span>
@@ -891,7 +1061,8 @@
               </button>
             </div>
           </div>
-          <div class="slide aspect-square w-1/4 text-center p-2 h-[400px]  ">
+          <!-- Item 2 -->
+          <div class="slide aspect-square w-1/4 mw-sm:w-1/2 text-center p-2 h-[400px]  ">
             <img src="assets/image/modüle20/atlet.jpg" alt="">
 
             <h3 class="text-center font-sans">
@@ -953,7 +1124,8 @@
               </button>
             </div>
           </div>
-          <div class="slide aspect-square w-1/4 text-center p-2 h-[400px] relative">
+          <!-- Item 3 -->
+          <div class="slide aspect-square w-1/4 mw-sm:w-1/2 text-center p-2 h-[400px] relative">
             <img src="assets/image/modüle20/tencere.jpg" alt="">
             <div class="text-white absolute top-5 right-2 font-sans bg-red-900 rounded-[100%] p-1 w-[30px]">
               <span class="text-sm">-2%</span>
@@ -1019,7 +1191,8 @@
               </button>
             </div>
           </div>
-          <div class="slide aspect-square w-1/4 text-center p-2 h-[400px] relative ">
+          <!-- Item 4 -->
+          <div class="slide aspect-square w-1/4 mw-sm:w-1/2 text-center p-2 h-[400px] relative ">
             <img src="assets/image/modüle20/ayakkabı.jpg" alt="">
             <div class="text-white absolute top-5 right-2 font-sans bg-red-900 rounded-[100%] p-1 w-[30px]">
               <span class="text-sm">-3%</span>
@@ -1085,7 +1258,8 @@
               </button>
             </div>
           </div>
-          <div class="slide aspect-square w-1/4 text-center p-2 h-[400px] ">
+          <!-- Item 5 -->
+          <div class="slide aspect-square w-1/4 mw-sm:w-1/2 text-center p-2 h-[400px] ">
             <img src="assets/image/modüle20/dolap.jpg" alt="">
             <h3 class="text-center font-sans">
               Drumstick tempor
@@ -1146,7 +1320,8 @@
               </button>
             </div>
           </div>
-          <div class="slide aspect-square w-1/4 text-center p-2 h-[400px] ">
+          <!-- Item 6 -->
+          <div class="slide aspect-square w-1/4 mw-sm:w-1/2 text-center p-2 h-[400px] ">
             <img src="assets/image/modüle20/tshirt2.jpg" alt="">
             <h3 class="text-center font-sans">
               Drutick lanaeger
@@ -1208,7 +1383,8 @@
               </button>
             </div>
           </div>
-          <div class="slide aspect-square w-1/4 text-center p-2 h-[400px] ">
+          <!-- Item 7 -->
+          <div class="slide aspect-square w-1/4 mw-sm:w-1/2 text-center p-2 h-[400px] ">
             <img src="assets/image/modüle20/elbise.jpg" alt="">
             <h3 class="text-center font-sans">
               Andouille burgdogge
@@ -1269,7 +1445,8 @@
               </button>
             </div>
           </div>
-          <div class="slide aspect-square w-1/4 text-center p-2 h-[400px] ">
+          <!-- Item 8 -->
+          <div class="slide aspect-square w-1/4 mw-sm:w-1/2 text-center p-2 h-[400px] ">
             <img src="assets/image/modüle20/elbise.jpg" alt="">
             <h3 class="text-center font-sans">
               Andouille burgdogge
@@ -1336,7 +1513,7 @@
 
         </div>
 
-        <div class="absolute -top-7 left-0 h-full items-center hidden md:flex opacity-20 hover:opacity-90">
+        <div class="absolute -top-7 left-0 h-full items-center  flex opacity-20 hover:opacity-90">
           <button role="button" class="prev px-2 py-2  bg-red-600 text-neutral-900 group" aria-label="prev"><svg
               xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor" class="w-5 h-5 group-active:-translate-x-2 transition-all duration-200 ease-linear">
@@ -1346,7 +1523,7 @@
           </button>
 
         </div>
-        <div class="absolute -top-7 right-0 h-full items-center hidden md:flex opacity-20 hover:opacity-90">
+        <div class="absolute -top-7 right-0 h-full items-center  flex opacity-20 hover:opacity-90">
           <button role="button" class="next px-2 py-2  bg-red-600 text-neutral-900 group" aria-label="next"><svg
               xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor" class="w-5 h-5 group-active:translate-x-2 transition-all duration-200 ease-linear">
@@ -1358,6 +1535,7 @@
       </div>
     </div>
   </div>
+
   <!-- Modul 20 Tasarımı End-->
 
   <!-- Modul 10 Tasarımı Start-->
@@ -1366,7 +1544,7 @@
     <h1 class="font-bold text-2xl ml-14">Popular Departments</h1>
     <p class="text-black  text-sm ml-14 ">Products From These Categories Often Buy</p>
 
-    <div class="grid gap-8 grid-cols-4 px-16   ">
+    <div class="grid gap-8 xl:grid-cols-4 md:grid-cols-2 px-16  mw-sm:grid-cols-1  ">
 
       <!-- Column -->
       <div class="my-1 px-1 bg-white  ">
@@ -1493,27 +1671,27 @@
   <!-- Modul 10 Tasarımı End-->
 
   <!-- Modul 12 Tasarımı Start-->
-  <div class="flex w-full h-[700px] bg-backcolor4">
-    <div class="w-1/2 flex flex-col justify-center items-center">
+  <div class="flex w-full h-[700px] mw-lg:h-full  bg-backcolor4 mw-md:flex-col">
+    <div class="w-1/2 mw-lg:w-full flex flex-col justify-center items-center">
       <p class="text-2xl font-bold p-4 ">MID-AUTUMN SALE</p>
       <p class="text-5xl font-bold p-4 ">Makeup You're Unique</p>
       <p class="text-sm font- p-4 ">Buh-by body acne. Hello Smoothing AHA Body Lotion.</p>
-      <button class="bg-black text-sm w-[300px] text-white font-bold py-4  px-4 rounded-full mt-4 ">
+      <button class="bg-black text-sm w-[300px] text-white font-bold py-2 mw-lg:mb-2 px-4 rounded-full mt-4 ">
         BUY NOW / $59.00
       </button>
     </div>
-    <div class="w-1/2">
-      <img class="h-full w-full" src="assets/image/module12/image01.jpg" alt="">
+    <div class="w-1/2 mw-lg:w-full">
+      <img class="h-full max-w-full" src="assets/image/module12/image01.jpg" alt="">
     </div>
   </div>
   <!-- Modul 12 Tasarımı End-->
 
   <!-- Modul 15 Tasarımı Start-->
 
-  <div class="mx-auto px-6 md:px-12 md:pb-5 bg-backcolor3 h-[500px]">
+  <div class="mx-auto px-6 md:px-12 md:pb-5 bg-backcolor3 h-[500px] mw-md:h-full">
     <h1 class="font-bold text-2xl ml-[70px]">Deals & Promotions</h1>
 
-    <div class="grid gap-8 grid-cols-3 px-16">
+    <div class="grid gap-8 grid-cols-3 px-16 mw-md:grid-cols-1 mw-md:gap-2">
       <!-- Column -->
       <div class="my-1  bg-white rounded-xl mt-8">
         <!-- Article -->
@@ -1598,7 +1776,7 @@
 
     <!-- ✅ Grid Section - Starts Here 👇 -->
     <section
-      class="w-9/12 mx-auto grid grid-cols-1 lg:grid-cols-5 md:grid-cols-2 justify-items-center gap-20 lg:gap-x-50 mt-10 mb-5">
+      class="w-9/12 mx-auto grid grid-cols-1 2xl:grid-cols-5 xl:grid-cols-4  lg:grid-cols-3 md:grid-cols-2 justify-items-center gap-20 lg:gap-x-50 mt-10 mb-5">
       <!--   ✅ Product card 1 - Starts Here 👇 -->
       <div
         class="w-50 bg-white border 2xl:h-full hover:border-yellow-400 shadow-md rounded-xl duration-500 hover:scale-105 imgChange hover:shadow-xl h-[400px]">
@@ -2314,7 +2492,7 @@
 
   <div class="modul h-[400px] flex flex-col justify-center items-center text-white p-4 ">
     <h1 class="font-bold text-5xl p-2">END OF SEASON SALE</h1>
-    <p class="w-2/3 text-center p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis magnam sed
+    <p class="w-2/3 text-center p-2 mw-lg:truncate">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis magnam sed
       repudiandae itaque blanditiis quam ab, officia veniam eius, porro, consequuntur sequi. Natus est iure explicabo
       itaque sit rem at!</p>
     <button type="button"
@@ -2323,64 +2501,67 @@
   <!-- Modul 5 Tasarımı  End-->
 
   <!-- Modul 6 Tasarımı  Start-->
-  <div class="flex justify-around p-4 bg-modul6">
-    <div class="flex">
-      <div class="rounded-full border-4 hover:border-sugar__blue border-sugar__pink p-4 hover:border-4 ">
+  <div class=" bg-modul6  ">
+    <div class="grid lg:grid-cols-4 gap-4 p-4 w-9/12 grid-cols-2 m-auto" >
 
-        <svg class="w-6 h-6 hover:cursor-pointer   text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-          fill="none" viewBox="0 0 18 20">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
-        </svg>
+      <div class="flex">
+        <div class="rounded-full border-4 hover:border-sugar__blue border-sugar__pink p-4 hover:border-4 ">
+  
+          <svg class="w-6 h-full hover:cursor-pointer   text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 18 20">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+          </svg>
+        </div>
+        <div class="p-2">
+          <h2 class="text-white font-bold hover:text-sugar__pink hover:cursor-pointer ">Free Shipping</h2>
+          <p class="text-gray-400">Free delivery over $100</p>
+        </div>
       </div>
-      <div class="p-2">
-        <h2 class="text-white font-bold hover:text-sugar__pink hover:cursor-pointer ">Free Shipping</h2>
-        <p class="text-gray-400">Free delivery over $100</p>
+      <div class="flex">
+        <div class="rounded-full border-4 hover:border-sugar__blue border-sugar__pink p-4 hover:border-4 ">
+  
+          <svg class="w-6 h-full hover:cursor-pointer text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 12 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 1 1 5l4 4m6-8L7 5l4 4" />
+          </svg>
+        </div>
+        <div class="p-2">
+          <h2 class="text-white font-bold hover:text-sugar__pink hover:cursor-pointer">Free Returns</h2>
+          <p class="text-gray-400">Hassle free returns</p>
+        </div>
       </div>
-    </div>
-    <div class="flex">
-      <div class="rounded-full border-4 hover:border-sugar__blue border-sugar__pink p-4 hover:border-4 ">
-
-        <svg class="w-6 h-6 hover:cursor-pointer text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-          fill="none" viewBox="0 0 12 10">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M5 1 1 5l4 4m6-8L7 5l4 4" />
-        </svg>
+      <div class="flex">
+        <div class="rounded-full h-full border-4 hover:border-sugar__blue border-sugar__pink p-4 hover:border-4 ">
+  
+          <svg class="w-6 h-full hover:cursor-pointer text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor" viewBox="0 0 18 20">
+            <path
+              d="m17.351 3.063-8-3a1.009 1.009 0 0 0-.7 0l-8 3A1 1 0 0 0 0 4a19.394 19.394 0 0 0 8.47 15.848 1 1 0 0 0 1.06 0A19.394 19.394 0 0 0 18 4a1 1 0 0 0-.649-.937Zm-3.644 4.644-5 5A1 1 0 0 1 8 13c-.033 0-.065 0-.1-.005a1 1 0 0 1-.733-.44l-2-3a1 1 0 0 1 1.664-1.11l1.323 1.986 4.138-4.138a1 1 0 0 1 1.414 1.414h.001Z" />
+          </svg>
+        </div>
+        <div class="p-2">
+          <h2 class="text-white font-bold hover:text-sugar__pink hover:cursor-pointer">Scure Shopping</h2>
+          <p class="text-gray-400">Best security features</p>
+        </div>
       </div>
-      <div class="p-2">
-        <h2 class="text-white font-bold hover:text-sugar__pink hover:cursor-pointer">Free Returns</h2>
-        <p class="text-gray-400">Hassle free returns</p>
-      </div>
-    </div>
-    <div class="flex">
-      <div class="rounded-full border-4 hover:border-sugar__blue border-sugar__pink p-4 hover:border-4 ">
-
-        <svg class="w-6 h-6 hover:cursor-pointer text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor" viewBox="0 0 18 20">
-          <path
-            d="m17.351 3.063-8-3a1.009 1.009 0 0 0-.7 0l-8 3A1 1 0 0 0 0 4a19.394 19.394 0 0 0 8.47 15.848 1 1 0 0 0 1.06 0A19.394 19.394 0 0 0 18 4a1 1 0 0 0-.649-.937Zm-3.644 4.644-5 5A1 1 0 0 1 8 13c-.033 0-.065 0-.1-.005a1 1 0 0 1-.733-.44l-2-3a1 1 0 0 1 1.664-1.11l1.323 1.986 4.138-4.138a1 1 0 0 1 1.414 1.414h.001Z" />
-        </svg>
-      </div>
-      <div class="p-2">
-        <h2 class="text-white font-bold hover:text-sugar__pink hover:cursor-pointer">Scure Shopping</h2>
-        <p class="text-gray-400">Best security features</p>
-      </div>
-    </div>
-    <div class="flex">
-      <div
-        class="rounded-full border-4 border-sugar__pink p-4 hover:border-4 hover:border-sugar__blue hover:cursor-pointer ">
-
-        <svg class="w-6 h-6 text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-          viewBox="0 0 20 19">
-          <path
-            d="M10.013 4.175 5.006 7.369l5.007 3.194-5.007 3.193L0 10.545l5.006-3.193L0 4.175 5.006.981l5.007 3.194ZM4.981 15.806l5.006-3.193 5.006 3.193L9.987 19l-5.006-3.194Z" />
-          <path
-            d="m10.013 10.545 5.006-3.194-5.006-3.176 4.98-3.194L20 4.175l-5.007 3.194L20 10.562l-5.007 3.194-4.98-3.211Z" />
-        </svg>
-      </div>
-      <div class="p-2">
-        <h2 class="text-white font-bold hover:text-sugar__pink hover:cursor-pointer">Unlimited Blocks</h2>
-        <p class="text-gray-400">Any content, any page</p>
+      <div class="flex">
+        <div
+          class="rounded-full border-4 border-sugar__pink p-4 hover:border-4 hover:border-sugar__blue hover:cursor-pointer ">
+  
+          <svg class="w-6 h-full text-gray-800 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+            viewBox="0 0 20 19">
+            <path
+              d="M10.013 4.175 5.006 7.369l5.007 3.194-5.007 3.193L0 10.545l5.006-3.193L0 4.175 5.006.981l5.007 3.194ZM4.981 15.806l5.006-3.193 5.006 3.193L9.987 19l-5.006-3.194Z" />
+            <path
+              d="m10.013 10.545 5.006-3.194-5.006-3.176 4.98-3.194L20 4.175l-5.007 3.194L20 10.562l-5.007 3.194-4.98-3.211Z" />
+          </svg>
+        </div>
+        <div class="p-2">
+          <h2 class="text-white font-bold hover:text-sugar__pink hover:cursor-pointer">Unlimited Blocks</h2>
+          <p class="text-gray-400">Any content, any page</p>
+        </div>
       </div>
     </div>
 
@@ -2390,9 +2571,9 @@
 
 
   <!-- Modul 7 Tasarımı  Start-->
-  <div id="" class=" mx-auto px-12 md:px-8 py-12 transition-all duration-500 ease-linear">
+  <div id="" class=" mx-auto px-12 mw-sm:px-2  md:px-8 py-12 transition-all duration-500 ease-linea before:w-1/2 mw-sm:before:w-1/1">
 
-    <div class="relative">
+    <div class="relative w-9/12 m-auto">
       <div
         class="slides-container h-\[156px\]] flex  snap-x snap-mandatory overflow-hidden  space-x-2 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0">
 
@@ -2533,7 +2714,7 @@
 
       </div>
 
-      <div class="absolute top-0 -left-4 h-full items-center hidden md:flex opacity-20 hover:opacity-90">
+      <div class="absolute top-0 -left-4 h-full items-center flex ">
         <button role="button" class="prev px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group"
           aria-label="prev"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="w-5 h-5 group-active:-translate-x-2 transition-all duration-200 ease-linear">
@@ -2542,7 +2723,7 @@
 
         </button>
       </div>
-      <div class="absolute top-0 -right-4 h-full items-center hidden md:flex">
+      <div class="absolute top-0 -right-4 h-full items-center flex">
         <button role="button" class="next px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group"
           aria-label="next"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="w-5 h-5 group-active:translate-x-2 transition-all duration-200 ease-linear">
@@ -2556,7 +2737,7 @@
 
   <!-- Modul 9 Tasarımı  Start-->
   <div class="bg-sugar__yellow ">
-    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <div class="w-9/12  p-4 py-6 m-auto ">
       <div class="flex justify-around items-center">
         <div class="grid sm:grid-cols-2 gap-2 sm:gap-2 sm:grid-cols-2">
           <div class="flex items-center justify-center">
@@ -2578,19 +2759,19 @@
           </div>
           <div class="">
 
-            <form class="flex items-center p-4">
+            <form class="flex items-center p-4 mw-lg:flex-col">
               <label for="voice-search" class="sr-only">Search</label>
               <div class="relative sm:w-full ">
 
                 <input type="text" id="voice-search"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block lg:w-[500px]  w-full  ps-5 p-2.5  placeholder:italic placeholder:text-slate-400"
+                  class="lg:w-[450px] md:w-[300px]  w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block   ps-5 p-2.5  placeholder:italic placeholder:text-slate-400"
                   placeholder="Email address" required>
 
-              </div>
-              <button type="submit"
-                class="inline-flex items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-black rounded-lg border border-black hover:text-black hover:bg-white focus:ring-4 focus:outline-none focus:ring-white ">
-                Subscribe
-              </button>
+                </div>
+                <button type="submit"
+                  class="inline-flex items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-black rounded-lg border border-black hover:text-black hover:bg-white focus:ring-4 focus:outline-none focus:ring-white ">
+                  Subscribe
+                </button>
             </form>
 
           </div>
@@ -2606,140 +2787,301 @@
 
 
   <!-- Footer     -->
-  <div class="footer-div px-[100px] bg-footerColor text-white">
-    <div class=" grid grid-cols-6 gap-4 ">
-      <div class="  flex flex-col justify-center items-center  col-span-1 p-8 ">
-        <img src="https://sekerofisi.com/uploads/p/o/Cp0Dlc3Rg2xo.PNG" class="w-[150px] h-[90px]" alt="">
+  <footer class="bg-footerColor">
+    <div
+      class="mx-auto max-w-screen-xl text-white space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8"
+    >
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div>
-          <p class="text-sm">123 Main St. London, UK</p>
-        </div>
-        <div class="flex justify-center items-center p-2">
-          <i class="fa-brands fa-facebook fa-md px-2 hover:text-sugar__blue hover:cursor-pointer hover:text-xl"></i>
-          <i class="fa-brands fa-twitter fa-md px-2 hover:text-sugar__blue hover:cursor-pointer hover:text-xl"></i>
-          <i class="fa-brands fa-instagram fa-md px-2 hover:text-sugar__blue hover:cursor-pointer hover:text-xl"></i>
-          <i class="fa-brands fa-google fa-md px-2 hover:text-sugar__blue hover:cursor-pointer hover:text-xl"></i>
-        </div>
-
-      </div>
-      <div class="flex justify-around  col-span-3 text-white p-8">
-        <div class="p-2">
-          <h2 class="mb-2 text-lg font-semibold  ">CUSTOMER SERVICE</h2>
-          <ul class="max-w-md text-sm text-gray-400 list-disc list-inside ">
-            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
-              Contact
-            </li>
-            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
-              Returns
-            </li>
-            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
-              Site Map
-            </li>
-            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
-              Brands
-            </li>
-            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
-              Unlimited Links
-            </li>
-          </ul>
-        </div>
-        <div class="p-2">
-          <h2 class="mb-2 text-lg font-semibold  ">MY ACCOUNT</h2>
-          <ul class="max-w-md text-sm text-gray-400 list-disc list-inside ">
-            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
-              My Account
-            </li>
-            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
-              Order History
-            </li>
-            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
-              Affıliates
-            </li>
-            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
-              newsletter
-            </li>
-            <li class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold">
-              Gift Certificates
-            </li>
-          </ul>
-        </div>
-
-
-      </div>
-      <!-- input -->
-      <div class=" p-8  w-[400px] col-span-1 ">
-        <h2 class="font-bold">NEWSLETTER</h2>
-        <p class="text-xs">Don't miss any updates or promotions by signing up to our newsletter.</p>
-        <form>
-          <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only ">Search</label>
-          <div class="relative">
-            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-              <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-              </svg>
-            </div>
-            <input type="search" id="default-search"
-              class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500  "
-              placeholder="Search Mockups, Logos..." required>
-            <button type="submit"
-              class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-sugar__pink focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2  ">Search</button>
+          <div class="text-teal-600">
+            <img
+              src="https://sekerofisi.com/uploads/p/o/Cp0Dlc3Rg2xo.PNG"
+              class="lg:h-auto lg:max-w-full w-[200px]"
+              alt=""
+            />
           </div>
-        </form>
-        <div class="flex items-center mb-4">
-          <input id="default-checkbox" type="checkbox" value=""
-            class="w-4 h-4  bg-gray-100  rounded focus:ring-blue-100 ">
-          <label for="default-checkbox" class="ms-2 text-sm font-medium  ">I have read and agree to the
-            <span class="underline text-sugar__pink hover:text-sugar__blue hover:font-bold hover:cursor-pointer">Privacy
-              Policy</span> </label>
-        </div>
-      </div>
-    </div>
-    <div>
 
+          <p class="mt-4 max-w-xs text-gray-500">123 Main St. London, UK</p>
 
-      <footer class="  bg-footerColor border-t-4 border-indigo-500">
-        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center ">© 2023 <a href="https://flowbite.com/"
-              class="hover:underline hover:text-sugar__pink hover:font-bold">SEKER OFIS™</a>. All Rights Reserved.
-          </span>
-          <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500  sm:mt-0">
+          <ul class="mt-8 flex gap-6">
             <li>
-              <a href="#" class="hover:underline me-2 ">
-                <i class="fa-brands fa-cc-visa fa-xl "></i>
+              <a
+                href="/"
+                rel="noreferrer"
+                target="_blank"
+                class="text-gray-700 transition hover:opacity-75"
+              >
+                <span class="sr-only">Facebook</span>
+
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
               </a>
             </li>
+
             <li>
-              <a href="#" class="hover:underline me-2 ">
-                <i class="fa-brands fa-cc-mastercard fa-xl "></i>
+              <a
+                href="/"
+                rel="noreferrer"
+                target="_blank"
+                class="text-gray-700 transition hover:opacity-75"
+              >
+                <span class="sr-only">Instagram</span>
+
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
               </a>
             </li>
+
             <li>
-              <a href="#" class="hover:underline me-2 ">
-                <i class="fa-brands fa-cc-amex fa-xl "></i>
+              <a
+                href="/"
+                rel="noreferrer"
+                target="_blank"
+                class="text-gray-700 transition hover:opacity-75"
+              >
+                <span class="sr-only">Twitter</span>
+
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                  />
+                </svg>
               </a>
             </li>
+
             <li>
-              <a href="#" class=" me-2 hover:underline">
-                <i class="fa-brands fa-cc-discover fa-xl "></i>
+              <a
+                href="/"
+                rel="noreferrer"
+                target="_blank"
+                class="text-gray-700 transition hover:opacity-75"
+              >
+                <span class="sr-only">GitHub</span>
+
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
               </a>
             </li>
+
             <li>
-              <a href="#" class="me-2 hover:underline">
-                <i class="fa-brands fa-cc-paypal fa-xl "></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="me-2 hover:underline">
-                <i class="fa-brands fa-cc-stripe fa-xl "></i>
+              <a
+                href="/"
+                rel="noreferrer"
+                target="_blank"
+                class="text-gray-700 transition hover:opacity-75"
+              >
+                <span class="sr-only">Dribbble</span>
+
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
               </a>
             </li>
           </ul>
         </div>
-      </footer>
 
+        <div
+          class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4"
+        >
+          <div class="p-2">
+            <h2 class="mb-2 text-lg font-semibold">CUSTOMER SERVICE</h2>
+            <ul class="max-w-md text-sm text-gray-400 list-disc list-inside">
+              <li
+                class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold"
+              >
+                Contact
+              </li>
+              <li
+                class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold"
+              >
+                Returns
+              </li>
+              <li
+                class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold"
+              >
+                Site Map
+              </li>
+              <li
+                class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold"
+              >
+                Brands
+              </li>
+              <li
+                class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold"
+              >
+                Unlimited Links
+              </li>
+            </ul>
+          </div>
+
+          <div class="p-2">
+            <h2 class="mb-2 text-lg font-semibold">MY ACCOUNT</h2>
+            <ul class="max-w-md text-sm text-gray-400 list-disc list-inside">
+              <li
+                class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold"
+              >
+                My Account
+              </li>
+              <li
+                class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold"
+              >
+                Order History
+              </li>
+              <li
+                class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold"
+              >
+                Affıliates
+              </li>
+              <li
+                class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold"
+              >
+                newsletter
+              </li>
+              <li
+                class="hover:text-sugar__blue hover:cursor-pointer hover:font-bold"
+              >
+                Gift Certificates
+              </li>
+            </ul>
+          </div>
+
+          <div class=" ">
+            <h2 class="font-bold">NEWSLETTER</h2>
+            <p class="text-xs">
+              Don't miss any updates or promotions by signing up to our
+              newsletter.
+            </p>
+
+            <form>
+              <label
+                for="default-search"
+                class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+                >Search</label
+              >
+              <div class="relative">
+             
+                <input
+                  type="search"
+                  id="default-search"
+                  class="block mw-md:w-full  w-[300px] p-4 ps-1text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+                  placeholder="Search Mockups, Logos..."
+                  required
+                />
+                <button
+                  type="submit"
+                  class="text-white absolute mw-lg:end-2.5 bottom-2.5 lg:-end-28 -end-28 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  Search
+                </button>
+              </div>
+            </form>
+
+            <div class="flex items-center mb-4">
+              <input
+                id="default-checkbox"
+                type="checkbox"
+                value=""
+                class="w-4 h-4 bg-gray-100 rounded focus:ring-blue-100"
+              />
+              <label for="default-checkbox" class="ms-2 text-sm font-medium"
+                >I have read and agree to the
+                <span
+                  class="underline text-sugar__pink hover:text-sugar__blue hover:font-bold hover:cursor-pointer"
+                  >Privacy Policy</span
+                >
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="  bg-footerColor border-t-4 border-indigo-500 ">
+          <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center ">© 2023 <a href="https://flowbite.com/"
+                class="hover:underline hover:text-sugar__pink hover:font-bold">SEKER OFIS™</a>. All Rights Reserved.
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500  sm:mt-0">
+              <li>
+                <a href="#" class="hover:underline me-2 ">
+                  <i class="fa-brands fa-cc-visa fa-xl "></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline me-2 ">
+                  <i class="fa-brands fa-cc-mastercard fa-xl "></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline me-2 ">
+                  <i class="fa-brands fa-cc-amex fa-xl "></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class=" me-2 hover:underline">
+                  <i class="fa-brands fa-cc-discover fa-xl "></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="me-2 hover:underline">
+                  <i class="fa-brands fa-cc-paypal fa-xl "></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="me-2 hover:underline">
+                  <i class="fa-brands fa-cc-stripe fa-xl "></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+  
     </div>
-  </div>
+  </footer>
+
   <script src="assets/js/index.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
 </body>

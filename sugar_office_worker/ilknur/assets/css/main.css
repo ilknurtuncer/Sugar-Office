@@ -1,0 +1,13 @@
+/* İkinci resmi gizle */
+.second-img {
+    display: none;
+}
+
+/* Mouse üzerine gelindiğinde ikinci resmi göster */
+.hover-img-trigger:hover .main-img {
+    display: none;
+}
+
+.hover-img-trigger:hover .second-img {
+    display: block;
+}

@@ -166,38 +166,29 @@ $('#carouselExampleSlidesOnly').slick('slickNext');
 
  //------- modul-20-----
 
- document.addEventListener('DOMContentLoaded', function () {
-    const carouselItems = document.querySelectorAll('[data-carousel-item]');
-    const prevButton = document.querySelector('[data-carousel-prev]');
-    const nextButton = document.querySelector('[data-carousel-next]');
-   
-    let currentIndex = 0;
+// Carousel kontrol fonksiyonları
+function prevItem() {
+    showItem(currentItem - 1);
+  }
 
-    function showItem(index) {
-      carouselItems.forEach((item, i) => {
-        if (i === index) {
-          item.style.display = 'flex';  // Mevcut öğeyi göster
-        } else {
-          item.style.display = 'none';  // Diğer öğeleri gizle
-        }
-      });
+  function nextItem() {
+    showItem(currentItem + 1);
+  }
+
+  // Görüntülenen öğe sayısını takip etmek için değişken
+  var currentItem = 1;
+
+  // Öğeleri gösteren fonksiyon
+  function showItem(n) {
+    var items = document.querySelectorAll('[data-carousel-item]');
+    if (n > items.length) {
+      currentItem = 1;
     }
-
-    function nextItem() {
-      currentIndex = (currentIndex + 1) % carouselItems.length;
-      showItem(currentIndex);
+    if (n < 1) {
+      currentItem = items.length;
     }
-
-    function prevItem() {
-      currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
-      showItem(currentIndex);
+    for (var i = 0; i < items.length; i++) {
+      items[i].style.display = 'none';
     }
-
-    // İlk ayar
-    showItem(currentIndex);
-
-    // Olay dinleyicilerini ekle
-    nextButton.addEventListener('click', nextItem);
-    prevButton.addEventListener('click', prevItem);
-  });
-  
+    items[currentItem - 1].style.display = 'flex';
+  }

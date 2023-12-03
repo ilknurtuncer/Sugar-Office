@@ -167,13 +167,37 @@ $('#carouselExampleSlidesOnly').slick('slickNext');
  //------- modul-20-----
 
  document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('#swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      navigation: {
-        nextEl: '[data-carousel-next]',
-        prevEl: '[data-carousel-prev]',
-      },
-    });
+    const carouselItems = document.querySelectorAll('[data-carousel-item]');
+    const prevButton = document.querySelector('[data-carousel-prev]');
+    const nextButton = document.querySelector('[data-carousel-next]');
+   
+    let currentIndex = 0;
+
+    function showItem(index) {
+      carouselItems.forEach((item, i) => {
+        if (i === index) {
+          item.style.display = 'flex';  // Mevcut öğeyi göster
+        } else {
+          item.style.display = 'none';  // Diğer öğeleri gizle
+        }
+      });
+    }
+
+    function nextItem() {
+      currentIndex = (currentIndex + 1) % carouselItems.length;
+      showItem(currentIndex);
+    }
+
+    function prevItem() {
+      currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+      showItem(currentIndex);
+    }
+
+    // İlk ayar
+    showItem(currentIndex);
+
+    // Olay dinleyicilerini ekle
+    nextButton.addEventListener('click', nextItem);
+    prevButton.addEventListener('click', prevItem);
   });
   

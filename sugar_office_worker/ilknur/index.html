@@ -363,8 +363,8 @@
       <div id="container-Mod20" class=" bg-gray-300 min-h-screen flex items-center justify-center p-3">
         <div class=" flex justify-between gap-8 p-5 w-9/12" >
 
-      <!----deals----->
 
+      <!----deals----->
       <div id="deals-container" class="relative w-1/3 bg-white"> 
         <div id="carouselExample" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" style="height: 500px;">
@@ -413,13 +413,13 @@
         <span class="price-new text-red-600 font-bold text-xl">$45.00</span>
         <span class="price-old ml-1 line-through">$49.00</span>
       </p>
-      <div class="button-group flex justify-start gap-3 p-2 mb-2">
-        <button class="addToCart border  inline-block " title="Add to Cart" type="button" onclick="cart.add('93');"><i class="fa fa-shopping-cart ml-2 text-gray-600"></i> <span class="mr-4">add to card</span></button>
+      <div class="button-group flex  justify-start gap-3 mt-4 ">
+        <button class="addToCart border flex gap-1 my-auto" title="Add to Cart" type="button" onclick="cart.add('93');"><i class=" fa fa-shopping-cart  text-gray-600  mr-2 p-1"></i> <p class="my-auto">add</p><p> to </p><p>card</p> </button>
         <button class="btn-button wishlist border" type="button" title="Add to Wish List" onclick="wishlist.add('93');"><i class="fa fa-heart p-1 text-gray-600"></i><span></span></button>
         <button class="btn-button compare border" type="button" title="Compare this Product" onclick="compare.add('93');"><i class="fa fa-refresh p-1 text-gray-600"></i><span></span></button>
       </div>
 
-<div class="item-timer ">
+<div class="item-timer mt-4">
           <div class="btn flex justify-start  ">
             
             <button class="flex  items-center p-2 my-2 mx-2 text-xs rounded font-bold 
@@ -484,9 +484,6 @@ text-blue-600 bg-gray-200 border border-gray-300"
         </div>
 </div> 
 
-
-
-
 <!-------- featurred----->
  <div id="featured-container" class="relative w-2/3 bg-white " data-carousel="static" style="height: 500px;"> 
 <div id="featured-title" class="modtitle text-2xl font-semibold leading-6 uppercase left-0 top-0  p-12">
@@ -497,15 +494,16 @@ text-blue-600 bg-gray-200 border border-gray-300"
 </h3>
 
 </div>
+<!-- Carousel wrapper -->
+        <div id="controls-carousel" class=" relative w-full  flex items-center flex-wrap justify-start "  data-carousel="static">
 
-        <div id="swiper-container" class="swiper-container flex flex-row flex-wrap justify-start  h-56 overflow-hidden rounded-lg md:h-96">
-
-         
-          
-<div id="featured-1" class=" p-4">
+          <div class="relative h-56  overflow-hidden rounded-lg md:h-96">
+          <!-- Item 1 -->
+<div id="slide-1" class="flex flex-row justify-center duration-700 ease-in-out mt-0 "data-carousel-item>
+  <div id="featured-1" class="flex gap-2 ">
   <div class="product-item-container">
-    <div class="right-block">
-      <div class="product-image-container ">
+    <div class="right-block mr-1">
+      <div class="product-image-container">
         <a href="https://opencart4.magentech.com/themes/so_emarket/layout4/index.php?route=product/product;language=en-gb;product_id=50" target="_self" title="Buffalo tail chicke">
             <img data-sizes="auto" src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/id-update/Electronics/10-270x270.jpg" data-src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/id-update/Electronics/10-270x270.jpg" alt="Buffalo tail chicke" class="rounded-t-lg  h-52 my-auto flex" >
         </a>
@@ -527,19 +525,19 @@ text-blue-600 bg-gray-200 border border-gray-300"
           <span class="price-new text-red-600 font-bold text-lg">$60.00</span>
           <span class="price-old ml-1 line-through">$67.00</span>
         </p>
-        <div class="button-group flex justify-start gap-3 p-2 mb-2">
-          <button class="addToCart border  inline-block " title="Add to Cart" type="button" onclick="cart.add('93');"><i class="fa fa-shopping-cart ml-2 text-gray-600"></i> <span class="mr-4">add to card</span></button>
+        <div class="button-group flex  justify-start gap-3">
+          <button class="addToCart border flex gap-1 my-auto" title="Add to Cart" type="button" onclick="cart.add('93');"><i class=" fa fa-shopping-cart  text-gray-600  mr-2 p-1"></i> <p class="my-auto">add</p><p> to </p><p>card</p> </button>
           <button class="btn-button wishlist border" type="button" title="Add to Wish List" onclick="wishlist.add('93');"><i class="fa fa-heart p-1 text-gray-600"></i><span></span></button>
           <button class="btn-button compare border" type="button" title="Compare this Product" onclick="compare.add('93');"><i class="fa fa-refresh p-1 text-gray-600"></i><span></span></button>
         </div>
       </div>
     </div>  
 </div>
-</div>
+
+  </div>
 
 
-
-<div id="featured-2" class=" p-4">
+<div id="featured-2" class=" ">
   <div class="product-item-container">
     <div class="right-block">
       <div class="product-image-container relative">
@@ -556,7 +554,7 @@ text-blue-600 bg-gray-200 border border-gray-300"
     <div class="right-block w-45 float-left text-left sm:text-center lg:text-left ml-3">
       <div class="caption ">
         <p class="text-start ">Buffalo tail chicke</p>
-        <div class="rating flex justify-start mb-2">
+        <div class="rating flex justify-start mb-1">
           <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
           <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
           <span class="fa fa-stack"><i class="fa fa-star fa-stack text-gray-300"></i></span>
@@ -566,12 +564,12 @@ text-blue-600 bg-gray-200 border border-gray-300"
   
         </div>
        
-        <p class="price mb-2 mt-2">
+        <p class="price mb-2 mt-2 ">
           <span class="price-new text-red-600 font-bold text-lg">$60.00</span>
           <span class="price-old ml-1 line-through">$67.00</span>
         </p>
-        <div class="button-group flex justify-start gap-3 p-2 mb-2">
-          <button class="addToCart border  inline-block " title="Add to Cart" type="button" onclick="cart.add('93');"><i class="fa fa-shopping-cart ml-2 text-gray-600"></i> <span class="mr-4">add to card</span></button>
+        <div class="button-group flex  justify-start gap-3">
+          <button class="addToCart border flex gap-1 my-auto" title="Add to Cart" type="button" onclick="cart.add('93');"><i class=" fa fa-shopping-cart  text-gray-600  mr-2 p-1"></i> <p class="my-auto">add</p><p> to </p><p>card</p> </button>
           <button class="btn-button wishlist border" type="button" title="Add to Wish List" onclick="wishlist.add('93');"><i class="fa fa-heart p-1 text-gray-600"></i><span></span></button>
           <button class="btn-button compare border" type="button" title="Compare this Product" onclick="compare.add('93');"><i class="fa fa-refresh p-1 text-gray-600"></i><span></span></button>
         </div>
@@ -581,7 +579,7 @@ text-blue-600 bg-gray-200 border border-gray-300"
 </div>
 
 
-<div id="featured-3" class=" p-4">
+<div id="featured-3" class="">
   <div class="product-item-container">
     <div class="right-block">
       <div class="product-image-container relative">
@@ -611,8 +609,8 @@ text-blue-600 bg-gray-200 border border-gray-300"
           <span class="price-new text-red-600 font-bold text-lg">$60.00</span>
           <span class="price-old ml-1 line-through">$67.00</span>
         </p>
-        <div class="button-group flex justify-start gap-3 p-2 mb-2">
-          <button class="addToCart border  inline-block " title="Add to Cart" type="button" onclick="cart.add('93');"><i class="fa fa-shopping-cart ml-2 text-gray-600"></i> <span class="mr-4">add to card</span></button>
+        <div class="button-group flex  justify-start gap-3">
+          <button class="addToCart border flex gap-1 my-auto" title="Add to Cart" type="button" onclick="cart.add('93');"><i class=" fa fa-shopping-cart  text-gray-600  mr-2 p-1"></i> <p class="my-auto">add</p><p> to </p><p>card</p> </button>
           <button class="btn-button wishlist border" type="button" title="Add to Wish List" onclick="wishlist.add('93');"><i class="fa fa-heart p-1 text-gray-600"></i><span></span></button>
           <button class="btn-button compare border" type="button" title="Compare this Product" onclick="compare.add('93');"><i class="fa fa-refresh p-1 text-gray-600"></i><span></span></button>
         </div>
@@ -622,7 +620,7 @@ text-blue-600 bg-gray-200 border border-gray-300"
 </div>
 
 
-<div id="featured-4" class=" p-4">
+<div id="featured-4" class="">
   <div class="product-item-container">
     <div class="right-block">
       <div class="product-image-container">
@@ -648,8 +646,8 @@ text-blue-600 bg-gray-200 border border-gray-300"
           <span class="price-new text-red-600 font-bold text-lg">$60.00</span>
           <span class="price-old ml-1 line-through">$67.00</span>
         </p>
-        <div class="button-group flex justify-start gap-3 p-2 mb-2">
-          <button class="addToCart border  inline-block " title="Add to Cart" type="button" onclick="cart.add('93');"><i class="fa fa-shopping-cart ml-2 text-gray-600"></i> <span class="mr-4">add to card</span></button>
+        <div class="button-group flex  justify-start gap-3">
+          <button class="addToCart border flex gap-1 my-auto" title="Add to Cart" type="button" onclick="cart.add('93');"><i class=" fa fa-shopping-cart  text-gray-600  mr-2 p-1"></i> <p class="my-auto">add</p><p> to </p><p>card</p> </button>
           <button class="btn-button wishlist border" type="button" title="Add to Wish List" onclick="wishlist.add('93');"><i class="fa fa-heart p-1 text-gray-600"></i><span></span></button>
           <button class="btn-button compare border" type="button" title="Compare this Product" onclick="compare.add('93');"><i class="fa fa-refresh p-1 text-gray-600"></i><span></span></button>
         </div>
@@ -658,9 +656,10 @@ text-blue-600 bg-gray-200 border border-gray-300"
 </div>
 </div>
 
+</div>
 
-
-<div id="featured-5" class=" p-4">
+<div id="slide-2" class=" duration-700 ease-in-out" data-carousel-item style="display: none;">
+<div id="featured-5" class="">
   <div class="product-item-container">
     <div class="right-block">
       <div class="product-image-container">
@@ -686,8 +685,8 @@ text-blue-600 bg-gray-200 border border-gray-300"
           <span class="price-new text-red-600 font-bold text-lg">$60.00</span>
           <span class="price-old ml-1 line-through">$67.00</span>
         </p>
-        <div class="button-group flex justify-start gap-3 p-2 mb-2">
-          <button class="addToCart border  inline-block " title="Add to Cart" type="button" onclick="cart.add('93');"><i class="fa fa-shopping-cart ml-2 text-gray-600"></i> <span class="mr-4">add to card</span></button>
+        <div class="button-group flex  justify-start gap-3">
+          <button class="addToCart border flex gap-1 my-auto" title="Add to Cart" type="button" onclick="cart.add('93');"><i class=" fa fa-shopping-cart  text-gray-600  mr-2 p-1"></i> <p class="my-auto">add</p><p> to </p><p>card</p> </button>
           <button class="btn-button wishlist border" type="button" title="Add to Wish List" onclick="wishlist.add('93');"><i class="fa fa-heart p-1 text-gray-600"></i><span></span></button>
           <button class="btn-button compare border" type="button" title="Compare this Product" onclick="compare.add('93');"><i class="fa fa-refresh p-1 text-gray-600"></i><span></span></button>
         </div>
@@ -698,7 +697,9 @@ text-blue-600 bg-gray-200 border border-gray-300"
 
 
 
-<div id="featured-6" class=" p-4">
+
+
+<div id="featured-6" class=" ">
   <div class="product-item-container">
     <div class="right-block">
       <div class="product-image-container">
@@ -724,8 +725,8 @@ text-blue-600 bg-gray-200 border border-gray-300"
           <span class="price-new text-red-600 font-bold text-lg">$60.00</span>
           <span class="price-old ml-1 line-through">$67.00</span>
         </p>
-        <div class="button-group flex justify-start gap-3 p-2 mb-2">
-          <button class="addToCart border  inline-block " title="Add to Cart" type="button" onclick="cart.add('93');"><i class="fa fa-shopping-cart ml-2 text-gray-600"></i> <span class="mr-4">add to card</span></button>
+        <div class="button-group flex  justify-start gap-3">
+          <button class="addToCart border flex gap-1 my-auto" title="Add to Cart" type="button" onclick="cart.add('93');"><i class=" fa fa-shopping-cart  text-gray-600  mr-2 p-1"></i> <p class="my-auto">add</p><p> to </p><p>card</p> </button>
           <button class="btn-button wishlist border" type="button" title="Add to Wish List" onclick="wishlist.add('93');"><i class="fa fa-heart p-1 text-gray-600"></i><span></span></button>
           <button class="btn-button compare border" type="button" title="Compare this Product" onclick="compare.add('93');"><i class="fa fa-refresh p-1 text-gray-600"></i><span></span></button>
         </div>
@@ -733,11 +734,13 @@ text-blue-600 bg-gray-200 border border-gray-300"
     </div>  
 </div>
 </div>
+          
+</div>
+
+  </div>
 
 
-      </div>
-     
-      <button type="button" class="absolute top-0 left-2 z-30 flex items-center justify-center h-full px-4 cursor-pointer group  focus:outline-none" data-carousel-prev>
+    <button type="button" class="absolute top-0 left-2 z-30 flex items-center justify-center h-full px-4 cursor-pointer group  focus:outline-none" data-carousel-prev>
         <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-red-100  group-hover:bg-red-400  ">
           <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
@@ -747,21 +750,27 @@ text-blue-600 bg-gray-200 border border-gray-300"
       </button>
       <button type="button" class="absolute top-0 right-2 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
         <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-red-100  group-hover:bg-red-400   ">
-          <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-          </svg>
-          <span class="sr-only">Next</span>
+            <svg class="w-4 h-4 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
         </span>
-      </button>
+    </button>
+
+</div>
+
+     
+    
   
-    </div> 
+  
+   
 
 
         </div>
-      </div>
-        </div>
-      </div>
 
+
+      </div>  
+      </div>
 
 
 

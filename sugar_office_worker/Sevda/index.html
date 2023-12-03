@@ -31,9 +31,10 @@
       }
     </script>
     <title>Sugar Office</title>
+    
 </head>
 <body>
-<script src="assets/main.js"></script>
+<script src="./assets/main.js"></script>
 <!-- FULL NAVBAR -->
 <div>
   <div class="w-1300px border-b-1">
@@ -281,46 +282,49 @@
   </div>
 </div>
 </div>
-<!-- SLİDER -->
-<div class="mx-auto relative group z-0 mb-10">
+ <!-- SLİDER -->
+ <div class="mx-auto relative group z-0 mb-10">
   <!-- PHOTO1 -->
-  <div class="mySlides fade relative">
-    <img src="https://sekerofisi.com/uploads/p/o/UJcZfLu1mDz4.jpg" class="w-full brightness-75">
-    <div class="absolute right-48 bottom-1/2 text-white  text-7xl font-bold fade-left">NEW MODALS1</div>
-  
-    <div class="absolute right-48 bottom-1/3 flex justify-around">
-      <button class="mx-1 py-4 border-2 px-4 w-42 bg-grayPrimary shadow-lg hover:bg-pinky">LEARN MORE</button>
-      <button class="mx-1 py-4 border px-4  bg-pinky text-white shadow-lg hover:bg-white hover:text-gray-900">SHOP
-        NOW</button>
-    </div>
-  </div>
-  <!-- PHOTO2 -->
-  <div class="mySlides fade relative">
-    <img src="https://sekerofisi.com/uploads/p/o/5IW9tx067AYF.jpg" class=" w-full brightness-75">
-    <div
-      class="absolute left-48 bottom-1/2 text-white  xl:text-7xl lg:text-7xl md:text-7xl sm:text-xl font-bold fade-right">
-      NEW MODALS2</div>
-  
-    <div class="absolute left-48 bottom-1/3 flex justify-around ">
-      <button class="mx-1 py-4 border-2 px-4 bg-grayPrimary shadow-lg hover:bg-pinky">LEARN MORE</button>
-      <button class="mx-1 py-4 border-2 px-4 bg-pinky text-white shadow-lg hover:bg-white hover:text-gray-900">SHOP
-        NOW</button>
-    </div>
-  </div>
-</div>
- <!-- Next and previous buttons -->
- <div class="flex flex-col absolute top-1/3 right-0 invisible group-hover:visible">
-  <a class="bg-white  hover:bg-grayPrimary w-8 h-10 text-center pt-2 mb-2 cursor-pointer"
-    onclick="plusSlides(-1)">&#10094;</a>
-  <a class="bg-white hover:bg-grayPrimary w-8 h-10 text-center pt-2 cursor-pointer"
-    onclick="plusSlides(1)">&#10095;</a>
+  <div class="slider-container">
+      <div class="mySlides fade relative">
+          <img src="https://sekerofisi.com/uploads/p/o/UJcZfLu1mDz4.jpg" class="w-full brightness-75">
+          <div class="absolute right-48 bottom-1/2 text-white  text-7xl font-bold fade-left">NEW MODALS1
+          </div>
 
-</div>
+          <div class="absolute right-48 bottom-1/3 flex justify-around">
+              <button class="mx-1 py-4 border-2 px-4 w-42 bg-grayPrimary shadow-lg hover:bg-pinky">LEARN
+                  MORE</button>
+              <button class="mx-1 py-4 border px-4  bg-pinky text-white shadow-lg hover:bg-white hover:text-gray-900">SHOP
+                  NOW</button>
+          </div>
+      </div>
+      <!-- PHOTO2 -->
+      <div class="mySlides fade relative">
+          <img src="https://sekerofisi.com/uploads/p/o/5IW9tx067AYF.jpg" class=" w-full brightness-75">
+          <div
+              class="absolute left-48 bottom-1/2 text-white  xl:text-7xl lg:text-7xl md:text-7xl sm:text-xl font-bold fade-right">
+              NEW MODALS2</div>
 
-<div class="text-center absolute top-0 right-1/2 hidden group-hover:block">
-  <span class="dot w-6 h-2 rounded-lg bg-white " onclick="currentSlide(1)"></span>
-  <span class="dot w-6 h-2 rounded-lg bg-white " onclick="currentSlide(2)"></span>
-</div>
+          <div class="absolute left-48 bottom-1/3 flex justify-around ">
+              <button class="mx-1 py-4 border-2 px-4 bg-grayPrimary shadow-lg hover:bg-pinky">LEARN MORE</button>
+              <button class="mx-1 py-4 border-2 px-4 bg-pinky text-white shadow-lg hover:bg-white hover:text-gray-900">SHOP
+                  NOW</button>
+          </div>
+      </div>
+  </div>
+  <!-- Next and previous buttons -->
+  <div
+      class="flex flex-col absolute top-1/3 right-0 invisible group-hover:visible">
+      <a class="bg-white  hover:bg-grayPrimary w-8 h-10 text-center pt-2 mb-2 cursor-pointer"
+          onclick="plusSlides(-1)">&#10094;</a>
+      <a class="bg-white hover:bg-grayPrimary w-8 h-10 text-center pt-2 cursor-pointer"
+          onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <div class="text-center absolute top-0 right-1/2 hidden group-hover:block">
+      <span class="dot w-6 h-2 rounded-lg bg-white " onclick="currentSlide(1)"></span>
+      <span class="dot w-6 h-2 rounded-lg bg-white " onclick="currentSlide(2)"></span>
+  </div>
 </div>
 </body>
 </html>

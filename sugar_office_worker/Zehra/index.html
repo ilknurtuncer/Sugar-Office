@@ -59,7 +59,7 @@
 
       <div class="h-8 border-b">
         <div
-          class="flex text-xs font-semibold  items-center text-gray-600 justify-between m-auto pl-1 xl:w-9/12 lg:w-11/12 md:w-full ">
+          class="flex text-xs font-semibold  items-center text-gray-600 justify-between m-auto pl-1 xl:w-9/12 lg:w-9/12 md:w-full ">
           <div class="relative group">
             <button type="button"
               class="dropbtn  py-2 text-gray-600  text-xs inline-flex items-center hover:text-pinky">
@@ -141,28 +141,27 @@
 
       <!-- HEADER-2 LOGO İNPUT ACCOUNT -->
 
-      <div class="h-24 flex justify-between xl:w-9/12 md:w-full lg:w-11/12 m-auto">
-        <div class="pr-1 mt-2">
-          <img src="./assets/images/logo.png" alt="Picture of the author" class="w-32 h-16" />
+      <div class="md:h-24 h-18 flex justify-between items-center w-full xl:w-9/12 lg:w-9/12 md:m-auto">
+        <div class="pr-1 m-5">
+          <img src="./assets/images/logo.png" alt="Picture of the author" class="md:w-32 md:h-16 w-20 h-12" />
         </div>
 
 
-        <div class="flex justify-center items-center w-[32rem] py-0 ">
-          <input
-            class="xl:w-[28rem] sm:w-[20rem] xs:w-[12rem] lg:w-[20rem] md:w-[20rem] h-10 bg-grayPrimary border-none "
+        <div class="flex items-center py-0">
+          <input class="xl:w-[28rem]  w-28  md:w-48 lg:w-56 h-8 md:h-10 bg-grayPrimary border-none "
             placeholder="Search here..."></input>
-          <button class="w-14 pt-2 pl-2  h-10 bg-pinky rounded-r-full hover:opacity-75">
-            <img src="./assets/images/magnifying-glass-solid.svg" alt="searchIcon" class="w-12"></img>
+          <button class="md:w-12  pt-2 pl-2 h-8 md:h-10 bg-pinky rounded-r-full hover:opacity-75">
+            <img src="./assets/images/magnifying-glass-solid.svg" alt="searchIcon" class="w-8 md:w-10"></img>
           </button>
         </div>
 
-        <div class="flex justify-evenly items-center w-[28rem]">
+        <div class="flex justify-evenly items-center md:w-48 lg:w-1/2">
 
           <div class="flex cursor-pointer  items-center  group">
-            <div class="sm:border p-1 sm:bg-pinky md:border-none md:bg-white ">
+            <div class="sm:border p-1 sm:bg-pinky md:border  md:bg-pinky lg:border-none lg:bg-white ">
               <img src="./assets/images/add-friend.png" alt="account_image" class="w-7 h-7 group-hover:opacity-25">
             </div>
-            <div class="ml-1 md:block sm:hidden group-hover:text-pinky">
+            <div class="ml-1 hidden lg:block  group-hover:text-pinky">
               <p class="text-xs font-bold ">Account</p>
               <p class="text-xs ">Login/Register</p>
             </div>
@@ -170,20 +169,20 @@
 
 
           <div class="flex cursor-pointer  group items-center ">
-            <div class="sm:border p-1 sm:bg-pinky md:border-none md:bg-white">
+            <div class="sm:border p-1 sm:bg-pinky md:border  md:bg-pinky lg:border-none lg:bg-white">
               <img src="./assets/images/love.png" alt="account_image" class="w-6 h-6 group-hover:opacity-25">
             </div>
-            <div class="ml-1 md:block sm:hidden">
+            <div class="ml-1 hidden lg:block  group-hover:text-pinky">
               <p class="text-xs font-bold mt-1 ">Wishlist</p>
               <p class="text-xs ">Edit your wishlist</p>
             </div>
           </div>
 
           <div class="flex cursor-pointer  group items-center ">
-            <div class="sm:border p-1 sm:bg-pinky md:border-none md:bg-white">
+            <div class="sm:border p-1 sm:bg-pinky md:border  md:bg-pinky lg:border-none lg:bg-white">
               <img src="./assets/images/compare.png" alt="account_image" class="w-7 h-7 group-hover:opacity-25">
             </div>
-            <div class=" md:block sm:hidden">
+            <div class=" hidden lg:block  group-hover:text-pinky">
               <p class="text-xs font-bold mt-1 ">Compare</p>
               <p class="text-xs ">Product Comparison</p>
             </div>
@@ -196,9 +195,12 @@
 
     <!-- HEADER-3 MENU ITEMS BASKET -->
 
-    <div class="h-14 flex items-center justify-between m-auto xl:w-9/12 md:w-full lg:w-9/12">
-      <div class="relative">
-        <ul class="menu-list flex font-semibold text-xs justify-center">
+    <div class="h-14 flex items-center justify-between m-auto xl:w-9/12 md:w-full sm:w-full lg:w-9/12">
+      <div class="relative flex">
+        <div class="visible md:invisible absolute top-1/3 left-10">
+          <i class="fa-solid fa-bars fa-lg "></i>
+        </div>
+        <ul class="menu-list invisible md:visible md:flex font-semibold text-xs justify-center ">
           <li class=" hover:text-pinky hover:cursor-pointer ">
             CATEGORIES
           </li>
@@ -262,8 +264,8 @@
     </div>
 
 
-    <div class="flex justify-center  items-center">
-      <ul class="flex menu-list font-semibold text-xs justify-around">
+    <div class="flex  justify-center items-center ">
+      <ul class="hidden md:flex  menu-list font-semibold text-xs justify-around">
         <li class="mx-2  hover:text-pinky hover:cursor-pointer ">
           ABOUT
         </li>
@@ -306,35 +308,45 @@
 
   <div class="mx-auto relative group z-0 ">
 
-    <div class="mySlides fade relative">
-      <img src="./assets/images/sliderimg2.jpg" class="w-full brightness-75">
-      <div class="absolute right-48 bottom-1/2 text-white  text-7xl font-bold fade-left sm:hidden">NEW MODALS1</div>
+    <div class="mySlides fade relative sm:h-48 md:h-full">
+      <img src="./assets/images/sliderimg2.jpg" class="w-full brightness-75 object-cover h-full">
+      <div
+      class="absolute right-10 md:left-48 bottom-1/2 text-white text-2xl md:text-4xl lg:text-7xl font-bold fade-right ">
+      NEW MODALS2</div>
 
-      <div class="absolute right-48 bottom-1/3 flex justify-around">
-        <button class="mx-1 py-4 border-2 px-4 w-42 bg-grayPrimary shadow-lg hover:bg-pinky">LEARN MORE</button>
-        <button class="mx-1 py-4 border px-4  bg-pinky text-white shadow-lg hover:bg-white hover:text-gray-900">SHOP
+
+      <div class="absolute right-10 md:left-48 bottom-1/4 lg:1/3 flex justify-around md:justify-start lg:justify-start">
+        <button
+          class="mx-1 py-1 lg:py-4 border-2 lg:px-4 text-xs md:text-base bg-grayPrimary shadow-lg hover:bg-pinky">LEARN
+          MORE</button>
+        <button
+          class="mx-1 py-1 lg:py-4 border lg:px-4  text-xs md:text-base  bg-pinky text-white shadow-lg hover:bg-white hover:text-gray-900">SHOP
           NOW</button>
       </div>
     </div>
 
-    <div class="mySlides fade relative">
-      <img src="./assets/images/sliderimg1.jpg" class=" w-full brightness-75">
+    <div class="mySlides fade relative sm:h-48 md:h-full">
+      <img src="./assets/images/sliderimg1.jpg" class=" w-full brightness-75 object-cover h-full">
       <div
-        class="absolute left-48 bottom-1/2 text-white  xl:text-7xl lg:text-7xl md:text-7xl sm:text-xl font-bold fade-right sm:hidden">
+        class="absolute right-12 md:left-48 bottom-1/2 text-white text-2xl md:text-4xl lg:text-7xl font-bold fade-right ">
         NEW MODALS2</div>
 
-      <div class="absolute left-48 bottom-1/3 flex justify-around ">
-        <button class="mx-1 py-4 border-2 px-4 bg-grayPrimary shadow-lg hover:bg-pinky">LEARN MORE</button>
-        <button class="mx-1 py-4 border-2 px-4 bg-pinky text-white shadow-lg hover:bg-white hover:text-gray-900">SHOP
+      <div
+        class="absolute right-12 md:left-48  bottom-1/4 lg:1/3 flex justify-around md:justify-start lg:justify-start">
+        <button
+          class="mx-1 py-1 lg:py-4 border-2 text-xs md:text-base lg:px-4 bg-grayPrimary shadow-lg hover:bg-pinky">LEARN
+          MORE</button>
+        <button
+          class="mx-1 py-1 lg:py-4 border-2 text-xs md:text-base lg:px-4 bg-pinky text-white shadow-lg hover:bg-white hover:text-gray-900">SHOP
           NOW</button>
       </div>
     </div>
 
     <!-- Next and previous buttons -->
     <div class="flex flex-col absolute top-1/3 right-0 invisible group-hover:visible">
-      <a class="bg-white  hover:bg-grayPrimary md:w-8 md:h-10  text-center pt-2 mb-2 cursor-pointer"
+      <a class="bg-white  hover:bg-grayPrimary w-6 h-8 md:w-8 md:h-10  text-center pt-2 mb-2 cursor-pointer"
         onclick="plusSlides(-1)">&#10094;</a>
-      <a class="bg-white hover:bg-grayPrimary w-8 h-10 text-center pt-2 cursor-pointer"
+      <a class="bg-white hover:bg-grayPrimary w-6 h-8 md:w-8 md:h-10 text-center pt-2 cursor-pointer"
         onclick="plusSlides(1)">&#10095;</a>
 
     </div>
@@ -347,19 +359,19 @@
 
   <!-- MODUL-10 -->
 
-  <div class="bg-graySoft md:h-64  w-full flex flex-col">
+  <div class="bg-graySoft md:h-64  w-full flex flex-col pb-2">
     <div class="w-9/12  mx-auto pt-3 mb-1">
       <p class="font-bold pb-3 mb-4">Popular Departments</p>
       <p class="text-xs text-grayDown">Products From These Categories Often Buy</p>
     </div>
     <div
-      class="w-9/12  grid md:grid-cols-4 sm:grid-rows-2 sm:grid-cols-2  md:h-48  mx-auto md:gap-3 sm:gap-2 items-center ">
+      class="w-9/12  grid grid-cols-2 grid-rows-2 md:grid-cols-4 gap-1 md:h-48  mx-auto md:gap-3 sm:gap-2 items-center ">
 
 
       <div class="relative cursor-pointer rounded-md">
 
         <img src="https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-1.png"
-          class="md:h-40 w-full hover:brightness-75 rounded-md">
+          class="w-full hover:brightness-75 rounded-md">
         <div class="flex flex-col ml-8 absolute bottom-1/3">
           <p class="text-sm font-bold">Vegetables</p>
           <p class="text-xs text-grayDown">1 products</p>
@@ -368,7 +380,7 @@
       <div class="relative cursor-pointer rounded-md">
 
         <img src="https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-2.png"
-          class="md:h-40 w-full hover:brightness-75 rounded-md">
+          class="w-full hover:brightness-75 rounded-md">
         <div class="flex flex-col ml-8 absolute bottom-1/3">
           <p class="text-sm font-bold">Fruits</p>
           <p class="text-xs text-grayDown">9 products</p>
@@ -378,7 +390,7 @@
       <div class="relative cursor-pointer rounded-md">
 
         <img src="https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-4.png"
-          class="md:h-40 w-full hover:brightness-75 rounded-md">
+          class="w-full hover:brightness-75 rounded-md">
         <div class="flex flex-col ml-8 absolute bottom-1/3">
           <p class="text-sm font-bold">Breakfast</p>
           <p class="text-xs text-grayDown">8 products</p>
@@ -388,7 +400,7 @@
       <div class="relative cursor-pointer rounded-md">
 
         <img src="https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-3.png"
-          class="md:h-40 w-full hover:brightness-75 rounded-md">
+          class="w-full hover:brightness-75 rounded-md">
         <div class="flex flex-col ml-8 absolute bottom-1/3">
           <p class="text-sm font-bold">Cooking</p>
           <p class="text-xs text-grayDown">5 products</p>
@@ -403,7 +415,7 @@
   </div>
 
   <!-- MODUL-15 -->
-  <div class="w-full md:h-[500px] sm:h-[50px] bg-graySoft mt-2">
+  <div class="w-full md:h-[500px] sm:h-[50px] bg-graySoft mt-2 p-2 md:p-0">
     <div class="md:w-9/12 sm:w-full m-auto py-1">
       <div class="py-3">
         <p class="font-bold mb-4 text-xl">Deals&Promotions</p>
@@ -571,11 +583,12 @@
 
   <!-- MODUL-21 -->
 
-  <div class="w-9/12  lg:m-auto xl:my-10 lg:h-[900px] md:h-[1700px]  flex flex-col itmes-center justify-evenly">
+  <div class="w-9/12  m-auto xl:my-10 lg:h-[900px] md:h-[1700px]  flex flex-col itmes-center justify-evenly">
     <div class="w-full bg-graySoft rounded-md border-l-8 border-yellowDark P-4 p-2 text-2xl font-bold mt-4">
       Popular Product
     </div>
-    <div class="grid lg:grid-cols-5 lg:grid-rows-2 md:grid-cols-3 md:grid-rows-3 sm:grid-cols-2 sm:grid-rows-5 xl:gap-4 2xl:gap-4 lg:gap-2 md:gap-1">
+    <div
+      class="grid lg:grid-cols-5 lg:grid-rows-2 md:grid-cols-3 md:grid-rows-3 sm:grid-cols-2 sm:grid-rows-5 xl:gap-4 2xl:gap-4 lg:gap-2 md:gap-1">
 
       <div class="border border-graySoft hover:border-yellowDark group rounded-sm relative">
         <div class="cursor-pointer">
@@ -872,8 +885,7 @@
           </div>
           <div class="group-hover:invisible my-4 text-xl font-bold">$602.00</div>
         </div>
-        <div
-          class="flex justify-between invisible group-hover:visible pb-1 absolute group-hover:-translate-y-16
+        <div class="flex justify-between invisible group-hover:visible pb-1 absolute group-hover:-translate-y-16
            transition-transform duration-300 p-2   my-4">
           <button class="bg-graySoft p-2 hover:bg-yellowDark rounded-full text-md font-thin">+ Add To Cart</button>
           <div class="bg-graySoft px-3 py-2 hover:bg-yellowDark rounded-full"><i class="fa-solid fa-heart fa-xs"></i>
@@ -887,13 +899,13 @@
   </div>
 
   <!-- MODUL-12 -->
-  <div class=" md:h-[700px] sm:h-[250px] w-full justify-evenly grid grid-cols-2 gap-0 bg-brownSoft">
-    <div class="bg-brownSoft h-full flex justify-center items-center text-center">
+  <div class=" md:h-[700px] w-full justify-evenly grid grid-cols-2 gap-0 bg-brownSoft mx-auto my-4">
+    <div class="bg-brownSoft flex justify-center items-center text-center">
       <div>
-        <p class="font-bold text-xs mb-4">MID-AUTUMN SALE</p>
-        <p class=" mb-5 text-4xl font-nanum">Makeup You're Uniqe</p>
-        <p class="text-xs m-8">Buh-bye body acne. Hella Smoothing AHA Body Lotion</p>
-        <button class="bg-black rounded-full md:w-48 p-1 sm:w-40 h-8 text-white text-xs hover:opacity-75">BUY NOW /
+        <p class="font-bold text-xs md:mb-4">MID-AUTUMN SALE</p>
+        <p class=" md:mb-5 text-xl md:text-4xl font-nanum">Makeup You're Uniqe</p>
+        <p class="text-xs font-thin md:m-8">Buh-bye body acne. Hella Smoothing AHA Body Lotion</p>
+        <button class="bg-black rounded-full md:w-48 p-1 w-40 h-8 text-white text-xs hover:opacity-75 m-2">BUY NOW /
           $59.00</button>
 
       </div>
@@ -904,9 +916,9 @@
   </div>
 
   <!-- MODUL-6 -->
-  <div class="bg-grayText flex items-center md:h-24 sm:h-40 w-full">
+  <div class="bg-grayText flex items-center md:h-24 sm:h-40 w-full md:pt-4 p-1 mb-4">
 
-    <div class="md:w-9/12 sm:w-full m-auto flex justify-between items-center">
+    <div class="md:w-9/12 w-full m-auto grid grid-cols-2 grid-rows-2 gap-2 md:grid-cols-4">
       <div class="flex items-center">
         <div class="rounded-full border-2 border-blue p-3">
           <i class="fa-sharp fa-solid fa-truck-fast fa-lg" style="color: #ff9ba7;"></i>
@@ -955,10 +967,10 @@
 
   <!-- MODUL-20 -->
 
-  <div class="w-full h-[500px] bg-[#F2F3F7] flex items-center justify-center border">
-    <div class="grid w-9/12  grid-cols-3 gap-2">
+  <div class="w-full  md:h-[500px] bg-[#F2F3F7] flex items-center justify-center border">
+    <div class="grid w-full md:w-9/12  md:grid-cols-3 gap-2">
 
-      <div class="col-span-1  relative flex overflow-hidden bg-white">
+      <div class="md:col-span-1 relative flex overflow-hidden bg-white">
         <div class="absolute top-0 right-0 z-20 "><img src="./assets/images/label-deal.png" class="h-16 w-16"></div>
 
         <div class="flex flex-col px-2">
@@ -967,12 +979,12 @@
           </div>
           <div id="slide-1" class="flex relative">
 
-            <div class="slide-left flex bg-white p-1  w-[calc(100vw_*_0.25)] h-[300px]">
-              <div class="m-4 relative ">
+            <div class="slide-left flex bg-white p-1 w-100vw  md:w-[calc(100vw_*_0.25)] md:h-[300px]">
+              <div class="m-4 relative w-full">
                 <img
                   src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/4-330x330.jpg"
                   class="object-cover  2xl:[200px] xl:w-[200px] lg:w-[150px] lg:h-[250px] ">
-                  <span class="rounded-full py-1 text-xs text-white absolute top-0 bg-clifford z-10">-8%</span>
+                <span class="rounded-full py-1 text-xs text-white absolute top-0 bg-clifford z-10">-8%</span>
 
               </div>
               <div class=" mt-8">
@@ -1006,7 +1018,7 @@
               </div>
 
             </div>
-            <div class="slide-left flex bg-white p-1 w-[calc(100vw_*_0.25)] h-[300px]">
+            <div class="slide-left flex  bg-white p-1 w-100vw  md:w-[calc(100vw_*_0.25)] md:h-[300px]">
               <div class="m-4">
                 <img
                   src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/2-330x330.jpg"
@@ -1044,7 +1056,7 @@
               </div>
 
             </div>
-            <div class="slide-left flex bg-white p-1 w-[calc(100vw_*_0.25)] h-[300px]">
+            <div class="slide-left flex  bg-white p-1 w100vwl  md:w-[calc(100vw_*_0.25)] md:h-[300px]">
               <div class="m-4">
                 <img
                   src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/10-330x330.jpg"
@@ -1100,9 +1112,9 @@
 
       <!-- modul 20 slide 2 -->
 
-      <div class="col-span-2 bg-white relative">
+      <div class="md:col-span-2 bg-white relative overflow-hidden md:overflow-auto">
 
-        <div class="pl-3 pt-4  text-3xl">
+        <div class="pl-3 pt-4 text-3xl">
           <p>Featured Products</p>
         </div>
         <div class="overflow-hidden">
@@ -1112,7 +1124,7 @@
                 <img
                   src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/fashion-21/3-270x270.jpg"
                   class="object-cover h-[250px]">
-                  <span class="rounded-full py-1 text-xs text-white absolute top-0 bg-clifford z-10">-8%</span>
+                <span class="rounded-full py-1 text-xs text-white absolute top-0 bg-clifford z-10">-8%</span>
 
               </div>
               <div class="w-40 flex flex-col items-center">
@@ -1124,13 +1136,13 @@
                     <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
                     <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
                     <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
-  
+
                   </div>
-  
+
                   <div class="flex items-center justify-center m-1">
                     <p class="font-bold text-l text-red">$ 45.00</p>
                   </div>
-  
+
                 </div>
                 <div class="flex w-full justify-evenly">
                   <div class="border cursor-pointer text-grayDark  items-center flex">
@@ -1139,10 +1151,10 @@
                   </div>
                   <div class="border cursor-pointer text-gray p-1"><i class="fa-solid fa-heart fa-xs"></i></div>
                   <div class="border cursor-pointer text-gray p-1"><i class="fa fa-refresh fa-xs"></i></div>
-  
+
                 </div>
               </div>
-  
+
             </div>
             <div class="slide-right bg-white p-1 mr-12 ml-5">
               <div class="m-2">
@@ -1160,11 +1172,11 @@
                     <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
                     <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
                   </div>
-  
+
                   <div class="flex items-center justify-center m-1">
                     <p class="font-bold text-l text-red">$ 45.00</p>
                   </div>
-  
+
                 </div>
                 <div class="flex w-full justify-evenly">
                   <div class="border cursor-pointer text-grayDark  items-center flex">
@@ -1173,10 +1185,10 @@
                   </div>
                   <div class="border cursor-pointer text-gray p-1"><i class="fa-solid fa-heart fa-xs"></i></div>
                   <div class="border cursor-pointer text-gray p-1"><i class="fa fa-refresh fa-xs"></i></div>
-  
+
                 </div>
               </div>
-  
+
             </div>
             <div class="slide-right bg-white p-1 mr-12 ml-5">
               <div class="m-2">
@@ -1194,11 +1206,11 @@
                     <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
                     <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
                   </div>
-  
+
                   <div class="flex items-center justify-center m-1">
                     <p class="font-bold text-l text-red">$ 45.00</p>
                   </div>
-  
+
                 </div>
                 <div class="flex w-full justify-evenly">
                   <div class="border cursor-pointer text-grayDark  items-center flex">
@@ -1207,10 +1219,10 @@
                   </div>
                   <div class="border cursor-pointer text-gray p-1"><i class="fa-solid fa-heart fa-xs"></i></div>
                   <div class="border cursor-pointer text-gray p-1"><i class="fa fa-refresh fa-xs"></i></div>
-  
+
                 </div>
               </div>
-  
+
             </div>
             <div class="slide-right bg-white p-1 mr-12 ml-5">
               <div class="m-2">
@@ -1228,11 +1240,11 @@
                     <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
                     <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
                   </div>
-  
+
                   <div class="flex items-center justify-center m-1">
                     <p class="font-bold text-l text-red">$ 45.00</p>
                   </div>
-  
+
                 </div>
                 <div class="flex w-full justify-evenly">
                   <div class="border cursor-pointer text-grayDark  items-center flex">
@@ -1241,10 +1253,10 @@
                   </div>
                   <div class="border cursor-pointer text-gray p-1"><i class="fa-solid fa-heart fa-xs"></i></div>
                   <div class="border cursor-pointer text-gray p-1"><i class="fa fa-refresh fa-xs"></i></div>
-  
+
                 </div>
               </div>
-  
+
             </div>
             <div class="slide-right bg-white p-1 mr-12 ml-5">
               <div class="m-2">
@@ -1262,11 +1274,11 @@
                     <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
                     <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
                   </div>
-  
+
                   <div class="flex items-center justify-center m-1">
                     <p class="font-bold text-l text-red">$ 45.00</p>
                   </div>
-  
+
                 </div>
                 <div class="flex w-full justify-evenly">
                   <div class="border cursor-pointer text-grayDark  items-center flex">
@@ -1275,17 +1287,17 @@
                   </div>
                   <div class="border cursor-pointer text-gray p-1"><i class="fa-solid fa-heart fa-xs"></i></div>
                   <div class="border cursor-pointer text-gray p-1"><i class="fa fa-refresh fa-xs"></i></div>
-  
+
                 </div>
               </div>
-  
+
             </div>
             <div class="slide-right bg-white p-1 mr-12 ml-5">
               <div class="m-2 relative">
                 <img
                   src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/11-270x270.jpg"
                   class="object-cover h-[250px]">
-                  <span class="rounded-full py-1 text-xs text-white absolute top-0 bg-clifford z-10">-8%</span>
+                <span class="rounded-full py-1 text-xs text-white absolute top-0 bg-clifford z-10">-8%</span>
 
               </div>
               <div class="w-40 flex flex-col items-center">
@@ -1298,11 +1310,11 @@
                     <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
                     <i class="fa-solid fa-star fa-xs" style="color:#7D7C7C;"></i>
                   </div>
-  
+
                   <div class="flex items-center justify-center m-1">
                     <p class="font-bold text-l text-red">$ 45.00</p>
                   </div>
-  
+
                 </div>
                 <div class="flex w-full justify-evenly">
                   <div class="border cursor-pointer text-grayDark  items-center flex">
@@ -1311,7 +1323,7 @@
                   </div>
                   <div class="border cursor-pointer text-gray p-1"><i class="fa-solid fa-heart fa-xs"></i></div>
                   <div class="border cursor-pointer text-gray p-1"><i class="fa fa-refresh fa-xs"></i></div>
-  
+
                 </div>
               </div>
             </div>
@@ -1338,19 +1350,19 @@
   <div class="w-full bg-yellowPrimary">
 
     <div class="w-9/12 h-36 m-auto flex items-center">
-      <div class="mr-6">
-        <img src="./assets/images/email_5355051.png " class="w-16 h-8">
+      <div class="mr-6 hidden md:block">
+        <img src="./assets/images/email_5355051.png " class="w-12 h-8 md:w-16 md:h-8">
       </div>
-      <div class="2/6 opacity-70">
+      <div class="opacity-70">
         <p class="my-2 font-bold text-sm">Subscribe Newsletter</p>
         <p class="text-xs ">Get all the latest information on Events, Sales and Offers. Sign up for newsletter today.
         </p>
 
       </div>
-      <div class="w-full flex">
-        <input class="border-none rounded-lg  placeholder:text-xs placeholder:opacity-50 w-11/12 flex items-center"
+      <div class="w-full flex flex-col md:flex-row">
+        <input class="border-none rounded-lg  placeholder:text-xs placeholder:opacity-50 w-36 md:w-11/12 flex items-center"
           placeholder="Email address"></input>
-        <button class="bg-black rounded-lg ml-2 w-3/12 text-white text-xs">Subscribe</button>
+        <button class="bg-black rounded-lg md:ml-2 w-36 md:w-3/12 text-white text-xs md:mt-0 md:py-0 mt-2 py-2">Subscribe</button>
       </div>
 
     </div>
@@ -1359,11 +1371,12 @@
 
   <!-- FOOTER -->
 
-  <div class="border-t  w-full pt-5 bg-grayDark">
-    <div class="xl:w-9/12 lg:w-9/12 md:10/12 sm:w-11/12 m-auto flex flex-col md:h-60 sm:h-96">
-      <div class="flex justify-between">
-        <div class="flex flex-col items-center mt-3">
-          <img src="./assets/images/logo.png" class="md:w-32 md:h-28 sm:w-20 sm:h-12 xs:w-18 xs:h-8 ">
+  <div class="border-t w-full pt-5 bg-grayDark">
+    <div class="w-full md:w-10/12 xl:w-9/12 m-auto flex flex-col md:h-60 sm:h-96">
+      <div class="grid  md:grid-cols-4 justify-between">
+
+        <div class="flex flex-col items-center justify-center mt-3 pl-20 md:p-0">
+          <img src="./assets/images/logo.png" class="w-24 h-20">
           <div class="text-center">
             <p class="text-grayPrimary text-bold">123 Main St. London, UK</p>
             <div class="flex justify-evenly w-48 mt-5">
@@ -1399,8 +1412,8 @@
             </div>
           </div>
         </div>
-        <div class="p-2 text-white">
-          <p class="leading-0 font-normal">CUSTOMER SERVICE</p>
+        <div class="p-2 text-white   >
+          <p class=" leading-0 font-normal">CUSTOMER SERVICE</p>
 
           <ul class="leading-none flex flex-col justify-start">
             <li class="flex items-center group">
@@ -1432,8 +1445,8 @@
           </ul>
 
         </div>
-        <div class="p-2 text-white">
-          <p class="leading-0 font-normal">MY ACCOUNT</p>
+        <div class="p-2 text-white   >
+          <p class=" leading-0 font-normal">MY ACCOUNT</p>
 
           <ul class="leading-none flex flex-col">
             <li class="flex items-center group">
@@ -1471,33 +1484,34 @@
 
 
         </div>
-        <div class="text-md p-2">
-          <p class="leading-0 font-normal text-white ">NEWSLETTER</p>
-          <p class="break-words mt-1 text-grayText2 ">Stay up to date with news and promotions by<br> signing up for our
-            newsletter</p>
-          <div class="relative ">
-            <input class="w-full border-none rounded-sm mt-1 placeholder:text-gray placeholder:text-sm"
-              placeholder="Your Email">
-            <button
-              class="absolute right-2 top-2 bg-grayDark flex items-center justify-around w-18 h-8 text-center hover:bg-pinky px-1 text-white">
-              <span class="material-symbols-outlined ">
-                mail
-              </span>
-              <p class="text-xs m-1">Send</p>
-            </button>
-            <div class="flex mt-5">
-              <input type="checkbox">
-              <p class="text-xs ml-1 cursor-pointer">I have read and agree to the <span
-                  class="text-blue text-xs"><a>Privacy
-                    Policy</a></span></p>
 
-            </div>
+        <div class="text-md p-2 >
+          <p class=" leading-0 font-normal text-white ">NEWSLETTER</p>
+          <p class=" break-words mt-1 text-grayText2 ">Stay up to date with news and promotions by<br> signing up for our
+            newsletter</p>
+          <div class=" relative ">
+            <input class=" w-full border-none rounded-sm mt-1 placeholder:text-gray placeholder:text-sm"
+          placeholder="Your Email">
+          <button
+            class="absolute right-2 top-2 bg-grayDark flex items-center justify-around w-18 h-8 text-center hover:bg-pinky px-1 text-white">
+            <span class="material-symbols-outlined ">
+              mail
+            </span>
+            <p class="text-xs m-1">Send</p>
+          </button>
+          <div class="flex mt-5">
+            <input type="checkbox">
+            <p class="text-xs ml-1 cursor-pointer">I have read and agree to the <span
+                class="text-blue text-xs"><a>Privacy
+                  Policy</a></span></p>
 
           </div>
 
         </div>
+
       </div>
     </div>
+  </div>
   </div>
   <div class="w-full h-16 flex items-center bg-grayDown text-white">
     <div class="w-10/12 ml-28  flex justify-between">

@@ -143,15 +143,60 @@ const swiper_main = new Swiper('#swiper_main', {
 
 
 
-const swiperEl = document.querySelector('swiper-container');
+const swiper_featured = document.getElementById('featured-products-swiper');
 const buttonNext = document.getElementById('swiper-btn-next');
 const buttonPrev = document.getElementById('swiper-btn-prev');
 console.log(buttonPrev)
 
 buttonNext.addEventListener('click', () => {
-  swiperEl.swiper.slideNext();
+  swiper_featured.swiper.slideNext();
 });
 
 buttonPrev.addEventListener('click', () => {
-  swiperEl.swiper.slidePrev();
+  swiper_featured.swiper.slidePrev();
 });
+
+
+
+
+// swiper parameters
+const swiperParams = {
+  slidesPerView: 1,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+  on: {
+    init() {
+      // ...
+    },
+  },
+};
+
+// now we need to assign all parameters to Swiper element
+Object.assign(swiper_featured, swiperParams);
+
+// and now initialize it
+swiper_featured.initialize();
+
+
+
+const swiper_deal = document.getElementById('deal-products-swiper');
+const buttonDealNext = document.getElementById('deal-swiper-btn-next');
+const buttonDealPrev = document.getElementById('deal-swiper-btn-prev');
+console.log(buttonPrev)
+
+buttonDealNext.addEventListener('click', () => {
+  swiper_deal.swiper.slideNext();
+});
+
+buttonDealPrev.addEventListener('click', () => {
+  swiper_deal.swiper.slidePrev();
+});
+
+
+

@@ -244,3 +244,10 @@
 /* modul10 start */
 
 
+/* modul 21 start */
+
+  .sliding-button:hover, .sliding-heart:hover, .sliding-compare:hover{
+    background-color: yellow;
+  }
+
+/* modul 21 end */

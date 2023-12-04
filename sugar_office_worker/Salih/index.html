@@ -379,7 +379,7 @@
 
         <!-- *** Bottom Menu links Mobile Version Start-->
         <div
-          class="cursor-pointer lg:hidden w-full menuClick relative bg-[#59B5FE] text-white flex justify-between items-center h-[44px] px-3 text-[18px] text-bold"
+          class="cursor-pointer lg:hidden w-full menuClick relative  bg-[#59B5FE] text-white flex justify-between items-center h-[44px] px-3 text-[18px] text-bold"
         >
           <span>TÜM KATEGORİLER</span>
           <i class="fa-solid fa-bars"></i>
@@ -424,52 +424,71 @@
       <!--  *** slider container  *** -->
       <div class="slider relative">
         <!-- *** Slides *** -->
-        <div
-          class="slideContainer flex transition ease-out duration-40 relative"
+        <swiper-container id="home-swiper" init="false"
+          class=""
         >
           <!-- *** slide 1 *** -->
-
-          <img class="slide" src="./assets/images/candy1.jpg" alt="" />
+          <swiper-slide>
+            <img class="slide" src="./assets/images/candy1.jpg" alt="" />
+            <div class="headingSlider absolute top-[40%] left-20 w-[300px]  flex flex-col justify-center items-center">
+              <div class="my-[20px]">
+                <button
+                class="  bg-[#ddd] hover:bg-[#eee] hover:text-teal-600 px-[20px]  text-center text-[13px] md:text-[15px] whitespace-nowrap lg:text-[20px] lg:py-[15px]"
+              >
+                Başlık
+              </button>
+              </div>
+              <div>
+                <button
+                class="btnSlider1 px-[10px]  cursor-pointer whitespace-nowrap bg-[#ddd] hover:bg-[#eee] hover:text-teal-600 hidden md:inline md:text-[13px] lg:text-[20px] lg:py-[15px]"
+              >
+                LEARN MORE
+              </button>
+              <button
+                class="btnSlider2  px-[10px] cursor-pointer whitespace-nowrap bg-[#ddd] hover:bg-[#eee] hover:text-teal-600 hidden md:inline md:text-[13px] lg:text-[20px] lg:py-[15px]"
+              >
+                SHOP NOW
+              </button>
+              </div>
+            </div>
+          </swiper-slide>
+        
 
           <!-- *** slide 2 *** -->
 
-          <img class="slide" src="./assets/images/candy2.jpg" alt="" />
-          <img class="slide" src="./assets/images/candy2.jpg" alt="" />
-        </div>
+          <swiper-slide class="relative">
+            <img class="slide" src="./assets/images/candy2.jpg" alt="" />
+            <div class="headingSlider absolute top-[40%] right-20 w-[300px]  flex flex-col justify-center items-center">
+              <div class="my-[20px]">
+                <button
+                class="  bg-[#ddd] hover:bg-[#eee] hover:text-teal-600 px-[20px]  text-center text-[13px] md:text-[15px] whitespace-nowrap lg:text-[20px] lg:py-[15px]"
+              >
+                Başlık
+              </button>
+              </div>
+              <div>
+                <button
+                class="btnSlider1 px-[10px]  cursor-pointer whitespace-nowrap bg-[#ddd] hover:bg-[#eee] hover:text-teal-600 hidden md:inline md:text-[13px] lg:text-[20px] lg:py-[15px]"
+              >
+                LEARN MORE
+              </button>
+              <button
+                class="btnSlider2  px-[10px] cursor-pointer whitespace-nowrap bg-[#ddd] hover:bg-[#eee] hover:text-teal-600 hidden md:inline md:text-[13px] lg:text-[20px] lg:py-[15px]"
+              >
+                SHOP NOW
+              </button>
+              </div>
+            </div>
+          </swiper-slide>
+
+        </swiper-container>
 
         <!-- *** Control buttons and button links *** -->
         <div
-          class="absolute top-0 h-full z-57 w-full justify-between items-center flex text-black px-10 text-3xl bg-[rgba(0,0,0,0.3)]"
+          class="absolute top-0 h-full  w-full justify-between items-center pointer-events-none z-50  flex text-black px-10 text-3xl bg-[rgba(0,0,0,0.2)]"
         >
-          <button
-            class="bg-[#eee] p-1 flex justify-center items-center btn-prev"
-          >
-            <i
-              class="slideBtn fa-solid fa-arrow-left text-black hover:text-red-500 text-[12px] sm:text-[18px] md:text-[20px] lg:text-[24px]"
-            ></i>
-          </button>
-          <button
-            class="bg-[#eee] p-1 flex justify-center items-center btn-next"
-          >
-            <i
-              class="slideBtn fa-solid fa-arrow-right text-black hover:text-red-500 text-[12px] sm:text-[18px] md:text-[20px] lg:text-[24px]"
-            ></i>
-          </button>
-          <button
-            class="headingSlider absolute left-[200px] top-[50%] bg-[#ddd] w-[15%] text-center text-[13px] md:text-[15px] whitespace-nowrap lg:text-[20px] lg:py-1"
-          >
-            Başlık
-          </button>
-          <button
-            class="btnSlider1 absolute left-[85px] top-[68%] w-[15%] cursor-pointer whitespace-nowrap bg-[#ddd] hidden md:inline md:text-[13px] lg:text-[20px] lg:py-1"
-          >
-            LEARN MORE
-          </button>
-          <button
-            class="btnSlider2 absolute left-[325px] top-[68%] w-[15%] cursor-pointer whitespace-nowrap bg-[#ddd] hidden md:inline md:text-[13px] lg:text-[20px] lg:py-1"
-          >
-            SHOP NOW
-          </button>
+
+     
         </div>
       </div>
     </div>
@@ -533,7 +552,7 @@
 
     <div class="flex flex-col justify-center items-center bg-[#F1F3F7]">
       <div class="flex justify-center lg:justify-start w-3/4 lg:ps-[30px]">
-        <h2 class="my-[20px] text-start text-[24px]">Deals & Promotions</h2>
+        <h2 class="my-[20px] text-start text-[16px] md:text-[20px] lg:text-[24px]">Deals & Promotions</h2>
       </div>
 
       <div

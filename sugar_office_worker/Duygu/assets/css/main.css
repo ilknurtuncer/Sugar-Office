@@ -1,0 +1,99 @@
+/* styles.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mid-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.mid-mid-nav {
+  width: 650px;
+}
+
+.right-mid-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.drop-menu ul {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  padding: 5px;
+}
+
+.drop-menu:hover ul {
+  display: block;
+}
+.drop-menu ul li:hover {
+  text-decoration: underline;
+}
+
+.drop-menu ul li {
+  cursor: pointer;
+  padding: 2px;
+}
+
+.right-drop-menu {
+  cursor: pointer;
+  position: relative;
+}
+.right-drop-menu > ul {
+  display: none;
+  position: absolute;
+  padding: 5px;
+  top: 40px;
+  left: 0px;
+}
+
+.right-drop-menu:hover > ul {
+  display: block;
+  text-decoration: underline;
+}
+
+.right-drop-menu > ul ul {
+    position: absolute;
+  display: none !important;
+  top: -5px;
+  left: 115px;
+  padding: 5px;
+ 
+}
+.right-drop-menu > ul:hover ul {
+  display: block !important;
+  text-decoration: underline;
+}
+
+.sliders {
+  height: 50vh !important;
+}
+
+.modul5{
+  background-position: center center;
+  background-size: cover;
+  filter: contrast(100%);
+  background-attachment:fixed ;
+  
+}

@@ -6,14 +6,14 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link href="/sugar_office_worker/Humeyra/dist/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="/sugar_office_worker/Humeyra/style.css">
-    <title>Sugarrr Office</title>
+    <link rel="stylesheet" href="../Humeyra/assets/css/style.css">
+    <title>Sugar Office</title>
 
 </head>
 <body >
    
     <!-- ********header start******** -->
-    <div class="flex justify-around  text-neutral-500  p-4">
+    <div class="flex justify-around text-primary p-4">
       <div class="flex items-center" > <i class="fa-solid fa-arrow-up-right-from-square "></i> 
        
        
@@ -108,13 +108,13 @@
 <!-- ****************search start****************** -->
    <div class="flex justify-evenly bg-blend-lighten text-blue-300 p-4">
        <div>
-           <img class="h-20"  src="/sugar_office_worker/Humeyra/image/şeker.png" alt="">
+           <img class="h-20"  src="../Humeyra/assets/image/şeker.png" alt="">
        </div>
 
 
        <div class="flex items-center">
            <input type="text" class="border p-2 w-96 h-12 rounded-l-2xl border-pink-300 focus:border-pink-500 outline-none " placeholder="Ara..." />
-           <button class="bg-primary text-white w-16 h-12 p-2 rounded-r-2xl">
+           <button class=" text-white w-16 h-12 p-2 rounded-r-2xl" style="background-color: #FF9BA7;">
                <i class="fa-solid fa-magnifying-glass "></i>
            </button>
        </div>
@@ -142,7 +142,7 @@
 
 </a>
 <a href="#" type="button"><div class="flex items-center">
-   <i class="fa-solid fa-code-compare fa-2xl  overflow-visible  hover:text-pink-600 text-gray-500" ></i>
+   <i class="fa-solid fa-right-left fa-2xl  overflow-visible  hover:text-pink-600 text-gray-500" ></i>
    <div  class="ml-2">
        <div class="font-bold">Compare</div>
        <div class="text-sm">Product Comparison</div>
@@ -157,7 +157,7 @@
    <!-- *********************search end***************** -->
    <!-- ******************categories start************************ -->
 
-<div class="flex justify-around bg-primary h-16">
+<div class="flex justify-around  h-16" style="background-color: #FF9BA7;">
    <div class="flex space-x-16 items-center justify-center  ">
        <a class="text-white hover:text-blue-500" href="#" type="button">OYUNCAK</a>
        <a class="text-white hover:text-blue-500" href="#" type="button">İLGİNÇ ÜRÜNLER</a>
@@ -243,13 +243,26 @@
  
  
 
-
+<!-- ********************slider start****************** -->
 
 <div class="carousel-inner relative overflow-hidden ">
   <!--Slide 1-->
   <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
   <div class="carousel-item absolute opacity-0">
     <img src="https://sekerofisi.com/uploads/p/o/5IW9tx067AYF.jpg" class="img block  w-full text-center"/>
+
+    <div class="w-9/12 mx-auto ">
+
+      <div class="absolute top-1/4">
+        <p  class="     font-bold border-b border-pink-500 text-pink-500 opacity-80 text-7xl   ">
+          NEW COLLECTİON
+      </p>
+    
+    
+     
+      </div>
+      
+    </div>
   </div>
   <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-yellow-500 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
   <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
@@ -258,17 +271,40 @@
   <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
   <div class="carousel-item absolute opacity-0" >
     <img src="https://sekerofisi.com/uploads/p/o/UJcZfLu1mDz4.jpg" class="img block w-full  text-center"/>
+
+    <div class="w-9/12 mx-auto ">
+
+      <div class="absolute top-1/4">
+        <p  class="     font-bold border-b border-blue-600 text-blue-600  text-7xl   ">
+          SUGAR OFFICE
+      </p>
+    
+    
+     
+      </div>
+      
+    </div>
   </div>
   <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-    <label for="carousel-1" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
-    
-    <label for="carousel-2" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
-    <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+  <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
 
   <!--Slide 3-->
   <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
   <div class="carousel-item absolute opacity-0" >
     <img src="https://sekerofisi.com/uploads/p/o/UJcZfLu1mDz4.jpg" class="img block  w-full text-center"/>
+
+    <div class="w-9/12 mx-auto ">
+
+      <div class="absolute top-1/4">
+        <p  class="     font-bold border-b border-blue-600 text-blue-600  text-7xl   ">
+          CANDY OFFICE
+      </p>
+    
+    
+     
+      </div>
+      
+    </div>
   </div>
   <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
   <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
@@ -281,13 +317,2108 @@
     <li class="inline-block mr-3">
       <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
     </li>
-
+    <li class="inline-block mr-3">
+      <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+    </li>
   </ol>
 
+  <div class="w-9/12 mx-auto ">
+
+    <div class="absolute top-1/2 ">
+      <button id="" class="    border border-pink-500 font-bold text-pink-500 px-4 py-3 hover:bg-white ">
+        LEARN MORE
+    </button>
+    
+    
+    <button id="" class="   border  bg-pink-300 text-bold border-pink-300 text-white px-4 py-3 hover:opacity-75">
+        SHOP NOW
+    </button>
+    </div>
+    
+    </div>
+</div>
+<!-- *********************slider end*************************** -->
+
+<!-- ***************************module10 start*************************** -->
+
+<div class="bg-gray-200 p-14 flex items-center justify-center">
+  <div class="w-9/12">
+
+    <h1 class="text-2xl font-bold">Popular Departments</h1>
+    <p class="text-black text-sm">Products From These Categories Often Buy</p>
+
+    <div class="grid gap-6 grid-cols-4 ">
+      <div class="bg-white my-2 sm:my-4 md:my-4 flex flex-row  justify-center py-4 sm:py-8 md:py-8">
+        <div class="dep-left flex-row  my-auto  ">
+          <h2 class="text-lg  font-bold pl-2 text-black">Vegatables</h2>
+          <p class="text-sm pl-2 text-gray-500">1 Products</p>
+        </div>
+        <div class="dep-img pr-2 flex items-center  ">
+          <img class="w-full h-auto " src="https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-1.png" alt="vegatables">
+        </div>
+      </div>
+      <div class="bg-white my-2 sm:my-4 md:my-4 flex flex-row justify-between py-4 sm:py-8 md:py-8">
+        <div class="dep-left flex-row my-auto flex-shrink-0">
+          <h2 class="text-lg font-bold pl-2 text-black">Fruits</h2>
+          <p class="text-sm pl-2 text-gray-500">9 Products</p>
+        </div>
+        <div class="dep-img pr-2 flex items-center">
+          <img class="w-full h-auto" src="https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-2.png" alt="fruits">
+        </div>
+      </div>
+      <div class="bg-white my-2 sm:my-4 md:my-4 flex flex-row justify-between py-4 sm:py-8 md:py-8">
+        <div class="dep-left flex-row my-auto">
+          <h2 class="text-lg font-bold pl-2 text-black">Breakfast</h2>
+          <p class="text-sm pl-2 text-gray-500">8 Products</p>
+        </div>
+        <div class="dep-img pr-2 flex items-center">
+          <img class="w-full h-auto" src="https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-4.png" alt="breakfast">
+        </div>
+      </div>
+      <div class="bg-white my-2 sm:my-4 md:my-4 flex flex-row justify-between py-4 sm:py-8 md:py-8">
+        <div class="dep-left flex-row my-auto">
+          <h2 class="text-lg font-bold pl-2 text-black">Cooking</h2>
+          <p class="text-sm pl-2 text-gray-500">5 Products</p>
+        </div>
+        <div class="dep-img pr-2">
+          <img class="w-full h-auto flex items-center" src="https://www.portotheme.com/wordpress/porto/shop35-soft/wp-content/uploads/sites/215/2020/07/cat-3.png" alt="cooking">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- *********************************module10 end********************************* -->
+<!-- **********************module12 start*********************** -->
+<div class="w-full flex items-center  " >
+ 
+
+    <div class="left12 bg-yellow-100  flex justify-center   text-center  w-1/2" style="height: 700px;">
+      <div class="  my-auto ">
+        <h3 class="text-xl font-bold mb-4">MID-AUTUMN SALE</h3>
+      <h1 class="font-bold text-2xl lg:text-4xl  mb-6">MakeUp You're Unique</h1>
+      <p class="mb-8 flex-shrink-0">Buh-bye body acne. Hello Smoothing AHA Body Lotion</p>
+      
+      <button class="bg-black  text-white py-2 px-12 rounded-full ">BUY NOW / $59.00</button>
+      </div>
+      
+
+    </div>
+    <div class=" right12 w-1/2" >
+      <img src="/sugar_office_worker/Humeyra/assets/image/image01.jpg" class="w-full" alt="" style="height: 700px;">
+    </div>
+
+ 
+</div>
+<!-- *******************module12 end********************************** -->
+
+<!-- ********************module15 start************************ -->
+
+<div class="w-full bg-gray-100 " style="height: 500px;">
+  <h1 class="text-4xl font-bold p-3 ml-64">Deals & Promotions</h1>
+
+
+<div class="w-9/12 mx-auto p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+  
+
+ 
+  <!--Card 1-->
+  <div class="rounded overflow-hidden shadow-lg">
+    <img class="w-full  object-cover"  src="/sugar_office_worker/Humeyra/assets/image/image (2).png" alt="" style="height: 250px;" />
+   
+      <div class="px-6 py-4">
+      <h2 class="text-xl font-bold">Sale Off Unlimited -Buy 1 Get 2</h2>
+          <p class="text-sm text-gray-500 mt-2">
+           Save 80% on order more thane $599. Delivery in 1 days.Apply for the first 1k Customers
+          </p>
+    </div>
+    
+  </div>
+  <!--Card 2-->
+  <div class="rounded overflow-hidden shadow-lg">
+    <img class="w-full  object-cover" src="/sugar_office_worker/Humeyra/assets/image/image (3).png" alt="" style="height: 250px;" />
+    <div class="px-6 py-4">
+      <h2 class="text-xl font-bold">Cyber Monday-Save $599 On Speaker</h2>
+      <p class="text-sm text-gray-500 mt-2">
+        Save 50% on order more then $599. Delivery im 1 days. Apply for the first 1k Customers.
+      </p>
+    </div>
+   
+  </div>
+
+  <!--Card 3-->
+  <div class="rounded overflow-hidden shadow-lg">
+    <img class="w-full  object-cover" src="/sugar_office_worker/Humeyra/assets/image/image (4).png" alt="" style="height: 250px;" />
+    <div class="px-6 py-4">
+      <h2 class="text-xl font-bold">Hurry Up-Smartphone Only $299</h2>
+          <p class="text-sm text-gray-500 mt-2">
+            All smartphone product at the same price $299.Delivery in 1 days.Apply for the first 1k Customers.
+          </p>
+    </div>
+  
+  </div>
+
+</div>
+</div>
+<!-- ***************module15 end******************** -->
+
+<!-- *********************module20start***************** -->
+
+<div class="min-h-screen flex items-center justify-center w-full   bg-gray-200 p-3" style="height: 00px;">
+  
+  <div class=" w-full flex justify-between gap-10 p-10" >
+    <!-- ************************birinci courasel start****************** -->
+    
+  <div class=" relative  w-1/3  outer-carousel" style="scroll-snap-type: x mandatory; display: flex; align-items: flex-start;  box-sizing: border-box; height: 500px; ">
+      <!-- first -->
+      <p class=" absolute top-0 left-0 z-50 mb-4 text-2xl"> Deals Of The Days</p>
+      <img src="/sugar_office_worker/Humeyra/assets/image/sale.png" alt="" class=" absolute z-30 top-0 right-0">
+      <div class="" style="flex: 1; ">
+          <input class="sr-only peer" type="radio" name="outer-carousel" id="outer-carousel-1" checked />
+          <!-- content #1 -->
+          <div class="w-full absolute flex justify-between top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0" style="height: 500px;">
+              <img class="rounded-t-lg w-1/2 h-[250px] my-auto flex " src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/10-800x800.jpg" alt="" />
+              <div class="py-1 px-1 w-1/2 flex justify-center items-center bg-white h-[500px]">
+                <div class=" bg-white w-full h-[250px] ">
+                  <h2 class="flex flex-shrink-0  leading-4 text-base lg:leading-5 text-black text-bold mt-2 mb-4">Doenpuis Consuat</h2>
+                  
+                  <div class="flex justify-start mt-4 mb-3">
+                    <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                    <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                    <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                    <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                    <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                  </div>
+                  <p class="flex flex-shrink-0 text-xs text-gray-500 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quod?</p>
+                  <p class="text-red-600 text-bold text-start mt-3 mb-3">$100.00
+                   
+                  </p>
+                  <div class="btn flex justify-start mt-4  ">
+                    <button 
+      class="flex flex-shrink-0 items-center mx-1 text-xs rounded font-bold tracking-wide
+      text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-cart-shopping mx-1 mt-1"></i>
+      ADD TO CART
+    </button>
+                    <button
+      class="flex items-center justify-center  p-1 mx-1 text-sm rounded font-bold tracking-wide
+       text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-heart "></i>
+     
+    </button>
+                    <button
+      class=" p-1  mx-1 text-sm rounded font-bold tracking-wide
+       text-gray-500 border border-gray-300 bg-gray-100 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-rotate"></i>
+     
+    </button>
+                   </div>
+                  <div class="btn flex   justify-start mt-4  ">
+                    <button 
+      class="flex flex-shrink-0 px-1 items-center mx-1 text-xs rounded font-bold tracking-wide
+      text-blue-600 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    
+      1215
+    </button>
+    <span class="text-blue-600">:</span>
+                    <button
+      class="flex items-center justify-center  px-3 mx-1 text-sm rounded font-bold tracking-wide
+      text-blue-600 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+21
+     
+    </button>
+    <span class="text-blue-600">:</span>
+                    <button
+      class=" px-4  mx-1 text-sm rounded font-bold tracking-wide
+      text-blue-600 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+   7
+     
+    </button>
+    <span class="text-blue-600">:</span>
+                    <button
+      class=" px-3  mx-1 text-sm rounded font-bold tracking-wide
+      text-blue-600 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+   19
+     
+    </button>
+                   </div>
+              </div>
+              </div>
+              <!-- controls -->
+              <div class="absolute top-1/2 w-full flex justify-between z-20">
+                  <label for="outer-carousel-3" class="inline-block text-white cursor-pointer -translate-x-5 bg-gray-200 rounded-full shadow-md active:translate-y-0.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                      </svg>
+                  </label>
+                  <label for="outer-carousel-2" class="inline-block text-white cursor-pointer translate-x-5 bg-gray-200 rounded-full shadow-md active:translate-y-0.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                      </svg>
+                  </label>
+              </div>
+          </div>
+          </div>
+     
+      <!-- second -->
+      <div class="" style="flex: 1;">
+          <input class="sr-only peer" type="radio" name="outer-carousel" id="outer-carousel-2" />
+          <!-- content #2 -->
+          <div class="w-full flex justify-between absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0" style="height: 500px;">
+              <img class="rounded-t-lg w-1/2  h-[250px] my-auto flex" src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/2-800x800.jpg" alt="" />
+              <div class="py-1 px-1 w-1/2 flex justify-center items-center bg-white h-[500px]">
+                <div class=" bg-white w-full h-[250px] ">
+                  <h2 class="flex flex-shrink-0  leading-4 text-base lg:leading-5 text-black text-bold mt-2 mb-4">Ground Round Enim</h2>
+                  
+                  <div class="flex justify-start mt-4 mb-3">
+                    <i class="fa-solid fa-star fa-xs text-yellow-400"></i>
+                    <i class="fa-solid fa-star fa-xs text-yellow-400"></i>
+                    <i class="fa-solid fa-star fa-xs text-yellow-400"></i>
+                    <i class="fa-solid fa-star fa-xs text-yellow-400"></i>
+                    <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                  </div>
+                  <p class="flex flex-shrink-0 text-xs text-gray-500 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quod?</p>
+                  <p class="text-red-600 text-bold text-start mt-3 mb-3">$34.00
+                    <span class="text-gray-500 text-xs line-through">$39.00</span>
+                   
+                  </p>
+                  <div class="btn flex justify-start mt-4  ">
+                    <button 
+      class="flex flex-shrink-0 items-center mx-1 text-xs rounded font-bold tracking-wide
+      text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-cart-shopping mx-1 mt-1"></i>
+      ADD TO CART
+    </button>
+                    <button
+      class="flex items-center justify-center  p-1 mx-1 text-sm rounded font-bold tracking-wide
+       text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-heart "></i>
+     
+    </button>
+                    <button
+      class=" p-1  mx-1 text-sm rounded font-bold tracking-wide
+       text-gray-500 border border-gray-300 bg-gray-100 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-rotate"></i>
+     
+    </button>
+                   </div>
+                   <div class="btn flex   justify-start mt-4  ">
+                    <button 
+      class="flex flex-shrink-0 px-1 items-center mx-1 text-xs rounded font-bold tracking-wide
+      text-blue-600 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    
+      1215
+    </button>
+    <span class="text-blue-600">:</span>
+                    <button
+      class="flex items-center justify-center  px-3 mx-1 text-sm rounded font-bold tracking-wide
+      text-blue-600 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+21
+     
+    </button>
+    <span class="text-blue-600">:</span>
+                    <button
+      class=" px-4  mx-1 text-sm rounded font-bold tracking-wide
+      text-blue-600 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+   7
+     
+    </button>
+    <span class="text-blue-600">:</span>
+                    <button
+      class=" px-3  mx-1 text-sm rounded font-bold tracking-wide
+      text-blue-600 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+   19
+     
+    </button>
+                   </div>
+              </div>
+              </div>
+              <!-- controls -->
+              <div class="absolute top-1/2 w-full flex justify-between z-20">
+                  <label for="outer-carousel-1" class="inline-block text-white cursor-pointer -translate-x-5 bg-gray-200 rounded-full shadow-md active:translate-y-0.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                      </svg>
+                  </label>
+                  <label for="outer-carousel-3" class="inline-block text-white cursor-pointer translate-x-5 bg-gray-200 rounded-full shadow-md active:translate-y-0.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                      </svg>
+                  </label>
+              </div>
+          </div>
+      </div>
+      <!-- three -->
+      <div class="" style="flex: 1;">
+          <input class="sr-only peer" type="radio" name="outer-carousel" id="outer-carousel-3" />
+          <!-- content #3 -->
+          <div class="w-full flex justify-between absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0" style="height: 500px;">
+              <img class="rounded-t-lg w-1/2  h-[250px] my-auto flex" src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/4-800x800.jpg" alt="" />
+              <div class="py-1 px-1 w-1/2 flex justify-center items-center bg-white h-[500px]">
+                <div class=" bg-white w-full h-[250px] ">
+                  <h2 class="flex flex-shrink-0  leading-4 text-base lg:leading-5 text-black text-bold mt-2 mb-4">Incididunt Picanha</h2>
+                  
+                  <div class="flex justify-start mt-4 mb-3">
+                    <i class="fa-solid fa-star fa-xs text-yellow-400"></i>
+                    <i class="fa-solid fa-star fa-xs text-yellow-400"></i>
+                    <i class="fa-solid fa-star fa-xs text-yellow-400"></i>
+                    <i class="fa-solid fa-star fa-xs text-yellow-400"></i>
+                    <i class="fa-solid fa-star fa-xs text-yellow-400"></i>
+                  </div>
+                  <p class="flex flex-shrink-0 text-xs text-gray-500 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quod?</p>
+                  <p class="text-red-600 text-bold text-start mt-3 mb-3">$45.00
+                    <span class="text-gray-500 text-xs line-through">$49.00</span>
+                  </p>
+                  <div class="btn flex justify-start mt-4  ">
+                    <button 
+      class="flex flex-shrink-0 items-center mx-1 text-xs rounded font-bold tracking-wide
+      text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-cart-shopping mx-1 mt-1"></i>
+      ADD TO CART
+    </button>
+                    <button
+      class="flex items-center justify-center  p-1 mx-1 text-sm rounded font-bold tracking-wide
+       text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-heart "></i>
+     
+    </button>
+                    <button
+      class=" p-1  mx-1 text-sm rounded font-bold tracking-wide
+       text-gray-500 border border-gray-300 bg-gray-100 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-rotate"></i>
+     
+    </button>
+                   </div>
+                   <div class="btn flex   justify-start mt-4  ">
+                    <button 
+      class="flex flex-shrink-0 px-1 items-center mx-1 text-xs rounded font-bold tracking-wide
+      text-blue-600 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    
+      1215
+    </button>
+    <span class="text-blue-600">:</span>
+                    <button
+      class="flex items-center justify-center  px-3 mx-1 text-sm rounded font-bold tracking-wide
+      text-blue-600 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+21
+     
+    </button>
+    <span class="text-blue-600">:</span>
+                    <button
+      class=" px-4  mx-1 text-sm rounded font-bold tracking-wide
+      text-blue-600 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+   7
+     
+    </button>
+    <span class="text-blue-600">:</span>
+                    <button
+      class=" px-3  mx-1 text-sm rounded font-bold tracking-wide
+      text-blue-600 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+   19
+     
+    </button>
+                   </div>
+              </div>
+              </div>
+              <!-- controls -->
+              <div class="absolute top-1/2 w-full flex justify-between z-20">
+                  <label for="outer-carousel-2" class="inline-block text-white cursor-pointer -translate-x-5 bg-gray-200 rounded-full shadow-md active:translate-y-0.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                      </svg>
+                  </label>
+                  <label for="outer-carousel-1" class="inline-block text-white cursor-pointer translate-x-5 bg-gray-200 rounded-full shadow-md active:translate-y-0.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+                      </svg>
+                  </label>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- ***********************birinci courasel end************************ -->
+<!-- *****************ikinci courasel start******************** -->
+    
+<div class="relative w-2/3 " style="height: 500px;">
+  <p class="absolute top-0 left-3 z-50 mb-4 text-2xl"> Featured Products</p>
+ 
+  <div class="flex items-center justify-center  bg-white w-full h-full py-24 sm:py-8 px-4">
+     <div class="w-full relative flex items-center justify-center">
+         <button aria-label="slide backward" class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
+             <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+             </svg>
+         </button>
+         <div class=" w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+             <div id="slider" class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
+              <div class=" flex-shrink-0 relative  w-full sm:w-auto" style="height: 400px;">
+                <img src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/fashion-21/3-800x800.jpg" alt="mavibluz" class="object-cover bg-red-500 object-center w-full h-[250px]" />
+                <div class="bg-white text-center w-full p-6 h-[150px]" >
+                    <div class="  ">
+                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-black text-bold mb-3">Andouille burdogge</h2>
+                        <div class="flex justify-center mb-3">
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                        </div>
+                        <p class="text-red-600 text-bold ml-4 mb-3">$100.00
+                         
+                        </p>
+                    </div>
+                   <div class="btn flex justify-center  ">
+                    <button
+      class="flex p-1 mx-1 text-sm rounded font-bold tracking-wide
+      text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-cart-shopping mx-1 mt-1"></i>
+      ADD TO CART
+    </button>
+                    <button
+      class="flex items-center justify-center  p-1 mx-1 text-sm rounded font-bold tracking-wide
+       text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-heart "></i>
+     
+    </button>
+                    <button
+      class=" p-1  mx-1 text-sm rounded font-bold tracking-wide
+       text-gray-500 border border-gray-300 bg-gray-100 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-rotate"></i>
+     
+    </button>
+                   </div>
+                 
+                </div>
+            </div>
+              <div class=" flex-shrink-0 relative  w-full sm:w-auto" style="height: 400px;">
+                <img src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/fashion-21/8-800x800.jpg" alt="siyahbluz" class="object-cover object-center w-full h-[250px]  " />
+                <div class="bg-white text-center w-full p-6 h-[150px]" >
+                    <div class="  ">
+                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-black text-bold mb-3">Beefribs tenderloine</h2>
+                        <div class="flex justify-center mb-3">
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                        </div>
+                        <p class="text-red-600 text-bold ml-4 mb-3">$93.00
+                        
+                        </p>
+                    </div>
+                   <div class="btn flex justify-center  ">
+                    <button
+      class="flex p-1 mx-1 text-sm rounded font-bold tracking-wide
+      text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-cart-shopping mx-1 mt-1"></i>
+      ADD TO CART
+    </button>
+                    <button
+      class="flex items-center justify-center  p-1 mx-1 text-sm rounded font-bold tracking-wide
+       text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-heart "></i>
+     
+    </button>
+                    <button
+      class=" p-1  mx-1 text-sm rounded font-bold tracking-wide
+       text-gray-500 border border-gray-300 bg-gray-100 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-rotate"></i>
+     
+    </button>
+                   </div>
+                  
+                </div>
+            </div>
+              <div class=" flex-shrink-0 relative w-full sm:w-auto" style="height: 400px;">
+                <img src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/id-update/Electronics/10-800x800.jpg" alt="tencere" class="object-cover object-center w-full h-[250px]  " />
+                <div class="bg-white text-center w-full p-6 h-[150px]" >
+                    <div class="  ">
+                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-black text-bold mb-3">Buffalo tail chicke </h2>
+                        <div class="flex justify-center mb-3">
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                        </div>
+                        <p class="text-red-600 text-bold ml-4 mb-3">$60.00
+                          <span class="text-gray-500 text-xs line-through">$67.00</span>
+                        </p>
+                    </div>
+                   <div class="btn flex justify-center  ">
+                    <button
+      class="flex p-1 mx-1 text-sm rounded font-bold tracking-wide
+      text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-cart-shopping mx-1 mt-1"></i>
+      ADD TO CART
+    </button>
+                    <button
+      class="flex items-center justify-center  p-1 mx-1 text-sm rounded font-bold tracking-wide
+       text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-heart "></i>
+     
+    </button>
+                    <button
+      class=" p-1  mx-1 text-sm rounded font-bold tracking-wide
+       text-gray-500 border border-gray-300 bg-gray-100 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-rotate"></i>
+     
+    </button>
+                   </div>
+                   <button class="flex p-1 mx-1 text-sm rounded-full font-bold tracking-wide text-white bg-red-500 absolute top-0 right-0">
+                    -10%
+                </button>
+                </div>
+            </div>
+              <div class=" flex-shrink-0 relative  w-full sm:w-auto" style="height: 400px;">
+                <img src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/10-800x800.jpg" alt="ayakkabı" class="object-cover object-center w-full h-[250px]  " />
+                <div class="bg-white text-center w-full p-6 h-[150px]" >
+                    <div class="  ">
+                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-black text-bold mb-3">Doenpuis consuat </h2>
+                        <div class="flex justify-center mb-3">
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                        </div>
+                        <p class="text-red-600 text-bold ml-4 mb-3">$45.00
+                          <span class="text-gray-500 text-xs line-through">$49.00</span>
+                        </p>
+                    </div>
+                   <div class="btn flex justify-center  ">
+                    <button
+      class="flex p-1 mx-1 text-sm rounded font-bold tracking-wide
+      text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-cart-shopping mx-1 mt-1"></i>
+      ADD TO CART
+    </button>
+                    <button
+      class="flex items-center justify-center  p-1 mx-1 text-sm rounded font-bold tracking-wide
+       text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-heart "></i>
+     
+    </button>
+                    <button
+      class=" p-1  mx-1 text-sm rounded font-bold tracking-wide
+       text-gray-500 border border-gray-300 bg-gray-100 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-rotate"></i>
+     
+    </button>
+                   </div>
+                   <button class="flex p-1 mx-1 text-sm rounded-full font-bold tracking-wide text-white bg-red-500 absolute top-0 right-0">
+                    -8%
+                </button>
+                </div>
+            </div>
+              <div class=" flex-shrink-0 relative  w-full sm:w-auto" style="height: 400px;">
+                <img src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/funiture/2-800x800.jpg" alt="cekmece" class="object-cover object-center w-full h-[250px]  " />
+                <div class="bg-white text-center w-full p-6 h-[150px]" >
+                    <div class="  ">
+                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-black text-bold mb-3">Drumstick tempor</h2>
+                        <div class="flex justify-center mb-3">
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                        </div>
+                        <p class="text-red-600 text-bold ml-4 mb-3">$100.00
+                         
+                        </p>
+                    </div>
+                   <div class="btn flex justify-center  ">
+                    <button
+      class="flex p-1 mx-1 text-sm rounded font-bold tracking-wide
+      text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-cart-shopping mx-1 mt-1"></i>
+      ADD TO CART
+    </button>
+                    <button
+      class="flex items-center justify-center  p-1 mx-1 text-sm rounded font-bold tracking-wide
+       text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-heart "></i>
+     
+    </button>
+                    <button
+      class=" p-1  mx-1 text-sm rounded font-bold tracking-wide
+       text-gray-500 border border-gray-300 bg-gray-100 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-rotate"></i>
+     
+    </button>
+                   </div>
+                  
+                </div>
+            </div>
+
+            <div class=" flex-shrink-0 relative  w-full sm:w-auto" style="height: 400px;">
+              <img src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/11-800x800.jpg" alt="tsört" class="object-cover object-center w-full h-[250px]  " />
+              <div class="bg-white text-center w-full p-6 h-[150px]" >
+                  <div class="  ">
+                      <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-black text-bold mb-3">Drutick lanaeger</h2>
+                      <div class="flex justify-center mb-3">
+                        <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                        <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                        <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                        <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                        <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                      </div>
+                      <p class="text-red-600 text-bold ml-4 mb-3">$67.00
+                        <span class="text-gray-500 text-xs line-through">$79.00</span>
+                      </p>
+                  </div>
+                 <div class="btn flex justify-center  ">
+                  <button
+    class="flex p-1 mx-1 text-sm rounded font-bold tracking-wide
+    text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+  >
+  <i class="fa-solid fa-cart-shopping mx-1 mt-1"></i>
+    ADD TO CART
+  </button>
+                  <button
+    class="flex items-center justify-center  p-1 mx-1 text-sm rounded font-bold tracking-wide
+     text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+  >
+  <i class="fa-solid fa-heart "></i>
+   
+  </button>
+                  <button
+    class=" p-1  mx-1 text-sm rounded font-bold tracking-wide
+     text-gray-500 border border-gray-300 bg-gray-100 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+  >
+  <i class="fa-solid fa-rotate"></i>
+   
+  </button>
+                 </div>
+                 <button class="flex p-1 mx-1 text-sm rounded-full font-bold tracking-wide text-white bg-red-500 absolute top-0 right-0">
+                  -15%
+              </button>
+              </div>
+          </div>
+
+              <div class=" flex-shrink-0 relative  w-full sm:w-auto" style="height: 400px;">
+                <img src="https://opencart4.magentech.com/themes/so_emarket/layout4/image/cache/catalog/demo/product/index2/2-800x800.jpg" alt="sapka" class="object-cover object-center w-full h-[250px]  " />
+                <div class="bg-white text-center w-full p-6 h-[150px]" >
+                    <div class="  ">
+                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-black text-bold mb-3">Drutick lanaeger</h2>
+                        <div class="flex justify-center mb-3">
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                          <i class="fa-solid fa-star fa-xs text-gray-400"></i>
+                        </div>
+                        <p class="text-red-600 text-bold ml-4 mb-3">$67.00
+                          <span class="text-gray-500 text-xs line-through">$79.00</span>
+                        </p>
+                    </div>
+                   <div class="btn flex justify-center  ">
+                    <button
+      class="flex p-1 mx-1 text-sm rounded font-bold tracking-wide
+      text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-cart-shopping mx-1 mt-1"></i>
+      ADD TO CART
+    </button>
+                    <button
+      class="flex items-center justify-center  p-1 mx-1 text-sm rounded font-bold tracking-wide
+       text-gray-500 bg-gray-100 border border-gray-300 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-heart "></i>
+     
+    </button>
+                    <button
+      class=" p-1  mx-1 text-sm rounded font-bold tracking-wide
+       text-gray-500 border border-gray-300 bg-gray-100 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-solid fa-rotate"></i>
+     
+    </button>
+                   </div>
+                   <button class="flex p-1 mx-1 text-sm rounded-full font-bold tracking-wide text-white bg-red-500 absolute top-0 right-0">
+                    -15%
+                </button>
+                </div>
+            </div>
+
+             
+
+
+         
+            
+            
+                
+
+
+             
+             </div>
+         </div>
+         <button aria-label="slide forward" class="absolute z-30 right-0 mr-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" id="next">
+             <svg class="dark:text-gray-900" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+             </svg>
+         </button>
+     </div>
+ </div>
+
+ 
+ 
 
 </div>
 
+<!-- *******************ikinci courasel end********************* -->
+</div>
+</div>
+
+
+
+<!-- ********************module20end********************** -->
+
+<!-- ******************module21start*********************** -->
+<div class="h-[980px] ">
+
+  <div class="mx-32 m-auto border-l-8 border-yellow-700 px-6 py-2 mt-2 rounded bg-gray-200"> <span
+  class="font-bold text-4xl mb-4  w-9/12 ">Popular Product</span>
+
+
+</div>
+<div class=" px-32 mt-7 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-5 gap-10 h-[900px]  ">
+ 
+
+  <!--Card 1-->
+  <div class="rounded  h-[400px] w-[320px] overflow-hidden  shadow-lg hover-effect">
+      <div class="default-content border border-gray-200">
+          <img class=" h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/15-635x635.jpg " alt="Mountain">
+          <div class="px-6 py-4 h-[150px] ">
+              <div class="font-base  text-gray-600 text-xl mb-2">Car</div>
+              <p class="text-black text-bold">
+              Fashion Design Two Color Car...
+              </p>
+              <div class="flex justify-start mt-4 mb-3">
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              </div>
+              <p class="text-black text-bold mt-4  text-2xl">$602.00</p>
+          </div>
+         
+      </div>
+      <div class="relative hover-content  border border-yellow-200">
+        <i class="absolute top-1/4 left-1/2 p-2 bg-white hover:bg-yellow-300 rounded-full fa-regular fa-eye"></i>
+          <img class="h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/3-800x800.jpg" alt="River">
+          <div class="px-6 py-4  h-[150px]">
+            <div class="font-base  text-gray-600 text-xl mb-2">Car</div>
+            <p class="text-black text-bold">
+            Fashion Design Two Color Car...
+            </p>
+            <div class="flex justify-start mt-4 mb-3">
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+            </div>
+           
+
+            <div class="btn h-[25px] flex justify-start  ">
+              <button
+class="flex  p-1 mx-1 text-sm rounded-full  tracking-wide
+text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+
++ ADD TO CART
+</button>
+              <button
+class="flex items-center justify-center  p-1 mx-1 text-sm rounded-full font-bold tracking-wide
+ text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-regular fa-heart "></i>
+
+</button>
+              <button
+class=" p-1  mx-1 text-sm rounded-full font-bold tracking-wide
+ text-gray-500 border border-gray-200 bg-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-solid fa-code-compare"></i>
+
+</button>
+             </div>
+          </div>
+          
+      </div>
+  </div>
+  <div class="rounded  h-[400px] w-[320px] overflow-hidden  shadow-lg hover-effect">
+      <div class="default-content border border-gray-200">
+          <img class=" h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/26-635x635.jpg " alt="Mountain">
+          <div class="px-6 py-4 h-[150px] ">
+              <div class="font-base  text-gray-600 text-xl mb-2">HTC</div>
+              <p class="text-black text-bold">
+             Alternator Engine Car
+              </p>
+              <div class="flex justify-start mt-4 mb-3">
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              </div>
+              <p class="text-black text-bold mt-4  text-2xl">$38.00
+                <span class="text-sm line-through  text-gray-300">$122.00</span>
+                <span><button class="bg-yellow-400 text-sm rounded px-1">70%</button></span>
+              </p>
+          </div>
+         
+      </div>
+      <div class="hover-content relative border border-yellow-200">
+        <i class="absolute top-1/4 left-1/2 p-2 bg-white hover:bg-yellow-300 rounded-full fa-regular fa-eye"></i>
+          <img class="h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/20-800x800.jpg" alt="River">
+          <div class="px-6 py-4  h-[150px]">
+            <div class="font-base  text-gray-600 text-xl mb-2">HTC</div>
+            <p class="text-black text-bold">
+              Alternator Engine Car
+            </p>
+            <div class="flex justify-start mt-4 mb-3">
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+            </div>
+           
+
+            <div class="btn h-[25px] flex justify-start  ">
+              <button
+class="flex  p-1 mx-1 text-sm rounded-full  tracking-wide
+text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+
++ ADD TO CART
+</button>
+              <button
+class="flex items-center justify-center  p-1 mx-1 text-sm rounded-full font-bold tracking-wide
+ text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-regular fa-heart "></i>
+
+</button>
+              <button
+class=" p-1  mx-1 text-sm rounded-full font-bold tracking-wide
+ text-gray-500 border border-gray-200 bg-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-solid fa-code-compare"></i>
+
+</button>
+             </div>
+          </div>
+          
+      </div>
+  </div>
+  <div class="rounded  h-[400px] w-[320px] overflow-hidden  shadow-lg hover-effect">
+      <div class="default-content border border-gray-200">
+          <img class=" h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/23-635x635.jpg " alt="Mountain">
+          <div class="px-6 py-4 h-[150px] ">
+           
+              <div class="font-base  text-gray-600 text-xl mb-2">Car</div>
+              <p class="text-black text-bold">
+              Car Body Parts
+              </p>
+              <div class="flex justify-start mt-4 mb-3">
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              </div>
+              <p class="text-black text-bold mt-4  text-2xl">$122.00</p>
+          </div>
+         
+      </div>
+      <div class="hover-content relative border border-yellow-200">
+        <i class="absolute top-1/4 left-1/2 p-2 bg-white hover:bg-yellow-300 rounded-full fa-regular fa-eye"></i>
+          <img class="h-[248px] w-[248px] mx-auto" src=" https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/4-800x800.jpg" alt="River">
+          <div class="px-6 py-4  h-[150px]">
+            <div class="font-base  text-gray-600 text-xl mb-2">Car</div>
+            <p class="text-black text-bold">
+              Car Body Parts
+            </p>
+            <div class="flex justify-start mt-4 mb-3">
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+            </div>
+           
+
+            <div class="btn h-[25px] flex justify-start  ">
+              <button
+class="flex  p-1 mx-1 text-sm rounded-full  tracking-wide
+text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+
++ ADD TO CART
+</button>
+              <button
+class="flex items-center justify-center  p-1 mx-1 text-sm rounded-full font-bold tracking-wide
+ text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-regular fa-heart "></i>
+
+</button>
+              <button
+class=" p-1  mx-1 text-sm rounded-full font-bold tracking-wide
+ text-gray-500 border border-gray-200 bg-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-solid fa-code-compare"></i>
+
+</button>
+             </div>
+          </div>
+          
+      </div>
+  </div>
+  <div class="rounded  h-[400px] w-[320px] overflow-hidden  shadow-lg hover-effect">
+      <div class="default-content border border-gray-200">
+          <img class=" h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/30-635x635.jpg " alt="Mountain">
+          <div class="px-6 py-4 h-[150px] ">
+              <div class="font-base  text-gray-600 text-xl mb-2">OIL</div>
+              <p class="text-black text-bold">
+          Mechanic Repairman Ins...
+              </p>
+              <div class="flex justify-start mt-4 mb-3">
+                <i class="fa-solid fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-solid fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              </div>
+              <p class="text-black text-bold mt-4  text-2xl">$241.99</p>
+          </div>
+         
+      </div>
+      <div class="hover-content relative border border-yellow-200">
+        <i class="absolute top-1/4 left-1/2 p-2 bg-white hover:bg-yellow-300 rounded-full fa-regular fa-eye"></i>
+          <img class="h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/19-800x800.jpg" alt="River">
+          <div class="px-6 py-4  h-[150px]">
+            <div class="font-base  text-gray-600 text-xl mb-2">OIL</div>
+            <p class="text-black text-bold">
+              Mechanic Repairman Ins...
+            </p>
+            <div class="flex justify-start mt-4 mb-3">
+              <i class="fa-solid fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-solid fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+            </div>
+           
+
+            <div class="btn h-[25px] flex justify-start  ">
+              <button
+class="flex  p-1 mx-1 text-sm rounded-full  tracking-wide
+text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+
++ ADD TO CART
+</button>
+              <button
+class="flex items-center justify-center  p-1 mx-1 text-sm rounded-full font-bold tracking-wide
+ text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-regular fa-heart "></i>
+
+</button>
+              <button
+class=" p-1  mx-1 text-sm rounded-full font-bold tracking-wide
+ text-gray-500 border border-gray-200 bg-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-solid fa-code-compare"></i>
+
+</button>
+             </div>
+          </div>
+          
+      </div>
+  </div>
+  <div class="rounded  h-[400px] w-[320px] overflow-hidden  shadow-lg hover-effect">
+      <div class="default-content border border-gray-200">
+          <img class=" h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/21-635x635.jpg " alt="Mountain">
+          <div class="px-6 py-4 h-[150px] ">
+              <div class="font-base  text-gray-600 text-xl mb-2">Car</div>
+              <p class="text-black text-bold">
+              Toys Plastic Tires Toy Car Wh...
+              </p>
+              <div class="flex justify-start mt-4 mb-3">
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              </div>
+              <p class="text-black text-bold mt-4  text-2xl">$1,202.00</p>
+          </div>
+         
+      </div>
+      <div class="hover-content relative border border-yellow-200">
+        <i class="absolute top-1/4 left-1/2 p-2 bg-white hover:bg-yellow-300 rounded-full fa-regular fa-eye"></i>
+          <img class="h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/27-800x800.jpg" alt="River">
+          <div class="px-6 py-4  h-[150px]">
+            <div class="font-base  text-gray-600 text-xl mb-2">Car</div>
+            <p class="text-black text-bold">
+              Toys Plastic Tires Toy Car Wh...
+            </p>
+            <div class="flex justify-start mt-4 mb-3">
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+            </div>
+           
+
+            <div class="btn h-[25px] flex justify-start  ">
+              <button
+class="flex  p-1 mx-1 text-sm rounded-full  tracking-wide
+text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+
++ ADD TO CART
+</button>
+              <button
+class="flex items-center justify-center  p-1 mx-1 text-sm rounded-full font-bold tracking-wide
+ text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-regular fa-heart "></i>
+
+</button>
+              <button
+class=" p-1  mx-1 text-sm rounded-full font-bold tracking-wide
+ text-gray-500 border border-gray-200 bg-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-solid fa-code-compare"></i>
+
+</button>
+             </div>
+          </div>
+          
+      </div>
+  </div>
+  <div class="rounded  h-[400px] w-[320px] overflow-hidden  shadow-lg hover-effect">
+      <div class="default-content border border-gray-200">
+          <img class=" h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/30-635x635.jpg" alt="Mountain">
+          <div class="px-6 py-4 h-[150px] ">
+              <div class="font-base  text-gray-600 text-xl mb-2">Car</div>
+              <p class="text-black text-bold">
+              Car Pump Washing Machine
+              </p>
+              <div class="flex justify-start mt-4 mb-3">
+                <i class="fa-solid fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-solid fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-solid fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-solid fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-solid fa-star fa-xs text-yellow-500"></i>
+              </div>
+              <p class="text-black text-bold mt-4  text-2xl">$122.00</p>
+          </div>
+         
+      </div>
+      <div class="hover-content relative border border-yellow-200">
+        <i class="absolute top-1/4 left-1/2 p-2 bg-white hover:bg-yellow-300 rounded-full fa-regular fa-eye"></i>
+          <img class="h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/26-800x800.jpg" alt="River">
+          <div class="px-6 py-4  h-[150px]">
+            <div class="font-base  text-gray-600 text-xl mb-2">Car</div>
+            <p class="text-black text-bold">
+              Car Pump Washing Machine
+            </p>
+            <div class="flex justify-start mt-4 mb-3">
+              <i class="fa-solid fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-solid fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-solid fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-solid fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-solid fa-star fa-xs text-yellow-500"></i>
+            </div>
+           
+
+            <div class="btn h-[25px] flex justify-start  ">
+              <button
+class="flex  p-1 mx-1 text-sm rounded-full  tracking-wide
+text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+
++ ADD TO CART
+</button>
+              <button
+class="flex items-center justify-center  p-1 mx-1 text-sm rounded-full font-bold tracking-wide
+ text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-regular fa-heart "></i>
+
+</button>
+              <button
+class=" p-1  mx-1 text-sm rounded-full font-bold tracking-wide
+ text-gray-500 border border-gray-200 bg-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-solid fa-code-compare"></i>
+
+</button>
+             </div>
+          </div>
+          
+      </div>
+  </div>
+  <div class="rounded  h-[400px] w-[320px] overflow-hidden  shadow-lg hover-effect">
+      <div class="default-content border border-gray-200">
+          <img class=" h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/17-635x635.jpg " alt="Mountain">
+          <div class="px-6 py-4 h-[150px] ">
+              <div class="font-base  text-gray-600 text-xl mb-2">Car</div>
+              <p class="text-black text-bold">
+             Car Seat Cushion Car Decorat...
+              </p>
+              <div class="flex justify-start mt-4 mb-3">
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              </div>
+              <p class="text-black text-bold mt-4  text-2xl">$120.80</p>
+          </div>
+         
+      </div>
+      <div class="hover-content relative border border-yellow-200">
+        <i class="absolute top-1/4 left-1/2 p-2 bg-white hover:bg-yellow-300 rounded-full fa-regular fa-eye"></i>
+          <img class="h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/16-800x800.jpg" alt="River">
+          <div class="px-6 py-4  h-[150px]">
+            <div class="font-base  text-gray-600 text-xl mb-2">Car</div>
+            <p class="text-black text-bold">
+              Car Seat Cushion Car Decorat...
+            </p>
+            <div class="flex justify-start mt-4 mb-3">
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+            </div>
+           
+
+            <div class="btn h-[25px] flex justify-start  ">
+              <button
+class="flex  p-1 mx-1 text-sm rounded-full  tracking-wide
+text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+
++ ADD TO CART
+</button>
+              <button
+class="flex items-center justify-center  p-1 mx-1 text-sm rounded-full font-bold tracking-wide
+ text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-regular fa-heart "></i>
+
+</button>
+              <button
+class=" p-1  mx-1 text-sm rounded-full font-bold tracking-wide
+ text-gray-500 border border-gray-200 bg-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-solid fa-code-compare"></i>
+
+</button>
+             </div>
+          </div>
+          
+      </div>
+  </div>
+  <div class="rounded  h-[400px] w-[320px] overflow-hidden  shadow-lg hover-effect">
+      <div class="default-content border border-gray-200">
+          <img class=" h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/11-635x635.jpg" alt="Mountain">
+          <div class="px-6 py-4 h-[150px] ">
+              <div class="font-base  text-gray-600 text-xl mb-2">Car</div>
+              <p class="text-black text-bold">
+              Car Steering Wheel Cover
+              </p>
+              <div class="flex justify-start mt-4 mb-3">
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              </div>
+              <p class="text-black text-bold mt-4  text-2xl">$122.00</p>
+          </div>
+         
+      </div>
+      <div class="hover-content relative border border-yellow-200">
+        <i class="absolute top-1/4 left-1/2 p-2 bg-white hover:bg-yellow-300 rounded-full fa-regular fa-eye"></i>
+          <img class="h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/12-800x800.jpg" alt="River">
+          <div class="px-6 py-4  h-[150px]">
+            <div class="font-base  text-gray-600 text-xl mb-2">Car</div>
+            <p class="text-black text-bold">
+              Car Steering Wheel Cover
+            </p>
+            <div class="flex justify-start mt-4 mb-3">
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+            </div>
+           
+
+            <div class="btn h-[25px] flex justify-start  ">
+              <button
+class="flex  p-1 mx-1 text-sm rounded-full  tracking-wide
+text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+
++ ADD TO CART
+</button>
+              <button
+class="flex items-center justify-center  p-1 mx-1 text-sm rounded-full font-bold tracking-wide
+ text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-regular fa-heart "></i>
+
+</button>
+              <button
+class=" p-1  mx-1 text-sm rounded-full font-bold tracking-wide
+ text-gray-500 border border-gray-200 bg-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-solid fa-code-compare"></i>
+
+</button>
+             </div>
+          </div>
+          
+      </div>
+  </div>
+  <div class="rounded  h-[400px] w-[320px] overflow-hidden  shadow-lg hover-effect">
+      <div class="default-content border border-gray-200">
+          <img class=" h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/1-635x635.jpg " alt="Mountain">
+          <div class="px-6 py-4 h-[150px] ">
+              <div class="font-base  text-gray-600 text-xl mb-2">PALM</div>
+              <p class="text-black text-bold">
+              Aluminium Alloy Wheel Machi...
+              </p>
+              <div class="flex justify-start mt-4 mb-3">
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              </div>
+              <p class="text-black text-bold mt-4  text-2xl">$242.00</p>
+          </div>
+         
+      </div>
+      <div class="hover-content relative border border-yellow-200">
+        <i class="absolute top-1/4 left-1/2 p-2 bg-white hover:bg-yellow-300 rounded-full fa-regular fa-eye"></i>
+          <img class="h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/21-800x800.jpg" alt="River">
+          <div class="px-6 py-4  h-[150px]">
+            <div class="font-base  text-gray-600 text-xl mb-2">PALM</div>
+            <p class="text-black text-bold">
+              Aluminium Alloy Wheel Machi...
+            </p>
+            <div class="flex justify-start mt-4 mb-3">
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+            </div>
+           
+
+            <div class="btn h-[25px] flex justify-start  ">
+              <button
+class="flex  p-1 mx-1 text-sm rounded-full  tracking-wide
+text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+
++ ADD TO CART
+</button>
+              <button
+class="flex items-center justify-center  p-1 mx-1 text-sm rounded-full font-bold tracking-wide
+ text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-regular fa-heart "></i>
+
+</button>
+              <button
+class=" p-1  mx-1 text-sm rounded-full font-bold tracking-wide
+ text-gray-500 border border-gray-200 bg-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-solid fa-code-compare"></i>
+
+</button>
+             </div>
+          </div>
+          
+      </div>
+  </div>
+  <div class="rounded  h-[400px] w-[320px] overflow-hidden  shadow-lg hover-effect">
+      <div class="default-content border border-gray-200">
+          <img class=" h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/27-635x635.jpg " alt="Mountain">
+          <div class="px-6 py-4 h-[150px] ">
+              <div class="font-base  text-gray-600 text-xl mb-2">CANON</div>
+              <p class="text-black text-bold">
+              Car Repair Archives-Right To...
+              </p>
+              <div class="flex justify-start mt-4 mb-3">
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+                <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              </div>
+              <p class="text-black text-bold mt-4  text-2xl">$122.00</p>
+          </div>
+         
+      </div>
+      <div class="hover-content relative border border-yellow-200">
+        <i class="absolute top-1/4 left-1/2 p-2 bg-white hover:bg-yellow-300 rounded-full fa-regular fa-eye"></i>
+          <img class="h-[248px] w-[248px] mx-auto" src="https://opencart.dostguru.com/AS01/autospeed_02/image/cache/catalog/product/12-800x800.jpg" alt="River">
+          <div class="px-6 py-4  h-[150px]">
+            <div class="font-base  text-gray-600 text-xl mb-2">CANON</div>
+            <p class="text-black text-bold">
+              Car Repair Archives-Right To...
+            </p>
+            <div class="flex justify-start mt-4 mb-3">
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+              <i class="fa-regular fa-star fa-xs text-yellow-500"></i>
+            </div>
+           
+
+            <div class="btn h-[25px] flex justify-start  ">
+              <button
+class="flex  p-1 mx-1 text-sm rounded-full  tracking-wide
+text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+
++ ADD TO CART
+</button>
+              <button
+class="flex items-center justify-center  p-1 mx-1 text-sm rounded-full font-bold tracking-wide
+ text-black bg-gray-200 border border-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-regular fa-heart "></i>
+
+</button>
+              <button
+class=" p-1  mx-1 text-sm rounded-full font-bold tracking-wide
+ text-gray-500 border border-gray-200 bg-gray-200 transition-none  sm:mt-0 sm:w-auto sm:shrink-0"
+>
+<i class="fa-solid fa-code-compare"></i>
+
+</button>
+             </div>
+          </div>
+          
+      </div>
+  </div>
+
+
+
+ 
+
+</div>
+</div>
+
+
+<!-- *******************module21end**************************** -->
+
+<!-- ******************module5 start*************************************** -->
+
+<div class="mod5image flex flex-col justify-center items-center">
+
+  <h1 class="text-white font-bold text-center text-5xl ">END OF SEASON SALE</h1>
+  <p class="text-white text-bold text-xl mt-8 text-center w-9/12 flex-wrap ">Lorem ipsum is simply dummy text of the printing and typesetting industry.Lorem ıpsum has been the ındustry's standard dummy text ever since the 1500s,when an unkown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+  <button class="bg-red-500 hover:bg-gray-700  text-white p-4 font-bold  mt-8 border-r-3">SHOP NOW</button>
+
+</div>
+<!-- ********************module5 end***************************************** -->
+
+<!-- ************************module6 start****************************************** -->
+
+<div class="bg-gray-700  w-full  p-12 flex items-center justify-center ">
+ 
+  <div class="flex justify-between w-9/12">
+    <div class="flex gap-5 items-center ">
+      <span class="flex items-center justify-center hover:cursor-pointer  w-20 h-20 border-2 border-blue-600 rounded-full">
+      <i class="fa-solid fa-truck fa-2xl" style="color:orange;"></i>
+    </span>
+    <div>
+      <h2 class="text-white font bold  hover:text-blue-600 hover:cursor-pointer transition-all duration-500">Free Shipping</h2>
+      <p class="text-gray-500 font bold">Free delivery over $100</p>
+    </div>
+    </div>
+    
+    <div class="flex gap-5 items-center">
+<span class="flex items-center justify-center w-20 h-20 border-2 border-blue-600 rounded-full">
+      <i class="fa-solid fa-rotate-left fa-2xl" style="color:orange;"></i>
+    </span>
+    <div>
+      <h2 class="text-white font bold hover:cursor-pointer hover:text-blue-600 transition-all duration-500">Free Returns</h2>
+      <p class="text-gray-500 font bold">Hassle free returns</p>
+    </div>
+
+    </div>
+
+    <div class="flex gap-5 items-center">
+ <span class="flex items-center justify-center w-20 h-20 border-2 border-blue-600 rounded-full">
+      <i class="fa-solid fa-shield fa-2xl" style="color:orange;"></i>
+    </span>
+    <div>
+      <h2 class="text-white font bold hover:cursor-pointer hover:text-blue-600 transition-all duration-500">Secure Shopping</h2>
+      <p class="text-gray-500 font bold">Best Security features</p>
+    </div>
+    </div>
+
+
+    <div class="flex gap-5 items-center">
+ <span class="flex items-center justify-center w-20 h-20 border-2 border-blue-600 rounded-full">
+      <i class="fa-solid fa-cube fa-2xl" style="color:orange;"></i>
+    </span>
+    <div>
+      <h2 class="text-white font bold hover:cursor-pointer hover:text-blue-600 transition-all duration-500">Unlimited Blocks</h2>
+      <p class="text-gray-500 font bold">Any content,any page</p>
+    </div>
+    </div>
+
+    
+
+
+   
+
+
+   
+
+
+  </div>
+  
+  
+</div>
+<!-- ***************************module6 end********************************* -->
+
+<!-- ******************************module7 start***************************************** -->
+<div class="bg-white p-10 w-full flex justify-center ">
+  <div class=" w-9/12 slider-container">
+<div class=" flex slides">
+
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/olivia-fashion-150x150.jpg.webp" alt="olivia smith">
+  </div>
+  
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src=" https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/palm_logo-150x150w.jpg.webp
+    " alt="palm">
+  </div>
+  
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src=" https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/awesome-150x150.jpg.webp
+  
+    " alt="awesome brand">
+  </div>
+  
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/mellisa-150x150.jpg.webp
+  
+  
+    " alt="melissa jhonsan">
+  </div>
+  
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/htc_logo-150x150w.jpg.webp
+  
+  
+    " alt="htc">
+  </div>
+  
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/superbrand-150x150.jpg.webp
+  
+  
+  
+    " alt="superbrand">
+  </div>
+  
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src=" https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/FC-fashion-150x150.jpg.webp
+  
+  
+  
+    " alt="fort cane">
+  </div>
+  
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src=" https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sony_logo-150x150w.jpg.webp
+  
+  
+  
+    " alt="sony">
+  </div>
+  
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src=" https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/fashion-150x150.jpg.webp
+  
+  
+  
+  
+    " alt="ny fashıon">
+  </div>
+  
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sunglasses-150x150.png.webp
+  
+  
+  
+  
+    " alt="sunglasses">
+  </div>
+  
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src=" https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/canon_logo-150x150w.jpg.webp
+  
+  
+  
+  
+  
+    " alt="canon">
+  </div>
+  
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src=" https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/erikson-150x150.jpg.webp
+  
+  
+  
+  
+  
+    " alt="ericksonn">
+  </div>
+  
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sarah-cosmetics-150x150.jpg.webp
+  
+  
+  
+  
+  
+    " alt="sarah bloom">
+  </div>
+  
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/apple_logo-150x150h.jpg.webp
+  
+  
+  
+  
+  
+    " alt="apple">
+  </div>
+  
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/hipster-150x150.jpg.webp
+  
+  
+  
+  
+  
+    " alt="hipster">
+  </div>
+  
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src=" https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sarah-beauty-150x150.jpg.webp
+  
+  
+  
+  
+  
+  
+    " alt="sarah bell">
+  </div>
+  
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/hp_logo-150x150w.jpg.webp
+  
+  
+  
+  
+  
+  
+    " alt="hewlet-packard">
+  </div>
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src=" https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/chic-150x150.jpg.webp
+  
+  
+  
+  
+  
+  
+  
+    " alt="chic dor">
+  </div>
+  <div  class="  relative group slide  hover:opacity-100  hover:grayscale-0  opacity-20 transition-all duration-500">
+    <img class="transition-all duration-500 transform group-hover:scale-150" src="https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/sarah-cosmetics-150x150.jpg.webp
+  
+  
+  
+  
+  
+  
+    " alt="sarah bloom">
+  </div>
+</div>
+
+
+  </div>
+
+
+
+</div>
+<!-- *************************module7 end******************************** -->
+
+<!-- ************************module9 start************************************ -->
+<div class=" w-full  p-12 flex justify-around items-center" style="background-color: #F9D759;">
+<div class=" w-9/12 flex ">
+ <div class="left  flex-grow-2   flex items-center justify-center gap-6">
+    <i class=" p-2 fa-regular fa-envelope fa-2xl"></i>
+    <div class="p-2">
+      <h2 class="text-black font-bold mb-2">SUBSCRIBE NEWSLETTER</h2>
+      <p class="flex-shrink-0">Get all the latest information on Events, Sales and Offers. Sign up <br> for newsletter today.</p>
+    </div>
+  </div>
+  <div class="right flex-grow ">
+    <form class="m-4 flex gap-5">
+    <input class="rounded-lg p-4 flex-grow border mr-0 focus:border-none text-gray-800 border-gray-200 bg-white" placeholder="Email address"/>
+  <button class="px-8 rounded-lg bg-black text-white font-bold p-4  hover:bg-white hover:text-black hover:border-white uppercase border-black border">Subscribe</button>
+</form></div>
+</div>
+
+ 
+
+</div>
+
+<!-- ************************module9 end******************************* -->
+
+<!-- ********************footer start********************************** -->
+
+<footer class="footer " style="background-color: #FF9BA7;">
+  <div class="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+    <div class="mt-1 grid justify-between grid-cols-1 gap-8  lg:grid-cols-3 ">
+      <div>
+        <div class="flex justify-center items-center text-teal-600 sm:justify-start">
+         <div class="">
+          <img class="h-20 mx-auto"  src="../Humeyra/assets/image/şeker.png" alt="">
+         </div>
+        </div>
+
+        <p
+          class="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left"
+        >
+         123 Main St. London, UK
+        </p>
+
+        <ul class="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
+          <li>
+            <a
+              href="/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:opacity-75"
+            >
+              <span class="sr-only">Facebook</span>
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:opacity-75"
+            >
+              <span class="sr-only">Instagram</span>
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:opacity-75"
+            >
+              <span class="sr-only">Twitter</span>
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:opacity-75"
+            >
+              <span class="sr-only">GitHub</span>
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-gray-700 transition hover:opacity-75"
+            >
+              <span class="sr-only">Dribbble</span>
+              <svg
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="grid grid-cols-1 gap-16 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2"
+      >
+      <!-- *******************customer****************** -->
+        <div class="text-center sm:text-left">
+          <p class="text-lg  font-medium text-white ">CUSTOMER SERVICE</p>
+
+          <ul class="mt-8 space-y-4 text-sm">
+            <li>
+              <a
+                class="text-white transition hover:opacity-75"
+                href="/"
+              >
+              <i class="fa-solid fa-check  hover:text-pink-600"></i>
+                Contact
+              </a>
+            </li>
+
+            <li>
+              <a
+              class="text-white transition hover:opacity-75"
+                href="/"
+              >
+              <i class="fa-solid fa-check  hover:text-pink-600"></i>
+                Returns
+              </a>
+            </li>
+
+            <li>
+              <a
+              class="text-white transition hover:opacity-75"
+                href="/"
+              >
+              <i class="fa-solid fa-check  hover:text-pink-600"></i>
+               Site Map
+              </a>
+            </li>
+
+            <li>
+              <a
+              class="text-white transition hover:opacity-75"
+                href="/"
+              >
+              <i class="fa-solid fa-check  hover:text-pink-600"></i>
+               Brands
+              </a>
+            </li>
+            <li>
+              <a
+              class="text-white transition hover:opacity-75"
+                href="/"
+              >
+              <i class="fa-solid fa-check  hover:text-pink-600"></i>
+               Unlimited Links
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- ********************customer end***************** -->
+<!-- ******************my Account start************ -->
+        <div class="text-center sm:text-left">
+          <p class="text-lg font-medium text-white">Our Services</p>
+
+          <ul class="mt-8 space-y-4 text-sm">
+            <li>
+              <a
+              class="text-white transition hover:opacity-75"
+                href="/"
+              >
+              <i class="fa-solid fa-check  hover:text-pink-600"></i>
+               My Account
+              </a>
+            </li>
+
+            <li>
+              <a
+              class="text-white transition hover:opacity-75"
+                href="/"
+              >
+              <i class="fa-solid fa-check  hover:text-pink-600"></i>
+                Order History
+              </a>
+            </li>
+
+            <li>
+              <a
+              class="text-white transition hover:opacity-75"
+                href="/"
+              >
+              <i class="fa-solid fa-check  hover:text-pink-600"></i>
+                Affiliates
+              </a>
+            </li>
+
+            <li>
+              <a
+              class="text-white transition hover:opacity-75"
+                href="/"
+              >
+              <i class="fa-solid fa-check  hover:text-pink-600"></i>Newsletter
+              </a>
+            </li>
+            <li>
+              <a
+              class="text-white transition hover:opacity-75"
+                href="/"
+              >
+              <i class="fa-solid fa-check hover:text-pink-600"></i>
+              Git Certificates
+              </a>
+            </li>
+          </ul>
+        </div>
+<!-- ****************my account end************************ -->
+     
+
+        <!-- *****************newsletter start**************** -->
+        <div class="text-center sm:text-left">
+          <p class="text-lg font-medium text-white">NEWSLETTER</p>
+<div class="mt-8 space-y-4 text-sm ">
+  <p
+  class="text-left text-gray-500 "
+>
+  Stay up to date with news and promotions by signing up for our newsletter
+</p>
+
+<form class="frm space-x-0 ">
+  <label for="UserEmail" class="sr-only"> Email </label>
+
+  <div
+    class="inputDiv py-2 border border-gray-100  bg-white
+    focus-within:ring sm:flex 
+     sm:items-center "
+  >
+    <input
+      type="email"
+      id="UserEmail"
+      placeholder="Your Email"
+      class="w-full p-1  rounded h-full first-letter
+      border border-white focus:border-white focus:outline-none
+      focus:ring-transparent sm:text-sm"
+    />
+
+    <button
+      class="flex mx-2 p-1 pr-4 text-sm rounded font-bold tracking-wide
+       text-white bg-gray-400 transition-none hover:bg-blue-500 sm:mt-0 sm:w-auto sm:shrink-0"
+    >
+    <i class="fa-regular fa-envelope mx-1 mt-1 " ></i>
+      SEND
+    </button>
+  </div>
+</form>
+<div  ">
+  <label for="myCheckbox" class="flex items-center text-xs ">
+    <input type="checkbox" id="myCheckbox" class="form-checkbox h-5 w-5 text-indigo-600">
+    <span class="whitespace-nowrap">I have read and agree to the </span>
+    <span class=" text-blue-500 hover:text-gray-400 whitespace-nowrap">Privacy Policy</span>
+</label>
+</div>
+
+</div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 border-t border-gray-100 pt-6 max-w-screen-xl mx-auto ">
+      <div class="text-center sm:flex sm:justify-between sm:text-left">
+        
+       <ul  class=" flex justify-center gap-3 sm:justify-start md:gap-3">
+          <li>
+              <a href="">
+                  <i class="fa-brands fa-cc-visa"></i>
+              </a>
+          </li>
+          <li>
+              <a href="">
+                  <i class="fa-brands fa-cc-mastercard"></i>
+              </a>
+          </li>
+          <li>
+              <a href="">
+                  <i class="fa-brands fa-cc-amex"></i>
+              </a>
+          </li>
+          <li>
+              <a href="">
+                  <i class="fa-brands fa-cc-discover"></i>
+              </a>
+          </li>
+          <li>
+              <a href="">
+                  <i class="fa-brands fa-cc-paypal"></i>
+              </a>
+          </li>
+          <li>
+              <a href="">
+                  <i class="fa-brands fa-cc-stripe"></i>
+              </a>
+          </li>
+       </ul>
+        <p class="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
+          &copy; Copyright 2014,Your Store ,All Rights Reserved
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  // JS kodunuzu buraya ekleyin
+  let defaultTransform = 0;
+
+  function goNext() {
+      defaultTransform = defaultTransform - 398;
+      var slider = document.getElementById("slider");
+      if (Math.abs(defaultTransform) >= slider.scrollWidth / 1.7) defaultTransform = 0;
+      slider.style.transform = "translateX(" + defaultTransform + "px)";
+  }
+
+  function goPrev() {
+      var slider = document.getElementById("slider");
+      if (Math.abs(defaultTransform) === 0) defaultTransform = 0;
+      else defaultTransform = defaultTransform + 398;
+      slider.style.transform = "translateX(" + defaultTransform + "px)";
+  }
+
+  var next = document.getElementById("next");
+  var prev = document.getElementById("prev");
+
+  next.addEventListener("click", goNext);
+  prev.addEventListener("click", goPrev);
+</script>
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/tw-elements@1.0.0/dist/js/tw-elements.umd.min.js"></script>
+<script src="/sugar_office_worker/Humeyra/assets/js/tailwind.config.js"></script>
+<script src="/sugar_office_worker/Humeyra/assets/js/index.js"></script>
+<script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
 </body>
 
 </html>
+
+
+

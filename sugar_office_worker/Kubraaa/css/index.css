@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fot{
+background-color: #a4bdd9;
+
+}
+.fotB{
+  background-color: #a4bdd9;
+}
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+  }
+  .carousel-item {
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+  }
+  #carousel-1:checked ~ .control-1,
+  #carousel-2:checked ~ .control-2,
+  #carousel-3:checked ~ .control-3 {
+    display: block;
+  }
+  .carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+  }
+  #carousel-1:checked
+    ~ .control-1
+    ~ .carousel-indicators
+    li:nth-child(1)
+    .carousel-bullet,
+  #carousel-2:checked
+    ~ .control-2
+    ~ .carousel-indicators
+    li:nth-child(2)
+    .carousel-bullet,
+  #carousel-3:checked
+    ~ .control-3
+    ~ .carousel-indicators
+    li:nth-child(3)
+    .carousel-bullet {
+    color: #ffb317; /*Set to match the Tailwind colour you want the active one to be */
+  }
+
+  .fixed-image {
+    height: 50vh; /* İstediğiniz dikey yüksekliği ayarlayabilirsiniz */
+    width: 100%;
+    background: url('https://www.journal-theme.com/2/image/cache/catalog/journal3/people/andrew-neel-369701-unsplash-1500x1000.jpg.webp') center/cover no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: contrast(200%);
+    background-attachment:fixed ;
+
+  }
+
+.content {
+    overflow-y: auto;
+    height: calc(100vh - 50vh); 
+    padding: 10px;
+}
+
+/* 
+.imageDiv {
+  background: url("https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/palm_logo-150x150w.jpg.webp");
+  background-position: center center;
+  background-size: cover;
+  width: 75px;
+  height: 75px;
+  transition: opacity 0.3s ease; /* Opacity değişimini düzenli hale getirir */
+
+
+  /* opacity: 0.7; */
+   /* Varsayılan opasite değeri */
+/* } */
+
+/* .imageDiv:hover {
+  width: 100px; 
+  height: 100px;
+  cursor:pointer ;
+ 
+} */
+
+.divİmg{
+  background: url("https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/olivia-fashion-150x150.jpg.webp")
+}
+
+.divİmg2{
+  background: url("https://www.journal-theme.com/5/image/cache/catalog/journal3/brands/awesome-150x150.jpg.webp")
+}
+
+
+.glide__arrow {
+  position: absolute;
+  display: block;
+  top: 50%;
+  z-index: 2;
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+
+/* #slider3 {
+  display: flex;
+  overflow: hidden;
+}
+
+#slider3 ul {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+#slider3 li {
+  flex: 0 0 25%; /* Her bir li elemanının genişliği %25 olacak şekilde ayarlandı */
+  /* padding: 0 8px; /* İki öğe arasında boşluk ekledik */
+  /* box-sizing: border-box; */

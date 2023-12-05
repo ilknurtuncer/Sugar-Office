@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  
+  .dropdownLanguage li{
+    padding: 2px;
+  }
+  
+  .dropdownLanguage li:hover, .dropdownCurrency li:hover, .dropdownAll li:hover{
+    background-color: #eee;
+    color:#FF9BA7;
+  }
+  
+  .dropdownCategory li:hover {
+    background-color:  #FF9BA7;
+  }
+  .dropdownMenuLinks li:hover {
+    color:  #FF9BA7;
+  }
+  
+
+  .search-box:nth-child(2) {
+    flex-basis: 100%; /* The second box takes up full width */
+  }
+  
+  @media screen and (min-width:1320px) {
+    .search-box:nth-child(2) {
+      flex-basis: auto; /* The second box takes up full width */
+      order: 0;
+      width: 40%;
+    }
+    .categoryxl{
+      display: hidden;
+    }
+  }
+  
+  .xyz{
+    transition: all 1s;
+  }
+  
+
+
+  
+.aaaa:hover{
+  color:red;
+}
+
+.btnSlider:hover{
+  color:#FF9BA7 !important;
+}
+
+/* Bottom menu clickable mobile dropdown part   */
+.menu2{
+
+  height: 0;
+  position: absolute;
+ 
+  min-width: 160px;
+  overflow: auto;
+  color:black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 51 !important;
+  transition: all ease-in-out 500ms;
+  padding:0 10px;
+}
+
+
+.show{
+  height: 250px;
+  max-height: 400px;
+}
+
+/* Bottom menu clickable mobile dropdown part end  */
+
+.overlay {
+  margin-left:0 !important;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: rgb(240, 236, 236);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top:10%;
+  width: 100%;
+
+}
+
+.overlay li {
+
+
+  font-size: 20px;
+  border-bottom: 2px solid black;
+  transition: 0.3s;
+}
+
+.overlay li:hover, .overlay li:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 36px;
+}
+
+@media screen and (max-width: 650px) {
+  .overlay li {font-size: 14px}
+
+}
+
+.parallax {
+  background-image: url('https://www.journal-theme.com/2/image/cache/catalog/journal3/people/andrew-neel-369701-unsplash-1500x1000.jpg.webp');
+  background-position: center center;
+  background-size: cover;
+  background-attachment:fixed ;
+}
+
+
+/* modul7 swiper start */
+
+.swiper-container-main{
+  position: relative;
+  width: 85%;
+  margin: 0 auto 50px;
+}
+.swiper-container-main .swiper-button-prev{
+  left: -50px;
+  background-color: #313846;
+  color:white;
+  padding: 30px 20px;
+}
+.swiper-container-main .swiper-button-next{
+  right: -50px;
+  background-color: #313846;
+  color:white;
+
+  padding: 30px 20px;
+}
+.swiper-container-main .swiper-button-prev:hover{
+  
+  background-color: #E7284D;
+ 
+
+}
+.swiper-container-main .swiper-button-next:hover{
+ 
+  background-color:  #E7284D;
+ 
+}
+.swiper-container-main .swiper-pagination{
+  bottom: -30px!important;
+}
+
+
+.swiper-container-main .swiper-slide{
+  padding-top: 20px;
+  cursor: pointer;
+
+}
+
+.swiper-container-main img{
+  opacity: 0.5;
+  transition: all ease-in-out 0.4s;
+}
+.swiper-container-main img:hover{
+  transform: scale(1.1);
+
+  opacity: 1;
+}
+
+@media screen and (max-width:576px) {
+  .swiper-container-main img{
+    width:"40px";
+    height:"40px";
+
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  .swiper-container-main img{
+    width:"104px";
+    height:"104px";
+  }
+
+}
+
+@media screen and (max-width:1320px) {
+  .swiper-container-main img{
+    width:"120px";
+    height:"120px";
+  }
+
+}
+
+/* modul7 swiper end */
+
+
+/* modul10 start */
+.modul10-wrapper{
+  padding: 20px 0;
+}
+
+.modul10-header{
+  margin: 10px 0 20px;
+}
+.product-item {
+  padding-left: 15px !important;
+  margin: 8px;
+}
+@media screen and (max-width:768px) {
+  .product-item {
+    max-width: 400px !important;
+  
+  }
+
+}
+
+@media screen and (min-width:992px) {
+  .product-item {
+    max-width: 275px !important;
+    height: 150px;
+  
+  }
+
+}
+/* modul10 start */
+
+
+/* modul 21 start */
+
+  .sliding-button:hover, .sliding-heart:hover, .sliding-compare:hover{
+    background-color: yellow;
+  }
+
+/* modul 21 end */
+
+
+/* home-swiper */

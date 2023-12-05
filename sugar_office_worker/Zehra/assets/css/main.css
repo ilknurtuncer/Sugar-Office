@@ -1,0 +1,232 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+body{
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.dropbtn,.multibtn {
+  border: none;
+  cursor: pointer;
+}
+.multi-content {
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+.multi-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.moneyContent {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.moneyContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* .dropdown a:hover {background-color: #ddd;}
+
+.dropdown-content {
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+ */
+.cart-content {
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.toys-content {
+  display: none;
+}
+
+.toys-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.material-symbols-outlined {
+  
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+
+.show {display: block;}
+
+.menu-list {
+  font-family: 'Montserrat';
+}
+
+#lang .dropdown-content #moneyText .money .tel .multilevel-list {
+  font-family: 'Nunito Sans';
+}
+
+.nunito {
+  font-family:'Nunito Sans';
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides1 {
+  display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  
+}
+
+.dot1 {
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  
+}
+
+ .dot:hover {
+  background-color: #717171;
+}
+
+.active{
+  background-color: red!important;
+}
+
+
+/* Fading animation */
+.fade1 {
+  animation-name: fade;
+  animation-duration: 0.50s;
+  transform-style: preserve-3d;
+ 
+}
+
+@keyframes fade {
+  from  {left:-100px}
+  to  { left:100px}
+}
+
+.fade{
+  animation-name: fade;
+  animation-duration: 0.50s;
+  transform-style: preserve-3d;
+ 
+}
+
+@keyframes fade1 {
+  from  {opacity: .4 ;left:-5px}
+  to  { opacity: 1;left:20px}
+}
+
+.fade-left {
+  animation-name: fade-left;
+  animation-duration: 0.4s;
+ 
+}
+
+@keyframes fade-left {
+  from  {opacity: .5;right:3;}
+  to  { opacity: 0; right:1;}
+}
+
+.fade-right {
+  animation-name: fade-right;
+  animation-duration: 0.4s;
+ 
+}
+
+@keyframes fade-right {
+  from  {opacity: .5;right:3;}
+  to  { opacity: 0; right:1;}
+}
+
+.iconModul6{
+  color: darkorchid!important;
+}
+
+.font-nanum{
+  font-family: 'Nanum Gothic', sans-serif;
+
+}
+
+.carousel-item {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-open:checked + .carousel-item {
+    opacity: 100;
+}
+
+
+.carousel-control {
+    display: none;
+}
+
+.carousel-indicators {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+}
+
+.carousel-bullet:hover {
+    color: #3182ce;
+}
+
+#back, #next, #back1, #next1 :hover{
+  color: #337AB7;
+}

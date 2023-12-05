@@ -176,18 +176,18 @@ function prevItem() {
   }
 
   // Görüntülenen öğe sayısını takip etmek için değişken
-  var currentItem = 1;
+  let currentItem = 1;
 
   // Öğeleri gösteren fonksiyon
   function showItem(n) {
-    var items = document.querySelectorAll('[data-carousel-item]');
+    let items = document.querySelectorAll('[data-carousel-item]');
     if (n > items.length) {
       currentItem = 1;
     }
     if (n < 1) {
       currentItem = items.length;
     }
-    for (var i = 0; i < items.length; i++) {
+    for (let i = 0; i < items.length; i++) {
       items[i].style.display = 'none';
     }
     items[currentItem - 1].style.display = 'flex';

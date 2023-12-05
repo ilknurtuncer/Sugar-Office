@@ -68,7 +68,7 @@
   overflow: auto;
   color:black;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 51 !important;
   transition: all ease-in-out 500ms;
   padding:0 10px;
 }
@@ -244,3 +244,13 @@
 /* modul10 start */
 
 
+/* modul 21 start */
+
+  .sliding-button:hover, .sliding-heart:hover, .sliding-compare:hover{
+    background-color: yellow;
+  }
+
+/* modul 21 end */
+
+
+/* home-swiper */

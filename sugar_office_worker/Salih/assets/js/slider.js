@@ -9,76 +9,50 @@ const btnSliderContainer = document.querySelector(".btnSliderContainer")
 
 let isToggled = true;
 
-// select next slide button
-const nextSlide = document.querySelector(".btn-next");
-
-// current slide counter
-let curSlide = 0;
 
 
-// add event listener and navigation functionality
-nextSlide.addEventListener("click", function () {
-  // check if current slide is the last and reset current slide
-  if (curSlide === (slides.length - 1)) {
-    curSlide = 0;
-  } else {
-    curSlide++;
-  }
-  slideFn(curSlide)
 
-});
-
-// select prev slide button
-const prevSlide = document.querySelector(".btn-prev");
-
-// add event listener and navigation functionality
-prevSlide.addEventListener("click", function () {
-  // check if current slide is the first and reset current slide to last
-  
-  if (curSlide === 0) {
-    curSlide = slides.length - 1;
-  } else {
-    curSlide--;
-  }
-
-  slideFn(curSlide)
-
-});
+const swiper_home = document.getElementById('home-swiper');
 
 
-// Slider Translate-x Function 
+const home_params = {
+  // array with CSS styles
+  navigation:"true",
+  loop:"true",
+  injectStyles: [
+    `
+    .swiper-button-next {
+      background-color: #fff;
+      padding:10px;
+    }
 
-const slideFn = (curSlide) => {
-  slideContainer.style.transform = `translateX(-${curSlide * 100}%)`;
+    .swiper-button-next:hover{
+      background-color: #ddd;
+      color:rgb(239,68,68)
+    }
+    .swiper-button-prev {
+     
+      background-color:#fff ;
+      padding:10px;
+    
+    }
+    .swiper-button-prev:hover{
+      color:rgb(239,68,68);
+      background-color: #ddd;
+    }
+    `,
+  ],
 
-  
-  if(isToggled){
-    headingSlider.classList.remove("left-[200px]");
-    headingSlider.classList.add("right-[25%]");
+  // array with CSS urls
+  injectStylesUrls: ['path/to/one.css', 'path/to/two.css'],
+};
 
-    btnSlider1.classList.remove("left-[85px]");
-    btnSlider1.classList.add("right-[33%]");
+Object.assign(swiper_home, home_params);
 
-    btnSlider2.classList.remove("left-[325px]");
-    btnSlider2.classList.add("right-[15%]");
-  }
-  else{
-    headingSlider.classList.remove("right-[25%]");
-    headingSlider.classList.add("left-[200px]");
+swiper_home.initialize();
 
-    btnSlider1.classList.remove("right-[33%]");
-    btnSlider1.classList.add("left-[85px]");
 
-    btnSlider2.classList.remove("right-[15%]");
-    btnSlider2.classList.add("left-[325px]");
-  }
-  isToggled = !isToggled;
 
-   console.log(headingSlider.classList)
-
-  // btnSliderContainer.style.right = `${15 - curSlide * 100}%`;
-  // btnSlider.style.left = `${15 + curSlide * 100}%`;
-}
 
 
 
@@ -112,7 +86,7 @@ closeButton.addEventListener("click", () => {
 
 })
 
-const swiper_main = new Swiper('.swiper_main', {
+const swiper_main = new Swiper('#swiper_main', {
   loop: true,                         
   pagination: {
       el: '.swiper-pagination',
@@ -139,3 +113,65 @@ const swiper_main = new Swiper('.swiper_main', {
   },
   
 })
+
+
+
+
+const swiper_featured = document.getElementById('featured-products-swiper');
+const buttonNext = document.getElementById('swiper-btn-next');
+const buttonPrev = document.getElementById('swiper-btn-prev');
+console.log(buttonPrev)
+
+buttonNext.addEventListener('click', () => {
+  swiper_featured.swiper.slideNext();
+});
+
+buttonPrev.addEventListener('click', () => {
+  swiper_featured.swiper.slidePrev();
+});
+
+
+
+
+// swiper parameters
+const swiperParams = {
+  slidesPerView: 1,
+  loop:"true",
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+  on: {
+    init() {
+      // ...
+    },
+  },
+};
+
+// now we need to assign all parameters to Swiper element
+Object.assign(swiper_featured, swiperParams);
+
+// and now initialize it
+swiper_featured.initialize();
+
+
+
+const swiper_deal = document.getElementById('deal-products-swiper');
+const buttonDealNext = document.getElementById('deal-swiper-btn-next');
+const buttonDealPrev = document.getElementById('deal-swiper-btn-prev');
+console.log(buttonPrev)
+
+buttonDealNext.addEventListener('click', () => {
+  swiper_deal.swiper.slideNext();
+});
+
+buttonDealPrev.addEventListener('click', () => {
+  swiper_deal.swiper.slidePrev();
+});
+
+
+

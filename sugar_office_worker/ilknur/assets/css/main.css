@@ -1,13 +1,42 @@
-/* İkinci resmi gizle */
-.second-img {
-    display: none;
+
+/* Hızlı görünüm simgesi için bu stili ekleyin */
+.quick-view-icon {
+    padding: 8px;
+    /* background-color: #c6c2c2; */
+    border: 1px solid #c3bfbf00;
+    border-radius: 50%;
+    margin-bottom: -12px; /* İhtiyaca göre ayarlayın */
+    margin-right: -12px; /* İhtiyaca göre ayarlayın */
+    transition: background-color 0.3s ease-in-out;
+  }
+  .right-block:hover .quick-view-icon {
+    opacity: 1;
+  }
+  .quick-view-icon:hover {
+    background-color: #c0b8b8ac;
+    
+  }
+ 
+  .product-layout .image:hover .quick-view-icon {
+    opacity: 2;
+    
+  }
+
+
+
+.product-thumb .image {
+  position: relative;
 }
 
-/* Mouse üzerine gelindiğinde ikinci resmi göster */
-.hover-img-trigger:hover .main-img {
-    display: none;
+.product-thumb .image a:last-child {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.hover-img-trigger:hover .second-img {
-    display: block;
+.product-thumb:hover .image a:last-child {
+  display: inline;
 }

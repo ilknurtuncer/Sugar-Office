@@ -532,61 +532,68 @@
 
   <!-- Blogger Card Buildings  -->
 
-  <div class="card-header border-white border-2 shadow-2xl rounded-t-lg p-4">
-   
-    <div class="card-header  border-white border-2 rounded-t-lg  p-1 px-32">
-      <div class="flex items-center justify-between card-header bg-orange-400 border-gray-200 border-2 rounded-t-lg ">
-       
-       <div class="flex items-center justify-between bg-white border-white border-2 rounded-t-lg mr-1 ml-1 p-1 w-full">
-        <div class="flex items-center">
-          <h3 class="text-black font-bold text-xl mr-4">Popular Product</h3>
+  <div
+    class="flex flex-col items-center justify-evenly card-header border-white border-2 shadow-2xl rounded-t-lg border-t-2 border-b-2 border-pink-400 w-12/12 px-32   ">
 
-        </div>
-        <div class="flex items-center">
-          <span class="bg-yellow-500 text-white px-2 py-1 rounded-full text-sm mr-2">Featured</span>
-          <span class="bg-yellow-400 text-white px-2 py-1 rounded-full text-sm mr-2">Bestseller</span>
-          <span class="bg-yellow-400 text-white px-2 py-1 rounded-full text-sm mr-4">Latest</span>
-          <button id="prev" class="w-6 h-6 text-yellow-600 rounded-full"> 
-           
-            <svg class="w-6 h-6 text-yellow-600" fill="none"
-              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2001/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-            </svg> 
+    <div class="card-header w-full border-white border-2 rounded-t-lg  p-1 mt-2 ">
+      <div class="card-header flex items-center justify-between  bg-orange-400 border-gray-200 border-2 rounded-t-lg ">
+
+        <div
+          class="w-full flex items-center justify-between bg-white border-white border-2 rounded-t-lg mr-1 ml-1 p-1 ">
+          <div class="flex items-center">
+            <h3 class="text-black font-bold text-xl mr-4">Popular Product</h3>
+
+          </div>
+          <div class="flex items-center">
+            <span class="bg-yellow-500 text-white px-2 py-1 rounded-full text-sm mr-2">Featured</span>
+            <span class="bg-yellow-400 text-white px-2 py-1 rounded-full text-sm mr-2">Bestseller</span>
+            <span class="bg-yellow-400 text-white px-2 py-1 rounded-full text-sm mr-4">Latest</span>
+            <button id="prev" class="w-6 h-6 text-yellow-600 rounded-full">
+
+              <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2001/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+              </svg>
 
             </button>
-          <button id="next" class="w-6 h-6 text-yellow-600 rounded-full">
-            <svg class="w-6 h-6 text-yellow-600" fill="none"
-              stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-              </path>
-            </svg>
-          
-          </button>
+            <button id="next" class="w-6 h-6 text-yellow-600 rounded-full">
+              <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                </path>
+              </svg>
+
+            </button>
 
 
 
+          </div>
         </div>
-       </div>
-       
+
       </div>
 
-  
+
     </div>
 
-    <div class="card-blogger mx-auto grid grid-cols-5 grid-rows-2 mt-8  gap-5 px-32 justify-items-center justify-center overflow-hidden ">
+    <div class="card-blogger w-full mx-auto grid grid-cols-5 grid-rows-2 grid lg:grid-cols-5 lg:grid-rows-2 md:grid-cols-3 md:grid-rows-3 sm:grid-cols-2 sm:grid-rows-5 xl:gap-4 2xl:gap-4 lg:gap-2 md:gap-1
+    mt-8 overflow-hidden p-2 mb-2">
 
-        <!-- Fiyatın üzerine gelince gösterilecek olan grup -->
-        <div class="group relative">
       <!-- Birinci kart -->
-      <div class="card rounded-lg shadow-lg overflow-hidden border-white border-4 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-2 mb-4">
-        <img src="assets/pictures/products/Fashion Design Two Color Car Wheel_files/3-288x288.jpg" alt="Wheel"
-          class="w-full h-36 object-cover">
+      <!-- Fiyatın üzerine gelince gösterilecek olan grup -->
+      <div
+        class="group relative card rounded-lg shadow-lg overflow-hidden border-white border-2 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-2 mb-4 h-96 w-64">
+        <div
+          class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center visible group-hover:invisible">
+          <img src="assets/pictures/products/Fashion Design Two Color Car Wheel_files/3-288x288.jpg" alt="Wheel"
+            class="w-full h-36 object-cover">
+        </div>
+
         <div class="p-4">
           <span class="text-xs font-light text-gray-600">CAR</span>
-      
+
           <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
           <div class="flex items-center justify-between">
-            <h4 class="text-xs font-bold text-gray-800">Fashion Design Two Color Car Wheel</h4>
+            <h4 class="text-xs font-bold text-gray-800 text-clip">Fashion Design Two Color Car Wheel</h4>
           </div>
           <div class="flex items-center justify-between py-4">
             <!-- Yıldız ikonunu span içinde tanımlayacağız -->
@@ -598,307 +605,663 @@
               <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
             </span>
           </div>
-          <p class="text-sm text-gray-600 py-2">$602.00</p>
+          <p class="text-sm text-gray-600 py-2 visible group-hover:invisible">$602.00</p>
 
         </div>
-      </div>
 
-          <!-- Fiyat -->
-         
-          <!-- Grup üzerine gelince gösterilecek olan kaplama -->
-          <div class="absolute h-full top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300  invisible group-hover:visible pb-1 
-          absolute group-hover:-translate-y-16 transition-transform duration-300 p-2   my-4 ">
-            <!-- Kaplamanın içindeki yeni resim -->
-            <div class="w-full h-36 object-cover rounded-full mb-20">
-              <img src="assets/pictures/products/21-800x800.jpg" alt="Wheel" class="w-full h-36 object-cover rounded-full mb-32"></div>
-            
-          
-            <div class="flex items-end  invisible group-hover:visible pb-1 h-28
-            absolute group-hover:-translate-y-16 transition-transform duration-300 p-2    mt-96">
-           
+
+        <!-- Fiyat -->
+
+        <!-- Grup üzerine gelince gösterilecek olan kaplama -->
+        <div class="group absolute h-full top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300  invisible group-hover:visible pb-1 
+          absolute group-hover:-translate-y-0 transition-transform duration-300 p-2 border-4 border-pink-400  my-4 ">
+          <!-- Kaplamanın içindeki yeni resim -->
+          <div class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center">
+            <img src="assets/pictures/products/21-800x800.jpg" alt="Wheel"
+              class="w-full h-44 object-cover rounded-full mb-44 flex flex-col items-center justify-center">
+          </div>
+
+
+          <div
+            class="flex items-end  invisible group-hover:visible pb-1 h-8 w-60
+            absolute group-hover:-translate-y-20 transition-transform duration-300 p-1 mt-96 flex text-center items-center justify-between">
+
             <!-- Kaplamanın içindeki buton -->
-            <button class="flex items-center  w-28 h-8 bg-graySoft bg-yellow-500 hover:bg-yellowDark text-white font-bold rounded-full "> +Add To Cart</button>
+            <button
+              class="flex items-center mr-3 px-2 w-32 h-8 bg-graySoft bg-yellow-500 hover:bg-yellowDark text-white font-bold rounded-full border-2 border-pink-800">
+              +Add To Cart</button>
 
-             <!-- Kaplamanın içindeki ikonlar -->
-            <div class="flex space-x-2 bg-graySoft px-1 py-1 hover:bg-yellowDark rounded-full ">
+            <!-- Kaplamanın içindeki ikonlar -->
+            <div class="flex space-x-2 bg-graySoft px-2 hover:bg-yellowDark  rounded-full ">
               <!-- Kalp ikonu -->
-              <i class="fas fa-heart text-white text-xl "></i>
+              <i class="fas fa-heart text-pink-500 text-xl mr-1 "></i>
               <!-- Paylaş ikonu -->
-              <i class="fas fa-share-alt text-white text-xl  "></i>
+              <i class="fas fa-share-alt text-primary text-xl mr-1"></i>
             </div>
           </div>
 
-           
-           
-          </div>
-        </div>
 
+
+        </div>
+      </div>
 
       <!-- İkinci kart -->
-      <div class="card rounded-lg shadow-lg overflow-hidden border-white border-4 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-1 mb-3">
+      <div
+      class="group relative card rounded-lg shadow-lg overflow-hidden border-white border-2 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-2 mb-4 h-96 w-64">
+      <div
+        class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center visible group-hover:invisible">
         <img src="assets/pictures/products/Alternator Engine Car_files/26-635x635.jpg" alt="Wheel"
           class="w-full h-36 object-cover">
-        <div class="p-4">
-          <span class="text-xs font-light text-gray-600">HTC</span>
-          <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
-          <div class="flex items-center justify-between">
-            <h4 class="text-xs font-bold text-gray-800">Alternator Engine Car</h4>
-          </div>
-          <div class="flex items-center justify-between py-4">
-            <!-- Yıldız ikonunu span içinde tanımlayacağız -->
-            <span class="text-yellow-500 text-sm flex items-center justify-between">
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-            </span>
-          </div>
-          <p class="text-sm text-gray-600 py-2">$602.00</p>
-
-        </div>
       </div>
+      <div class="p-4">
+        <span class="text-xs font-light text-gray-600">HTC</span>
+
+        <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
+        <div class="flex items-center justify-between">
+          <h4 class="text-xs font-bold text-gray-800 text-clip">Alternator Engine Carl</h4>
+        </div>
+        <div class="flex items-center justify-between py-4">
+          <!-- Yıldız ikonunu span içinde tanımlayacağız -->
+          <span class="text-yellow-500 text-sm flex items-center justify-between mt-4">
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+          </span>
+        </div>
+        <div class="flex items-center mt-0 hover-txt2 visible group-hover:invisible">
+          <p class="text-sm text-gray-600 cursor-auto mr-3 my-3">
+            $149.00
+          </p>
+          <del>
+            <p class="text-sm text-gray-500 cursor-auto ">$199</p>
+          </del>
+          <div class="ml-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-plus"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z" />
+              <path
+                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+            </svg>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Fiyat -->
+
+      <!-- Grup üzerine gelince gösterilecek olan kaplama -->
+      <div class="group absolute h-full top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300  invisible group-hover:visible pb-1 
+        absolute group-hover:-translate-y-0 transition-transform duration-300 p-2 border-4 border-pink-400  my-4 ">
+        <!-- Kaplamanın içindeki yeni resim -->
+        <div class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center">
+          <img src="assets/pictures/products/21-800x800.jpg" alt="Wheel"
+            class="w-full h-44 object-cover rounded-full mb-44 flex flex-col items-center justify-center">
+        </div>
+
+
+        <div
+          class="flex items-end  invisible group-hover:visible pb-1 h-8 w-60
+          absolute group-hover:-translate-y-20 transition-transform duration-300 p-1 mt-96 flex text-center items-center justify-between">
+
+          <!-- Kaplamanın içindeki buton -->
+          <button
+            class="flex items-center mr-3 px-2 w-32 h-8 bg-graySoft bg-yellow-500 hover:bg-yellowDark text-white font-bold rounded-full border-2 border-pink-800">
+            +Add To Cart</button>
+
+          <!-- Kaplamanın içindeki ikonlar -->
+          <div class="flex space-x-2 bg-graySoft px-2 hover:bg-yellowDark  rounded-full ">
+            <!-- Kalp ikonu -->
+            <i class="fas fa-heart text-pink-500 text-xl mr-1 "></i>
+            <!-- Paylaş ikonu -->
+            <i class="fas fa-share-alt text-primary text-xl mr-1"></i>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+      
       <!-- Üçüncü kart -->
-      <div class="card rounded-lg shadow-lg overflow-hidden border-white border-4 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-1 mb-3">
+      <div
+      class="group relative card rounded-lg shadow-lg overflow-hidden border-white border-2 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-2 mb-4 h-96 w-64">
+      <div
+        class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center visible group-hover:invisible">
         <img src="assets/pictures/products/Car Body Parts_files/23-635x635.jpg" alt="Wheel"
           class="w-full h-36 object-cover">
-        <div class="p-4">
-          <span class="text-xs font-light text-gray-600">CAR</span>
-          <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
-          <div class="flex items-center justify-between">
-            <h4 class="text-xs font-bold text-gray-800">Car Body Parts</h4>
-          </div>
-          <div class="flex items-center justify-between py-4">
-            <!-- Yıldız ikonunu span içinde tanımlayacağız -->
-            <span class="text-yellow-500 text-sm flex items-center justify-between">
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-            </span>
-          </div>
-          <p class="text-sm text-gray-600 py-2">$602.00</p>
-
-        </div>
       </div>
+
+      <div class="p-4">
+        <span class="text-xs font-light text-gray-600">CAR</span>
+
+        <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
+        <div class="flex items-center justify-between">
+          <h4 class="text-xs font-bold text-gray-800 text-clip ">Car Body Parts</h4>
+        </div>
+        <div class="flex items-center justify-between py-4 mt-4">
+          <!-- Yıldız ikonunu span içinde tanımlayacağız -->
+          <span class="text-yellow-500 text-sm flex items-center justify-between">
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+          </span>
+        </div>
+        <p class="text-sm text-gray-600 py-2 visible group-hover:invisible">$241.99</p>
+
+      </div>
+
+
+      <!-- Fiyat -->
+
+      <!-- Grup üzerine gelince gösterilecek olan kaplama -->
+      <div class="group absolute h-full top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300  invisible group-hover:visible pb-1 
+        absolute group-hover:-translate-y-0 transition-transform duration-300 p-2 border-4 border-pink-400  my-4 ">
+        <!-- Kaplamanın içindeki yeni resim -->
+        <div class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center">
+          <img src="assets/pictures/products/21-800x800.jpg" alt="Wheel"
+            class="w-full h-44 object-cover rounded-full mb-44 flex flex-col items-center justify-center">
+        </div>
+
+
+        <div
+          class="flex items-end  invisible group-hover:visible pb-1 h-8 w-60
+          absolute group-hover:-translate-y-20 transition-transform duration-300 p-1 mt-96 flex text-center items-center justify-between">
+
+          <!-- Kaplamanın içindeki buton -->
+          <button
+            class="flex items-center mr-3 px-2 w-32 h-8 bg-graySoft bg-yellow-500 hover:bg-yellowDark text-white font-bold rounded-full border-2 border-pink-800">
+            +Add To Cart</button>
+
+          <!-- Kaplamanın içindeki ikonlar -->
+          <div class="flex space-x-2 bg-graySoft px-2 hover:bg-yellowDark  rounded-full ">
+            <!-- Kalp ikonu -->
+            <i class="fas fa-heart text-pink-500 text-xl mr-1 "></i>
+            <!-- Paylaş ikonu -->
+            <i class="fas fa-share-alt text-primary text-xl mr-1"></i>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
       <!-- Dördüncü kart -->
-      <div class="card rounded-lg shadow-lg overflow-hidden border-white border-4 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-1 mb-3">
+      <div
+      class="group relative card rounded-lg shadow-lg overflow-hidden border-white border-2 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-2 mb-4 h-96 w-64">
+      <div
+        class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center visible group-hover:invisible">
         <img src="assets/pictures/products/Mechanic Repairman Inspecting Car Stock_files/30-635x635.jpg" alt="Wheel"
           class="w-full h-36 object-cover">
-        <div class="p-4">
-          <span class="text-xs font-light text-gray-600">OIL</span>
-          <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
-          <div class="flex items-center justify-between">
-            <h4 class="text-xs font-bold text-gray-800">Mechanic Repairman Inspecting Car</h4>
-          </div>
-          <div class="flex items-center justify-between py-4">
-            <!-- Yıldız ikonunu span içinde tanımlayacağız -->
-            <span class="text-yellow-500 text-sm flex items-center justify-between">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-            </span>
-          </div>
-          <p class="text-sm text-gray-600 py-2">$602.00</p>
-
-        </div>
       </div>
+
+      <div class="p-4">
+        <span class="text-xs font-light text-gray-600">OIL</span>
+
+        <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
+        <div class="flex items-center justify-between">
+          <h4 class="text-xs font-bold text-gray-800 text-clip ">Mechanic Repairman Inspecting Car</h4>
+        </div>
+        <div class="flex items-center justify-between py-4 mt-2">
+          <!-- Yıldız ikonunu span içinde tanımlayacağız -->
+          <span class="text-yellow-500 text-sm flex items-center justify-between">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+          </span>
+        </div>
+        <p class="text-sm text-gray-600 py-2 visible group-hover:invisible">$602.00</p>
+
+      </div>
+
+
+      <!-- Fiyat -->
+
+      <!-- Grup üzerine gelince gösterilecek olan kaplama -->
+      <div class="group absolute h-full top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300  invisible group-hover:visible pb-1 
+        absolute group-hover:-translate-y-0 transition-transform duration-300 p-2 border-4 border-pink-400  my-4 ">
+        <!-- Kaplamanın içindeki yeni resim -->
+        <div class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center">
+          <img src="assets/pictures/products/21-800x800.jpg" alt="Wheel"
+            class="w-full h-44 object-cover rounded-full mb-44 flex flex-col items-center justify-center">
+        </div>
+
+
+        <div
+          class="flex items-end  invisible group-hover:visible pb-1 h-8 w-60
+          absolute group-hover:-translate-y-20 transition-transform duration-300 p-1 mt-96 flex text-center items-center justify-between">
+
+          <!-- Kaplamanın içindeki buton -->
+          <button
+            class="flex items-center mr-3 px-2 w-32 h-8 bg-graySoft bg-yellow-500 hover:bg-yellowDark text-white font-bold rounded-full border-2 border-pink-800">
+            +Add To Cart</button>
+
+          <!-- Kaplamanın içindeki ikonlar -->
+          <div class="flex space-x-2 bg-graySoft px-2 hover:bg-yellowDark  rounded-full ">
+            <!-- Kalp ikonu -->
+            <i class="fas fa-heart text-pink-500 text-xl mr-1 "></i>
+            <!-- Paylaş ikonu -->
+            <i class="fas fa-share-alt text-primary text-xl mr-1"></i>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    
       <!-- Beşinci kart -->
-      <div class="card rounded-lg shadow-lg overflow-hidden border-white border-4 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-1 mb-3">
+      <div
+      class="group relative card rounded-lg shadow-lg overflow-hidden border-white border-2 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-2 mb-4 h-96 w-64">
+      <div
+        class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center visible group-hover:invisible">
         <img src="assets/pictures/products/Toys Plastic Tires Toy Car Wheels_files/21-635x635.jpg" alt="Wheel"
           class="w-full h-36 object-cover">
-        <div class="p-4">
-          <span class="text-xs font-light text-gray-600">CAR</span>
-          <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
-          <div class="flex items-center justify-between">
-            <h4 class="text-xs font-bold text-gray-800">Toys Plastic Tires Toy Car</h4>
-          </div>
-          <div class="flex items-center justify-between py-4">
-            <!-- Yıldız ikonunu span içinde tanımlayacağız -->
-            <span class="text-yellow-500 text-sm flex items-center justify-between">
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>   
-            </span>
-          </div>
-          <p class="text-sm text-gray-600 py-2">$602.00</p>
-
-        </div>
       </div>
+
+      <div class="p-4">
+        <span class="text-xs font-light text-gray-600">CAR</span>
+
+        <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
+        <div class="flex items-center justify-between">
+          <h4 class="text-xs font-bold text-gray-800 text-clip ">Toys Plastic Tires Toy Car</h4>
+        </div>
+        <div class="flex items-center justify-between py-4 mt-4">
+          <!-- Yıldız ikonunu span içinde tanımlayacağız -->
+          <span class="text-yellow-500 text-sm flex items-center justify-between">
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+          </span>
+        </div>
+        <p class="text-sm text-gray-600 py-2 visible group-hover:invisible">$602.00</p>
+
+      </div>
+
+
+      <!-- Fiyat -->
+
+      <!-- Grup üzerine gelince gösterilecek olan kaplama -->
+      <div class="group absolute h-full top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300  invisible group-hover:visible pb-1 
+        absolute group-hover:-translate-y-0 transition-transform duration-300 p-2 border-4 border-pink-400  my-4 ">
+        <!-- Kaplamanın içindeki yeni resim -->
+        <div class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center">
+          <img src="assets/pictures/products/21-800x800.jpg" alt="Wheel"
+            class="w-full h-44 object-cover rounded-full mb-44 flex flex-col items-center justify-center">
+        </div>
+
+
+        <div
+          class="flex items-end  invisible group-hover:visible pb-1 h-8 w-60
+          absolute group-hover:-translate-y-20 transition-transform duration-300 p-1 mt-96 flex text-center items-center justify-between">
+
+          <!-- Kaplamanın içindeki buton -->
+          <button
+            class="flex items-center mr-3 px-2 w-32 h-8 bg-graySoft bg-yellow-500 hover:bg-yellowDark text-white font-bold rounded-full border-2 border-pink-800">
+            +Add To Cart</button>
+
+          <!-- Kaplamanın içindeki ikonlar -->
+          <div class="flex space-x-2 bg-graySoft px-2 hover:bg-yellowDark  rounded-full ">
+            <!-- Kalp ikonu -->
+            <i class="fas fa-heart text-pink-500 text-xl mr-1 "></i>
+            <!-- Paylaş ikonu -->
+            <i class="fas fa-share-alt text-primary text-xl mr-1"></i>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+      
+   
       <!-- Altıncı kart -->
-      <div class="card rounded-lg shadow-lg overflow-hidden border-white border-4 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-1 mb-3">
+     
+      <div
+      class="group relative card rounded-lg shadow-lg overflow-hidden border-white border-2 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-2 mb-4 h-96 w-64">
+      <div
+        class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center visible group-hover:invisible">
         <img src="assets/pictures/products/Old Car Shine Like New With Car Polish_files/07-635x635.jpg" alt="Wheel"
           class="w-full h-36 object-cover">
-        <div class="p-4">
-          <span class="text-xs font-light text-gray-600">CAR</span>
-          <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
-          <div class="flex items-center justify-between">
-            <h4 class="text-xs font-bold text-gray-800">Car Pump Washing Machine</h4>
-          </div>
-          <div class="flex items-center justify-between py-4">
-            <!-- Yıldız ikonunu span içinde tanımlayacağız -->
-            <span class="text-yellow-500 text-sm flex items-center justify-between">
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-            </span>
-          </div>
-          <p class="text-sm text-gray-600 py-2">$602.00</p>
-
-        </div>
       </div>
+
+      <div class="p-4">
+        <span class="text-xs font-light text-gray-600">CAR</span>
+
+        <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
+        <div class="flex items-center justify-between">
+          <h4 class="text-xs font-bold text-gray-800 text-clip ">Car Pump Washing Machine</h4>
+        </div>
+        <div class="flex items-center justify-between py-4 mt-4">
+          <!-- Yıldız ikonunu span içinde tanımlayacağız -->
+          <span class="text-yellow-500 text-sm flex items-center justify-between">
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+          </span>
+        </div>
+        <p class="text-sm text-gray-600 py-2 visible group-hover:invisible">$602.00</p>
+
+      </div>
+
+
+      <!-- Fiyat -->
+
+      <!-- Grup üzerine gelince gösterilecek olan kaplama -->
+      <div class="group absolute h-full top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300  invisible group-hover:visible pb-1 
+        absolute group-hover:-translate-y-0 transition-transform duration-300 p-2 border-4 border-pink-400  my-4 ">
+        <!-- Kaplamanın içindeki yeni resim -->
+        <div class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center">
+          <img src="assets/pictures/products/21-800x800.jpg" alt="Wheel"
+            class="w-full h-44 object-cover rounded-full mb-44 flex flex-col items-center justify-center">
+        </div>
+
+
+        <div
+          class="flex items-end  invisible group-hover:visible pb-1 h-8 w-60
+          absolute group-hover:-translate-y-20 transition-transform duration-300 p-1 mt-96 flex text-center items-center justify-between">
+
+          <!-- Kaplamanın içindeki buton -->
+          <button
+            class="flex items-center mr-3 px-2 w-32 h-8 bg-graySoft bg-yellow-500 hover:bg-yellowDark text-white font-bold rounded-full border-2 border-pink-800">
+            +Add To Cart</button>
+
+          <!-- Kaplamanın içindeki ikonlar -->
+          <div class="flex space-x-2 bg-graySoft px-2 hover:bg-yellowDark  rounded-full ">
+            <!-- Kalp ikonu -->
+            <i class="fas fa-heart text-pink-500 text-xl mr-1 "></i>
+            <!-- Paylaş ikonu -->
+            <i class="fas fa-share-alt text-primary text-xl mr-1"></i>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
       <!-- Yedinci kart -->
-      <div class="card rounded-lg shadow-lg overflow-hidden border-white border-4 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-1 mb-3">
+      <div
+      class="group relative card rounded-lg shadow-lg overflow-hidden border-white border-2 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-2 mb-4 h-96 w-64">
+      <div
+        class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center visible group-hover:invisible">
         <img src="assets/pictures/products/Car Pump Washing Machine_files/30-635x635.jpg" alt="Wheel"
           class="w-full h-36 object-cover">
-        <div class="p-4">
-          <span class="text-xs font-light text-gray-600">CAR</span>
-          <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
-          <div class="flex items-center justify-between">
-            <h4 class="text-xs font-bold text-gray-800">Car Seat Cushion Car Decoration</h4>
-          </div>
-          <div class="flex items-center justify-between py-4">
-            <!-- Yıldız ikonunu span içinde tanımlayacağız -->
-            <span class="text-yellow-500 text-sm flex items-center justify-between"><i class="fas fa-star"></i>
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                class="fas fa-star"></i>
-            </span>
-          </div>
-          <p class="text-sm text-gray-600 py-2">$602.00</p>
-
-        </div>
       </div>
-      <!-- Sekizinci kart -->
-      <div class="card rounded-lg shadow-lg overflow-hidden border-white border-4 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-1 mb-3">
+
+      <div class="p-4">
+        <span class="text-xs font-light text-gray-600">CAR</span>
+
+        <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
+        <div class="flex items-center justify-between">
+          <h4 class="text-xs font-bold text-gray-800 text-clip ">Car Seat Cushion Car Decoration</h4>
+        </div>
+        <div class="flex items-center justify-between py-4 mt-4">
+          <!-- Yıldız ikonunu span içinde tanımlayacağız -->
+          <span class="text-yellow-500 text-sm flex items-center justify-between">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </span>
+        </div>
+        <p class="text-sm text-gray-600 py-2 visible group-hover:invisible">$602.00</p>
+
+      </div>
+
+
+      <!-- Fiyat -->
+
+      <!-- Grup üzerine gelince gösterilecek olan kaplama -->
+      <div class="group absolute h-full top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300  invisible group-hover:visible pb-1 
+        absolute group-hover:-translate-y-0 transition-transform duration-300 p-2 border-4 border-pink-400  my-4 ">
+        <!-- Kaplamanın içindeki yeni resim -->
+        <div class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center">
+          <img src="assets/pictures/products/21-800x800.jpg" alt="Wheel"
+            class="w-full h-44 object-cover rounded-full mb-44 flex flex-col items-center justify-center">
+        </div>
+
+
+        <div
+          class="flex items-end  invisible group-hover:visible pb-1 h-8 w-60
+          absolute group-hover:-translate-y-20 transition-transform duration-300 p-1 mt-96 flex text-center items-center justify-between">
+
+          <!-- Kaplamanın içindeki buton -->
+          <button
+            class="flex items-center mr-3 px-2 w-32 h-8 bg-graySoft bg-yellow-500 hover:bg-yellowDark text-white font-bold rounded-full border-2 border-pink-800">
+            +Add To Cart</button>
+
+          <!-- Kaplamanın içindeki ikonlar -->
+          <div class="flex space-x-2 bg-graySoft px-2 hover:bg-yellowDark  rounded-full ">
+            <!-- Kalp ikonu -->
+            <i class="fas fa-heart text-pink-500 text-xl mr-1 "></i>
+            <!-- Paylaş ikonu -->
+            <i class="fas fa-share-alt text-primary text-xl mr-1"></i>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+      <!-- Sekizinci kart --> 
+      <div
+      class="group relative card rounded-lg shadow-lg overflow-hidden border-white border-2 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-2 mb-4 h-96 w-64">
+      <div
+        class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center visible group-hover:invisible">
         <img src="assets/pictures/products/Car Seat Cushion Car Decoration Car_files/17-635x635.jpg" alt="Wheel"
           class="w-full h-36 object-cover">
-        <div class="p-4">
-          <span class="text-xs font-light text-gray-600">CAR</span>
-          <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
-          <div class="flex items-center justify-between">
-            <h4 class="text-xs font-bold text-gray-800">Car Seat Cushion Car Decoration</h4>
-          </div>
-          <div class="flex items-center justify-between py-4">
-            <!-- Yıldız ikonunu span içinde tanımlayacağız -->
-            <span class="text-yellow-500 text-sm flex items-center justify-between">
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-            </span>
-          </div>
-          <p class="text-sm text-gray-600 py-2">$602.00</p>
-
-        </div>
       </div>
+
+      <div class="p-4">
+        <span class="text-xs font-light text-gray-600">CAR</span>
+
+        <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
+        <div class="flex items-center justify-between">
+          <h4 class="text-xs font-bold text-gray-800 text-clip ">Car Seat Cushion Car Decoration</h4>
+        </div>
+        <div class="flex items-center justify-between py-4 mt-4">
+          <!-- Yıldız ikonunu span içinde tanımlayacağız -->
+          <span class="text-yellow-500 text-sm flex items-center justify-between">
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+          </span>
+        </div>
+        <p class="text-sm text-gray-600 py-2 visible group-hover:invisible">$602.00</p>
+
+      </div>
+
+
+      <!-- Fiyat -->
+
+      <!-- Grup üzerine gelince gösterilecek olan kaplama -->
+      <div class="group absolute h-full top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300  invisible group-hover:visible pb-1 
+        absolute group-hover:-translate-y-0 transition-transform duration-300 p-2 border-4 border-pink-400  my-4 ">
+        <!-- Kaplamanın içindeki yeni resim -->
+        <div class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center">
+          <img src="assets/pictures/products/21-800x800.jpg" alt="Wheel"
+            class="w-full h-44 object-cover rounded-full mb-44 flex flex-col items-center justify-center">
+        </div>
+
+
+        <div
+          class="flex items-end  invisible group-hover:visible pb-1 h-8 w-60
+          absolute group-hover:-translate-y-20 transition-transform duration-300 p-1 mt-96 flex text-center items-center justify-between">
+
+          <!-- Kaplamanın içindeki buton -->
+          <button
+            class="flex items-center mr-3 px-2 w-32 h-8 bg-graySoft bg-yellow-500 hover:bg-yellowDark text-white font-bold rounded-full border-2 border-pink-800">
+            +Add To Cart</button>
+
+          <!-- Kaplamanın içindeki ikonlar -->
+          <div class="flex space-x-2 bg-graySoft px-2 hover:bg-yellowDark  rounded-full ">
+            <!-- Kalp ikonu -->
+            <i class="fas fa-heart text-pink-500 text-xl mr-1 "></i>
+            <!-- Paylaş ikonu -->
+            <i class="fas fa-share-alt text-primary text-xl mr-1"></i>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+ 
       <!-- Dokuzuncu kart -->
-      <div class="card rounded-lg shadow-lg overflow-hidden border-white border-4 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-1 mb-3">
+
+      <div
+      class="group relative card rounded-lg shadow-lg overflow-hidden border-white border-2 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-2 mb-4 h-96 w-64">
+      <div
+        class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center visible group-hover:invisible">
         <img src="assets/pictures/products/Car Steering Wheel Cover_files/11-635x635.jpg" alt="Wheel"
           class="w-full h-36 object-cover">
-        <div class="p-4">
-          <span class="text-xs font-light text-gray-600">CAR</span>
-          <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
-          <div class="flex items-center justify-between">
-            <h4 class="text-xs font-bold text-gray-800">Alternator Engine Car</h4>
-          </div>
-          <div class="flex items-center justify-between py-4">
-            <!-- Yıldız ikonunu span içinde tanımlayacağız -->
-            <span class="text-yellow-500 text-sm flex items-center justify-between">
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-            </span>
-          </div>
-          <p class="text-sm text-gray-600 py-2">$602.00</p>
-
-        </div>
       </div>
+
+      <div class="p-4">
+        <span class="text-xs font-light text-gray-600">CAR</span>
+
+        <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
+        <div class="flex items-center justify-between">
+          <h4 class="text-xs font-bold text-gray-800 text-clip ">Alternator Engine Car</h4>
+        </div>
+        <div class="flex items-center justify-between py-4 mt-4">
+          <!-- Yıldız ikonunu span içinde tanımlayacağız -->
+          <span class="text-yellow-500 text-sm flex items-center justify-between">
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+          </span>
+        </div>
+        <p class="text-sm text-gray-600 py-2 visible group-hover:invisible">$602.00</p>
+
+      </div>
+
+
+      <!-- Fiyat -->
+
+      <!-- Grup üzerine gelince gösterilecek olan kaplama -->
+      <div class="group absolute h-full top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300  invisible group-hover:visible pb-1 
+        absolute group-hover:-translate-y-0 transition-transform duration-300 p-2 border-4 border-pink-400  my-4 ">
+        <!-- Kaplamanın içindeki yeni resim -->
+        <div class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center">
+          <img src="assets/pictures/products/21-800x800.jpg" alt="Wheel"
+            class="w-full h-44 object-cover rounded-full mb-44 flex flex-col items-center justify-center">
+        </div>
+
+
+        <div
+          class="flex items-end  invisible group-hover:visible pb-1 h-8 w-60
+          absolute group-hover:-translate-y-20 transition-transform duration-300 p-1 mt-96 flex text-center items-center justify-between">
+
+          <!-- Kaplamanın içindeki buton -->
+          <button
+            class="flex items-center mr-3 px-2 w-32 h-8 bg-graySoft bg-yellow-500 hover:bg-yellowDark text-white font-bold rounded-full border-2 border-pink-800">
+            +Add To Cart</button>
+
+          <!-- Kaplamanın içindeki ikonlar -->
+          <div class="flex space-x-2 bg-graySoft px-2 hover:bg-yellowDark  rounded-full ">
+            <!-- Kalp ikonu -->
+            <i class="fas fa-heart text-pink-500 text-xl mr-1 "></i>
+            <!-- Paylaş ikonu -->
+            <i class="fas fa-share-alt text-primary text-xl mr-1"></i>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+   
       <!-- Onuncu kart -->
-      <div class="card rounded-lg shadow-lg overflow-hidden border-white border-4 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-1 mb-3">
+      
+      <div
+      class="group relative card rounded-lg shadow-lg overflow-hidden border-white border-2 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-2 mb-4 h-96 w-64">
+      <div
+        class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center visible group-hover:invisible">
         <img src="assets/pictures/products/aluminium alloy wheel machine face rims and wheels_files/1-635x635.jpg" alt="Wheel"
           class="w-full h-36 object-cover">
-        <div class="p-4">
-          <span class="text-xs font-light text-gray-600">PALM</span>
-          <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
-          <div class="flex items-center justify-between">
-            <h4 class="text-xs font-bold text-gray-800">Car Body Parts</h4>
-          </div>
-          <div class="flex items-center justify-between py-4">
-            <!-- Yıldız ikonunu span içinde tanımlayacağız -->
-            <span class="text-yellow-500 text-sm flex items-center justify-between">
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-
-            </span>
-          </div>
-          <p class="text-sm text-gray-600 py-2">$602.00</p>
-
-        </div>
       </div>
 
-      <!-- Onbirinci kart -->
-      <div class="card rounded-lg shadow-lg overflow-hidden border-white border-4 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-1 mb-3">
-        <img src="assets/pictures/products/Car Repair Archives - Right to Repair Cars_files/27-635x635.jpg" alt="Wheel"
-          class="w-full h-36 object-cover">
-        <div class="p-4">
-          <span class="text-xs font-light text-gray-600">CANON</span>
-          <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
-          <div class="flex items-center justify-between">
-            <h4 class="text-xs font-bold text-gray-800">Mechanic Repairman Inspecting Car Stock</h4>
-          </div>
-          <div class="flex items-center justify-between py-4">
-            <!-- Yıldız ikonunu span içinde tanımlayacağız -->
-            <span class="text-yellow-500 text-sm flex items-center justify-between">
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-            </span>
-          </div>
-          <p class="text-sm text-gray-600 py-2">$602.00</p>
+      <div class="p-4">
+        <span class="text-xs font-light text-gray-600">PALM</span>
 
+        <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
+        <div class="flex items-center justify-between">
+          <h4 class="text-xs font-bold text-gray-800 text-clip ">Car Body Parts</h4>
         </div>
-      </div>
-      <!-- Onikinci kart -->
-      <div class="card rounded-lg shadow-lg overflow-hidden border-white border-4 shadow-2xl bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl mt-1 mb-3">
-        <img src="assets/pictures/products/Car Wheel Detailing and Cleaning_files/24-635x635.jpg" alt="Wheel"
-          class="w-full h-36 object-cover">
-        <div class="p-4">
-          <span class="text-xs font-light text-gray-600">OIL</span>
-          <!-- Başlık ve yıldız ikonunu flex ile yan yana hizalayacağız -->
-          <div class="flex items-center justify-between">
-            <h4 class="text-xs font-bold text-gray-800">Toys Plastic Tires Toy Car Wheels</h4>
-          </div>
-          <div class="flex items-center justify-between py-4">
-            <!-- Yıldız ikonunu span içinde tanımlayacağız -->
-            <span class="text-yellow-500 text-sm flex items-center justify-between">
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-              <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
-            </span>
-          </div>
-          <p class="text-sm text-gray-600 py-2">$602.00</p>
+        <div class="flex items-center justify-between py-4 mt-4">
+          <!-- Yıldız ikonunu span içinde tanımlayacağız -->
+          <span class="text-yellow-500 text-sm flex items-center justify-between">
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+            <i class="fa-regular fa-star " style="color: #FEC42C;"></i>
+          </span>
+        </div>
+        <p class="text-sm text-gray-600 py-2 visible group-hover:invisible">$602.00</p>
 
-        </div>
       </div>
-    
-     
+
+
+      <!-- Fiyat -->
+
+      <!-- Grup üzerine gelince gösterilecek olan kaplama -->
+      <div class="group absolute h-full top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300  invisible group-hover:visible pb-1 
+        absolute group-hover:-translate-y-0 transition-transform duration-300 p-2 border-4 border-pink-400  my-4 ">
+        <!-- Kaplamanın içindeki yeni resim -->
+        <div class="cursor-pointer w-44 h-44 mx-auto my-auto flex flex-col text-center items-center justify-center">
+          <img src="assets/pictures/products/21-800x800.jpg" alt="Wheel"
+            class="w-full h-44 object-cover rounded-full mb-44 flex flex-col items-center justify-center">
+        </div>
+
+
+        <div
+          class="flex items-end  invisible group-hover:visible pb-1 h-8 w-60
+          absolute group-hover:-translate-y-20 transition-transform duration-300 p-1 mt-96 flex text-center items-center justify-between">
+
+          <!-- Kaplamanın içindeki buton -->
+          <button
+            class="flex items-center mr-3 px-2 w-32 h-8 bg-graySoft bg-yellow-500 hover:bg-yellowDark text-white font-bold rounded-full border-2 border-pink-800">
+            +Add To Cart</button>
+
+          <!-- Kaplamanın içindeki ikonlar -->
+          <div class="flex space-x-2 bg-graySoft px-2 hover:bg-yellowDark  rounded-full ">
+            <!-- Kalp ikonu -->
+            <i class="fas fa-heart text-pink-500 text-xl mr-1 "></i>
+            <!-- Paylaş ikonu -->
+            <i class="fas fa-share-alt text-primary text-xl mr-1"></i>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+      
+
+
       <!-- Diğer kartlar için de aynı şekilde yapabilirsiniz -->
 
       <!-- Diğer kartlar -->

@@ -17,6 +17,26 @@
     
   }
  
-  .text-left:hover .quick-view-icon {
-    opacity: 1;
+  .product-layout .image:hover .quick-view-icon {
+    opacity: 2;
+    
   }
+
+
+
+.product-thumb .image {
+  position: relative;
+}
+
+.product-thumb .image a:last-child {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.product-thumb:hover .image a:last-child {
+  display: inline;
+}

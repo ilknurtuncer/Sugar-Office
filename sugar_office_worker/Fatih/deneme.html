@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Multi-Card Slider with Swiper</title>
+  <!-- Include Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  <style>
+    .swiper-container {
+      width: 20%;
+      margin: auto;
+    }
+
+    .swiper-slide {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-200">
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <!-- Card Content -->
+        <img src="http://localhost:8888/wordpress/smartmedic/wp-content/uploads/2019/12/DSC_0188.jpg" class="rounded-full w-2/4 mb-6">
+        <p>Card Content 1</p>
+        <p class="font-bold mt-4">Author - Company 1</p>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <!-- Card Content -->
+        <img src="http://localhost:8888/wordpress/smartmedic/wp-content/uploads/2019/12/DSC_0188.jpg" class="rounded-full w-2/4 mb-6">
+        <p>Card Content 2</p>
+        <p class="font-bold mt-4">Author - Company 2</p>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <!-- Card Content -->
+        <img src="http://localhost:8888/wordpress/smartmedic/wp-content/uploads/2019/12/DSC_0188.jpg" class="rounded-full w-2/4 mb-6">
+        <p>Card Content 2</p>
+        <p class="font-bold mt-4">Author - Company 2</p>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <!-- Card Content -->
+        <img src="http://localhost:8888/wordpress/smartmedic/wp-content/uploads/2019/12/DSC_0188.jpg" class="rounded-full w-2/4 mb-6">
+        <p>Card Content 2</p>
+        <p class="font-bold mt-4">Author - Company 2</p>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <!-- Card Content -->
+        <img src="http://localhost:8888/wordpress/smartmedic/wp-content/uploads/2019/12/DSC_0188.jpg" class="rounded-full w-2/4 mb-6">
+        <p>Card Content 2</p>
+        <p class="font-bold mt-4">Author - Company 2</p>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <!-- Card Content -->
+        <img src="http://localhost:8888/wordpress/smartmedic/wp-content/uploads/2019/12/DSC_0188.jpg" class="rounded-full w-2/4 mb-6">
+        <p>Card Content 2</p>
+        <p class="font-bold mt-4">Author - Company 2</p>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <!-- Card Content -->
+        <img src="http://localhost:8888/wordpress/smartmedic/wp-content/uploads/2019/12/DSC_0188.jpg" class="rounded-full w-2/4 mb-6">
+        <p>Card Content 2</p>
+        <p class="font-bold mt-4">Author - Company 2</p>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <!-- Card Content -->
+        <img src="http://localhost:8888/wordpress/smartmedic/wp-content/uploads/2019/12/DSC_0188.jpg" class="rounded-full w-2/4 mb-6">
+        <p>Card Content 2</p>
+        <p class="font-bold mt-4">Author - Company 2</p>
+      </div>
+
+      <!-- Repeat the above structure for additional slides -->
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Include Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+</body>
+
+</html>

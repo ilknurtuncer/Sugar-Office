@@ -217,3 +217,23 @@ function nextSlide() {
     },
     
   });
+
+  //**** modul-21 ****/
+  function showButtons(element) {
+    const buttons = element.querySelector('.txt-button-group');
+    const ratPri = element.querySelector('.rat-pri');
+
+    buttons.style.display = 'flex';
+    ratPri.style.display = 'none';
+  }
+
+  function hideButtons(element) {
+    const buttons = element.querySelector('.txt-button-group');
+    const ratPri = element.querySelector('.rat-pri');
+
+    buttons.style.display = 'none';
+    ratPri.style.display = 'block';
+  }
+
+
+

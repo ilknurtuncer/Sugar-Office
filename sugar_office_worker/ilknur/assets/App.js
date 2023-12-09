@@ -135,7 +135,28 @@ const isLinkClick = event.target.tagName === 'A';
 
 //****** Initialize Slick Carousel *******
 
+// $(document).ready(function(){
+//     $('.slick-carousel').slick({
+//         autoplay: true,
+//         autoplaySpeed: 3000,
+//         dots: true,
+//         prevArrow: '<button type="button" class="slick-prev">&#8249;</button>',
+//         nextArrow: '<button type="button" class="slick-next">&#8250;</button>',
+//     });
+// });
+// $(document).ready(function () {
+// $('#carouselExampleSlidesOnly').slick();
+// });
+
+// function prevSlide() {
+// $('#carouselExampleSlidesOnly').slick('slickPrev');
+// }
+
+// function nextSlide() {
+// $('#carouselExampleSlidesOnly').slick('slickNext');
+// }
 $(document).ready(function(){
+    // Tek bir document ready kullanın
     $('.slick-carousel').slick({
         autoplay: true,
         autoplaySpeed: 3000,
@@ -143,18 +164,20 @@ $(document).ready(function(){
         prevArrow: '<button type="button" class="slick-prev">&#8249;</button>',
         nextArrow: '<button type="button" class="slick-next">&#8250;</button>',
     });
-});
-$(document).ready(function () {
-$('#carouselExampleSlidesOnly').slick();
+
+    // Slick Carousel'ı başlatırken gerekli seçicilerinizi kullanın
+    $('#carouselExampleSlidesOnly').slick();
 });
 
+// Slick Carousel'ı kullanmak için ayrı ayrı fonksiyonlar
 function prevSlide() {
-$('#carouselExampleSlidesOnly').slick('slickPrev');
+    $('#carouselExampleSlidesOnly').slick('slickPrev');
 }
 
 function nextSlide() {
-$('#carouselExampleSlidesOnly').slick('slickNext');
+    $('#carouselExampleSlidesOnly').slick('slickNext');
 }
+
 
  //******  Modul-7 ******
 

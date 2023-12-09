@@ -40,6 +40,41 @@
 .product-thumb:hover .image a:last-child {
   display: inline;
 }
+
+.product-thumb {
+  position: relative;
+}
+
+.txt-button-group {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.txt-button-group button {
+  margin-right: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.txt-button-group button:hover {
+  background-color: rgb(248, 187, 4);
+}
+
+.rat-pri {
+  display: block;
+}
+
+.txt-button-group, .rat-pri {
+  position: absolute;
+bottom: 5px;
+}
+
+.txt-button-group {
+  display: none;
+}
+
+
+
+*-----footer-----*
 .social .sparkle-button {
   position: relative;
   overflow: hidden;
